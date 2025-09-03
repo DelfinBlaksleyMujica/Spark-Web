@@ -15,10 +15,10 @@ export default function Footer() {
       className={`${publicSans.className} bg-[#FCD34D] text-zinc-900`}
     >
       {/* TOP OF FOOTER */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-10 pt-24 pb-6 md:pb-16 px-4 sm:px-6 md:px-0 text-center md:text-left">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-12 pb-6 text-center md:px-0 md:grid-cols-12 md:text-left sm:px-6  ">
         <section className="md:col-start-2 md:col-span-7">
-          <h2 className="font-regular leading-[0.95] tracking-tight text-balance
-                         text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+          <h2 className="font-regular  tracking-tight
+                         text-[30px] md:text-[40px] xl:text-[64px] ">
             <span className="block">Transform teams,</span>
             <span className="block">Reduce turnover,</span>
             <span className="block font-semibold">Boost performance</span>
@@ -28,7 +28,7 @@ export default function Footer() {
             <Link
               href="#book-demo"
               className="inline-flex items-center rounded-lg bg-white px-4 py-2
-                         text-[20px] font-semibold leading-none 
+                         text-[20px]  font-semibold leading-none 
                          hover:translate-y-[-1px] transition"
             >
               Book a demo
@@ -39,9 +39,9 @@ export default function Footer() {
         {/* Right: Vertical nav  */}
         <nav
           aria-label="Footer navigation"
-          className="md:col-start-9 md:col-span-3 md:self-start"
+          className="pt-12 pb-6 md:col-start-9 md:col-span-3 md:py-4 md:self-start "
         >
-          <ul className="space-y-6 text-[25px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
+          <ul className="space-y-6 text-[20px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
             <li><Link href="/" className="hover:underline">Home</Link></li>
             <li><Link href="/pricing" className="hover:underline">Pricing</Link></li>
             <li><Link href="/about" className="hover:underline">About Us</Link></li>
@@ -58,7 +58,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-8 pt-0 pb-12 md:pb-24 md:pt-2 px-4 sm:px-6 sm:py-12 md:px-0 text-center md:text-left ">
 
         {/* LEFT: Socials */}
-        <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0">
+        <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
           <div className="flex items-center gap-3 ">
             <FaInstagram className="h-7 w-7 text-black" />
             <span className="text-[20px] leading-6">in/sparkclub.xyz</span>
@@ -78,7 +78,7 @@ export default function Footer() {
         </section>
 
         {/* LEFT: Logo + copyright */}
-        <section className="md:col-start-2 md:col-span-3 md:row-start-3 flex flex-col items-center md:items-start sm:py-6">
+        <section className="md:col-start-2 md:col-span-3 md:row-start-3 flex flex-col items-center md:items-start py-6 sm:py-6">
           <div className="md:space-y-6 space-y-6">
             <div className="flex justify-center md:justify-start items-center sm:justify-center sm:items-center">
               <Image
@@ -105,8 +105,6 @@ export default function Footer() {
         </section>
 
 
-
-
         {/* RIGHT: Contact */}
         <section
           aria-labelledby="contact-heading"
@@ -122,7 +120,7 @@ export default function Footer() {
         {/* RIGHT: Newsletter */}
         <section
           aria-labelledby="newsletter-heading"
-          className="md:col-start-9 md:col-span-3 md:row-start-3 space-y-6 mx-auto md:mx-0 sm:py-10"
+          className="md:col-start-9 md:col-span-3 md:row-start-3 space-y-4 mx-auto md:mx-0 pt-12 pb-6 sm:py-10"
         >
           <h3 id="newsletter-heading" className="font-semibold text-[25px] ">
             Join Our Newsletter
@@ -131,7 +129,7 @@ export default function Footer() {
             Sign up for our newsletter to enjoy free marketing tips, inspiration, and more
           </p>
 
-          <form className="flex items-center gap-3 max-w-sm mx-auto md:mx-0" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex items-center gap-3 w-[250px] md:w-[300px] mx-auto md:mx-0" onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="email" className="sr-only">Email</label>
             <input
               id="email"
