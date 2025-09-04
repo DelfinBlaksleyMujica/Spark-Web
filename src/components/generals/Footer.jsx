@@ -82,7 +82,7 @@ export default function Footer() {
           <div className="md:space-y-6 space-y-6">
             <div className="flex justify-center md:justify-start items-center sm:justify-center sm:items-center">
               <Image
-                src="/Logo_black.png"
+                src="/images/Logos/Logo_black.png"
                 alt="SparkClub Logo"
                 width={230}
                 height={0}
