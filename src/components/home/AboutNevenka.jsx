@@ -102,9 +102,8 @@ export default function AboutNevenka() {
                 <div className="mt-10 sm:mt-12 flex justify-center">
                     <Link
                         href="#try"
-                        className="inline-flex items-center justify-center rounded-xl bg-black text-white
-                       h-12 px-6 sm:px-8 text-sm sm:text-base font-medium hover:translate-y-[-1px]
-                       transition will-change-transform"
+                        className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
+                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
                     >
                         Try for free
                     </Link>

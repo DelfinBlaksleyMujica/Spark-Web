@@ -27,9 +27,8 @@ export default function Footer() {
           <div className="mt-6 sm:mt-8">
             <Link
               href="#book-demo"
-              className="inline-flex items-center rounded-lg bg-white px-4 py-2
-                         text-[20px]  font-semibold leading-none 
-                         hover:translate-y-[-1px] transition"
+              className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
+                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
             >
               Book a demo
             </Link>
