@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className={`${publicSans.className} bg-[#FCD34D] text-zinc-900`}>
       {/* TOP OF FOOTER */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-10 pt-24 pb-6 md:pb-16 px-4 sm:px-6 md:px-0 text-center md:text-left">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-12 pb-6 text-center md:px-0 md:grid-cols-12 md:text-left sm:px-6  ">
         <section className="md:col-start-2 md:col-span-7">
           <h2
             className="font-regular leading-[0.95] tracking-tight text-balance
@@ -27,9 +27,8 @@ export default function Footer() {
           <div className="mt-6 sm:mt-8">
             <Link
               href="#book-demo"
-              className="inline-flex items-center rounded-lg bg-white px-4 py-2
-                         text-[20px] font-semibold leading-none 
-                         hover:translate-y-[-1px] transition"
+              className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
+                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
             >
               Book a demo
             </Link>
@@ -39,7 +38,7 @@ export default function Footer() {
         {/* Right: Vertical nav  */}
         <nav
           aria-label="Footer navigation"
-          className="md:col-start-9 md:col-span-3 md:self-start"
+          className="pt-12 pb-6 md:col-start-9 md:col-span-3 md:py-4 md:self-start "
         >
           <ul className="space-y-6 text-[25px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
             <li>
@@ -74,7 +73,7 @@ export default function Footer() {
       {/* BOTTOM OF FOOTER */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-8 pt-0 pb-12 md:pb-24 md:pt-2 px-4 sm:px-6 sm:py-12 md:px-0 text-center md:text-left ">
         {/* LEFT: Socials */}
-        <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0">
+        <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
           <div className="flex items-center gap-3 ">
             <FaInstagram className="h-7 w-7 text-black" />
             <span className="text-[20px] leading-6">in/sparkclub.xyz</span>
@@ -94,11 +93,11 @@ export default function Footer() {
         </section>
 
         {/* LEFT: Logo + copyright */}
-        <section className="md:col-start-2 md:col-span-3 md:row-start-3 flex flex-col items-center md:items-start sm:py-6">
+        <section className="md:col-start-2 md:col-span-3 md:row-start-3 flex flex-col items-center md:items-start py-6 sm:py-6">
           <div className="md:space-y-6 space-y-6">
             <div className="flex justify-center md:justify-start items-center sm:justify-center sm:items-center">
               <Image
-                src="/Logo_black.png"
+                src="/images/Logos/Logo_black.png"
                 alt="SparkClub Logo"
                 width={230}
                 height={0}
@@ -135,7 +134,7 @@ export default function Footer() {
         {/* RIGHT: Newsletter */}
         <section
           aria-labelledby="newsletter-heading"
-          className="md:col-start-9 md:col-span-3 md:row-start-3 space-y-6 mx-auto md:mx-0 sm:py-10"
+          className="md:col-start-9 md:col-span-3 md:row-start-3 space-y-4 mx-auto md:mx-0 pt-12 pb-6 sm:py-10"
         >
           <h3 id="newsletter-heading" className="font-semibold text-[25px] ">
             Join Our Newsletter
