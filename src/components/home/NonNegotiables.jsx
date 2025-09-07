@@ -41,11 +41,10 @@ export default function NonNegotiables() {
         <section className={`${publicSans.className} relative bg-black overflow-hidden`}>
             {/* BACKGROUND SHAPES */}
             <div className="pointer-events-none absolute inset-0 z-0">
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={420} height={420} className="absolute top-10 left-6 " />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={520} height={520} className="absolute top-20 right-10" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={640} height={640} className="absolute bottom-10 left-16" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={460} height={460} className="absolute bottom-20 right-16" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={380} height={380} className="absolute top-1/2 left-1/3 -translate-y-1/2 " />
+                <Image src="/images/Textures/Circle_BG.png" alt="" width={200} height={200} className="absolute md:bottom-10 lg:left-60 lg:top-10 lg:left-6 opacity-[0] md:opacity-[100]" />
+                <Image src="/images/Textures/Circle_BG.png" alt="" width={240} height={240} className="absolute md:bottom-0 md:right-0 lg:bottom-140 lg:left-300 opacity-[0] md:opacity-[100]" />
+                <Image src="/images/Textures/Circle_BG.png" alt="" width={460} height={460} className="absolute md:bottom-100 md:right-50 lg:top-80 lg:right-10 opacity-[0] md:opacity-[100]" />
+                <Image src="/images/Textures/Circle_BG.png" alt="" width={300} height={300} className="absolute lg:top-1/2 lg:left-1/3 opacity-[0] md:opacity-[100]" />
             </div>
 
             {/* HEADER */}
