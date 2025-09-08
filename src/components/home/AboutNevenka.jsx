@@ -85,7 +85,7 @@ export default function AboutNevenka() {
 
                                     {/* YELLOW RECT */}
                                     <div className="rounded-[8px] bg-[#FCD34D] text-zinc-900 p-4 sm:p-5 ">
-                                        <h3 className="text-[20px] sm:text-[32px] font-extrabold">
+                                        <h3 className="text-[20px] sm:text-[32px] font-extrabold leading-[1.2]">
                                             {c.title}
                                         </h3>
                                         <p className="mt-2 text-[16px] sm:text-[20px]">
