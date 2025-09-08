@@ -6,7 +6,7 @@ import { LayoutGroup, motion } from "framer-motion";
 import { useMemo, useState, useEffect, useTransition } from "react";
 
 const TABS = [
-  { key: "users", label: "Users", href: "/users" },
+  { key: "users", label: "Users", href: "/" },
   { key: "providers", label: "Providers", href: "/providers" },
 ];
 

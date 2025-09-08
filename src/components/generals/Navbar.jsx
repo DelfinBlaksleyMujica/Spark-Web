@@ -59,7 +59,7 @@ export default function Navbar() {
   const toggleMenu = () => setOpen((v) => !v);
 
   return (
-    <header className="h-[100px] w-full flex justify-center items-center fixed top-0">
+    <header className="h-[100px] w-full flex justify-center items-center fixed top-0 z-50">
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] bg-[#000000] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
         {/* Logo */}
         <div className="h-full flex items-center">

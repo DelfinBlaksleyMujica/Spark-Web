@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Clases de Botones*/
+
+.primary-btn{
+  background-color: #000000;
+  color: #ffffff;
+  border: solid 1px #FFFFFF;
+  width: 85%;
+}
+
+.secondary-btn{
+  background-color: #f0f0f0;
+  color: #000000;
+  border: solid 1px #f0f0f0;
+  width: 85%;
+}
+
+.tertiary-btn{
+  background-color: #FCD34D;
+  color: #000000;
+  border: solid 1px #000000;
+  width: 85%;
+}
+
+
+@media (min-width:768px) {
+  .primary-btn{
+  width: 195px;
+}
+
+.secondary-btn{
+  width: 195px;
+}
+
+.tertiary-btn{
+  width: 215px;
+}
+}
+
+/*Clases Home*/
