@@ -1,5 +1,10 @@
+import SectionContainer from "@/components/pricing/SectionContainer";
 import React from "react";
 
 export default function PricingPageContainer() {
-  return <div>Pricing Page</div>;
+  return (
+    <>
+      <SectionContainer />
+    </>
+  );
 }

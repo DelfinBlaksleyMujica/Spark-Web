@@ -4,15 +4,19 @@ import NonNegotiables from "@/components/home/NonNegotiables";
 import FaqsSection from "@/components/home/FaqsSection";
 import Hero from "@/components/home/Hero";
 import WeMakeWorkWorkComponent from "@/components/home/WeMakeWorkWorkComponent";
+import TestimonialsContainer from "@/components/generals/TestimonialsContainer";
+import TrustedByComponent from "@/components/home/TrustedByComponent";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <TrustedByComponent />
       <AboutNevenka />
       <WeMakeWorkWorkComponent />
       <FeaturesComparison />
       <NonNegotiables />
+      <TestimonialsContainer />
       <FaqsSection />
     </>
   );

@@ -7,7 +7,7 @@ import { useMemo, useState, useEffect, useTransition } from "react";
 
 const TABS = [
   { key: "users", label: "Users", href: "/" },
-  { key: "providers", label: "Providers", href: "/providers" },
+  { key: "provider", label: "Provider", href: "/provider" },
 ];
 
 export default function NavUserProviderToggle() {
@@ -17,7 +17,7 @@ export default function NavUserProviderToggle() {
 
   // Activo real según la ruta
   const activeKey = useMemo(() => {
-    if (pathname?.startsWith("/providers")) return "providers";
+    if (pathname?.startsWith("/provider")) return "provider";
     return "users";
   }, [pathname]);
 
@@ -49,7 +49,7 @@ export default function NavUserProviderToggle() {
         className="relative inline-flex h-10 w-[220px] select-none p-1"
         style={{ backgroundColor: "#FCD34D", borderRadius: "24.5px" }}
         role="tablist"
-        aria-label="Users / Providers"
+        aria-label="Users / Provider"
       >
         {TABS.map((tab) => {
           const isActive = activeKey === tab.key;
