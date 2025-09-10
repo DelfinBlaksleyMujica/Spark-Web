@@ -16,8 +16,8 @@ export default function Footer() {
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-12 pb-6 text-center md:px-0 md:grid-cols-12 md:text-left sm:px-6  ">
         <section className="md:col-start-2 md:col-span-7">
           <h2
-            className="font-regular leading-[0.95] tracking-tight text-balance
-                         text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
+            className="font-regular leading-[0.95] tracking-tight text-balance p-x-4 sm:px-0
+                         text-[30px] sm:text-[40px] md:text-[45px] lg:text-[55px]"
           >
             <span className="block">Transform teams,</span>
             <span className="block">Reduce turnover,</span>
@@ -40,7 +40,7 @@ export default function Footer() {
           aria-label="Footer navigation"
           className="pt-12 pb-6 md:col-start-9 md:col-span-3 md:py-4 md:self-start "
         >
-          <ul className="space-y-6 text-[25px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
+          <ul className="space-y-4 text-[25px] sm:text-[30px] md:text-[20px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
             <li>
               <Link href="/" className="hover:underline">
                 Home

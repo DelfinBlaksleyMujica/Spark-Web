@@ -27,7 +27,7 @@ body {
 
 /*Clases de Botones*/
 
-.primary-btn{
+.primary-btn {
   background-color: #000000;
   color: #ffffff;
   border: solid 1px #FFFFFF;
@@ -35,7 +35,7 @@ body {
   height: 50px;
 }
 
-.secondary-btn{
+.secondary-btn {
   background-color: #f0f0f0;
   color: #000000;
   border: solid 1px #f0f0f0;
@@ -43,7 +43,7 @@ body {
   height: 50px;
 }
 
-.tertiary-btn{
+.tertiary-btn {
   background-color: #FCD34D;
   color: #000000;
   border: solid 1px #000000;
@@ -53,23 +53,23 @@ body {
 
 
 @media (min-width:768px) {
-  .primary-btn{
-  width: 195px;
-}
+  .primary-btn {
+    width: 195px;
+  }
 
-.secondary-btn{
-  width: 195px;
-}
+  .secondary-btn {
+    width: 195px;
+  }
 
-.tertiary-btn{
-  width: 215px;
-}
+  .tertiary-btn {
+    width: 215px;
+  }
 }
 
 /*Animación Testimonios*/
 
-.testimonial-slider-left{
-   width: 100%;
+.testimonial-slider-left {
+  width: 100%;
   height: 142px;
 }
 
@@ -79,7 +79,7 @@ body {
 }
 
 /* Reglas comunes para la lista */
-.testimonial-slider-left .testimonial-list-left{
+.testimonial-slider-left .testimonial-list-left {
   display: flex;
   width: 100%;
   min-width: 1780px;
@@ -87,10 +87,10 @@ body {
 }
 
 /* Reglas unificadas para cada item */
-.testimonial-slider-left .testimonial-list-left .testimonial-item-left{
+.testimonial-slider-left .testimonial-list-left .testimonial-item-left {
   /* El delay sale del índice --i */
-  animation-delay: calc( 5s * var(--i) );
-    width: 445px;
+  animation-delay: calc(5s * var(--i));
+  width: 445px;
   height: 142px;
   position: absolute;
   left: 105%;
@@ -98,23 +98,56 @@ body {
 }
 
 /* Ajustes de la card: una sola regla */
-.testimonial-slider-left .testimonial-list-left .testimonial-item-left .testimonial-card{
+.testimonial-slider-left .testimonial-list-left .testimonial-item-left .testimonial-card {
   margin-left: -90px;
 }
 
 /* Hover de la card: una sola regla */
-.testimonial-slider-left .testimonial-list-left .testimonial-item-left .testimonial-card:hover{
+.testimonial-slider-left .testimonial-list-left .testimonial-item-left .testimonial-card:hover {
   background: #FFFFFF;
   transition: all .5s;
 }
 
 
-@keyframes autoRun{
-  from{
-    left:105%;
+@keyframes autoRun {
+  from {
+    left: 105%;
   }
-  to{
+
+  to {
     left: 444px;
   }
 }
 
+
+@layer utilities {
+  @keyframes chips-marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+
+    /* move by half because the content is duplicated */
+  }
+
+  .marquee {
+    animation: chips-marquee var(--marquee-duration, 28s) linear infinite;
+    will-change: transform;
+  }
+
+  .marquee-reverse {
+    animation: chips-marquee var(--marquee-duration, 28s) linear infinite reverse;
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    .marquee,
+    .marquee-reverse {
+      animation: none !important;
+    }
+  }
+}
