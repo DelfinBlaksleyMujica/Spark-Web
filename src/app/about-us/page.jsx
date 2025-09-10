@@ -1,7 +1,6 @@
+import MeetTheTeamContainer from "@/components/about us/MeetTheTeamContainer";
 import React from "react";
-import AboutNevenka from "@/components/about/AboutNevenka";
 
 export default function AboutUsPageContainer() {
-  return (<AboutNevenka />);
+  return <MeetTheTeamContainer />;
 }
-
