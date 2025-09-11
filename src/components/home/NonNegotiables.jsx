@@ -62,7 +62,7 @@ export default function NonNegotiables() {
                         {nonNegotiables.map((item) => (
                             <article
                                 key={item.id}
-                                className={`relative ${item.color} rounded-[10px] px-4 pt-20 pb-8 text-center`}
+                                className={`relative ${item.color} rounded-[10px] px-4 pt-20 pb-12 text-center flex flex-col  `}
                             >
                                 {/* Illustration  */}
                                 <div className="absolute -top-20 left-0 right-0 flex justify-center py-4">
@@ -76,7 +76,7 @@ export default function NonNegotiables() {
                                     />
                                 </div>
 
-                                <h3 className="text-[30px] md:text-[32px] font-black text-black mb-2 pt-24 leading-[1.2]">
+                                <h3 className="text-[30px] lg:text-[25px] xl:text-[32] font-black text-black mb-2 pt-24 leading-[1.2]">
                                     {item.title}
                                 </h3>
                                 <p className="text-[16px] sm:text-[22px] text-black leading-[1.3]">
