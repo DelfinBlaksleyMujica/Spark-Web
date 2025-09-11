@@ -50,8 +50,8 @@ const mobileLinkVars = {
 // Links del menú (desktop y mobile)
 const NAV_LINKS = [
   { title: "Blog", href: "/" },
-  { title: "Pricing", href: "/about" },
-  { title: "About us", href: "/services" },
+  { title: "Pricing", href: "/pricing" },
+  { title: "About us", href: "/about-us" },
 ];
 
 export default function Navbar() {
@@ -59,8 +59,8 @@ export default function Navbar() {
   const toggleMenu = () => setOpen((v) => !v);
 
   return (
-    <header className="h-[100px] w-full flex justify-center items-center fixed top-0">
-      <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] bg-[#000000] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
+    <header className="h-[100px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#000000]">
+      <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
         {/* Logo */}
         <div className="h-full flex items-center">
           <Link href="/" aria-label="SparkClub - Home">
