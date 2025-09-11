@@ -88,7 +88,7 @@ export default function AboutNevenka() {
                                         <h3 className="text-[20px] sm:text-[32px] font-extrabold leading-[1.2]">
                                             {c.title}
                                         </h3>
-                                        <p className="mt-2 text-[16px] sm:text-[20px]">
+                                        <p className="mt-2 text-[16px] sm:text-[20px] leading-[1.2]">
                                             {c.description}
                                         </p>
                                     </div>

@@ -76,10 +76,10 @@ export default function NonNegotiables() {
                                     />
                                 </div>
 
-                                <h3 className="text-[30px] md:text-[32px] font-black text-black mb-2 pt-24">
+                                <h3 className="text-[30px] md:text-[32px] font-black text-black mb-2 pt-24 leading-[1.2]">
                                     {item.title}
                                 </h3>
-                                <p className="text-[16px] sm:text-[22px]  text-black">
+                                <p className="text-[16px] sm:text-[22px] text-black leading-[1.3]">
                                     {item.description}
                                 </p>
                             </article>
