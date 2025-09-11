@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
