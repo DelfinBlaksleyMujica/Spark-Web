@@ -16,8 +16,8 @@ export default function Footer() {
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 pt-12 pb-6 text-center md:px-0 md:grid-cols-12 md:text-left sm:px-6  ">
         <section className="md:col-start-2 md:col-span-7">
           <h2
-            className="font-regular leading-[0.95] tracking-tight text-balance
-                         text-5xl sm:text-6xl md:text-7xl lg:text-8xl"
+            className="font-regular leading-[1.2] text-balance p-x-4 sm:px-0
+                         text-[30px] sm:text-[40px] md:text-[45px] lg:text-[55px]"
           >
             <span className="block">Transform teams,</span>
             <span className="block">Reduce turnover,</span>
@@ -40,7 +40,7 @@ export default function Footer() {
           aria-label="Footer navigation"
           className="pt-12 pb-6 md:col-start-9 md:col-span-3 md:py-4 md:self-start "
         >
-          <ul className="space-y-6 text-[25px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
+          <ul className="space-y-4 text-[25px] sm:text-[30px] md:text-[20px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
             <li>
               <Link href="/" className="hover:underline">
                 Home
@@ -76,19 +76,19 @@ export default function Footer() {
         <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
           <div className="flex items-center gap-3 ">
             <FaInstagram className="h-7 w-7 text-black" />
-            <span className="text-[20px] leading-6">in/sparkclub.xyz</span>
+            <span className="text-[20px] ">in/sparkclub.xyz</span>
           </div>
           <div className="flex items-center gap-3">
             <FaLinkedin className="h-7 w-7 text-black" />
-            <span className="text-[20px] leading-6">ig/sparkclub</span>
+            <span className="text-[20px] ">ig/sparkclub</span>
           </div>
           <div className="flex items-center gap-3">
             <FaTelegram className="h-7 w-7 text-black" />
-            <span className="text-[20px] leading-6">tg/sparkclub</span>
+            <span className="text-[20px] ">tg/sparkclub</span>
           </div>
           <div className="flex items-center gap-3">
             <FaTwitter className="h-7 w-7 text-black" />
-            <span className="text-[20px] leading-6">tw/sparkclub</span>
+            <span className="text-[20px] ">tw/sparkclub</span>
           </div>
         </section>
 
@@ -107,7 +107,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="text-[14px] leading-6">
+            <p className="text-[14px] mt-4">
               We are a comprehensive smart engagement platform designed to help
               companies boost employee engagement, reduce turnover, and improve
               employee performance.
@@ -127,8 +127,8 @@ export default function Footer() {
           <h3 id="contact-heading" className="font-semibold text-[25px]">
             Contact Info
           </h3>
-          <p className="text-[20px] leading-6">+54 9 1157979949</p>
-          <p className="text-[20px] leading-6">Mon–Fri 9am–6pm</p>
+          <p className="text-[20px] ">+54 9 1157979949</p>
+          <p className="text-[20px] ">Mon–Fri 9am–6pm</p>
         </section>
 
         {/* RIGHT: Newsletter */}
@@ -139,7 +139,7 @@ export default function Footer() {
           <h3 id="newsletter-heading" className="font-semibold text-[25px] ">
             Join Our Newsletter
           </h3>
-          <p className="text-[20px] leading-6 max-w-sm ">
+          <p className="text-[20px] leading-[2] max-w-sm ">
             Sign up for our newsletter to enjoy free marketing tips,
             inspiration, and more
           </p>
@@ -156,11 +156,11 @@ export default function Footer() {
               type="email"
               required
               placeholder="Email Address"
-              className="w-full bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] leading-6 placeholder-zinc-700"
+              className="w-full bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px]  placeholder-zinc-700"
             />
             <button
               type="submit"
-              className="shrink-0 inline-flex items-center justify-center rounded-full border border-zinc-900/80 px-4 py-2 text-[14px] leading-none hover:bg-black hover:text-white transition"
+              className="shrink-0 inline-flex items-center justify-center rounded-full border border-zinc-900/80 px-4 py-2 text-[14px]  hover:bg-black hover:text-white transition"
             >
               Join us
             </button>
