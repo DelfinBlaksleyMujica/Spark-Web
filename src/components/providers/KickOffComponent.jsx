@@ -37,7 +37,7 @@ const Card = ({ id, image, title, description, color }) => {
 
 export default function KickOffComponent({ cardsData, titleKickoff }) {
   return (
-    <div className="w-full py-[70px] flex justify-center items-center">
+    <div className="w-full py-[70px] flex justify-center items-center bg-white">
       <div className="flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
         <h2
           className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-black mb-[45px]`}
