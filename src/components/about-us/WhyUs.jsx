@@ -28,51 +28,42 @@ const ITEMS = [
 
 export default function WhyWorkWithUs() {
     return (
-        <section className={`${publicSans.className} relative bg-black overflow-hidden`}>
+        <section className={`${publicSans.className} relative bg-black overflow-hidden min-h-[700px] `}>
+
             {/* BACKGROUND  */}
-            <div className="pointer-events-none absolute inset-0 z-0">
-                <Image
-                    src="/images/Textures/Circle_BG.png"
-                    alt=""
-                    width={200}
-                    height={200}
-                    className="absolute md:bottom-10 lg:top-10 lg:left-6 opacity-0 md:opacity-100"
-                />
-                <Image
-                    src="/images/Textures/Circle_BG.png"
-                    alt=""
-                    width={240}
-                    height={240}
-                    className="absolute md:bottom-0 md:right-0 lg:bottom-[140px] lg:left-[300px] opacity-0 md:opacity-100"
-                />
-                <Image
-                    src="/images/Textures/Circle_BG.png"
-                    alt=""
-                    width={460}
-                    height={460}
-                    className="absolute md:bottom-[100px] md:right-[50px] lg:top-80 lg:right-10 opacity-0 md:opacity-100"
-                />
-                <Image
-                    src="/images/Textures/Circle_BG.png"
-                    alt=""
-                    width={300}
-                    height={300}
-                    className="absolute lg:top-1/2 lg:left-1/3 opacity-0 md:opacity-100"
-                />
-            </div>
+            <img
+                src="/images/Textures/Circle_BG.png"
+                alt=""
+                className="absolute w-[300px] h-[300px] left-[10px] bottom-[10px]   lg:left-[4px] lg:bottom-[10px] z-0"
+            />
+            <img
+                src="/images/Textures/SquareBlack_BG.svg"
+                alt=""
+                className="absolute w-[250px] h-[250px] opacity-0 lg:opacity-100 rotate-45 z-0 lg:left-[-100px] lg:top-[0px] "
+            />
+            <img
+                src="/images/Textures/SquareBlack_BG.svg"
+                alt=""
+                className="absolute w-[350px] h-[350px] rotate-45 right-[-100px] z-0 lg:right-[70px] lg:bottom-[10px]"
+            />
+            <img
+                src="/images/Textures/Circle_BG.png"
+                alt=""
+                className="absolute w-[200px] h-[200px]  z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
+            />
 
             {/* MAIN  */}
-            <div className="relative z-10 px-4 sm:px-6 md:px-0 py-14 sm:py-16 lg:py-20">
-                <div className="grid grid-cols-12 gap-x-6 gap-y-10">
+            <div className="relative z-10 px-4 sm:px-8 md:px-0 py-14 sm:py-16 lg:py-20">
+                <div className="grid grid-cols-12 gap-x-10 gap-y-10">
                     {/* Title */}
                     <header className="col-start-2 col-span-10 text-center pb-24 pt-4 ">
-                        <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] font-semibold">
+                        <h2 className="text-[28px] sm:text-[36px] lg:text-[38px] font-medium">
                             Why work with us?
                         </h2>
                     </header>
 
                     {/* 3 Cards */}
-                    <div className="col-start-2 col-span-10">
+                    <div className="col-start-3 col-span-8 ">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 xl:gap-20">
                             {ITEMS.map((item) => (
                                 <article

@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Public_Sans } from "next/font/google";
+import Button from "../generals/Button";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -12,22 +12,22 @@ const cards = [
         img: "/images/Cards/MockUp-01.png",
         imageAlt: "Input your event ideas",
         title: "Input your event ideas",
-        description: "Dates, guests, vibe, format, services",
+        description: "Dates, guests, vibe, format, services.",
     },
     {
         id: "proposal",
         img: "/images/Cards/MockUp-02.png",
-        imageAlt: "Get a proposal in 20 seconds",
-        title: "Get a proposal in 20 seconds",
+        imageAlt: "Get a proposal in 20 sec",
+        title: "Get a proposal in 20 sec",
         description:
-            "Nevenka briefs the event with certified suppliers for all your needs.",
+            "Nevenka briefs the event for all your needs.",
     },
     {
         id: "pm",
         img: "/images/Cards/MockUp-03.png",
         imageAlt: "Your PM takes over",
         title: "Your PM takes over",
-        description: "Experiences, suppliers, and love for details",
+        description: "Experiences, suppliers, and love for details.",
     },
 ];
 
@@ -100,13 +100,11 @@ export default function AboutNevenka() {
 
                 {/* CTA */}
                 <div className="mt-10 sm:mt-12 flex justify-center">
-                    <Link
-                        href="#try"
-                        className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
-                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
-                    >
-                        Try for free
-                    </Link>
+                    <Button
+                        btnText="Try for free"
+                        btnClass="primary-btn"
+                        href="/get-started"
+                    />
                 </div>
             </div>
         </section>
