@@ -1,30 +1,6 @@
 import React from "react";
 import Button from "../generals/Button";
-
-const cardsData = [
-  {
-    id: 1,
-    image: "/images/Providers/KickOffJourneyStep1.png",
-    title: "Sync with Nevenka",
-    description: "Easily complete your profile and become a verified partner.",
-    color: "#D8B4FE",
-  },
-  {
-    id: 2,
-    image: "/images/Providers/KickOffJourneyStep2.png",
-    title: "Share your experiences",
-    description: "Share your activities, get discovered, and track engagement.",
-    color: "#FCA5A5",
-  },
-  {
-    id: 3,
-    image: "/images/Providers/KickOffJourneyStep3.png",
-    title: "Grow your impact.",
-    description:
-      "Connect with brands, scale your reach, and unlock new opportunities.",
-    color: "#67E8F9",
-  },
-];
+import { poppins, public_sans } from "@/app/fonts/fonts";
 
 const Card = ({ id, image, title, description, color }) => {
   return (
@@ -45,24 +21,32 @@ const Card = ({ id, image, title, description, color }) => {
           alt=""
         />
       </div>
-      <h3 className="w-[80%] pl-[10px] mb-[24px] text-black text-[36px] font-bold leading-[100%] tracking-tight">
+      <h3
+        className={`${public_sans.className} w-[80%] pl-[10px] mb-[24px] text-black text-[36px] font-bold leading-[100%] tracking-tight`}
+      >
         {title}
       </h3>
-      <p className="w-[90%] pl-[10px] text-black text-[18px] font-regular leading-[100%] tracking-tight">
+      <p
+        className={`${poppins.className} w-[90%] pl-[10px] text-black text-[18px] font-regular leading-[100%] tracking-tight`}
+      >
         {description}
       </p>
     </div>
   );
 };
 
-export default function KickOffComponent() {
+export default function KickOffComponent({ cardsData, titleKickoff }) {
   return (
     <div className="w-full py-[70px] flex justify-center items-center">
       <div className="flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
-        <h2 className="text-center text-[44px] font-extrabold leading-[100%] text-black mb-[45px]">
-          Kick off your journey
+        <h2
+          className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-black mb-[45px]`}
+        >
+          {titleKickoff}
         </h2>
-        <p className="text-[18px] font-regular leading-[100%] tracking-tight text-black mb-[30px] text-center">
+        <p
+          className={`${poppins.className} text-[18px] font-regular leading-[100%] tracking-tight text-black mb-[30px] text-center`}
+        >
           Three simple steps to certify your profile, showcase your experiences,
           and connect with brands.
         </p>

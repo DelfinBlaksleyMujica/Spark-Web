@@ -7,6 +7,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 // Tu pill de Users / Providers
 import NavUserProviderToggle from "./NavUserProviderToggle";
+import { public_sans } from "@/app/fonts/fonts";
 
 // --- Config menú mobile (mismas animaciones que tu Navbar anterior) ---
 const menuVars = {
@@ -49,9 +50,9 @@ const mobileLinkVars = {
 
 // Links del menú (desktop y mobile)
 const NAV_LINKS = [
-  { title: "Blog", href: "/" },
-  { title: "Pricing", href: "/pricing" },
   { title: "About us", href: "/about-us" },
+  { title: "Pricing", href: "/pricing" },
+  { title: "Blog", href: "/" },
 ];
 
 export default function Navbar() {
@@ -59,7 +60,7 @@ export default function Navbar() {
   const toggleMenu = () => setOpen((v) => !v);
 
   return (
-    <header className="h-[100px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#000000]">
+    <header className="h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#000000]">
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
         {/* Logo */}
         <div className="h-full flex items-center">
@@ -68,19 +69,21 @@ export default function Navbar() {
             <img
               src="/images/Logo SparkClub Original.webp"
               alt="Logo"
-              width={185}
-              height={35}
-              className="block w-[135px] h-[25px] md:w-[185px] md:h-[35px]"
+              width={155}
+              height={30}
+              className="block w-[135px] h-[25px] md:w-[155px] md:h-[30px]"
             />
           </Link>
         </div>
 
         {/* Links desktop */}
-        <ul className="hidden md:flex items-center gap-[36px] lg:gap-[63px]">
+        <ul
+          className={`${public_sans.className} hidden md:flex items-center gap-[36px] lg:gap-[63px]`}
+        >
           {NAV_LINKS.map((item) => (
             <li key={item.href}>
               <Link
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-white hover:text-gray-300 transition-colors font-semibold"
                 href={item.href}
               >
                 {item.title}
@@ -186,8 +189,14 @@ export default function Navbar() {
                   initial="initial"
                   animate="open"
                   exit="initial"
-                  className="flex flex-col justify-center gap-6 sm:gap-8 h-full"
+                  className="flex flex-col justify-start pt-30 gap-10 sm:gap-8 h-full"
                 >
+                  {/* Pill Users/Providers también visible en el menú mobile */}
+                  <div className="mt-6 flex justify-center">
+                    <motion.div onClick={toggleMenu} variants={mobileLinkVars}>
+                      <NavUserProviderToggle />
+                    </motion.div>
+                  </div>
                   {NAV_LINKS.map((link) => (
                     <div className="overflow-hidden" key={link.href}>
                       <motion.div
@@ -204,13 +213,6 @@ export default function Navbar() {
                       </motion.div>
                     </div>
                   ))}
-
-                  {/* Pill Users/Providers también visible en el menú mobile */}
-                  <div className="mt-6 flex justify-center">
-                    <motion.div variants={mobileLinkVars}>
-                      <NavUserProviderToggle />
-                    </motion.div>
-                  </div>
 
                   {/* CTA opcional abajo (si quisieras agregar alguno) */}
                   {/* <motion.div variants={mobileLinkVars} className="mt-2 flex justify-center">

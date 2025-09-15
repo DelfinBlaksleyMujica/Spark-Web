@@ -1,3 +1,5 @@
+import { poppins } from "@/app/fonts/fonts";
+
 export default function CardDeTestimonio({ imagen, testimonio, firma }) {
   return (
     <div className="rounded-[10px] bg-black px-[44px] py-[36px] h-[336px] w-[357px] min-w-[357px] shrink-0">
@@ -7,8 +9,8 @@ export default function CardDeTestimonio({ imagen, testimonio, firma }) {
           src={imagen}
           alt="Imagen de testimonio"
         />
-        <p>{testimonio}</p>
-        <p className="absolute bottom-0">{firma}</p>
+        <p className={`${poppins.className}`}>{testimonio}</p>
+        <p className={`${poppins.className} absolute bottom-0`}>{firma}</p>
       </div>
     </div>
   );

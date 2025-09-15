@@ -1,5 +1,6 @@
 import React from "react";
 import TeamMemberCard from "./TeamMemberCard";
+import { public_sans } from "@/app/fonts/fonts";
 
 const theTeam = [
   {
@@ -43,12 +44,12 @@ const theTeam = [
   },
   {
     id: 2,
-    image: "/images/TheTeam/FotoDelfPlaceholder.svg",
+    image: "/images/TheTeam/DelfinBlaksleyMujica-CTO-Sparkclub.jpg",
     nombre: "Delfín",
     apellido: "Blaksley Mujica",
     rol: "CTO",
     linkedinLink: "",
-    topExperiences: [""],
+    topExperiences: ["Boards"],
     descriptions: [
       "Spent +4 years turning ideas into products and challenges into growth. Built a software agency from scratch, delivered 100+ projects worldwide, led teams of 20+ people, and launched an OOH startup in Buenos Aires Argentina. This journey taught me how powerful aligned teams can be. ",
       "Sparkclub is our way of bringing that same sense of connection and momentum to organizations everywhere",
@@ -84,8 +85,10 @@ const theTeam = [
 
 export default function MeetTheTeamContainer() {
   return (
-    <div className="bg-[#FCD34D] w-full flex flex-col justify-center items-center h-[1500px] lg:h-screen py-[100px]">
-      <h2 className="text-[48px] font-medium leading-[100%] tracking-tight text-center">
+    <div className="bg-[#FCD34D] w-full flex flex-col justify-center items-center h-[1500px] lg:h-auto py-[100px]">
+      <h2
+        className={`${public_sans.className} text-[48px] font-medium leading-[100%] tracking-tight text-center`}
+      >
         Meet the Team
       </h2>
       <div className="flex w-full justify-center items-center gap-[50px] flex-wrap mt-[50px]">

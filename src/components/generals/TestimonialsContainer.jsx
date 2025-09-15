@@ -4,6 +4,7 @@
 import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import CardDeTestimonio from "./CardDeTestimonio";
+import { public_sans } from "@/app/fonts/fonts";
 
 const testimonios = [
   {
@@ -104,8 +105,10 @@ export default function TestimonialsContainer() {
 
   return (
     <div className="w-full overflow-x-hidden py-[82px] flex flex-col justify-center items-center gap-6 bg-[#F3F3F3]">
-      <h2 className="font-medium text-[40px] leading-[100%] tracking-tight text-center text-[#000000] mb-[62px]">
-        Stories from our partners
+      <h2
+        className={`${public_sans.className} font-medium text-[40px] leading-[100%] tracking-tight text-center text-[#000000] mb-[62px]`}
+      >
+        What people are saying
       </h2>
 
       <div

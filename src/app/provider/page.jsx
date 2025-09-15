@@ -3,15 +3,41 @@ import Hero from "@/components/providers/Hero";
 import KickOffComponent from "@/components/providers/KickOffComponent";
 import ActivityTags from "@/components/providers/ActivityTags";
 
-
 import React from "react";
+
+const titleKickoff = "Kick off your journey";
+
+const cardsData = [
+  {
+    id: 1,
+    image: "/images/Providers/KickOffJourneyStep1.png",
+    title: "Sync with Nevenka",
+    description: "Easily complete your profile and become a verified partner.",
+    color: "#D8B4FE",
+  },
+  {
+    id: 2,
+    image: "/images/Providers/KickOffJourneyStep2.png",
+    title: "Share your experiences",
+    description: "Share your activities, get discovered, and track engagement.",
+    color: "#FCA5A5",
+  },
+  {
+    id: 3,
+    image: "/images/Providers/KickOffJourneyStep3.png",
+    title: "Grow your impact.",
+    description:
+      "Connect with brands, scale your reach, and unlock new opportunities.",
+    color: "#86EFAC",
+  },
+];
 
 export default function ProviderPageContainer() {
   return (
     <div>
       <Hero />
-      <ActivityTags />
-      <KickOffComponent />
+      {/* <ActivityTags /> */}
+      <KickOffComponent cardsData={cardsData} titleKickoff={titleKickoff} />
       <TestimonialsContainer />
     </div>
   );
