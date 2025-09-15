@@ -11,28 +11,28 @@ const nonNegotiables = [
         title: "INNOVATION",
         description: "Leveraging AI to foster employee well-being.",
         color: "bg-[#FCA5A5]",
-        img: "/images/3DIllus/Rocket.png",
+        img: "/images/3DIllus/Rocket.svg",
     },
     {
         id: 2,
         title: "EMPLOYEE CENTRIC",
         description: "To reduce rotation and turnover rates.",
         color: "bg-[#D8B4FE]",
-        img: "/images/3DIllus/Backpack.png",
+        img: "/images/3DIllus/Backpack.svg",
     },
     {
         id: 3,
         title: "DATA DRIVEN",
         description: "To enhance workforce performance and satisfaction",
         color: "bg-[#FAE5A8]",
-        img: "/images/3DIllus/Plant.png",
+        img: "/images/3DIllus/Plant.svg",
     },
     {
         id: 4,
         title: "EFFICIENCY",
         description: "S.M.A.R.T long-term plans to enforce brand culture.",
         color: "bg-[#67E8F9]",
-        img: "/images/3DIllus/Lamp.png",
+        img: "/images/3DIllus/Lamp.svg",
     },
 ];
 
@@ -41,10 +41,28 @@ export default function NonNegotiables() {
         <section className={`${publicSans.className} relative bg-black overflow-hidden`}>
             {/* BACKGROUND SHAPES */}
             <div className="pointer-events-none absolute inset-0 z-0">
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={200} height={200} className="absolute md:bottom-10 lg:left-60 lg:top-10 lg:left-6 opacity-[0] md:opacity-[100]" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={240} height={240} className="absolute md:bottom-0 md:right-0 lg:bottom-140 lg:left-300 opacity-[0] md:opacity-[100]" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={460} height={460} className="absolute md:bottom-100 md:right-50 lg:top-80 lg:right-10 opacity-[0] md:opacity-[100]" />
-                <Image src="/images/Textures/Circle_BG.png" alt="" width={300} height={300} className="absolute lg:top-1/2 lg:left-1/3 opacity-[0] md:opacity-[100]" />
+                {/* BACKGROUND  */}
+                <img
+                    src="/images/Textures/Circle_BG.png"
+                    alt=""
+                    className="absolute w-[300px] h-[300px] left-[10px] bottom-[10px]   lg:left-[4px] lg:bottom-[10px] z-0"
+                />
+                <img
+                    src="/images/Textures/SquareBlack_BG.svg"
+                    alt=""
+                    className="absolute w-[250px] h-[250px] opacity-0 lg:opacity-100 rotate-45 z-0 lg:left-[-100px] lg:top-[0px] "
+                />
+                <img
+                    src="/images/Textures/SquareBlack_BG.svg"
+                    alt=""
+                    className="absolute w-[350px] h-[350px] rotate-45 right-[-100px] z-0 lg:right-[70px] lg:bottom-[10px]"
+                />
+                <img
+                    src="/images/Textures/Circle_BG.png"
+                    alt=""
+                    className="absolute w-[200px] h-[200px]  z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
+                />
+
             </div>
 
             {/* HEADER */}
