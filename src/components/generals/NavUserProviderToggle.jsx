@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { LayoutGroup, motion } from "framer-motion";
 import { useMemo, useState, useEffect, useTransition } from "react";
+import { public_sans } from "@/app/fonts/fonts";
 
 const TABS = [
   { key: "users", label: "Users", href: "/" },
@@ -84,7 +85,7 @@ export default function NavUserProviderToggle() {
                 // prefetch={false}
                 role="tab"
                 aria-selected={isActive}
-                className="relative z-10 grid h-full w-full place-items-center px-3"
+                className={`${public_sans.className} relative z-10 grid h-full w-full place-items-center px-3`}
                 onClick={(e) => handleClick(e, tab)}
               >
                 <span
