@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import Button from "../generals/Button";
 import { Public_Sans } from "next/font/google";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
-
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -22,8 +21,7 @@ const ROWS = [
         other: "Limited",
     },
     {
-        feature:
-            "Do you have a host guiding you though the organizing process?",
+        feature: "Do you have a host guiding you though the organizing process?",
         spark: true,
         other: false,
     },
@@ -39,16 +37,16 @@ const ROWS = [
 function CellContent({ value, positiveColor = "text-black" }) {
     if (value === true)
         return (
-            <CheckIcon className={`w-5 h-5 sm:w-6 sm:h-6 ${positiveColor}`} />
+            <CheckIcon className={`w-4 h-4 sm:w-5 sm:h-5 lg:w-3 lg:h-3 ${positiveColor}`} />
         );
 
     if (value === false)
         return (
-            <CloseIcon className="w-5 h-5 sm:w-6 sm:h-6 text-zinc-600" />
+            <CloseIcon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-3 lg:h-3 text-zinc-600" />
         );
 
     return (
-        <span className="text-[10px] sm:text-[12px] md:text-[14px] leading-snug">
+        <span className="text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] leading-snug">
             {value}
         </span>
     );
@@ -57,29 +55,29 @@ function CellContent({ value, positiveColor = "text-black" }) {
 export default function WhyChoose() {
     return (
         <section className={`bg-white text-zinc-900 ${publicSans.className}`}>
-            <div className="px-4 py-16 sm:py-20">
+            <div className="px-4 py-16 sm:py-20 lg:py-14">
                 <div className="grid grid-cols-12 gap-x-6 gap-y-12">
                     {/* Title */}
                     <header className="col-start-2 col-span-10 text-center">
-                        <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold tracking-tight">
+                        <h2 className="text-[32px] sm:text-[38px] lg:text-[28px] font-semibold tracking-tight">
                             Why choose <span className="font-bold">SparkClub?</span>
                         </h2>
                     </header>
 
-                    {/* 12-col inner grid: keep 1-col margins; features 5 cols, each box 2 cols */}
-                    <div className="col-start-2 col-span-10 grid grid-cols-12 gap-6 sm:gap-10">
+                    {/* Inner grid */}
+                    <div className="col-start-2 col-span-10 grid grid-cols-12 gap-6 sm:gap-10 lg:gap-4 lg:px-24">
                         {/* Features */}
                         <div className="col-span-5">
-                            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] font-semibold mb-4 md:mb-6">
+                            <h3 className="text-[16px] sm:text-[20px] md:text-[22px] lg:text-[14px] font-semibold mb-4 md:mb-6">
                                 Features
                             </h3>
-                            <div className="divide-y divide-black/5">
-                                {ROWS.map((r, i) => (
+                            <div className="divide-y divide-black/5 lg:pr-0 lg:mr-0">
+                                {ROWS.map((r) => (
                                     <div
                                         key={r.feature}
-                                        className={`flex items-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] px-1 sm:px-2`}
+                                        className="flex items-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px]"
                                     >
-                                        <span className="text-[12px] sm:text-[20px] leading-snug">
+                                        <span className="text-[12px] sm:text-[16px] lg:text-[18px] ">
                                             {r.feature}
                                         </span>
                                     </div>
@@ -88,15 +86,15 @@ export default function WhyChoose() {
                         </div>
 
                         {/* Sparkclub */}
-                        <div className="col-span-3  rounded-[8px] overflow-hidden">
-                            <div className="bg-[#FCD34D] py-3 sm:py-4 text-center font-semibold text-[10px] sm:text-[20px] md:text-[22px]">
+                        <div className="col-span-3 rounded-[8px] overflow-hidden">
+                            <div className="bg-[#FCD34D] py-3 sm:py-4 text-center font-semibold text-[10px] sm:text-[20px] md:text-[22px] lg:text-[14px]">
                                 Sparkclub
                             </div>
                             <div className="divide-y divide-black/5">
                                 {ROWS.map((r, i) => (
                                     <div
                                         key={r.feature + "-spark"}
-                                        className={`flex items-center justify-center  min-h-[72px] sm:min-h-[80px] md:min-h-[84px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-[#FFE696]" : "bg-[#FCD34D]"
+                                        className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-[#FFE696]" : "bg-[#FCD34D]"
                                             }`}
                                     >
                                         <CellContent value={r.spark} positiveColor="text-black" />
@@ -106,15 +104,15 @@ export default function WhyChoose() {
                         </div>
 
                         {/* Others */}
-                        <div className="col-span-3  rounded-[8px]  overflow-hidden">
-                            <div className="bg-zinc-100 py-3 sm:py-4 text-center font-semibold text-[10px] sm:text-[20px] md:text-[22px]">
+                        <div className="col-span-3 rounded-[8px] overflow-hidden">
+                            <div className="bg-zinc-100 py-3 sm:py-4 text-center font-semibold text-[10px] sm:text-[20px] md:text-[22px] lg:text-[14px]">
                                 Others
                             </div>
                             <div className="divide-y divide-black/5">
                                 {ROWS.map((r, i) => (
                                     <div
                                         key={r.feature + "-other"}
-                                        className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-zinc-100" : "bg-zinc-200"
+                                        className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-zinc-100" : "bg-zinc-200"
                                             }`}
                                     >
                                         <CellContent value={r.other} />
@@ -124,15 +122,13 @@ export default function WhyChoose() {
                         </div>
                     </div>
 
-                    {/* CTA */}
+                    {/* CTA - button unchanged */}
                     <div className="col-start-2 col-span-10 flex justify-center">
-                        <Link
+                        <Button
+                            btnText="See Pricing"
+                            btnClass="primary-btn"
                             href="/pricing"
-                            className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
-                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
-                        >
-                            See Pricing
-                        </Link>
+                        />
                     </div>
                 </div>
             </div>

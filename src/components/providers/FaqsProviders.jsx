@@ -78,7 +78,7 @@ export default function FaqSection() {
                     </header>
 
                     {/* LISTA */}
-                    <div className="col-start-3 col-span-8 space-y-4">
+                    <div className="col-start-2 col-span-10 space-y-4">
                         {FAQS.map((item) => {
                             const isOpen = openId === item.id;
                             const contentEl = contentRefs.current[item.id];
@@ -97,7 +97,7 @@ export default function FaqSection() {
                                         aria-controls={`faq-panel-${item.id}`}
                                         className="w-full flex items-center justify-between gap-4 px-5 sm:px-6 py-4 sm:py-5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black focus-visible:ring-offset-white"
                                     >
-                                        <span className="text-[18px] md:text-[20px] font-medium">
+                                        <span className="text-[18px] sm:text-[20px] md:text-[22px] font-medium">
                                             {item.question}
                                         </span>
 
