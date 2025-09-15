@@ -114,7 +114,7 @@ export default function WeMakeWorkWorkComponent() {
                 bgImg="/images/Cards/We_make_work_work_3.png"
               />
               <ColoredCard
-                color="#67E8F9"
+                color="#86EFAC"
                 icon="/images/3DIllus/Truck.svg"
                 title="+300 Certified Suppliers"
                 text="Scaling their experiences and services."
