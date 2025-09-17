@@ -29,7 +29,7 @@ const cardsData = [
     title: "Grow your impact.",
     description:
       "Connect with brands, scale your reach, and unlock new opportunities.",
-    color: "#86EFAC",
+    color: "#6EE7B7",
   },
 ];
 

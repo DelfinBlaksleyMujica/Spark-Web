@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
+import { motion } from "framer-motion";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -10,9 +13,14 @@ export default function AboutUsHero() {
                 <div className="grid grid-cols-12">
 
                     {/* HERO IMAGE */}
-                    <div className="col-start-4 col-span-6 justify-self-center py-4">
+                    <motion.div
+                        className="col-start-4 col-span-6 justify-self-center py-4"
+                        initial={{ opacity: 0, y: -80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
+                    >
                         <div className="relative w-full overflow-hidden">
-
                             {/* IMG MOBILE */}
                             <div className="block lg:hidden">
                                 <Image
@@ -37,18 +45,29 @@ export default function AboutUsHero() {
                                 />
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* TITLE */}
-                    <header className="col-start-2 col-span-10 text-center py-4">
+                    <motion.header
+                        className="col-start-2 col-span-10 text-center py-4"
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
+                    >
                         <h1 className="text-[28px] sm:text-[36px] lg:text-[30px] font-semibold leading-[1.1] lg:leading-[1.05]">
                             Our mission is to strengthen work relationships through{" "}
                             <span className="font-extrabold">shared experiences.</span>
                         </h1>
-                    </header>
+                    </motion.header>
 
                     {/* SUBTITLE */}
-                    <div className="col-start-2 col-span-10 pt-4 pb-12">
+                    <motion.header className="col-start-2 col-span-10 pt-4 pb-12"
+                        initial={{ opacity: 0, y: 80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
+                    >
                         <p className="mx-auto text-[18px] sm:text-[20px] md:text-[24px] lg:text-[16px] text-white text-center lg:max-w-[800px]">
                             At Spark, we redefine connections. We believe a single experience can
                             flip your perception of someone 180º. That’s why we’re on a mission to
@@ -56,7 +75,7 @@ export default function AboutUsHero() {
                             the trendiest local experiences to help you build game-changing
                             relationships—with your all-star team and top-tier clients.
                         </p>
-                    </div>
+                    </motion.header>
                 </div>
             </div>
         </section>
