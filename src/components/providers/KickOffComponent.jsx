@@ -57,82 +57,76 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
   const yMed = useTransform(scrollY, [0, 500], [0, -40]);
 
   return (
-    <div className="w-full py-[70px] flex justify-center items-center bg-white">
-      <div className="flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
-        <div className="relative w-full py-[70px] flex justify-center items-center bg-black overflow-hidden">
-          {/* BACKGROUND SHAPES */}
-          <div className="pointer-events-none absolute inset-0 z-0">
-            <motion.img
-              src="/images/Textures/Circle_BG.png"
-              alt=""
-              className="absolute w-[300px] h-[300px] left-[10px] bottom-[10px] lg:left-[4px] lg:bottom-[10px] z-0"
-              style={{ y: yFast }}
+    // <div className="w-full py-[70px] flex justify-center items-center bg-white">
+    //   <div className="flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
+    <div className="relative w-full py-[70px] flex justify-center items-center bg-black overflow-hidden">
+      {/* BACKGROUND SHAPES */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <motion.img
+          src="/images/Textures/Circle_BG.png"
+          alt=""
+          className="absolute w-[300px] h-[300px] left-[10px] bottom-[10px] lg:left-[4px] lg:bottom-[10px] z-0"
+          style={{ y: yFast }}
+        />
+
+        <motion.img
+          src="/images/Textures/SquareBlack_BG.svg"
+          alt=""
+          className="absolute w-[250px] h-[250px] opacity-0 lg:opacity-100 rotate-45 z-0 lg:left-[-100px] lg:top-[0px]"
+          style={{ y: yFast }}
+        />
+
+        <motion.img
+          src="/images/Textures/SquareBlack_BG.svg"
+          alt=""
+          className="absolute w-[350px] h-[350px] rotate-45 right-[-100px] z-0 lg:right-[70px] lg:bottom-[10px]"
+          style={{ y: yFast }}
+        />
+
+        {/* Circle top-right */}
+        <motion.img
+          src="/images/Textures/Circle_BG.png"
+          alt=""
+          className="absolute w-[200px] h-[200px] z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
+          style={{ y: yMed }}
+        />
+      </div>
+
+      {/* MAIN CONTENT */}
+      <div className="relative z-10 flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
+        {/* TITLE */}
+        <h2
+          className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-white mb-[45px]`}
+        >
+          {titleKickoff}
+        </h2>
+
+        {/* SUBTITLE */}
+        <p
+          className={`${poppins.className} text-[18px] font-regular leading-[100%] tracking-tight text-white mb-[30px] text-center`}
+        >
+          Three simple steps to certify your profile, showcase your experiences,
+          and connect with brands.
+        </p>
+
+        {/* CARDS */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap">
+          {cardsData.map((card, index) => (
+            <Card
+              key={card.id}
+              id={card.id}
+              image={card.image}
+              title={card.title}
+              description={card.description}
+              color={card.color}
+              index={index}
             />
+          ))}
+        </div>
 
-            <motion.img
-              src="/images/Textures/SquareBlack_BG.svg"
-              alt=""
-              className="absolute w-[250px] h-[250px] opacity-0 lg:opacity-100 rotate-45 z-0 lg:left-[-100px] lg:top-[0px]"
-              style={{ y: yFast }}
-            />
-
-            <motion.img
-              src="/images/Textures/SquareBlack_BG.svg"
-              alt=""
-              className="absolute w-[350px] h-[350px] rotate-45 right-[-100px] z-0 lg:right-[70px] lg:bottom-[10px]"
-              style={{ y: yFast }}
-            />
-
-            {/* Circle top-right */}
-            <motion.img
-              src="/images/Textures/Circle_BG.png"
-              alt=""
-              className="absolute w-[200px] h-[200px] z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
-              style={{ y: yMed }}
-            />
-          </div>
-
-          {/* MAIN CONTENT */}
-          <div className="relative z-10 flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
-            {/* TITLE */}
-            <h2
-              className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-white mb-[45px]`}
-            >
-              {titleKickoff}
-            </h2>
-
-            {/* SUBTITLE */}
-            <p
-              className={`${poppins.className} text-[18px] font-regular leading-[100%] tracking-tight text-white mb-[30px] text-center`}
-            >
-              Three simple steps to certify your profile, showcase your
-              experiences, and connect with brands.
-            </p>
-
-            {/* CARDS */}
-            <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap">
-              {cardsData.map((card, index) => (
-                <Card
-                  key={card.id}
-                  id={card.id}
-                  image={card.image}
-                  title={card.title}
-                  description={card.description}
-                  color={card.color}
-                  index={index}
-                />
-              ))}
-            </div>
-
-            {/* CTA BUTTON */}
-            <div className="w-full flex justify-center items-center mt-[50px]">
-              <Button
-                btnText="Become a partner"
-                btnClass="primary-btn"
-                href="/"
-              />
-            </div>
-          </div>
+        {/* CTA BUTTON */}
+        <div className="w-full flex justify-center items-center mt-[50px]">
+          <Button btnText="Become a partner" btnClass="primary-btn" href="/" />
         </div>
       </div>
     </div>
