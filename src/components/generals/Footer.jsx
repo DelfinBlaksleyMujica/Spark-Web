@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { FaInstagram, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 import Image from "next/image";
+import Button from "../generals/Button";
+import { motion } from "framer-motion";
+
+
 import { Public_Sans } from "next/font/google";
 
 const publicSans = Public_Sans({
@@ -25,13 +29,7 @@ export default function Footer() {
           </h2>
 
           <div className="mt-6 sm:mt-8">
-            <Link
-              href="#book-demo"
-              className="inline-flex items-center justify-center rounded-[10px] bg-black text-white
-                       h-12 px-6 sm:px-8 sm:text-[20px] sm:text-base sm:font-semibold font-semibold"
-            >
-              Book a demo
-            </Link>
+            <Button btnText="Book a demo" btnClass="primary-btn" href="/pricing" />
           </div>
         </section>
 
@@ -74,22 +72,35 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-8 pt-0 pb-12 md:pb-24 md:pt-2 px-4 sm:px-6 sm:py-12 md:px-0 text-center md:text-left ">
         {/* LEFT: Socials */}
         <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
-          <div className="flex items-center gap-3 ">
+          <motion.div
+            className="flex items-center gap-3 cursor-pointer"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
             <FaInstagram className="h-7 w-7 text-black" />
             <span className="text-[20px] ">in/sparkclub.xyz</span>
-          </div>
-          <div className="flex items-center gap-3">
+          </motion.div>
+
+
+          <motion.div className="flex items-center gap-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
             <FaLinkedin className="h-7 w-7 text-black" />
             <span className="text-[20px] ">ig/sparkclub</span>
-          </div>
-          <div className="flex items-center gap-3">
+          </motion.div>
+
+          <motion.div className="flex items-center gap-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
             <FaTelegram className="h-7 w-7 text-black" />
             <span className="text-[20px] ">tg/sparkclub</span>
-          </div>
-          <div className="flex items-center gap-3">
+          </motion.div>
+
+          <motion.div className="flex items-center gap-3"
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
             <FaTwitter className="h-7 w-7 text-black" />
             <span className="text-[20px] ">tw/sparkclub</span>
-          </div>
+          </motion.div>
         </section>
 
         {/* LEFT: Logo + copyright */}
@@ -145,7 +156,7 @@ export default function Footer() {
           </p>
 
           <form
-            className="flex items-center gap-3 max-w-sm mx-auto md:mx-0"
+            className="flex items-center gap-3 max-w-md w-full mx-auto md:mx-0"
             onSubmit={(e) => e.preventDefault()}
           >
             <label htmlFor="email" className="sr-only">
@@ -156,14 +167,11 @@ export default function Footer() {
               type="email"
               required
               placeholder="Email Address"
-              className="w-full bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px]  placeholder-zinc-700"
+              className="flex-1 bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
             />
-            <button
-              type="submit"
-              className="shrink-0 inline-flex items-center justify-center rounded-full border border-zinc-900/80 px-4 py-2 text-[14px]  hover:bg-black hover:text-white transition"
-            >
-              Join us
-            </button>
+            <Button
+              btnText="Join us" btnClass="primary-btn" href="/about-us"
+            />
           </form>
         </section>
       </div>
