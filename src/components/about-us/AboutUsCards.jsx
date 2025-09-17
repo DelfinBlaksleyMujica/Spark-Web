@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
+import { motion } from "framer-motion";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -17,29 +20,32 @@ export default function ChallengeCards() {
                 {/* CARDS */}
                 <div className="relative z-10 px-4 sm:px-6 md:px-0 py-12 sm:py-16 lg:py-20">
                     <div className="grid grid-cols-12 gap-x-6 gap-y-10">
-
-                        {/* CARD 1 . pink*/}
-                        <article
+                        {/* CARD 1 — pink (from left) */}
+                        <motion.article
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
                             className="
                 col-start-2 col-span-10
-                md:col-start-4 md:col-span-6
+                md:col-start-4 md:col-span-6 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6
                 rounded-[8px] bg-[#F7A7A5] text-black p-5 sm:p-6 lg:p-8
               "
                         >
                             <div
                                 className="
                   grid grid-cols-1 items-center gap-6 lg:gap-8
-                  lg:grid-cols-[minmax(0,1fr)_340px]   /* slightly narrower for 1280px */
+                  lg:grid-cols-[minmax(0,1fr)_340px]
                 "
                             >
                                 {/* IMAGE */}
                                 <div className="order-1 lg:order-2">
                                     <div
                                         className="
-                    relative mx-auto w-full max-w-[420px]    /* mobile/tablet */
-                    aspect-[456/364] overflow-hidden ring-1 ring-black/10
-                    md:max-w-[360px] lg:w-[340px] lg:max-w-none
-                "
+                      relative mx-auto w-full max-w-[420px]
+                      aspect-[456/364] overflow-hidden ring-1 ring-black/10
+                      md:max-w-[360px] lg:w-[340px] lg:max-w-none
+                    "
                                     >
                                         <Image
                                             src="/images/AboutUs/Card5.svg"
@@ -54,7 +60,7 @@ export default function ChallengeCards() {
 
                                 {/* TEXT */}
                                 <div className="order-2 lg:order-1 mx-1 sm:mx-2">
-                                    <h3 className="text-[26px] sm:text-[32px] lg:text-[32px] font-extrabold mb-3 leading-[1.2]">
+                                    <h3 className="text-[26px] sm:text-[30px] lg:text-[30px] font-extrabold mb-3 leading-[1.2]">
                                         Here’s the challenge:
                                     </h3>
                                     <p className="text-[15px] sm:text-[20px] lg:text-[18px]">
@@ -65,11 +71,17 @@ export default function ChallengeCards() {
                                     </p>
                                 </div>
                             </div>
-                        </article>
+                        </motion.article>
 
-                        {/* CARD 2 — green */}
-                        <article
-                            className="col-start-2 col-span-10 md:col-start-4 md:col-span-6 rounded-[8px] bg-[#9CF0C3] text-black p-5 sm:p-6 lg:p-8"
+                        {/* CARD 2 — green (from right) */}
+                        <motion.article
+                            initial={{ opacity: 0, x: 100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
+                            className="col-start-2 col-span-10
+                md:col-start-4 md:col-span-6 lg:col-start-3 lg:col-span-8 xl:col-start-4 xl:col-span-6 
+                rounded-[8px] bg-[#9CF0C3] text-black p-5 sm:p-6 lg:p-8"
                         >
                             <div
                                 className="
@@ -98,7 +110,7 @@ export default function ChallengeCards() {
 
                                 {/* TEXT */}
                                 <div className="order-2 mx-1 sm:mx-2">
-                                    <h3 className="text-[26px] sm:text-[32px] lg:text-[32px] font-extrabold mb-3 leading-[1.2]">
+                                    <h3 className="text-[26px] sm:text-[30px] lg:text-[30px] font-extrabold mb-3 leading-[1.2]">
                                         So, we did something about it.
                                     </h3>
                                     <p className="text-[15px] sm:text-[20px] lg:text-[18px]">
@@ -112,8 +124,7 @@ export default function ChallengeCards() {
                                     </p>
                                 </div>
                             </div>
-                        </article>
-
+                        </motion.article>
                     </div>
                 </div>
             </div>

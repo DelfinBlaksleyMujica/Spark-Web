@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
 import Button from "../generals/Button";
+import { motion } from "framer-motion";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -19,8 +20,7 @@ const cards = [
         img: "/images/Cards/MockUp-02.png",
         imageAlt: "Get a proposal in 20 sec",
         title: "Get a proposal in 20 sec",
-        description:
-            "Nevenka briefs the event for all your needs.",
+        description: "Nevenka briefs the event for all your needs.",
     },
     {
         id: "pm",
@@ -34,9 +34,7 @@ const cards = [
 export default function AboutNevenka() {
     return (
         <section className={`bg-white ${publicSans.className} text-zinc-900`}>
-
             <div className="px-4 py-12 sm:py-16 lg:py-20">
-
                 <div className="grid grid-cols-12 gap-x-6 gap-y-12">
                     {/* TITLE + SUBTITLE */}
                     <header className="col-start-2 col-span-10 text-center max-w-[1600px] mx-auto">
@@ -52,15 +50,25 @@ export default function AboutNevenka() {
                         </p>
                     </header>
 
-                    {/* CARDS WRAPPER */}
+                    {/* CARDS  */}
                     <div className="col-start-2 col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
                         {cards.map((c, i) => (
-                            <article
+                            <motion.article
                                 key={c.id}
-                                className="relative overflow-hidden "
+                                className="relative overflow-hidden"
+                                initial={{ opacity: 0, y: 80 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, amount: 0.3 }}
+                                transition={{
+                                    type: "spring",
+                                    bounce: 0.5,
+                                    duration: 0.7,      // snappy
+                                    delay: i * 0.1,
+                                    duration: 0.6,
+                                }}
                             >
                                 {/* CARD BG */}
-                                <div className="absolute inset-0 ">
+                                <div className="absolute inset-0">
                                     <Image
                                         src="/images/Cards/Background.png"
                                         alt=""
@@ -84,7 +92,7 @@ export default function AboutNevenka() {
                                     </div>
 
                                     {/* YELLOW RECT */}
-                                    <div className="rounded-[8px] bg-[#FCD34D] text-zinc-900 p-4 sm:p-5 ">
+                                    <div className="rounded-[8px] bg-[#FCD34D] text-zinc-900 p-4 sm:p-5">
                                         <h3 className="text-[20px] sm:text-[32px] font-extrabold leading-[1.2]">
                                             {c.title}
                                         </h3>
@@ -93,18 +101,14 @@ export default function AboutNevenka() {
                                         </p>
                                     </div>
                                 </div>
-                            </article>
+                            </motion.article>
                         ))}
                     </div>
                 </div>
 
                 {/* CTA */}
                 <div className="mt-10 sm:mt-12 flex justify-center">
-                    <Button
-                        btnText="Try for free"
-                        btnClass="primary-btn"
-                        href="/get-started"
-                    />
+                    <Button btnText="Try for free" btnClass="primary-btn" href="/get-started" />
                 </div>
             </div>
         </section>

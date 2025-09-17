@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
+import { motion } from "framer-motion";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -10,26 +11,28 @@ const ITEMS = [
         id: "vision",
         icon: "/images/Icons/Illus1.svg",
         title: "VISION",
-        text: "Dedicated to enhancing workplace engagement through innovative team building events and loyalty features.",
+        text:
+            "Dedicated to enhancing workplace engagement through innovative team building events and loyalty features.",
     },
     {
         id: "mission",
         icon: "/images/Icons/Illus2.svg",
         title: "MISSION",
-        text: "Our mission is to significantly reduce turnover and elevate performance by fostering strong connections among employees.",
+        text:
+            "Our mission is to significantly reduce turnover and elevate performance by fostering strong connections among employees.",
     },
     {
         id: "process",
         icon: "/images/Icons/Illus3.svg",
         title: "PROCESS",
-        text: "Enhance collaboration and boost morale with our tailored team-building events. Experience increased productivity and reduced turnover as your team connects and grows together.",
+        text:
+            "Enhance collaboration and boost morale with our tailored team-building events. Experience increased productivity and reduced turnover as your team connects and grows together.",
     },
 ];
 
 export default function WhyWorkWithUs() {
     return (
-        <section className={`${publicSans.className} relative bg-black overflow-hidden min-h-[700px] `}>
-
+        <section className={`${publicSans.className} text-white relative bg-black overflow-hidden min-h-[700px] `}>
             {/* BACKGROUND  */}
             <img
                 src="/images/Textures/Circle_BG.png"
@@ -56,19 +59,37 @@ export default function WhyWorkWithUs() {
             <div className="relative z-10 px-4 sm:px-8 md:px-0 py-14 sm:py-16 lg:py-20">
                 <div className="grid grid-cols-12 gap-x-10 gap-y-10">
                     {/* Title */}
-                    <header className="col-start-2 col-span-10 text-center pb-24 pt-4 ">
+                    <motion.header
+                        className="col-start-2 col-span-10 text-center pb-24 pt-4 "
+                        initial={{ opacity: 0, y: -80 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ type: "spring", stiffness: 100, damping: 18, duration: 0.8 }}
+                    >
                         <h2 className="text-[28px] sm:text-[36px] lg:text-[38px] font-medium">
                             Why work with us?
                         </h2>
-                    </header>
+                    </motion.header>
 
                     {/* 3 Cards */}
                     <div className="col-start-3 col-span-8 ">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 xl:gap-20">
-                            {ITEMS.map((item) => (
-                                <article
+                            {ITEMS.map((item, i) => (
+                                <motion.article
                                     key={item.id}
                                     className="flex flex-col items-center text-center space-y-5 sm:space-y-6"
+                                    initial={{ opacity: 0, y: 90 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, amount: 0.35 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 90,
+                                        damping: 14,
+                                        duration: 0.9,
+                                        delay: i * 0.12,
+                                    }}
+                                    whileHover={{ scale: 1.09 }}
+                                    whileTap={{ scale: 0.995 }}
                                 >
                                     {/* Icon */}
                                     <div className="relative w-20 h-20 sm:w-20 sm:h-20">
@@ -88,10 +109,10 @@ export default function WhyWorkWithUs() {
                                     </h3>
 
                                     {/* Text */}
-                                    <p className="max-w-[28rem] text-[18px] sm:text-[20px] leading-7 text-white/90">
+                                    <p className="max-w-[28rem] text-[18px] sm:text-[20px] leading-7 ">
                                         {item.text}
                                     </p>
-                                </article>
+                                </motion.article>
                             ))}
                         </div>
                     </div>
