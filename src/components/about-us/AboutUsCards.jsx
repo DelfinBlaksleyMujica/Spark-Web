@@ -12,9 +12,9 @@ export default function ChallengeCards() {
             <div className="relative w-full overflow-hidden">
                 {/* Bg texture */}
                 <img
-                    src="/images/Textures/SparkBackground.png"
+                    src="/images/Textures/SparkLogo_Texture.webp"
                     alt="Background texture"
-                    className="absolute inset-0 z-10 w-[2216.25px] h-full object-cover"
+                    className="absolute inset-0 z-10 w-full  h-full object-cover"
                 />
 
                 {/* CARDS */}
@@ -48,7 +48,7 @@ export default function ChallengeCards() {
                     "
                                     >
                                         <Image
-                                            src="/images/AboutUs/Card5.svg"
+                                            src="/images/AboutUs/Card1.webp"
                                             alt="Remote work scene with laptop"
                                             fill
                                             className="object-cover"
@@ -99,7 +99,7 @@ export default function ChallengeCards() {
                     "
                                     >
                                         <Image
-                                            src="/images/AboutUs/Card2.png"
+                                            src="/images/AboutUs/Card2.webp"
                                             alt="Team outdoor activity"
                                             fill
                                             className="object-cover"

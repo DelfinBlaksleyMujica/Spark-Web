@@ -52,7 +52,7 @@ const mobileLinkVars = {
 const NAV_LINKS = [
   { title: "About us", href: "/about-us" },
   { title: "Pricing", href: "/pricing" },
-  { title: "Blog", href: "/" },
+  { title: "Blog", href: "/blog" },
 ];
 
 export default function Navbar() {

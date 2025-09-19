@@ -29,7 +29,7 @@ export default function Footer() {
           </h2>
 
           <div className="mt-6 sm:mt-8">
-            <Button btnText="Book a demo" btnClass="primary-btn" href="/pricing" />
+            <Button btnText="Book a demo" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
           </div>
         </section>
 
@@ -72,35 +72,62 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-8 pt-0 pb-12 md:pb-24 md:pt-2 px-4 sm:px-6 sm:py-12 md:px-0 text-center md:text-left ">
         {/* LEFT: Socials */}
         <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
-          <motion.div
-            className="flex items-center gap-3 cursor-pointer"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
-            <FaInstagram className="h-7 w-7 text-black" />
-            <span className="text-[20px] ">in/sparkclub.xyz</span>
-          </motion.div>
+          {/* Socials */}
+          {/* LEFT: Socials */}
+          <section className="md:col-start-2 md:col-span-4 md:row-start-2 space-y-10 mx-auto md:mx-0 py-8 sm:py-4">
+            {/* Instagram */}
+            <motion.a
+              href="https://www.instagram.com/sparkclub.xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <FaInstagram className="h-7 w-7 text-black" />
+              <span className="text-[20px]">ig/sparkclub.xyz</span>
+            </motion.a>
 
+            {/* LinkedIn */}
+            <motion.a
+              href="https://www.linkedin.com/company/spark-latam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <FaLinkedin className="h-7 w-7 text-black" />
+              <span className="text-[20px]">in/sparkclub</span>
+            </motion.a>
 
-          <motion.div className="flex items-center gap-3"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
-            <FaLinkedin className="h-7 w-7 text-black" />
-            <span className="text-[20px] ">ig/sparkclub</span>
-          </motion.div>
+            {/* Telegram */}
+            <motion.a
+              href="https://t.me/+BxgSUYyP38c1M2M5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <FaTelegram className="h-7 w-7 text-black" />
+              <span className="text-[20px]">tg/sparkclub</span>
+            </motion.a>
 
-          <motion.div className="flex items-center gap-3"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
-            <FaTelegram className="h-7 w-7 text-black" />
-            <span className="text-[20px] ">tg/sparkclub</span>
-          </motion.div>
+            {/* Twitter/X */}
+            <motion.a
+              href="https://x.com/SparkclubXYZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: "spring", stiffness: 300, damping: 15 }}
+            >
+              <FaTwitter className="h-7 w-7 text-black" />
+              <span className="text-[20px]">tw/sparkclub</span>
+            </motion.a>
+          </section>
 
-          <motion.div className="flex items-center gap-3"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300, damping: 15 }}>
-            <FaTwitter className="h-7 w-7 text-black" />
-            <span className="text-[20px] ">tw/sparkclub</span>
-          </motion.div>
         </section>
 
         {/* LEFT: Logo + copyright */}
@@ -150,13 +177,13 @@ export default function Footer() {
           <h3 id="newsletter-heading" className="font-semibold text-[25px] ">
             Join Our Newsletter
           </h3>
-          <p className="text-[20px] leading-[2] max-w-sm ">
+          <p className="text-[20px] leading-[1.2] max-w-sm ">
             Sign up for our newsletter to enjoy free marketing tips,
             inspiration, and more
           </p>
 
           <form
-            className="flex items-center gap-3 max-w-md w-full mx-auto md:mx-0"
+            className="flex flex-col lg:flex-row md:items-left md:justify-left lg:justify-left items-center gap-3 max-w-md w-full mx-auto md:mx-0"
             onSubmit={(e) => e.preventDefault()}
           >
             <label htmlFor="email" className="sr-only">
@@ -167,7 +194,7 @@ export default function Footer() {
               type="email"
               required
               placeholder="Email Address"
-              className="flex-1 bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
+              className="flex bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
             />
             <Button
               btnText="Join us" btnClass="primary-btn" href="/about-us"
