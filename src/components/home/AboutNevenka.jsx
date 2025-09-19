@@ -2,29 +2,33 @@
 
 import Image from "next/image";
 import { Public_Sans } from "next/font/google";
+import { Maven_Pro } from "next/font/google";
 import Button from "../generals/Button";
 import { motion } from "framer-motion";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
+const mavenPro = Maven_Pro({ subsets: ["latin"] });
+
+const sparkleSrc = "/images/Logos/Icon_Nevenka.png";
 
 const cards = [
     {
         id: "input",
-        img: "/images/Cards/MockUp-01.png",
+        img: "/images/Cards/MockUp-01.webp",
         imageAlt: "Input your event ideas",
         title: "Input your event ideas",
         description: "Dates, guests, vibe, format, services.",
     },
     {
         id: "proposal",
-        img: "/images/Cards/MockUp-02.png",
+        img: "/images/Cards/MockUp-02.webp",
         imageAlt: "Get a proposal in 20 sec",
         title: "Get a proposal in 20 sec",
         description: "Nevenka briefs the event for all your needs.",
     },
     {
         id: "pm",
-        img: "/images/Cards/MockUp-03.png",
+        img: "/images/Cards/MockUp-03.webp",
         imageAlt: "Your PM takes over",
         title: "Your PM takes over",
         description: "Experiences, suppliers, and love for details.",
@@ -38,9 +42,21 @@ export default function AboutNevenka() {
                 <div className="grid grid-cols-12 gap-x-6 gap-y-12">
                     {/* TITLE + SUBTITLE */}
                     <header className="col-start-2 col-span-10 text-center max-w-[1600px] mx-auto">
-                        <h2 className="text-[38px] sm:text-[40px] lg:text-[40px] font-semibold ">
-                            But wait, who is <span className="font-bold">Nevenka?</span>
+                        <h2 className="text-[38px] sm:text-[40px] lg:text-[40px] font-medium">
+                            But wait, who is{" "}
+                            <span className="inline-block align-[0.31rem] pr-2">
+                                <Image
+                                    src="/images/Logos/Nevenka_Logo.png"
+                                    alt="Nevenka Logo"
+                                    width={180}
+                                    height={50}
+                                    className="inline-block object-contain"
+                                    priority
+                                />
+                            </span>
+                            ?
                         </h2>
+
                         <p className="mt-4 text-base sm:text-[20px] text-zinc-700">
                             Nevenka is the teammate every manager wishes they had.
                         </p>
@@ -49,6 +65,7 @@ export default function AboutNevenka() {
                             meaningful experiences that truly bring people together.
                         </p>
                     </header>
+
 
                     {/* CARDS  */}
                     <div className="col-start-2 col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -61,16 +78,18 @@ export default function AboutNevenka() {
                                 viewport={{ once: true, amount: 0.3 }}
                                 transition={{
                                     type: "spring",
-                                    bounce: 0.5,
-                                    duration: 0.7,      // snappy
-                                    delay: i * 0.1,
-                                    duration: 0.6,
+                                    bounce: 0.25,
+                                    duration: 0.9,
+                                    duration: 0.9,
+                                    delay: i * 0.08,
                                 }}
+                                whileHover={{ scale: 1.09 }}
+                                whileTap={{ scale: 0.995 }}
                             >
                                 {/* CARD BG */}
                                 <div className="absolute inset-0">
                                     <Image
-                                        src="/images/Cards/Background.png"
+                                        src="/images/Cards/Background.webp"
                                         alt=""
                                         fill
                                         className="object-cover"
@@ -108,7 +127,7 @@ export default function AboutNevenka() {
 
                 {/* CTA */}
                 <div className="mt-10 sm:mt-12 flex justify-center">
-                    <Button btnText="Try for free" btnClass="primary-btn" href="/get-started" />
+                    <Button btnText="Try for free" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
                 </div>
             </div>
         </section>

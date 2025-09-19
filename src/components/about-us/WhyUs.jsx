@@ -57,10 +57,10 @@ export default function WhyWorkWithUs() {
 
             {/* MAIN  */}
             <div className="relative z-10 px-4 sm:px-8 md:px-0 py-14 sm:py-16 lg:py-20">
-                <div className="grid grid-cols-12 gap-x-10 gap-y-10">
+                <div className="sm:column md:grid md:grid-cols-12 gap-x-10 gap-y-10">
                     {/* Title */}
                     <motion.header
-                        className="col-start-2 col-span-10 text-center pb-24 pt-4 "
+                        className="col-start-2 col-span-10 text-center pb-24 pt-4"
                         initial={{ opacity: 0, y: -80 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, amount: 0.5 }}
@@ -72,7 +72,7 @@ export default function WhyWorkWithUs() {
                     </motion.header>
 
                     {/* 3 Cards */}
-                    <div className="col-start-3 col-span-8 ">
+                    <div className=" md:col-start-3 md:col-span-8 ">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 xl:gap-20">
                             {ITEMS.map((item, i) => (
                                 <motion.article

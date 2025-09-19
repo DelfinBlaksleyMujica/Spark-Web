@@ -14,46 +14,58 @@ const FAQS = [
             "Sparkclub is a platform that brings people together through curated events, activities, and experiences designed to build stronger teams and communities — inside and outside the workplace.",
     },
     {
-        id: "organizer",
-        question: "Who is Sparkclub for?",
-        answer: [
-            ["- ", { bold: "Employees" }, " — discover and join activities that match your interests."],
-            ["- ", { bold: "Managers & HR teams" }, " — plan team-building experiences easily and measure their impact."],
-            ["- ", { bold: "Brands & suppliers" }, " — connect with companies and communities through meaningful events."],
-        ],
-    },
-    {
-        id: "analytics",
-        question: "How does Sparkclub work?",
+        id: "supplier",
+        question: "Who can become a supplier?",
         answer:
-            "You create your profile, share your interests, and Sparkclub recommends events, activities, and experiences that fit your team’s vibe. From after-work meetups to larger offsites or wellness activities, everything is designed to strengthen connections.",
+            "Any provider offering services or experiences for teams — from workshops and sports to catering, venues, tech, or wellness activities.",
     },
     {
-        id: "billing",
-        question: "What kind of experiences can I expect?",
-        answer: [
-            ["- 🏔 Internal team events: offsites, workshops, sports, cultural activities."],
-            ["- 🌍 External community events: networking, festivals, learning sessions, and collaborations with other companies."],
-            ["- ✨ Well-being & lifestyle perks: from yoga classes to cooking nights."],
-        ],
+        id: "work",
+        question: "How does Sparkclub work for suppliers?",
+        answer:
+            "You create your profile, list your services, and companies can book directly. Sparkclub makes it easy to connect with new clients and manage requests.",
     },
     {
         id: "companies",
-        question: "Why should companies use Sparkclub?",
+        question: "What kind of companies will I reach?",
         answer:
-            "Because engaged teams perform better. Sparkclub saves managers time by automating event planning and helps companies create a culture of belonging, motivation, and connection.",
+            "Startups, SMEs, and large organizations looking for team-building, offsites, and well-being activities for their employees.",
     },
     {
-        id: "communities",
-        question: "How does Sparkclub help communities grow?",
+        id: "payments",
+        question: "How do bookings and payments work?",
         answer:
-            "Every event, big or small, becomes a way to connect. Employees bond with each other, companies connect with suppliers, and brands get closer to communities through real experiences.",
+            "Companies book through Sparkclub, and you’ll receive payment securely after the event.",
     },
     {
-        id: "active",
-        question: "Is Sparkclub already active?",
+        id: "cancelled",
+        question: "What happens if a booking is cancelled?",
         answer:
-            "Yes. We’ve already organized multiple events and activities, with teams and suppliers joining in. Our community is growing every week.",
+            "Sparkclub has a cancellation policy to protect both companies and suppliers. You’ll always be notified in advance, and in some cases you may keep part of the payment depending on timing.",
+    },
+    {
+        id: "ratings",
+        question: "How do ratings and reviews work?",
+        answer:
+            "After each event, companies can leave feedback. Positive reviews increase your visibility on the platform and help you reach more clients.",
+    },
+    {
+        id: "costs",
+        question: "Is there a cost to join as a supplier?",
+        answer:
+            "Joining is free. Sparkclub charges a small commission per booking to keep the platform running.",
+    },
+    {
+        id: "availability",
+        question: "Can I manage my own availability?",
+        answer:
+            "Yes. You decide when and how your services are offered, including blackout dates or limits.",
+    },
+    {
+        id: "joining",
+        question: "Why should I join Sparkclub?",
+        answer:
+            "Sparkclub helps you grow your business, reach new clients, and be part of a community that values real experiences.",
     },
 ];
 

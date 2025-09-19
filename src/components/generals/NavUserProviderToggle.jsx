@@ -7,8 +7,8 @@ import { useMemo, useState, useEffect, useTransition } from "react";
 import { public_sans } from "@/app/fonts/fonts";
 
 const TABS = [
-  { key: "users", label: "Users", href: "/" },
-  { key: "provider", label: "Provider", href: "/provider" },
+  { key: "users", label: "Team Leads", href: "/" },
+  { key: "provider", label: "Partners", href: "/provider" },
 ];
 
 export default function NavUserProviderToggle() {
@@ -47,10 +47,10 @@ export default function NavUserProviderToggle() {
     <LayoutGroup id="users-providers-toggle">
       <motion.div
         layout
-        className="relative inline-flex h-10 w-[220px] select-none p-1"
+        className="relative inline-flex h-10 w-[260px] select-none p-1"
         style={{ backgroundColor: "#FCD34D", borderRadius: "24.5px" }}
         role="tablist"
-        aria-label="Users / Provider"
+        aria-label="Team Leads / Partners"
       >
         {TABS.map((tab) => {
           const isActive = activeKey === tab.key;
@@ -89,9 +89,8 @@ export default function NavUserProviderToggle() {
                 onClick={(e) => handleClick(e, tab)}
               >
                 <span
-                  className={`${
-                    isActive ? "font-semibold" : "font-medium"
-                  } transition-opacity duration-200`}
+                  className={`${isActive ? "font-semibold" : "font-medium"
+                    } transition-opacity duration-200`}
                   style={{ color: "#5F5F5F", opacity: isActive ? 1 : 0.75 }}
                 >
                   {tab.label}

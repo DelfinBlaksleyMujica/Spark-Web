@@ -23,7 +23,7 @@ const tags = [
     { label: "HeliTour in Delta", color: "#FEF08A" },
 ];
 
-function Row({ reverse = false, duration = 28, delay = 0 }) {
+function Row({ reverse = false, duration = 60, delay = 0 }) {
     return (
         <div
             className="relative w-full overflow-hidden"

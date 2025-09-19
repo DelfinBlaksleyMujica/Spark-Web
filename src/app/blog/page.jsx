@@ -1,5 +1,6 @@
 import React from "react";
+import BlogLanding from "@/components/blog/BlogLanding";
 
 export default function BlogPageContainer() {
-  return <div>Blog Page</div>;
+  return <BlogLanding />;
 }

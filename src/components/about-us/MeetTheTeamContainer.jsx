@@ -12,7 +12,7 @@ const theTeam = [
     nombre: "Gastón",
     apellido: "Santourian",
     rol: "CEO",
-    linkedinLink: "",
+    linkedinLink: "https://www.linkedin.com/in/gastisan/",
     topExperiences: ["Kartings"],
     descriptions: [
       "Led brand, culture, and experience strategy for companies like Red Bull, Fitchin, 9z Team, and DalePlay. Managed teams of 50+ and executed 150+ online and on-site events across tech and entertainment.",
@@ -31,7 +31,7 @@ const theTeam = [
     nombre: "Delfín",
     apellido: "Blaksley Mujica",
     rol: "CTO",
-    linkedinLink: "",
+    linkedinLink: "https://www.linkedin.com/in/delfin-blaksley-mujica-73415b276/",
     topExperiences: ["Boards"],
     descriptions: [
       "Spent +4 years turning ideas into products and challenges into growth. Built a software agency from scratch, delivered 100+ projects worldwide, led teams of 20+ people, and launched an OOH startup in Buenos Aires Argentina. This journey taught me how powerful aligned teams can be. ",
@@ -55,7 +55,7 @@ export default function MeetTheTeamContainer() {
         Meet the Team
       </h2>
 
-      <div className="flex w-full justify-center items-start gap-[50px] flex-wrap mt-[50px]">
+      <div className="flex w-full justify-center items-stretch gap-[90px] flex-wrap mt-[90px]">
         {theTeam.map((member, index) => (
           <motion.div
             key={index}

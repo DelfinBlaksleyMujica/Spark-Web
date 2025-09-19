@@ -48,8 +48,6 @@ export default function NonNegotiables() {
     });
 
 
-    const ySlow = useTransform(scrollYProgress, [0, 1], [0, 40]);
-    const yMed = useTransform(scrollYProgress, [0, 1], [0, 80]);
     const yFast = useTransform(scrollYProgress, [0, 1], [0, 120]);
 
     return (
@@ -82,7 +80,7 @@ export default function NonNegotiables() {
                     src="/images/Textures/Circle_BG.png"
                     alt=""
                     className="absolute w-[200px] h-[200px]  z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
-                    style={{ y: yMed }}
+                    style={{ y: yFast }}
                 />
             </div>
 
@@ -115,7 +113,7 @@ export default function NonNegotiables() {
                                     type: "spring",
                                     bounce: 0.25,
                                     duration: 0.9,
-                                    delay: i * 0.08, // slight stagger across cards
+                                    delay: i * 0.08,
                                 }}
                             >
                                 {/* Illustration */}
