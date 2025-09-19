@@ -54,7 +54,6 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
   const { scrollY } = useScroll();
 
   const yFast = useTransform(scrollY, [0, 500], [0, -80]);
-  const yMed = useTransform(scrollY, [0, 500], [0, -40]);
 
   return (
     <div className="relative w-full py-[70px] flex justify-center items-center bg-black overflow-hidden">
@@ -86,12 +85,12 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
           src="/images/Textures/Circle_BG.png"
           alt=""
           className="absolute w-[200px] h-[200px] z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
-          style={{ y: yMed }}
+          style={{ y: yFast }}
         />
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="relative z-10 flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
+      <div className="relative z-10 flex flex-col justify-center items-center w-full overflow-visible px-[40px] xl:px-[70px] 2xl:px-[120px]">
         {/* TITLE */}
         <h2
           className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-white mb-[45px]`}
@@ -108,7 +107,7 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
         </p>
 
         {/* CARDS */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap py-[40px]">
           {cardsData.map((card, index) => (
             <Card
               key={card.id}
@@ -123,7 +122,7 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="w-full flex justify-center items-center mt-[50px]">
+        <div className="w-full flex justify-center items-center mt-[30px]">
           <Button btnText="Become a partner" btnClass="primary-btn" href="/" />
         </div>
       </div>

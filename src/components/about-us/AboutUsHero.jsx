@@ -8,7 +8,7 @@ const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export default function AboutUsHero() {
     return (
-        <section className={`${publicSans.className} bg-black text-white`}>
+        <section className={`${publicSans.className} bg-black text-white lg:min-h-[700px]`}>
             <div className="px-4 sm:px-6 md:px-0 pt-24">
                 <div className="grid grid-cols-12">
 
@@ -24,7 +24,7 @@ export default function AboutUsHero() {
                             {/* IMG MOBILE */}
                             <div className="block lg:hidden">
                                 <Image
-                                    src="/images/AboutUs/HeroImg_Mobile.png"
+                                    src="/images/AboutUs/HeroImg_Mobile.webp"
                                     alt="SparkClub mobile hero"
                                     width={800}
                                     height={900}
@@ -36,7 +36,7 @@ export default function AboutUsHero() {
                             {/* IMG DESKTOP */}
                             <div className="hidden lg:block">
                                 <Image
-                                    src="/images/AboutUs/HeroImg.png"
+                                    src="/images/AboutUs/HeroImg.webp"
                                     alt="SparkClub desktop hero"
                                     width={1920}
                                     height={900}
@@ -68,7 +68,7 @@ export default function AboutUsHero() {
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.8 }}
                     >
-                        <p className="mx-auto text-[18px] sm:text-[20px] md:text-[24px] lg:text-[16px] text-white text-center lg:max-w-[800px]">
+                        <p className="mx-auto text-[18px] sm:text-[20px] md:text-[24px] lg:text-[16px] text-center lg:max-w-[800px]">
                             At Spark, we redefine connections. We believe a single experience can
                             flip your perception of someone 180º. That’s why we’re on a mission to
                             make every moment unforgettable. We’ve handpicked, tested, and perfected

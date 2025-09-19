@@ -9,13 +9,13 @@ export default function Hero() {
   const { scrollY } = useScroll();
 
   // PARALLAX EFFECT
-  const y = useTransform(scrollY, [0, 500], [0, -200]);
+  const y = useTransform(scrollY, [0, 100], [0, -100]);
 
   return (
     <div className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden bg-black">
       {/* ANIMACION BACKGROUND */}
       <motion.img
-        src="/images/Textures/SparkBackground.png"
+        src="/images/Textures/SparkLogo_Texture.webp"
         alt="Hero Background Image"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ y }}
@@ -56,12 +56,12 @@ export default function Hero() {
             <Button
               btnText="Experiences"
               btnClass="primary-btn"
-              href="/get-started"
+              href="/blog"
             />
             <Button
               btnText="Try Nevenka"
               btnClass="secondary-btn"
-              href="/learn-more"
+              href="https://zcal.co/sparkclub"
             />
           </div>
         </div>

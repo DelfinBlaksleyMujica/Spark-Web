@@ -126,7 +126,7 @@ export default function WeMakeWorkWorkComponent() {
       {/* Background Texture */}
       <img
         className="w-full h-full absolute top-0 left-0 object-cover"
-        src="/images/Textures/Home_WeMakeWorkWork_Texture.png"
+        src="/images/Textures/SparkLogo_Texture.webp"
         alt=""
       />
 
@@ -150,7 +150,7 @@ export default function WeMakeWorkWorkComponent() {
                 <CategoryCard
                   category="Wellness Experiences"
                   badge=""
-                  bgImg="/images/Cards/We_make_work_work_1.png"
+                  bgImg="/images/Cards/Welness.webp"
                   hoverText="Mindful activities curated for team wellbeing."
                 />
               </RevealUp>
@@ -179,7 +179,7 @@ export default function WeMakeWorkWorkComponent() {
                 <CategoryCard
                   category="Art & Culture"
                   badge="Trending"
-                  bgImg="/images/Cards/We_make_work_work_2.png"
+                  bgImg="/images/Cards/ArtCulture.webp"
                   hoverText="From museum nights to creative labs."
                 />
               </RevealUp>
@@ -192,7 +192,7 @@ export default function WeMakeWorkWorkComponent() {
                 <CategoryCard
                   category="Running Session"
                   badge=""
-                  bgImg="/images/Cards/We_make_work_work_3.png"
+                  bgImg="/images/Cards/RunningSessions.webp"
                   hoverText="Weekly group runs and step challenges."
                 />
               </RevealUp>
@@ -221,7 +221,7 @@ export default function WeMakeWorkWorkComponent() {
                 <CategoryCard
                   category="Ed Tech"
                   badge="COMING SOON"
-                  bgImg="/images/Cards/We_make_work_work_4.png"
+                  bgImg="/images/Cards/Edtech.webp"
                   hoverText="Learning tracks and growth paths."
                 />
               </RevealUp>
@@ -231,7 +231,7 @@ export default function WeMakeWorkWorkComponent() {
 
         {/* CTA Button */}
         <div className="w-full flex justify-center lg:justify-end items-center max-w-[1040px]">
-          <Button btnText="Create an event now!" btnClass="tertiary-btn" href="/" />
+          <Button btnText="Create an event now!" btnClass="tertiary-btn" href="https://forms.gle/QwyfJa6Nr6ZWz5hY7" />
         </div>
       </div>
     </div>
