@@ -40,6 +40,11 @@ export default function AboutNevenka() {
         <section className={`bg-white ${publicSans.className} text-zinc-900`}>
             <div className="px-4 py-12 sm:py-16 lg:py-20">
                 <div className="grid grid-cols-12 gap-x-6 gap-y-12">
+
+                    <div className="col-start-2 col-span-10 max-w-[800px] mx-auto">
+                        <img src="/images/Logos/Nevenka_asset.svg" alt="Nevenka Asset" className="mx-auto" />
+                    </div>
+
                     {/* TITLE + SUBTITLE */}
                     <header className="col-start-2 col-span-10 text-center max-w-[1600px] mx-auto">
                         <h2 className="text-[38px] sm:text-[40px] lg:text-[40px] font-medium">
@@ -65,7 +70,6 @@ export default function AboutNevenka() {
                             meaningful experiences that truly bring people together.
                         </p>
                     </header>
-
 
                     {/* CARDS  */}
                     <div className="col-start-2 col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
@@ -126,7 +130,7 @@ export default function AboutNevenka() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-10 sm:mt-12 flex justify-center">
+                <div className="mt-10 flex flex-col lg:flex-row  justify-center px-8">
                     <Button btnText="Try for free" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
                 </div>
             </div>

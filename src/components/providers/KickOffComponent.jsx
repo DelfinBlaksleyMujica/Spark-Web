@@ -122,7 +122,7 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="w-full flex justify-center items-center mt-[30px]">
+        <div className="flex flex-col w-full lg:flex-row justify-center px-8 mt-[30px]">
           <Button btnText="Become a partner" btnClass="primary-btn" href="/" />
         </div>
       </div>

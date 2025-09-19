@@ -229,9 +229,12 @@ export default function WeMakeWorkWorkComponent() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="w-full flex justify-center lg:justify-end items-center max-w-[1040px]">
-          <Button btnText="Create an event now!" btnClass="tertiary-btn" href="https://forms.gle/QwyfJa6Nr6ZWz5hY7" />
+        <div className="w-full flex justify-center lg:justify-end lg:max-w-[1040px]">
+          <Button
+            btnText="Create an event now!"
+            btnClass="tertiary-btn"
+            href="https://forms.gle/QwyfJa6Nr6ZWz5hY7"
+          />
         </div>
       </div>
     </div>
