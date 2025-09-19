@@ -58,9 +58,9 @@ export default function BlogLanding() {
                             </p>
                         </motion.header>
 
-                        {/* Banner image (12-col with margins) */}
+                        {/* Banner image */}
                         <motion.div
-                            className="col-start-0 col-span-12 mt-6 lg:mt-8 relative"
+                            className="col-start-3 col-span-8  mt-6 lg:mt-8 relative"
                             initial={{ opacity: 0, y: -60 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.4 }}
@@ -90,18 +90,6 @@ export default function BlogLanding() {
                                     />
                                 </div>
                             </div>
-
-                            {/* “sticker” emojis over the banner */}
-                            <img
-                                src="/images/Blog/Sticker_Sunglasses.png"
-                                alt=""
-                                className="pointer-events-none absolute -left-6 -top-8 w-24 sm:w-28 lg:w-32"
-                            />
-                            <img
-                                src="/images/Blog/Sticker_Backpack.png"
-                                alt=""
-                                className="pointer-events-none absolute -right-6 -bottom-8 w-20 sm:w-24 lg:w-28"
-                            />
                         </motion.div>
                     </div>
                 </div>
