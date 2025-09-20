@@ -50,7 +50,7 @@ export default function MeetTheTeamContainer() {
   return (
     <div className="bg-[#FCD34D] text-black w-full flex flex-col justify-center items-center h-[1500px] lg:h-auto py-[100px]">
       <h2
-        className={`${public_sans.className} text-[48px] font-medium leading-[100%] tracking-tight text-center`}
+        className={`${public_sans.className} text-[48px] font-medium leading-[100%] tracking-tight text-center text-black`}
       >
         Meet the Team
       </h2>

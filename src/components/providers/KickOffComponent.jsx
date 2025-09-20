@@ -50,12 +50,14 @@ const Card = ({ id, image, title, description, color, index }) => {
 };
 
 export default function KickOffComponent({ cardsData, titleKickoff }) {
-  //parallax animation 
+  //parallax animation
   const { scrollY } = useScroll();
 
   const yFast = useTransform(scrollY, [0, 500], [0, -80]);
 
   return (
+    // <div className="w-full py-[70px] flex justify-center items-center bg-white">
+    //   <div className="flex flex-col justify-center items-center w-full overflow-hidden px-[40px] xl:px-[70px] 2xl:px-[120px]">
     <div className="relative w-full py-[70px] flex justify-center items-center bg-black overflow-hidden">
       {/* BACKGROUND SHAPES */}
       <div className="pointer-events-none absolute inset-0 z-0">
