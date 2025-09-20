@@ -65,13 +65,12 @@ export default function Navbar() {
         {/* Logo */}
         <div className="h-full flex items-center">
           <Link href="/" aria-label="SparkClub - Home">
-            {/* Podés cambiar a <Image> si preferís */}
             <img
-              src="/images/Logo SparkClub Original.webp"
+              src="/images/Logos/Logo_SparkClub_Original.webp"
               alt="Logo"
               width={155}
               height={30}
-              className="block w-[135px] h-[25px] md:w-[155px] md:h-[30px]"
+              className="block w-[135px] h-[25px] md:h-[20px] md:h-[auto] lg:w-[155px]"
             />
           </Link>
         </div>
@@ -152,7 +151,7 @@ export default function Navbar() {
                     aria-label="SparkClub - Home"
                   >
                     <img
-                      src="/images/Logo SparkClub Original.webp"
+                      src="/images/Logos/Logo_SparkClub_Original.webp"
                       alt="Logo"
                       width={140}
                       height={28}

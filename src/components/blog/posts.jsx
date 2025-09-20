@@ -3,9 +3,9 @@ export const POSTS = [
   {
     id: "leadership-costs",
     title: "438 billion: The hidden cost of poor leadership",
-    date: "23/07/2025",
+    date: "23-07-2025",
     tag: "Costs",
-    cover: "/images/blog/cover-1.jpg",
+    cover: "/images/Blog/wakeboard.svg",
     content: `
       <p>The lack of commitment is silently draining the global economy, and it’s no longer a “soft” issue. Recent data shows that poor leadership costs companies $438 billion a year. It’s not just about low productivity, but also turnover, absenteeism, misalignment, burnout, and something deeper: a work model that was never designed for people.</p>
     `,
@@ -13,9 +13,9 @@ export const POSTS = [
   {
     id: "workplace-changing",
     title: "The Workplace Is Changing. Are We Listening?",
-    date: "23/07/2025",
+    date: "23-07-2025",
     tag: "Workplace",
-    cover: "/images/blog/cover-2.jpg",
+    cover: "/images/Blog/Bouldering.svg",
     content: `
       <p>As global engagement hits historic lows and managers face growing pressure, the future of work hangs in the balance. 
       This post explores the root causes of workplace disconnection and how a more personalized, data-driven approach can help teams rebuild trust, motivation, and belonging. 
@@ -26,9 +26,9 @@ export const POSTS = [
   {
     id: "ai-hr-future",
     title: "Human Resources in Charge: Why the Future of AI at Work Should Be Led by HR",
-    date: "23/07/2025",
+    date: "23-07-2025",
     tag: "AI-HR",
-    cover: "/images/blog/cover-1.jpg",
+    cover: "/images/Blog/ArtificialIntelligence.webp",
     content: `
       <p>Artificial intelligence is no longer a distant trend — it’s integrated into the way organizations operate, evolve, and thrive. 
       And as companies rush to adopt AI, there’s a growing consensus about who should lead that change: the Human Resources department.</p>
@@ -37,9 +37,9 @@ export const POSTS = [
   {
     id: "culture-connection-google",
     title: "Culture, Connection, and Experiences at Google: A Success Story in Employee Engagement",
-    date: "23/07/2025",
+    date: "23-07-2025",
     tag: "Culture-Connection",
-    cover: "/images/blog/cover-2.jpg",
+    cover: "/images/blog/Running.svg",
     content: `
       <p>In today’s corporate world, few companies have captured as much attention for their organizational culture as Google. Known for its innovative work environment and employee-centered initiatives, Google has become a benchmark for engagement and job satisfaction. This article explores how Google’s strategies around culture, connection, and experiences can serve as a model for other organizations looking to improve employee engagement.</p>
     `,
@@ -49,7 +49,7 @@ export const POSTS = [
     title: "What Is Employee Engagement and Why Your Team Needs It Now",
     date: "2025-08-12",
     tag: "Engagement",
-    cover: "/images/blog/cover-1.jpg",
+    cover: "/images/Blog/GoogleEngagement.png",
     content: `
       <p>The world of work has changed. Offices are now hybrid, teams are distributed, and people are looking for more than just a paycheck at the end of the month. In this new context, engagement has become a key asset. 
       It’s no longer enough to have productive employees; we need them to be connected, committed, and eager to build together.
@@ -61,7 +61,7 @@ export const POSTS = [
     title: "Hello, World! Meet Spark: The Future of Employee Engagement",
     date: "2025-08-01",
     tag: "FutureEmployee",
-    cover: "/images/blog/cover-2.jpg",
+    cover: "/images/Blog/Logo.webp",
     content: `
       <p>At Spark, we believe the key to a thriving workforce lies in smart engagement—creating meaningful experiences that bring teams together, boost performance, and strengthen workplace culture.
 Why Spark?

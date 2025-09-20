@@ -15,9 +15,12 @@ const companies = [
   { id: 7, img: "/images/TrustedBy/Comp7.png" },
   { id: 8, img: "/images/TrustedBy/Comp8.svg" },
   { id: 9, img: "/images/TrustedBy/Comp9.svg" },
-  { id: 10, img: "/images/TrustedBy/Comp10.png" },
+  { id: 10, img: "/images/TrustedBy/Comp10.svg" },
   { id: 11, img: "/images/TrustedBy/Comp11.svg" },
-  { id: 12, img: "/images/TrustedBy/Comp12.png" },
+  { id: 12, img: "/images/TrustedBy/Comp12.svg" },
+  { id: 13, img: "/images/TrustedBy/Comp13.svg" },
+  { id: 14, img: "/images/TrustedBy/Comp14.svg" },
+
 ];
 
 export default function TrustedByComponent() {
@@ -41,7 +44,7 @@ export default function TrustedByComponent() {
 
   return (
     <div className="w-full bg-white">
-      <div className="flex flex-col justify-center items-center w-full py-[40px] px-4 sm:px-6 lg:px-12">
+      <div className="flex flex-col justify-center items-center w-full py-[40px] px-4 sm:px-6 lg:px-4">
         {/* Title */}
         <h2
           className={`${public_sans.className} text-[24px] font-semibold leading-[100%] tracking-tight text-center mb-[30px] pt-[36px] text-black`}
@@ -50,7 +53,7 @@ export default function TrustedByComponent() {
         </h2>
 
         {/* MOBILE SWIPER */}
-        <div className="xl:hidden overflow-hidden w-full">
+        <div className="lg:hidden overflow-hidden w-full">
           <TrustedByMobileSwiper companies={companies} />
         </div>
 
@@ -58,29 +61,30 @@ export default function TrustedByComponent() {
         <motion.div
           ref={ref}
           className="
-            hidden xl:flex 
+            hidden lg:flex 
             justify-center items-center 
-            gap-[40px] lg:gap-[50px] xl:gap-[60px] 
-            w-full max-w-[1200px] mx-auto
+            gap-[10px] lg:gap-[30px] xl:gap-[40px] 
+            w-full max-w-[1800px] mx-auto py-[40px]
           "
           initial={{ opacity: 0, y: -80 }}
           animate={controls}
+
         >
           {companies.map((company) => (
             <div
               key={company.id}
               className="
-                w-[50px] h-[50px] 
-                sm:w-[55px] sm:h-[55px] 
-                md:w-[60px] md:h-[60px] 
-                lg:w-[65px] lg:h-[65px]
+                w-[90px] h-[90px] 
                 flex justify-center items-center
               "
             >
-              <img
+              <motion.img
                 src={company.img}
                 alt="Empresa asociada a Sparkclub"
                 className="max-w-full max-h-full object-contain"
+
+                whileHover={{ scale: 1.6 }}
+                whileTap={{ scale: 0.995 }}
               />
             </div>
           ))}
