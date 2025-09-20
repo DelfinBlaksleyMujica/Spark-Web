@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const publicSans = Public_Sans({ subsets: ["latin"] });
 const mavenPro = Maven_Pro({ subsets: ["latin"] });
 
-const sparkleSrc = "/images/Logos/Icon_Nevenka.png";
+const sparkleSrc = "/images/Logos/Nevenka_asset.webp";
 
 const cards = [
     {
@@ -37,13 +37,30 @@ const cards = [
 
 export default function AboutNevenka() {
     return (
-        <section className={`bg-white ${publicSans.className} text-zinc-900`}>
-            <div className="px-4 py-12 sm:py-16 lg:py-20">
-                <div className="grid grid-cols-12 gap-x-6 gap-y-12">
+        <section className={`bg-white ${publicSans.className} text-zinc-900 relative`}>
+            <div className="px-4 py-12 sm:py-16 lg:py-20 relative">
 
-                    <div className="col-start-2 col-span-10 max-w-[800px] mx-auto">
-                        <img src="/images/Logos/Nevenka_asset.svg" alt="Nevenka Asset" className="mx-auto" />
-                    </div>
+                {/* FLOATING LOGO FOR LARGE SCREENS (top-right) */}
+                <motion.div
+                    className="lg:block absolute   lg:top-12 lg:right-20 z-10"
+                    animate={{ opacity: [1, 0.5, 1] }}
+                    transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image
+                        src={sparkleSrc}
+                        alt="Nevenka Icon"
+                        width={140}
+                        height={140}
+                        priority
+                        className="w-[100px] lg:w-[200px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)] opacity-[0] lg:opacity-[100]"
+                    />
+                </motion.div>
+
+                <div className="grid grid-cols-12 gap-x-6 gap-y-12">
 
                     {/* TITLE + SUBTITLE */}
                     <header className="col-start-2 col-span-10 text-center max-w-[1600px] mx-auto">
@@ -71,7 +88,7 @@ export default function AboutNevenka() {
                         </p>
                     </header>
 
-                    {/* CARDS  */}
+                    {/* CARDS */}
                     <div className="col-start-2 col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
                         {cards.map((c, i) => (
                             <motion.article
@@ -84,13 +101,12 @@ export default function AboutNevenka() {
                                     type: "spring",
                                     bounce: 0.25,
                                     duration: 0.9,
-                                    duration: 0.9,
                                     delay: i * 0.08,
                                 }}
                                 whileHover={{ scale: 1.09 }}
                                 whileTap={{ scale: 0.995 }}
                             >
-                                {/* CARD BG */}
+                                {/* CARD BACKGROUND */}
                                 <div className="absolute inset-0">
                                     <Image
                                         src="/images/Cards/Background.webp"
@@ -101,9 +117,8 @@ export default function AboutNevenka() {
                                     />
                                 </div>
 
-                                {/* card content */}
+                                {/* CARD CONTENT */}
                                 <div className="relative p-4 sm:p-5 flex flex-col">
-                                    {/* MOCK UP IMAGE */}
                                     <div className="w-full">
                                         <Image
                                             src={c.img}
@@ -114,7 +129,6 @@ export default function AboutNevenka() {
                                         />
                                     </div>
 
-                                    {/* YELLOW RECT */}
                                     <div className="rounded-[8px] bg-[#FCD34D] text-zinc-900 p-4 sm:p-5">
                                         <h3 className="text-[20px] sm:text-[32px] font-extrabold leading-[1.2]">
                                             {c.title}
@@ -129,9 +143,13 @@ export default function AboutNevenka() {
                     </div>
                 </div>
 
-                {/* CTA */}
-                <div className="mt-10 flex flex-col lg:flex-row  justify-center px-8">
-                    <Button btnText="Try for free" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
+                {/* CTA BUTTON */}
+                <div className="mt-10 flex flex-col lg:flex-row justify-center px-8">
+                    <Button
+                        btnText="Try for free"
+                        btnClass="primary-btn"
+                        href="https://zcal.co/sparkclub"
+                    />
                 </div>
             </div>
         </section>
