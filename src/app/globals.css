@@ -31,8 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 100%;
-  /* full width on mobile */
+  width: 70%;
   text-align: center;
   box-sizing: border-box;
   padding: 0 24px;
@@ -45,6 +44,7 @@ body {
   color: #ffffff;
   border: solid 1px #FFFFFF;
   text-align: center;
+
 }
 
 .secondary-btn {
@@ -60,12 +60,8 @@ body {
   border: solid 1px #000000;
 }
 
-
-@media (min-width: 768px) {
-
-  .primary-btn,
-  .secondary-btn,
-  .tertiary-btn {
+@media (min-width: 640px) {
+  .btn {
     min-width: 120px;
     width: auto;
   }

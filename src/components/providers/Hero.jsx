@@ -26,7 +26,8 @@ export default function Hero() {
             Join Sparkclub´s partner network to scale your experiences/services
             and connect with brands that value human interaction.
           </p>
-          <div className="flex flex-col md:flex-row gap-4 w-full justify-center items-center md:w-fit md:mx-auto">
+
+          <div className="flex flex-col w-full lg:flex-row gap-[18px] justify-center px-8">
             <Button btnText="Book a demo" btnClass="primary-btn" href="/" />
             <Button btnText="Join us" btnClass="secondary-btn" href="/" />
           </div>

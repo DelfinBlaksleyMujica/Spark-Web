@@ -30,7 +30,7 @@ export default function TrustedByMobileSwiper({ companies }) {
             key={company.id}
             className="flex justify-center items-center"
           >
-            <div className="w-[200px] h-[120px] sm:w-[200px] md:w-[160px] lg:w-[200px] h-[50px] flex justify-center items-center">
+            <div className="w-[200px] h-[120px] sm:w-[200px] h-[50px] flex justify-center items-center">
               <img
                 className="max-w-full max-h-full object-contain"
                 src={company.img}

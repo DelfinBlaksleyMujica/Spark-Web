@@ -25,10 +25,7 @@ const tags = [
 
 function Row({ reverse = false, duration = 60, delay = 0 }) {
     return (
-        <div
-            className="relative w-full overflow-hidden"
-            style={{ "--marquee-duration": `${duration}s` }}
-        >
+        <div className="relative w-full overflow-hidden" style={{ "--marquee-duration": `${duration}s` }}>
             <div
                 className={`${reverse ? "marquee-reverse" : "marquee"} flex w-[200%]`}
                 style={delay ? { animationDelay: `${delay}s` } : undefined}
@@ -36,30 +33,24 @@ function Row({ reverse = false, duration = 60, delay = 0 }) {
                 {[0, 1].map((copy) => (
                     <ul
                         key={copy}
-                        className="flex min-w-[50%] shrink-0 items-center gap-3 sm:gap-4 py-1"
+                        className="flex min-w-[50%] shrink-0 items-center gap-3 sm:gap-2 "
                         aria-hidden={copy === 1 ? true : undefined}
                     >
                         {tags.map((t, i) => (
                             <li
                                 key={`${copy}-${i}`}
-                                className="text-slate-900 flex items-center gap-2 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 whitespace-nowrap "
+                                className="text-slate-900 flex items-center gap-2 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 whitespace-nowrap"
                                 style={{ backgroundColor: t.color }}
                             >
-                                {/* LOGO */}
                                 <div className="relative w-4 h-4 sm:w-5 sm:h-5">
-                                    <Image
-                                        src="/images/Logos/Logo_icon.png"
-                                        alt="SparkClub Logo"
-                                        fill
-                                        className="object-contain"
-                                        priority={i === 0}
-                                    />
+                                    <Image src="/images/Logos/Logo_icon.png" alt="SparkClub Logo" fill className="object-contain" priority={i === 0} />
                                 </div>
-
-                                {/* LABEL */}
-                                <span className="text-[16px] sm:text-sm font-regular ">{t.label}</span>
+                                <span className="text-[16px] sm:text-sm font-regular">{t.label}</span>
                             </li>
                         ))}
+
+                        {/* spacer to prevent last/first chip touching at the seam */}
+                        <li aria-hidden className="w-3 sm:w-4 shrink-0" />
                     </ul>
                 ))}
             </div>
@@ -67,13 +58,12 @@ function Row({ reverse = false, duration = 60, delay = 0 }) {
     );
 }
 
+
 export default function ActivityTags() {
     return (
         <section className="w-full bg-white">
-            <div className={`${publicSans.className} py-4`}>
-                {/* TOP ROW */}
+            <div className={`${publicSans.className} px-6 py-4 flex flex-col gap-2.5 sm:gap-3`}>
                 <Row reverse={false} duration={32} delay={-50} />
-                {/* BOTTOM ROW */}
                 <Row reverse duration={32} delay={-50} />
             </div>
         </section>

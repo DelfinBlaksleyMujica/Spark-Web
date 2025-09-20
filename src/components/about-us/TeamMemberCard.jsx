@@ -29,7 +29,7 @@ export default function TeamMemberCard({
             {nombre} <br /> {apellido}
           </h4>
           <h5 className="text-[14px] sm:text-[16px] mb-[5px] text-black">{rol}</h5>
-          <Link href={linkedinLink}>
+          <Link href={linkedinLink} rel="noopener noreferrer" target="_blank">
             <img src="/images/Icons/LinkedinLogo.svg" alt="LinkedIn Profile" />
           </Link>
           <ul className="text-[16px] leading-[136%] list-none mt-[10px]">

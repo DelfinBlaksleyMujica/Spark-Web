@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-col lg:flex-row gap-[18px] justify-center items-center">
+          <div className="flex flex-col lg:flex-row gap-[18px] justify-center px-8">
             <Button
               btnText="Experiences"
               btnClass="primary-btn"
