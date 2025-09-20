@@ -19,7 +19,7 @@ const planesData = [
     price: "15",
     anualPrice: "10",
     icon: "/images/Icons/TickRosa.svg",
-    href: "#",
+    href: "https://api.whatsapp.com/send?phone=541157979949",
     bgColor: "primary",
     btnText: "Default",
   },
@@ -38,7 +38,7 @@ const planesData = [
     price: "30",
     anualPrice: "20",
     icon: "/images/Icons/TickNegro.svg",
-    href: "#",
+    href: "https://api.whatsapp.com/send?phone=541157979949",
     bgColor: "secondary",
     btnText: "Select Plan",
   },
@@ -61,15 +61,13 @@ const planesData = [
     price: "85",
     anualPrice: "60",
     icon: "/images/Icons/TickRosa.svg",
-    href: "#",
+    href: "https://api.whatsapp.com/send?phone=541157979949",
     bgColor: "primary",
     btnText: "Get a quote",
   },
 ];
 
 export default function SectionContainer() {
-
-
   return (
     <div className="w-full flex flex-col justify-center items-center min-h-screen relative bg-[#D9D9D9] overflow-hidden py-[60px] h-[3000px] lg:h-[1500px]">
       <img
@@ -99,7 +97,8 @@ export default function SectionContainer() {
           className="mt-[120px] sm:mt-[240px] lg:mt-[120px] text-[36px] sm:text-[48px] font-medium leading-[100%] tracking-tight mb-[30px] lg:mb-[10px] text-center width-[90%] text-black"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}>
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           Plans built for <strong>people-first companies</strong>
         </motion.h1>
         <p className="text-[24px] leading-[136%] tracking-tight font-medium mb-[40px] text-center text-black">
