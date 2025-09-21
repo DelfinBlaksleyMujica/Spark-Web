@@ -67,7 +67,7 @@ export default function Navbar() {
           <Link href="/" aria-label="SparkClub - Home">
             <img
               src="/images/Logos/Logo_SparkClub_Original.webp"
-              alt="Logo"
+              alt="Sparkclub Logo"
               width={155}
               height={30}
               className="block w-[135px] h-[25px] md:h-[20px] md:h-[auto] lg:w-[155px]"
@@ -152,7 +152,7 @@ export default function Navbar() {
                   >
                     <img
                       src="/images/Logos/Logo_SparkClub_Original.webp"
-                      alt="Logo"
+                      alt="Sparkclub Logo"
                       width={140}
                       height={28}
                       className="block"

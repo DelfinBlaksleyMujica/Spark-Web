@@ -32,7 +32,7 @@ const Card = ({ id, image, title, description, color, index }) => {
         <img
           className="w-full absolute top-0 left-0 object-cover h-full"
           src={image}
-          alt=""
+          alt="Step to kickoff Image"
         />
       </div>
       <h3

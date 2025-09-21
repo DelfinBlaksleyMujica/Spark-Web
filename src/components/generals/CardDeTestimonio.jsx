@@ -7,7 +7,7 @@ export default function CardDeTestimonio({ imagen, testimonio, firma }) {
         <img
           className="w-[69px] h-[69px]"
           src={imagen}
-          alt="Imagen de testimonio"
+          alt="Testimonial Image"
         />
         <p className={`${poppins.className}`}>{testimonio}</p>
         <p className={`${poppins.className} absolute bottom-0`}>{firma}</p>

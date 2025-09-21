@@ -9,7 +9,7 @@ export default function PlanCard({
   price,
   features,
   icon,
-  href, // poné acá tu link de WhatsApp (p. ej. "https://wa.me/54911XXXXXX?text=Quiero%20el%20plan%20...")
+  href,
   btnText,
   bgColor,
   // mobile accordion
@@ -86,7 +86,7 @@ export default function PlanCard({
                     className={`${public_sans.className} font-medium text-[14px] text-black leading-[136%] tracking-tight flex justify-start items-center gap-[15px] mb-[10px]`}
                     key={index}
                   >
-                    <img src={icon} alt="" />
+                    <img src={icon} alt="Tick Icon for feature included" />
                     {feature}
                   </li>
                 ))}
