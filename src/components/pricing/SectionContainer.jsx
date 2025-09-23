@@ -19,7 +19,7 @@ const planesData = [
     price: "15",
     anualPrice: "10",
     icon: "/images/Icons/TickRosa.svg",
-    href: "https://api.whatsapp.com/send?phone=541157979949",
+    href: "https://api.whatsapp.com/send?phone=541149604816",
     bgColor: "primary",
     btnText: "Default",
   },
@@ -38,7 +38,7 @@ const planesData = [
     price: "30",
     anualPrice: "20",
     icon: "/images/Icons/TickNegro.svg",
-    href: "https://api.whatsapp.com/send?phone=541157979949",
+    href: "https://api.whatsapp.com/send?phone=541149604816",
     bgColor: "secondary",
     btnText: "Select Plan",
   },
@@ -61,7 +61,7 @@ const planesData = [
     price: "85",
     anualPrice: "60",
     icon: "/images/Icons/TickRosa.svg",
-    href: "https://api.whatsapp.com/send?phone=541157979949",
+    href: "https://api.whatsapp.com/send?phone=541149604816",
     bgColor: "primary",
     btnText: "Get a quote",
   },
@@ -72,22 +72,22 @@ export default function SectionContainer() {
     <div className="w-full flex flex-col justify-center items-center min-h-screen relative bg-[#D9D9D9] overflow-hidden py-[60px] h-[3000px] lg:h-[1500px]">
       <img
         src="/images/Pricing/PricingBackgroundDecoration1.svg"
-        alt=""
+        alt="Pricing Section Background Pattern"
         className="absolute w-[437px] h-[437px] left-[-150px] top-[300px] lg:top-[-50px] z-0"
       />
       <img
         src="/images/Pricing/PricingBackgroundDecoration2.svg"
-        alt=""
+        alt="Pricing Section Background Pattern"
         className="absolute w-[272px] h-[272px] right-[-50px] lg:right-[20px] top-[650px] lg:top-[270px] z-0"
       />
       <img
         src="/images/Pricing/PricingBackgroundDecoration3.svg"
-        alt=""
+        alt="Pricing Section Background Pattern"
         className="w-[437px] h-[437px] absolute z-0 left-[-100px] bottom-[1100px] lg:bottom-[400px]"
       />
       <img
         src="/images/Pricing/PricingBackgroundDecoration4.svg"
-        alt=""
+        alt="Pricing Section Background Pattern"
         className="absolute w-[437px] h-[437px] absolute z-0 right-[0px] bottom-[300px]"
       />
 

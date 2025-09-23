@@ -12,7 +12,7 @@ function ColoredCard({ color, icon, title, text }) {
     >
       {/*Card Content Container*/}
       <div>
-        <img src={icon} alt="" />
+        <img src={icon} alt="Experience Icon" />
         <h3
           className={`${public_sans.className} text-black text-[22px] sm:text-[24px] font-bold leading-[100%] tracking-tight my-[12px]`}
         >
@@ -43,7 +43,7 @@ function CategoryCard({ category, bgImg, badge, hoverText }) {
         <img
           className="h-full w-full absolute top-0 left-0 object-cover rounded-[10px]"
           src={bgImg}
-          alt=""
+          alt="Background pattern"
         />
 
         {/* White overlay on hover */}
@@ -119,15 +119,13 @@ function RevealUp({ children, delay = 0 }) {
 }
 
 export default function WeMakeWorkWorkComponent() {
-
-
   return (
     <div className="h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black relative flex justify-center items-center w-full">
       {/* Background Texture */}
       <img
         className="w-full h-full absolute top-0 left-0 object-cover"
         src="/images/Textures/SparkLogo_Texture.webp"
-        alt=""
+        alt="Background Pattern"
       />
 
       {/* Content */}
@@ -137,7 +135,12 @@ export default function WeMakeWorkWorkComponent() {
           initial={{ opacity: 0, y: -60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
-          transition={{ type: "spring", stiffness: 100, damping: 16, duration: 0.6 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
+            damping: 16,
+            duration: 0.6,
+          }}
         >
           We make work, <strong>work</strong>
         </motion.h2>
@@ -146,7 +149,7 @@ export default function WeMakeWorkWorkComponent() {
         <div className="w-full flex flex-col lg:flex-row justify-center items-center mb-[20px] gap-[2%] md:gap-[20px] px-0 md:px-[119px]">
           <div className="w-full flex gap-[2%] md:gap-[20px] mb-[10px] lg:mb-[20px] justify-end items-center">
             <div className="flex flex-col gap-[7px] sm:gap-[20px] w-[50%] md:w-auto">
-              <RevealUp delay={0.00}>
+              <RevealUp delay={0.0}>
                 <CategoryCard
                   category="Wellness Experiences"
                   badge=""
@@ -197,7 +200,7 @@ export default function WeMakeWorkWorkComponent() {
                 />
               </RevealUp>
 
-              <RevealUp delay={0.40}>
+              <RevealUp delay={0.4}>
                 <ColoredCard
                   color="#86EFAC"
                   icon="/images/3DIllus/Truck.svg"
