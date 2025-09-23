@@ -9,27 +9,31 @@ import { public_sans } from "@/app/fonts/fonts";
 const testimonios = [
   {
     id: 1,
-    img: "/images/testimonios/TestimonialIconPlaceholder1.svg",
-    testimonio: "Quote",
-    firma: "Fernando Cobas  - Owner Led HD",
+    img: "/images/testimonios/TestimonialIconPlaceholder1.jpeg",
+    testimonio:
+      "Working with SparkClub feels natural. The connections are there, the way of working is clear, and everything runs smooth from start to finish. It´s the kind of partner you don´t need to over-explain things to - they get it and make it happen.",
+    firma: "Technical production",
   },
   {
     id: 2,
     img: "/images/testimonios/TestimonialIconPlaceholder2.svg",
-    testimonio: "Quote",
-    firma: "Carla Casasola - Yoga Coach",
+    testimonio:
+      "I like how SparkClub opens doors. One week I´m setting up an event for a startup, the next I´m meeting a new brand I never thought I´d work with. They make thos connections possible, and for frelancers like me, that´s gold.",
+    firma: "Wellness Coach",
   },
   {
     id: 3,
     img: "/images/testimonios/TestimonialIconPlaceholder3.svg",
-    testimonio: "Quote",
-    firma: "Matías Ferrari - BD Konex (venue)",
+    testimonio:
+      "With SparkClub, creating events stopped being a headache. The platform connects us instantly with trusted suppliers, and in minutes we have everything set up. It´s seamless, efficient, and lets us focus on delivering experiences that strenghten our brand.",
+    firma: "FMCG Beverages",
   },
   {
     id: 4,
     img: "/images/testimonios/TestimonialIconPlaceholder4.svg",
-    testimonio: "Quote",
-    firma: "Choco Lopez - Helipuerto Mouras",
+    testimonio:
+      "We needed to organize an activation for DevConnect, and we were 10,500 km away from the venue. Honestly, I didn´t expect it to come together so fast. SparkClub managed everything with precision and delivered an event that felt like we´d been on the ground al along.",
+    firma: "Industry-Blockchain",
   },
 ];
 
