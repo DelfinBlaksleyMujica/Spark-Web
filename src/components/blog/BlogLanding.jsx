@@ -41,22 +41,6 @@ export default function BlogLanding() {
                 { /* HERO SECTION */}
                 <div className="px-4 sm:px-6 md:px-0 py-10 sm:py-14 lg:py-16 relative z-10">
                     <div className="grid grid-cols-12 gap-x-6">
-                        {/* Title */}
-                        <motion.header
-                            className="col-start-2 col-span-10 text-center"
-                            initial={{ opacity: 0, y: -40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, amount: 0.5 }}
-                            transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.6 }}
-                        >
-                            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-semibold">
-                                Engagement Blog
-                            </h1>
-                            <p className="mt-3 mx-auto max-w-[900px] text-[16px] sm:text-[18px] lg:text-[18px] text-zinc-700">
-                                Discover trends, tips, and strategies to enhance employee engagement, strengthen
-                                company culture, and create a more connected and productive workplace.
-                            </p>
-                        </motion.header>
 
                         {/* Banner image */}
                         <motion.div
@@ -91,6 +75,24 @@ export default function BlogLanding() {
                                 </div>
                             </div>
                         </motion.div>
+
+                        {/* Title */}
+                        <motion.header
+                            className="col-start-2 col-span-10 text-center"
+                            initial={{ opacity: 0, y: -40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.5 }}
+                            transition={{ type: "spring", stiffness: 100, damping: 20, duration: 0.6 }}
+                        >
+                            <h1 className="text-[28px] sm:text-[36px] lg:text-[44px] font-semibold">
+                                Engagement Blog
+                            </h1>
+                            <p className="mt-3 mx-auto max-w-[900px] text-[16px] sm:text-[18px] lg:text-[18px] text-zinc-700">
+                                Discover trends, tips, and strategies to enhance employee engagement, strengthen
+                                company culture, and create a more connected and productive workplace.
+                            </p>
+                        </motion.header>
+
                     </div>
                 </div>
             </section>
@@ -100,7 +102,7 @@ export default function BlogLanding() {
                 <div className="px-4 sm:px-6 md:px-0 py-12 sm:py-16 lg:py-20">
                     <div className="grid grid-cols-12 gap-x-6 gap-y-10">
                         <div className="col-start-2 col-span-10">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
+                            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-16">
                                 {POSTS.map((post) => (
                                     <BlogCard key={post.id} post={post} />
                                 ))}
