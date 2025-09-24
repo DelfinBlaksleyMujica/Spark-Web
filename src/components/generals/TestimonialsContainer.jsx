@@ -1,7 +1,13 @@
 // TestimonialsContainer.jsx
 "use client";
 
-import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
+import React, {
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+  useEffect,
+} from "react";
 import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import CardDeTestimonio from "./CardDeTestimonio";
 import { public_sans } from "@/app/fonts/fonts";
@@ -10,8 +16,6 @@ import { public_sans } from "@/app/fonts/fonts";
 const SPEED = 80;
 
 export default function TestimonialsContainer({ data }) {
-  console.log("DATA", data);
-
   const viewportRef = useRef(null);
   const trackRef = useRef(null);
 
@@ -19,28 +23,40 @@ export default function TestimonialsContainer({ data }) {
   const [paused, setPaused] = useState(false);
 
   // setW: ancho de UN set (N cards + N-1 gaps)
-  // periodW: **setW + 1 gap** => distancia exacta donde el patrón [card+gap] vuelve a empezar
+  // periodW: setW + 1 gap => distancia exacta donde el patrón [card+gap] vuelve a empezar
   const [setW, setSetW] = useState(0);
   const [periodW, setPeriodW] = useState(0);
   const [repeatCount, setRepeatCount] = useState(3);
 
+  // Clonamos el set las veces necesarias
+  const items = useMemo(() => {
+    const out = [];
+    const base = Array.isArray(data?.testimonials) ? data.testimonials : [];
+    for (let i = 0; i < repeatCount; i++) {
+      for (const t of base) out.push({ ...t, _k: `${i}-${t.id}` });
+    }
+    return out;
+  }, [data?.testimonials, repeatCount]);
+
+  // Medición (incluye gap real de CSS)
   useLayoutEffect(() => {
     const measure = () => {
       const track = trackRef.current;
       const viewport = viewportRef.current;
-      if (!track || !viewport) return;
+      const base = data?.testimonials ?? [];
+      if (!track || !viewport || base.length === 0) return;
 
       const first = track.children[0];
-      // medir ancho real de la card (más fiable con zoom/escala que offsetWidth)
-      const rect = first?.getBoundingClientRect();
+      if (!first) return;
+
+      const rect = first.getBoundingClientRect();
       const cardW = rect?.width ?? first?.offsetWidth ?? 0;
 
       const styles = getComputedStyle(track);
       const gap =
         parseFloat(styles.gap || styles.columnGap || styles.rowGap || "0") || 0;
 
-      const n = data.testimonials.length;
-
+      const n = base.length;
       const _setW = n * cardW + (n - 1) * gap;
       const _periodW = _setW + gap; // 🔑 incluir el gap entre el último y el primero del siguiente set
 
@@ -49,7 +65,7 @@ export default function TestimonialsContainer({ data }) {
 
       const vw = viewport.offsetWidth;
       // duplicar lo suficiente para cubrir el viewport con holgura
-      const needed = Math.ceil(vw / _setW) + 2;
+      const needed = Math.ceil(vw / Math.max(_setW, 1)) + 2;
       setRepeatCount(Math.max(3, needed));
 
       x.set(0); // evitar saltos al redimensionar
@@ -57,26 +73,34 @@ export default function TestimonialsContainer({ data }) {
 
     measure();
     window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
-  }, [x]);
 
-  // animación infinita sin “corte”: envolver por periodW (set + 1 gap)
+    // Re-medir si cambia el tamaño real de la primera card (imágenes, fuentes, etc.)
+    let ro;
+    if (trackRef.current) {
+      ro = new ResizeObserver(measure);
+      const firstChild = trackRef.current.children?.[0];
+      if (firstChild) ro.observe(firstChild);
+    }
+
+    return () => {
+      window.removeEventListener("resize", measure);
+      if (ro) ro.disconnect();
+    };
+  }, [x, data?.testimonials]);
+
+  // Animación infinita sin “corte”: envolver por periodW (set + 1 gap)
   useAnimationFrame((_, delta) => {
     if (paused || periodW === 0) return;
     const dt = delta / 1000;
     let next = x.get() - SPEED * dt;
-    if (next <= -periodW) next += periodW; // 👈 wrap suave
+    if (next <= -periodW) next += periodW; // 👈 wrap suave, alineado con el patrón
     x.set(next);
   });
 
-  // clonado del set
-  const items = useMemo(() => {
-    const out = [];
-    for (let i = 0; i < repeatCount; i++) {
-      for (const t of data.testimonials) out.push({ ...t, _k: `${i}-${t.id}` });
-    }
-    return out;
-  }, [repeatCount]);
+  // Early return si no hay data
+  if (!data?.testimonials || data.testimonials.length === 0) {
+    return null;
+  }
 
   return (
     <div className="w-full overflow-x-hidden py-[82px] flex flex-col justify-center items-center gap-6 bg-[#F3F3F3]">
@@ -95,12 +119,16 @@ export default function TestimonialsContainer({ data }) {
       >
         <motion.div
           ref={trackRef}
-          style={{ x, willChange: "transform" }}
-          className="flex gap-[35px]"
+          style={{
+            x,
+            willChange: "transform",
+            transform: "translate3d(0,0,0)",
+          }}
+          className="flex flex-nowrap items-stretch gap-[35px]"
         >
-          {data.testimonials.map((t) => (
+          {items.map((t) => (
             <CardDeTestimonio
-              key={t.id}
+              key={t._k}
               imagen={t.img}
               testimonio={t.testimonio}
               firma={t.firma}

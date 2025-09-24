@@ -6,7 +6,7 @@ import ActivityTags from "./ActivityTags";
 import { public_sans } from "@/app/fonts/fonts";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+export default function Hero({ data }) {
   return (
     <div className="relative flex justify-center items-center h-screen w-full bg-white pt-[40px] ">
       <div className="w-full h-full flex justify-center items-center px-[20px] lg:px-[100px]">
@@ -17,21 +17,20 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Certified Experiences. <br />
-            Real Impact.
+            {data.title}
+            <br />
+            {data.titleSpan}
           </motion.h1>
           <p
             className={`${public_sans.className} mb-[56px] text-[18px] leading-[136%] tracking-tight text-center text-black`}
           >
-            Join Sparkclub´s partner network to scale your experiences/services
-            and connect with brands that value human interaction.
+            {data.subtitle}
           </p>
 
           <div className="flex flex-col w-full lg:flex-row gap-[18px] justify-center px-8">
             <Button btnText="Book a demo" btnClass="primary-btn" href="/" />
             <Button btnText="Join us" btnClass="secondary-btn" href="/" />
           </div>
-
         </div>
       </div>
       <div className="absolute bottom-0 w-full flex justify-center items-center">
