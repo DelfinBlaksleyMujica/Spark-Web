@@ -196,7 +196,7 @@ const data = {
         "Culture, Connection, and Experiences at Google: A Success Story in Employee Engagement",
       date: "10 April 2025",
       tag: "Culture & Connection",
-      cover: "/images/blog/Running.svg",
+      cover: "/images/Blog/Running.svg",
       ontent: `
     <p>In today’s corporate world, few companies have captured attention for their organizational culture like Google. Known for its innovative work environment and employee-centric initiatives, Google has become a reference point for engagement and job satisfaction. This article explores how Google’s strategies across culture, connection, and experiences can serve as a model for organizations seeking to improve employee engagement.</p>
 
