@@ -42,22 +42,55 @@ export default function AboutNevenka({ data }) {
     >
       <div className="px-4 py-12 sm:py-16 lg:py-20 relative">
         {/* FLOATING LOGO FOR LARGE SCREENS (top-right) */}
+        {/* FLOATING LOGOS (desktop only) */}
+        {/* Right side */}
         <motion.div
-          className="lg:block absolute   lg:top-12 lg:right-20 z-10"
+          className="hidden lg:block absolute rotate-[15deg] lg:top-12 lg:right-20 z-0 pointer-events-none"
           animate={{ opacity: [1, 0.5, 1] }}
-          transition={{
-            duration: 2,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          aria-hidden
         >
           <Image
             src={sparkleSrc}
-            alt="Nevenka Icon"
-            width={140}
-            height={140}
+            alt=""
+            width={200}
+            height={200}
             priority
-            className="w-[100px] lg:w-[200px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)] opacity-[0] lg:opacity-[100]"
+            className="w-[200px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
+          />
+        </motion.div>
+
+        {/* Left side — big */}
+        <motion.div
+          className="hidden lg:block absolute rotate-[-15deg] lg:top-8 lg:left-20  z-0 pointer-events-none"
+          animate={{ opacity: [1, 0.5, 1] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          aria-hidden
+        >
+          <Image
+            src={sparkleSrc}
+            alt=""
+            width={220}
+            height={220}
+            priority
+            className="w-[150px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
+          />
+        </motion.div>
+
+        {/* Left side — small (offset lower/right for variety) */}
+        <motion.div
+          className="hidden lg:block absolute rotate-[-15deg] lg:top-24 lg:left-52 z-0 pointer-events-none"
+          animate={{ opacity: [0.4, 0.3, 0.4] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          aria-hidden
+        >
+          <Image
+            src={sparkleSrc}
+            alt=""
+            width={120}
+            height={120}
+            priority
+            className="w-[110px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
           />
         </motion.div>
 

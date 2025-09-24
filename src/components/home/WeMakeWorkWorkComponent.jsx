@@ -8,7 +8,7 @@ function ColoredCard({ color, icon, title, text }) {
   return (
     <div
       style={{ backgroundColor: color }}
-      className="h-[205px] w-full md:w-[243px] rounded-[10px] px-[13px] md:px-[26px] py-[10px] md:py-[20px]"
+      className=" h-[205px] w-full md:w-[243px] rounded-[10px] px-[13px] md:px-[26px] py-[10px] md:py-[20px]"
     >
       {/*Card Content Container*/}
       <div>
@@ -28,7 +28,7 @@ function ColoredCard({ color, icon, title, text }) {
   );
 }
 
-function CategoryCard({ category, bgImg, badge, hoverText }) {
+function CategoryCard({ category, bgImg, badge, hoverText, className }) {
   return (
     <div className="relative group w-full md:w-[243px]">
       {/* CARD */}
@@ -41,7 +41,7 @@ function CategoryCard({ category, bgImg, badge, hoverText }) {
       >
         {/* Background image */}
         <img
-          className="h-full w-full absolute top-0 left-0 object-cover rounded-[10px]"
+          className={`h-full w-full absolute top-0 left-0 object-cover rounded-[10px] ${className}`}
           src={bgImg}
           alt="Background pattern"
         />
@@ -119,30 +119,33 @@ function RevealUp({ children, delay = 0 }) {
 }
 
 export default function WeMakeWorkWorkComponent({ data }) {
+  const d = data[0];
+
   return (
-    <div className="h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black relative flex justify-center items-center w-full">
+    <div className="relative flex justify-center items-center w-full h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black">
       {/* Background Texture */}
       <img
-        className="w-full h-full absolute top-0 left-0 object-cover"
+        className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
         src="/images/Textures/SparkLogo_Texture.webp"
         alt="Background Pattern"
       />
 
       {/* Content */}
-      <div className="py-[76px] px-0 md:px-[121px] w-full h-full flex flex-col justify-center items-center z-10">
+      <div className="relative z-20 w-full flex flex-col justify-center items-center py-[76px] px-0 md:px-[121px]">
         <motion.h2
-          className={`${public_sans.className} text-white text-[48px] font-regular leading-[100%] mb-[40px] text-center w-full`}
+          className={`${public_sans.className}  text-white text-[48px] font-regular leading-[100%] mb-[40px] text-center w-full`}
           initial={{ opacity: 0, y: -60 }}
+          animate={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{
             type: "spring",
             stiffness: 100,
             damping: 16,
-            duration: 0.6,
+            duration: 0.2,
           }}
         >
-          {data.title} <strong>{data.titleSpan}</strong>
+          {d.title} <strong> {d.titleSpan} </strong>
         </motion.h2>
 
         {/* Cards layout */}
@@ -152,6 +155,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.0}>
                 <CategoryCard
                   category="Wellness Experiences"
+                  className="translate-y-[90px] "
                   badge=""
                   bgImg="/images/Cards/Welness.webp"
                   hoverText="Mindful activities curated for team wellbeing."
