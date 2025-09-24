@@ -118,7 +118,7 @@ function RevealUp({ children, delay = 0 }) {
   );
 }
 
-export default function WeMakeWorkWorkComponent() {
+export default function WeMakeWorkWorkComponent({ data }) {
   return (
     <div className="h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black relative flex justify-center items-center w-full">
       {/* Background Texture */}
@@ -142,7 +142,7 @@ export default function WeMakeWorkWorkComponent() {
             duration: 0.6,
           }}
         >
-          We make work, <strong>work</strong>
+          {data.title} <strong>{data.titleSpan}</strong>
         </motion.h2>
 
         {/* Cards layout */}

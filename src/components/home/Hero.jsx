@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "../generals/Button";
 import { public_sans } from "@/app/fonts/fonts";
 
-export default function Hero() {
+export default function Hero({ data }) {
   const { scrollY } = useScroll();
 
   // PARALLAX EFFECT
@@ -34,30 +34,19 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Experiences that foster <br /> engagement.
+            {data.tituloPrincipal} <br /> {data.kwTituloPrincipal}
           </motion.h1>
 
           {/* Paragraphs */}
           <div className="flex flex-col gap-3 md:gap-1 text-[16px] md:text-[18px] leading-[150%] mb-[25px] md:mb-[30px] px-[1rem] md:px-[2rem] lg:px-0">
-            <p className={`${public_sans.className}`}>
-              Designing team experiences shouldn´t take weeks or blow your budget.
-            </p>
-            <p className={`${public_sans.className}`}>
-              What used to take months now takes 10 minutes.
-            </p>
-            <p className={`${public_sans.className}`}>
-              Just tell Nevenka what you need and get a curated,
-              cost-efficient event, ready to go with certified suppliers.
-            </p>
+            <p className={`${public_sans.className}`}>{data.firstSubtitle}</p>
+            <p className={`${public_sans.className}`}>{data.secondSubtitle}</p>
+            <p className={`${public_sans.className}`}>{data.thirdSubtitle}</p>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-col lg:flex-row gap-[18px] justify-center px-8">
-            <Button
-              btnText="Experiences"
-              btnClass="primary-btn"
-              href="/blog"
-            />
+            <Button btnText="Experiences" btnClass="primary-btn" href="/blog" />
             <Button
               btnText="Try Nevenka"
               btnClass="secondary-btn"

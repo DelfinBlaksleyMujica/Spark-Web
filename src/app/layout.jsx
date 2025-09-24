@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Smart Engagement | Sparkclub , Buenos Aires Argentina",
+  title: "Smart Engagement Platform | Sparkclub , Buenos Aires Argentina",
   description: "Experiences that level up your team",
 };
 

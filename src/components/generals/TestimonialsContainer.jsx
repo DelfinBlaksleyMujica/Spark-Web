@@ -6,41 +6,12 @@ import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import CardDeTestimonio from "./CardDeTestimonio";
 import { public_sans } from "@/app/fonts/fonts";
 
-const testimonios = [
-  {
-    id: 1,
-    img: "/images/Testimonios/TestimonialIconPlaceholder1.jpeg",
-    testimonio:
-      "Working with SparkClub feels natural. The connections are there, the way of working is clear, and everything runs smooth from start to finish. It´s the kind of partner you don´t need to over-explain things to - they get it and make it happen.",
-    firma: "Technical production",
-  },
-  {
-    id: 2,
-    img: "/images/Testimonios/TestimonialIconPlaceholder2.svg",
-    testimonio:
-      "I like how SparkClub opens doors. One week I´m setting up an event for a startup, the next I´m meeting a new brand I never thought I´d work with. They make thos connections possible, and for frelancers like me, that´s gold.",
-    firma: "Wellness Coach",
-  },
-  {
-    id: 3,
-    img: "/images/Testimonios/TestimonialIconPlaceholder3.svg",
-    testimonio:
-      "With SparkClub, creating events stopped being a headache. The platform connects us instantly with trusted suppliers, and in minutes we have everything set up. It´s seamless, efficient, and lets us focus on delivering experiences that strenghten our brand.",
-    firma: "FMCG Beverages",
-  },
-  {
-    id: 4,
-    img: "/images/Testimonios/TestimonialIconPlaceholder4.svg",
-    testimonio:
-      "We needed to organize an activation for DevConnect, and we were 10,500 km away from the venue. Honestly, I didn´t expect it to come together so fast. SparkClub managed everything with precision and delivered an event that felt like we´d been on the ground al along.",
-    firma: "Industry-Blockchain",
-  },
-];
-
 // Velocidad en px/seg
 const SPEED = 80;
 
-export default function TestimonialsContainer() {
+export default function TestimonialsContainer({ data }) {
+  console.log("DATA", data);
+
   const viewportRef = useRef(null);
   const trackRef = useRef(null);
 
@@ -68,7 +39,7 @@ export default function TestimonialsContainer() {
       const gap =
         parseFloat(styles.gap || styles.columnGap || styles.rowGap || "0") || 0;
 
-      const n = testimonios.length;
+      const n = data.testimonials.length;
 
       const _setW = n * cardW + (n - 1) * gap;
       const _periodW = _setW + gap; // 🔑 incluir el gap entre el último y el primero del siguiente set
@@ -102,7 +73,7 @@ export default function TestimonialsContainer() {
   const items = useMemo(() => {
     const out = [];
     for (let i = 0; i < repeatCount; i++) {
-      for (const t of testimonios) out.push({ ...t, _k: `${i}-${t.id}` });
+      for (const t of data.testimonials) out.push({ ...t, _k: `${i}-${t.id}` });
     }
     return out;
   }, [repeatCount]);
@@ -112,7 +83,7 @@ export default function TestimonialsContainer() {
       <h2
         className={`${public_sans.className} font-medium text-[40px] leading-[100%] tracking-tight text-center text-[#000000] mb-[62px]`}
       >
-        What people are saying
+        {data.title}
       </h2>
 
       <div
@@ -127,9 +98,9 @@ export default function TestimonialsContainer() {
           style={{ x, willChange: "transform" }}
           className="flex gap-[35px]"
         >
-          {items.map((t) => (
+          {data.testimonials.map((t) => (
             <CardDeTestimonio
-              key={t._k}
+              key={t.id}
               imagen={t.img}
               testimonio={t.testimonio}
               firma={t.firma}
