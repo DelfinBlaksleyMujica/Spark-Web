@@ -49,7 +49,7 @@ const Card = ({ id, image, title, description, color, index }) => {
   );
 };
 
-export default function KickOffComponent({ cardsData, titleKickoff }) {
+export default function KickOffComponent({ data }) {
   //parallax animation
   const { scrollY } = useScroll();
 
@@ -97,20 +97,19 @@ export default function KickOffComponent({ cardsData, titleKickoff }) {
         <h2
           className={`${public_sans.className} text-center text-[44px] font-extrabold leading-[100%] text-white mb-[45px]`}
         >
-          {titleKickoff}
+          {data.title}
         </h2>
 
         {/* SUBTITLE */}
         <p
           className={`${poppins.className} text-[18px] font-regular leading-[100%] tracking-tight text-white mb-[30px] text-center`}
         >
-          Three simple steps to certify your profile, showcase your experiences,
-          and connect with brands.
+          {data.subtitle}
         </p>
 
         {/* CARDS */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap py-[40px]">
-          {cardsData.map((card, index) => (
+          {data.cards.map((card, index) => (
             <Card
               key={card.id}
               id={card.id}

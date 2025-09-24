@@ -35,7 +35,7 @@ const cards = [
   },
 ];
 
-export default function AboutNevenka() {
+export default function AboutNevenka({ data }) {
   return (
     <section
       className={`bg-white ${publicSans.className} text-zinc-900 relative`}
@@ -65,7 +65,7 @@ export default function AboutNevenka() {
           {/* TITLE + SUBTITLE */}
           <header className="col-start-2 col-span-10 text-center max-w-[1600px] mx-auto">
             <h2 className="text-[38px] sm:text-[40px] lg:text-[40px] font-medium">
-              But wait, who is{" "}
+              {data.title}{" "}
               <span className="inline-block align-[0.31rem] pr-2">
                 <Image
                   src="/images/Logos/Nevenka_logo.png"
@@ -80,17 +80,16 @@ export default function AboutNevenka() {
             </h2>
 
             <p className="mt-4 text-base sm:text-[20px] text-zinc-700">
-              Nevenka is the teammate every manager wishes they had.
+              {data.firstSubtitle}
             </p>
             <p className="text-base sm:text-[20px] text-zinc-700">
-              She listens, understands your team, and turns scattered ideas into
-              meaningful experiences that truly bring people together.
+              {data.secondSubtitle}
             </p>
           </header>
 
           {/* CARDS */}
           <div className="col-start-2 col-span-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {cards.map((c, i) => (
+            {data.cards.map((c, i) => (
               <motion.article
                 key={c.id}
                 className="relative overflow-hidden"

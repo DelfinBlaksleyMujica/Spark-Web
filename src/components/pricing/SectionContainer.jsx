@@ -6,68 +6,7 @@ import Button from "../generals/Button";
 import { public_sans } from "@/app/fonts/fonts";
 import { motion } from "framer-motion";
 
-const planesData = [
-  {
-    id: 1,
-    name: "Essential",
-    features: [
-      "Unlimited experiences",
-      "Unlimited services",
-      "Unlimited user invites",
-      "Schedule experiences",
-    ],
-    price: "15",
-    anualPrice: "10",
-    icon: "/images/Icons/TickRosa.svg",
-    href: "https://api.whatsapp.com/send?phone=541149604816",
-    bgColor: "primary",
-    btnText: "Default",
-  },
-  {
-    id: 2,
-    name: "PRO",
-    features: [
-      "Unlimited experiences",
-      "Unlimited services",
-      "Unlimited user invites",
-      "Schedule experiences",
-      "Event tracking & reports",
-      "Recurring event automation",
-      "Budget management",
-    ],
-    price: "30",
-    anualPrice: "20",
-    icon: "/images/Icons/TickNegro.svg",
-    href: "https://api.whatsapp.com/send?phone=541149604816",
-    bgColor: "secondary",
-    btnText: "Select Plan",
-  },
-  {
-    id: 3,
-    name: "Enterprise",
-    features: [
-      "Unlimited team events",
-      "Unlimited users",
-      "Gift tracking & reports",
-      "Budget management",
-      "Branded gifts",
-      "HRIS integrations",
-      "Team event host",
-      "Engagement tracking tool",
-      "Priority support",
-      "Advanced workspace management",
-      "Custom integration",
-    ],
-    price: "85",
-    anualPrice: "60",
-    icon: "/images/Icons/TickRosa.svg",
-    href: "https://api.whatsapp.com/send?phone=541149604816",
-    bgColor: "primary",
-    btnText: "Get a quote",
-  },
-];
-
-export default function SectionContainer() {
+export default function SectionContainer({ data }) {
   return (
     <div className="w-full flex flex-col justify-center items-center min-h-screen relative bg-[#D9D9D9] overflow-hidden py-[60px] h-[3000px] lg:h-[1500px]">
       <img
@@ -99,16 +38,16 @@ export default function SectionContainer() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          Plans built for <strong>people-first companies</strong>
+          {data.title}
+          <strong>{data.spanTitle}</strong>
         </motion.h1>
         <p className="text-[24px] leading-[136%] tracking-tight font-medium mb-[40px] text-center text-black">
-          From small teams to global companies, Sparkclub helps you scale
-          engagement month by month.
+          {data.subtitle}
         </p>
-        <PlansContainer data={planesData} />
+        <PlansContainer data={data.planesData} />
         <div className="w-full flex justify-center items-center mt-[20px] mb-[125px] text-black">
           <p>
-            Need a personalised plan?{" "}
+            {data.personalisedPlanTitle}{" "}
             <Link className="underline font-semibold" href="/contact">
               Get in touch
             </Link>
@@ -119,14 +58,12 @@ export default function SectionContainer() {
             <h3
               className={`${public_sans.className} font-medium text-[32px] sm:text-[48px] leading-[100%] tracking-tight text-center mb-[20px] text-black`}
             >
-              For Experience Providers
+              {data.secondTitle}
             </h3>
             <p
               className={`${public_sans.className} text-[18px] sm:text-[24px] leading-[136%] tracking-tight font-medium  text-center mb-[40px] text-black`}
             >
-              We´ve designed flexible tiers for providers, with commissions that
-              scale as you do. Whether you´re just starting or already
-              established, Sparkclub helps you grow.
+              {data.secondSubtitle}
             </p>
             <div className="w-full flex justify-center items-center">
               <Button
