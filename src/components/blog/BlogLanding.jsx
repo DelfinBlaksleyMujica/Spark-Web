@@ -17,22 +17,22 @@ export default function BlogLanding({ data }) {
         <div>
           <img
             src="/images/Pricing/PricingBackgroundDecoration1.svg"
-            alt=""
+            alt="Textura de Fondo"
             className="pointer-events-none absolute w-[420px] h-[420px] -left-32 -top-24 opacity-80"
           />
           <img
             src="/images/Pricing/PricingBackgroundDecoration2.svg"
-            alt=""
+            alt="Textura de Fondo"
             className="pointer-events-none absolute w-[280px] h-[280px] -right-8 top-28 opacity-80"
           />
           <img
             src="/images/Pricing/PricingBackgroundDecoration3.svg"
-            alt=""
+            alt="Textura de Fondo"
             className="pointer-events-none absolute w-[420px] h-[420px] left-1/4 bottom-[-140px] opacity-60 hidden lg:block"
           />
           <img
             src="/images/Pricing/PricingBackgroundDecoration4.svg"
-            alt=""
+            alt="Textura de Fondo"
             className="pointer-events-none absolute w-[420px] h-[420px] right-0 bottom-[-180px] opacity-60 hidden lg:block"
           />
         </div>

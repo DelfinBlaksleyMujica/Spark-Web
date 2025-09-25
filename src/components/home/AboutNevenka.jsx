@@ -44,55 +44,6 @@ export default function AboutNevenka({ data }) {
         {/* FLOATING LOGO FOR LARGE SCREENS (top-right) */}
         {/* FLOATING LOGOS (desktop only) */}
         {/* Right side */}
-        <motion.div
-          className="hidden absolute rotate-[15deg] lg:top-12 lg:right-20 z-0 pointer-events-none"
-          animate={{ opacity: [1, 0.5, 1] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          aria-hidden
-        >
-          <Image
-            src={sparkleSrc}
-            alt=""
-            width={200}
-            height={200}
-            priority
-            className="w-[200px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
-          />
-        </motion.div>
-
-        {/* Left side — big */}
-        <motion.div
-          className="hidden absolute rotate-[-15deg] lg:top-8 lg:left-20  z-0 pointer-events-none"
-          animate={{ opacity: [1, 0.5, 1] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          aria-hidden
-        >
-          <Image
-            src={sparkleSrc}
-            alt=""
-            width={220}
-            height={220}
-            priority
-            className="w-[150px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
-          />
-        </motion.div>
-
-        {/* Left side — small (offset lower/right for variety) */}
-        <motion.div
-          className="hidden absolute rotate-[-15deg] lg:top-24 lg:left-52 z-0 pointer-events-none"
-          animate={{ opacity: [0.4, 0.3, 0.4] }}
-          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          aria-hidden
-        >
-          <Image
-            src={sparkleSrc}
-            alt=""
-            width={120}
-            height={120}
-            priority
-            className="w-[110px] drop-shadow-[0_0_15px_rgba(252,211,77,0.7)]"
-          />
-        </motion.div>
 
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
           {/* TITLE + SUBTITLE */}
@@ -142,7 +93,7 @@ export default function AboutNevenka({ data }) {
                 <div className="absolute inset-0">
                   <Image
                     src="/images/Cards/Background.webp"
-                    alt=""
+                    alt="Fondo de Card"
                     fill
                     className="object-cover"
                     sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"

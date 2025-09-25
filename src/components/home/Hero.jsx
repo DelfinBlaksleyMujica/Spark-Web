@@ -14,12 +14,6 @@ export default function Hero({ data }) {
   return (
     <div className="relative w-full h-[1500px] sm:h-[1600px] lg:h-[1600px] xl:h-[1450px] 2xl:h-[1700px] flex items-center justify-center overflow-hidden bg-[#151515]">
       {/* ANIMACION BACKGROUND */}
-      {/* <img
-        src="/images/Textures/SparkLogo_Texture.webp"
-        alt="Hero Background Image"
-        className="absolute inset-0 w-full h-full object-cover"
-        style={{ y }}
-      /> */}
 
       {/* GRADIENTE */}
       <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" />
@@ -60,23 +54,23 @@ export default function Hero({ data }) {
           <img
             className="absolute z-0 top-[700px] sm:top-[770px] md:top-[790px] lg:top-[550px] xl:top-[500px] 2xl:top-[600px] left-0"
             src="/images/HomeHero/imagenIzquierdaSuperior.svg"
-            alt=""
+            alt="Experiencies in SparkClub"
           />
           <img
             className="absolute hidden md:top-[950px] lg:top-[820px] xl:top-[650px] 2xl:top-[750px] left-[85px] z-0"
             src="/images/HomeHero/imagenIzquierdaInferior.svg"
-            alt=""
+            alt="Experiencias en SparkClub"
           />
           <img
             className="absolute top-[650px] sm:top-[700px] md:top-[650px] lg:top-[470px] xl:top-[420px] 2xl:top-[520px] left-[85px] z-1"
             src="/images/HomeHero/globoIzquierda.svg"
-            alt=""
+            alt="Experiencies in SparkClub"
           />
           <div className="absolute top-[950px] sm:top-[820px] md:top-[680px] lg:top-[541px] xl:top-[430px] 2xl:top-[500px] left-0 w-full flex justify-center items-center">
             <img
-              className="h-[191px] w-[220px] sm:h-[260px] sm:w-[300px] z-20"
+              className="h-[180px] w-[220px] sm:h-[245px] sm:w-[300px] z-20"
               src="/images/HomeHero/nevenkaAsset.png"
-              alt=""
+              alt="Team Building Experiences with SparkClub"
             />
           </div>
           <div className="w-full flex justify-center items-center absolute left-0 top-[880px] sm:top-[900px]  md:top-[800px] lg:top-[700px] xl:top-[550px] 2xl:top-[650px] z-10">
@@ -89,17 +83,17 @@ export default function Hero({ data }) {
           <img
             className="absolute top-[650px] md:top-[610px] lg:top-[507px] xl:top-[450px] sm:right-[75px] right-0 z-0"
             src="/images/HomeHero/imagenDerechaSuperior.svg"
-            alt=""
+            alt="Experiencies in SparkClub"
           />
           <img
             className="absolute sm:top-[1150px] hidden md:top-[850px] lg:top-[750px] right-0 z-0"
             src="/images/HomeHero/imagenDerechaInferior.svg"
-            alt=""
+            alt="Experiencies in SparkClub"
           />
           <img
             className="absolute top-[600px] sm:top-[600px] md:top-[520px] lg:top-[420px] xl:top-[380px] right-[57px] z-1"
             src="/images/HomeHero/globoDerecha.svg"
-            alt=""
+            alt="Experiencies in SparkClub"
           />
 
           {/* Buttons */}
@@ -117,7 +111,7 @@ export default function Hero({ data }) {
               <img
                 className="ml-[15px]"
                 src="/images/Icons/black-arrow.svg"
-                alt=""
+                alt="Arrow Icon"
               />
             </Button>
           </div>

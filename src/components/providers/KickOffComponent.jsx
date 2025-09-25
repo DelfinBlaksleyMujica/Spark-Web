@@ -63,21 +63,21 @@ export default function KickOffComponent({ data }) {
       <div className="pointer-events-none absolute inset-0 z-0">
         <motion.img
           src="/images/Textures/Circle_BG.png"
-          alt=""
+          alt="Background Image"
           className="absolute w-[300px] h-[300px] left-[10px] bottom-[10px] lg:left-[4px] lg:bottom-[10px] z-0"
           style={{ y: yFast }}
         />
 
         <motion.img
           src="/images/Textures/SquareBlack_BG.svg"
-          alt=""
+          alt="Background Image"
           className="absolute w-[250px] h-[250px] opacity-0 lg:opacity-100 rotate-45 z-0 lg:left-[-100px] lg:top-[0px]"
           style={{ y: yFast }}
         />
 
         <motion.img
           src="/images/Textures/SquareBlack_BG.svg"
-          alt=""
+          alt="Background Image"
           className="absolute w-[350px] h-[350px] rotate-45 right-[-100px] z-0 lg:right-[70px] lg:bottom-[10px]"
           style={{ y: yFast }}
         />
@@ -85,7 +85,7 @@ export default function KickOffComponent({ data }) {
         {/* Circle top-right */}
         <motion.img
           src="/images/Textures/Circle_BG.png"
-          alt=""
+          alt="Background Image"
           className="absolute w-[200px] h-[200px] z-0 opacity-0 lg:opacity-100 lg:right-[-10px] lg:top-[80px]"
           style={{ y: yFast }}
         />
