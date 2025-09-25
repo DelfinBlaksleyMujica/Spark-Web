@@ -13,8 +13,6 @@ export default function Hero({ data }) {
 
   return (
     <div className="relative w-full h-[1500px] sm:h-[1600px] lg:h-[1600px] xl:h-[1450px] 2xl:h-[1700px] flex items-center justify-center overflow-hidden bg-[#151515]">
-      {/* ANIMACION BACKGROUND */}
-
       {/* GRADIENTE */}
       <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" />
 
@@ -77,6 +75,7 @@ export default function Hero({ data }) {
             <img
               className="w-[965px] h-[626px]"
               src="/images/HomeHero/pantallaPlataforma.svg"
+              alt="Imagen de plataforma de SparkClub"
             />
           </div>
 
