@@ -8,19 +8,18 @@ import TrustedByMobileSwiper from "./TrustedByMobileSwiper";
 const companies = [
   { id: 1, img: "/images/TrustedBy/Comp1.png" },
   { id: 2, img: "/images/TrustedBy/Comp2.svg" },
-  { id: 3, img: "/images/TrustedBy/Comp3.svg" },
+  // { id: 3, img: "/images/TrustedBy/Comp3.svg" },
   { id: 4, img: "/images/TrustedBy/Comp4.svg" },
-  { id: 5, img: "/images/TrustedBy/Comp5.svg" },
-  { id: 6, img: "/images/TrustedBy/Comp6.svg" },
+  // { id: 5, img: "/images/TrustedBy/Comp5.svg" },
+  // { id: 6, img: "/images/TrustedBy/Comp6.svg" },
   { id: 7, img: "/images/TrustedBy/Comp7.png" },
-  { id: 8, img: "/images/TrustedBy/Comp8.svg" },
-  { id: 9, img: "/images/TrustedBy/Comp9.svg" },
-  { id: 10, img: "/images/TrustedBy/Comp10.svg" },
-  { id: 11, img: "/images/TrustedBy/Comp11.svg" },
-  { id: 12, img: "/images/TrustedBy/Comp12.svg" },
-  { id: 13, img: "/images/TrustedBy/Comp13.svg" },
-  { id: 14, img: "/images/TrustedBy/Comp14.svg" },
-
+  // { id: 8, img: "/images/TrustedBy/Comp8.svg" },
+  // { id: 9, img: "/images/TrustedBy/Comp9.svg" },
+  // { id: 10, img: "/images/TrustedBy/Comp10.svg" },
+  // { id: 11, img: "/images/TrustedBy/Comp11.svg" },
+  // { id: 12, img: "/images/TrustedBy/Comp12.svg" },
+  // { id: 13, img: "/images/TrustedBy/Comp13.svg" },
+  // { id: 14, img: "/images/TrustedBy/Comp14.svg" },
 ];
 
 export default function TrustedByComponent() {
@@ -53,12 +52,12 @@ export default function TrustedByComponent() {
         </h2>
 
         {/* MOBILE SWIPER */}
-        <div className="lg:hidden overflow-hidden w-full">
+        <div className="overflow-hidden w-full">
           <TrustedByMobileSwiper companies={companies} />
         </div>
 
         {/* DESKTOP */}
-        <motion.div
+        {/*--<motion.div
           ref={ref}
           className="
             hidden lg:flex 
@@ -88,7 +87,7 @@ export default function TrustedByComponent() {
               />
             </div>
           ))}
-        </motion.div>
+        </motion.div>--*/}
       </div>
     </div>
   );

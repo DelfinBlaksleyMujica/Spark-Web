@@ -40,9 +40,9 @@ body {
 }
 
 .primary-btn {
-  background-color: #000000;
+  background-color: #27272A;
   color: #ffffff;
-  border: solid 1px #FFFFFF;
+  border: solid 1px #27272A;
   text-align: center;
 
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .tertiary-btn {
-  background-color: #FCD34D;
+  background-color: #FFEE35;
   color: #000000;
   border: solid 1px #000000;
 }

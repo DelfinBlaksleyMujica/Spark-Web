@@ -45,7 +45,7 @@ export default function AboutNevenka({ data }) {
         {/* FLOATING LOGOS (desktop only) */}
         {/* Right side */}
         <motion.div
-          className="hidden lg:block absolute rotate-[15deg] lg:top-12 lg:right-20 z-0 pointer-events-none"
+          className="hidden absolute rotate-[15deg] lg:top-12 lg:right-20 z-0 pointer-events-none"
           animate={{ opacity: [1, 0.5, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           aria-hidden
@@ -62,7 +62,7 @@ export default function AboutNevenka({ data }) {
 
         {/* Left side — big */}
         <motion.div
-          className="hidden lg:block absolute rotate-[-15deg] lg:top-8 lg:left-20  z-0 pointer-events-none"
+          className="hidden absolute rotate-[-15deg] lg:top-8 lg:left-20  z-0 pointer-events-none"
           animate={{ opacity: [1, 0.5, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           aria-hidden
@@ -79,7 +79,7 @@ export default function AboutNevenka({ data }) {
 
         {/* Left side — small (offset lower/right for variety) */}
         <motion.div
-          className="hidden lg:block absolute rotate-[-15deg] lg:top-24 lg:left-52 z-0 pointer-events-none"
+          className="hidden absolute rotate-[-15deg] lg:top-24 lg:left-52 z-0 pointer-events-none"
           animate={{ opacity: [0.4, 0.3, 0.4] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           aria-hidden
@@ -176,7 +176,7 @@ export default function AboutNevenka({ data }) {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="mt-10 flex flex-col lg:flex-row justify-center px-8">
+        <div className="mt-10 flex flex-col lg:flex-row justify-center items-center px-8">
           <Button
             btnText="Try for free"
             btnClass="primary-btn"

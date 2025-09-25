@@ -48,7 +48,7 @@ export default function NavUserProviderToggle() {
       <motion.div
         layout
         className="relative inline-flex h-10 w-[260px] select-none p-1"
-        style={{ backgroundColor: "#FCD34D", borderRadius: "24.5px" }}
+        style={{ backgroundColor: "#27272A", borderRadius: "8px" }}
         role="tablist"
         aria-label="Team Leads / Partners"
       >
@@ -65,8 +65,8 @@ export default function NavUserProviderToggle() {
                   initial={false}
                   className="absolute inset-0"
                   style={{
-                    background: "#FFFFFF",
-                    borderRadius: "19.5px",
+                    background: "#FAFAFA",
+                    borderRadius: "6px",
                     boxShadow: "0 1px 2px rgba(0,0,0,.06)",
                     willChange: "transform",
                   }}
@@ -89,9 +89,10 @@ export default function NavUserProviderToggle() {
                 onClick={(e) => handleClick(e, tab)}
               >
                 <span
-                  className={`${isActive ? "font-semibold" : "font-medium"
-                    } transition-opacity duration-200`}
-                  style={{ color: "#5F5F5F", opacity: isActive ? 1 : 0.75 }}
+                  className={`${
+                    isActive ? "font-semibold" : "font-medium"
+                  } transition-opacity duration-200`}
+                  style={{ color: "#5F5F5F", opacity: isActive ? 1 : 0.9 }}
                 >
                   {tab.label}
                 </span>
