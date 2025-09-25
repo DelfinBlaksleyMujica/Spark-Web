@@ -30,7 +30,7 @@ export default function AboutUsHero({ data }) {
               {/* IMG MOBILE */}
               <div className="block lg:hidden">
                 <Image
-                  src="/images/AboutUs/HeroImg_Mobile.webp"
+                  src="/images/AboutUs/HeroImg_mobile.webp"
                   alt="SparkClub mobile hero"
                   width={800}
                   height={900}
