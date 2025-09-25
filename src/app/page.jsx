@@ -11,11 +11,10 @@ const data = {
   hero: {
     tituloPrincipal: "Experiences that foster",
     kwTituloPrincipal: "engagement.",
-    firstSubtitle:
-      "Designing team experiences shouldn´t take weeks or blow your budget.",
-    secondSubtitle: "What used to take months now takes 10 minutes.",
-    thirdSubtitle:
-      "Just tell Nevenka what you need and get a curated, cost-efficient event, ready to go with certified suppliers.",
+    firstSubtitle: "Stop spending weeks planning and fortune on team events. ",
+    strongSubtitle: "Tell Nevenka what you need ",
+    secondPartSubtitle:
+      "and get perfectly curated, budget-friendly experiences with certified suppliers, ready in just 10 minutes.",
   },
   aboutNevenka: {
     title: "But wait, who is",
