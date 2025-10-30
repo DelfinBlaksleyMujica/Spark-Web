@@ -18,7 +18,7 @@ export default function Hero({ data }) {
 
       {/* Content Container */}
       <div className="w-full h-auto flex justify-center items-center z-10 px-4 2xl:mt-[-100px] absolute top-[50px] md:top-[150px] xl:top-[200px] 2xl:top-[300px]">
-        <div className="flex flex-col gap-6 max-w-[1024px] text-center text-white pt-[100px] pt-[10px] sm:pt-[100px] md:pt-[65px] 2xl:pt-[50px]">
+        <div className="flex flex-col gap-6 max-w-[1024px] text-center text-white pt-[10px] sm:pt-[100px] md:pt-[65px] 2xl:pt-[50px]">
           {/*Top Pill*/}
           <div className="w-full flex justify-center items-center">
             <div className="bg-[#212121] rounded-[16px] w-auto px-[24px] py-[8px] flex justify-center items-center">
@@ -95,27 +95,31 @@ export default function Hero({ data }) {
             alt="Experiencies in SparkClub"
           />
 
-          {/* Buttons */}
-          <div className="flex flex-col justify-center items-center md:flex-row gap-[18px] justify-center px-8">
-            <Button
-              btnText="Browse experiences"
-              btnClass="primary-btn"
-              href="/blog"
-            />
-            <Button
-              btnText="Try Nevenka"
-              btnClass="tertiary-btn"
-              href="https://zcal.co/sparkclub"
-            >
-              <img
-                className="ml-[15px]"
-                src="/images/Icons/black-arrow.svg"
-                alt="Arrow Icon"
-              />
-            </Button>
-          </div>
         </div>
       </div>
+
+      {/* Buttons */}
+      <div className="absolute inset-x-0 bottom-30 z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-8">
+        <Button
+          btnText="Join waitlist"
+          btnClass="primary-btn"
+          href="https://forms.gle/QwyfJa6Nr6ZWz5hY7"
+        />
+        <Button
+          btnText="Try Nevenka"
+          btnClass="tertiary-btn"
+          href="https://zcal.co/sparkclub"
+        >
+          <img
+            className="ml-[15px]"
+            src="/images/Icons/black-arrow.svg"
+            alt="Arrow Icon"
+          />
+        </Button>
+      </div>
+
     </div>
+
+
   );
 }

@@ -57,7 +57,13 @@ export default function PlanCard({
         <p
           className={`${public_sans.className} font-semibold text-[24px] text-black leading-[100%] tracking-tight`}
         >
-          {price} $/mo
+          {name === "Enterprise" ? (
+            <span style={{ fontSize: "16px" }}>
+              Get a Call
+            </span>
+          ) : (
+            `${price} $/mo`
+          )}
         </p>
       </div>
 

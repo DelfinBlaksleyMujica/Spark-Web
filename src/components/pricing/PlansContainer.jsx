@@ -88,9 +88,8 @@ export default function PlansContainer({ data }) {
                 />
               )}
               <span
-                className={`relative z-10 text-[18px] leading-[100%] tracking-tight ${
-                  payment === "monthly" ? "text-[#333333]" : "text-[#5F5F5F]"
-                }`}
+                className={`relative z-10 text-[18px] leading-[100%] tracking-tight ${payment === "monthly" ? "text-[#333333]" : "text-[#5F5F5F]"
+                  }`}
               >
                 Monthly
               </span>
@@ -121,23 +120,20 @@ export default function PlansContainer({ data }) {
                 />
               )}
               <span
-                className={`relative z-10 text-[18px] leading-[100%] tracking-tight ${
-                  payment === "annual" ? "text-[#333333]" : "text-[#5F5F5F]"
-                }`}
+                className={`relative z-10 flex text-[18px] leading-[100%] tracking-tight  items-center gap-6
+                ${payment === "annual" ? "text-[#333333]" : "text-[#5F5F5F]"}`
+                }
               >
-                Annual
+                <p>Annual  </p>
+                <p
+                  className={`${poppins.className} py-[8px] text-[12px] sm:text-[14px] leading-[100%] tracking-tight text-center`}
+                >
+                  Get 2 months free🔥
+                </p>
               </span>
             </motion.button>
           </div>
 
-          {/* Badge */}
-          <div className="ml-[12px] w-full sm:w-[50%] lg:w-auto">
-            <p
-              className={`text-[#00A03A] ${poppins.className} text-[16px] sm:text-[18px] leading-[100%] tracking-tight text-center`}
-            >
-              Get 2 months free🔥
-            </p>
-          </div>
         </motion.div>
       </LayoutGroup>
 
