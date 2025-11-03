@@ -28,8 +28,8 @@ export default function Hero({ data }) {
           </p>
 
           <div className="flex flex-col w-full lg:flex-row gap-[18px] justify-center px-8">
-            <Button btnText="Book a demo" btnClass="primary-btn" href="/" />
-            <Button btnText="Join us" btnClass="secondary-btn" href="/" />
+            <Button btnText="Become a Certified Partner" btnClass="primary-btn" href="https://forms.gle/QwyfJa6Nr6ZWz5hY7" />
+            <Button btnText="Try Nevenka (alpha)" btnClass="secondary-btn" href="https://zcal.co/sparkclub" />
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ const mobileLinkVars = {
 // Links del menú (desktop y mobile)
 const NAV_LINKS = [
   { title: "About us", href: "/about-us" },
-  { title: "Pricing", href: "/pricing" },
+  //{ title: "Pricing", href: "/pricing" },
   { title: "Blog", href: "/blog" },
 ];
 
