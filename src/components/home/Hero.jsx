@@ -12,7 +12,7 @@ export default function Hero({ data }) {
   const y = useTransform(scrollY, [0, 100], [0, -100]);
 
   return (
-    <div className="relative w-full h-[1700px] sm:h-[1800px] lg:h-[1700px] xl:h-[1650px] 2xl:h-[1700px] flex items-center justify-center overflow-hidden bg-[#151515]">
+    <div className="relative w-full  h-[1700px] sm:h-[1800px] md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
       {/* GRADIENTE */}
       <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" />
 
@@ -91,11 +91,11 @@ export default function Hero({ data }) {
       </div>
 
       {/* Buttons */}
-      <div className="absolute inset-x-0 bottom-30 z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-8">
+      <div className="absolute inset-x-0 bottom-30 z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-4 lg:px-0">
         <Button
           btnText="Plan Your Event"
           btnClass="primary-btn"
-          href="https://forms.gle/QwyfJa6Nr6ZWz5hY7"
+          href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
         />
         <Button
           btnText="Try Nevenka (alpha)"
