@@ -28,8 +28,8 @@ export default function Hero({ data }) {
           </p>
 
           <div className="flex flex-col w-full lg:flex-row gap-[18px] justify-center px-8">
-            <Button btnText="Book a demo" btnClass="primary-btn" href="/" />
-            <Button btnText="Join us" btnClass="secondary-btn" href="/" />
+            <Button btnText="Become a Certified Partner" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u" />
+            <Button btnText="Try Nevenka (alpha)" btnClass="tertiary-btn" href="https://zcal.co/sparkclub" />
           </div>
         </div>
       </div>

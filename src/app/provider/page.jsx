@@ -4,6 +4,7 @@ import KickOffComponent from "@/components/providers/KickOffComponent";
 import ActivityTags from "@/components/providers/ActivityTags";
 import FaqsProviders from "@/components/providers/FaqsProviders";
 
+
 import React from "react";
 
 const data = {
