@@ -18,12 +18,12 @@ export default function Hero({ data }) {
 
       {/* Content Container */}
       <div className="w-full h-auto flex justify-center items-center z-10 px-4 2xl:mt-[-100px] absolute top-[50px] md:top-[150px] xl:top-[200px] 2xl:top-[300px]">
-        <div className="flex flex-col gap-6 max-w-[1024px] text-center text-white pt-[10px] sm:pt-[100px] md:pt-[65px] 2xl:pt-[50px]">
+        <div className="flex flex-col gap-6 max-w-[1024px] text-center text-white pt-[100px] sm:pt-[100px] md:pt-[65px] 2xl:pt-[50px]">
           {/*Top Pill*/}
           <div className="w-full flex justify-center items-center">
             <div className="bg-[#212121] rounded-[16px] w-auto px-[24px] py-[8px] flex justify-center items-center">
               <p
-                className={`${public_sans.className} text-[16px] md:text-[18px] #FFFFFF font-medium leading-[100%] tracking-tight  `}
+                className={`${public_sans.className} text-[16px] md:text-[18px] #FFFFFF font-medium leading-[100%] tracking-tight `}
               >
                 ✨ From weeks to minutes
               </p>
@@ -60,9 +60,9 @@ export default function Hero({ data }) {
             src="/images/HomeHero/globoIzquierda.svg"
             alt="Experiencies in SparkClub"
           />
-          <div className="absolute top-[350px] sm:top-[450px] md:top-[400px] lg:top-[380px]  left-0 w-full flex justify-center items-center">
+          <div className="absolute top-[450px] sm:top-[450px] md:top-[400px] lg:top-[380px]  left-0 w-full flex justify-center items-center">
             <img
-              className="h-[180px] w-[220px] sm:h-[245px] sm:w-[300px] z-20"
+              className="h-[160px] w-[200px] sm:h-[245px] sm:w-[300px] z-20"
               src="/images/HomeHero/nevenkaAsset.png"
               alt="Team Building Experiences with SparkClub"
             />

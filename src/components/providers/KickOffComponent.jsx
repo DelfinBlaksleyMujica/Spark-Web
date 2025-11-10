@@ -124,7 +124,7 @@ export default function KickOffComponent({ data }) {
 
         {/* CTA BUTTON */}
         <div className="flex flex-col w-full lg:flex-row justify-center px-8 mt-[30px]">
-          <Button btnText="Become a partner" btnClass="primary-btn" href="/" />
+          <Button btnText="Become a partner" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u" />
         </div>
       </div>
     </div>
