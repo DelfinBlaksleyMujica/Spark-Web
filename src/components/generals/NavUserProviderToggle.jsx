@@ -89,10 +89,9 @@ export default function NavUserProviderToggle() {
                 onClick={(e) => handleClick(e, tab)}
               >
                 <span
-                  className={`${
-                    isActive ? "font-semibold" : "font-medium"
-                  } transition-opacity duration-200`}
-                  style={{ color: "#5F5F5F", opacity: isActive ? 1 : 0.9 }}
+                  className={`${isActive ? "font-semibold" : "font-medium"} 
+transition-opacity duration-200`}
+                  style={{ color: isActive ? "#353434ff" : "#bcbbbbff", opacity: isActive ? 1 : 0.9 }}
                 >
                   {tab.label}
                 </span>
