@@ -44,11 +44,11 @@ export default function Footer() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/pricing" className="hover:underline">
                 Pricing
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/about" className="hover:underline">
                 About Us
