@@ -1,13 +1,14 @@
 "use client";
 
 // React / Next
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 // Animaciones
 import { AnimatePresence, motion } from "framer-motion";
 // Tu pill de Users / Providers
 import NavUserProviderToggle from "./NavUserProviderToggle";
 import { public_sans } from "@/app/fonts/fonts";
+import { usePathname } from "next/navigation";
 
 // --- Config menú mobile (mismas animaciones que tu Navbar anterior) ---
 const menuVars = {
@@ -58,9 +59,25 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => setOpen((v) => !v);
+  const pathname = usePathname();
+  const [esconderNavbar, setEsconderNavbar] = useState("");
+  // No renderizar el Navbar en las páginas bajo /data/eventos
+  React.useEffect(() => {
+    if (pathname.startsWith("/data/eventos")) {
+      setEsconderNavbar(true);
+    } else {
+      setEsconderNavbar(false);
+    }
+  });
 
   return (
-    <header className="h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]">
+    <header
+      className={`${
+        esconderNavbar == true
+          ? "hidden"
+          : "h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]"
+      } `}
+    >
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
         {/* Logo */}
         <div className="h-full flex items-center">
