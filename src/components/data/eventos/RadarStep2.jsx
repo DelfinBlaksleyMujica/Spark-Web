@@ -10,22 +10,9 @@ const radarCardVariants = {
   exit: { opacity: 0, y: -10, scale: 0.96, transition: { duration: 0.25 } },
 };
 
-const radarBgVariants = {
-  hidden: { opacity: 0, scale: 0.9 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.35 } },
-  exit: { opacity: 0, scale: 0.9, transition: { duration: 0.25 } },
-};
-
 const radarItemVariants = {
   hidden: { opacity: 0, y: 8 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.28 } },
-};
-
-const renderEnergyEmoji = (opcion) => {
-  if (opcion === "Bajo") return "😴";
-  if (opcion === "Medio") return "🙂";
-  if (opcion === "Alto") return "😁";
-  return "✨";
 };
 
 export default function RadarStep2({
