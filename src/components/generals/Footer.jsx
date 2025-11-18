@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaInstagram, FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import Image from "next/image";
 import Button from "../generals/Button";
 import { motion } from "framer-motion";
@@ -123,7 +123,7 @@ export default function Footer() {
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <FaTwitter className="h-7 w-7 text-black" />
+              <img src="/images/Icons/twitter.svg" alt="Twitter" className="h-7 w-7 text-black" />
               <span className="text-[20px]">tw/sparkclub</span>
             </motion.a>
           </section>
@@ -162,11 +162,13 @@ export default function Footer() {
           aria-labelledby="contact-heading"
           className="md:col-start-9 md:col-span-3 md:row-start-2 space-y-2 mx-auto md:mx-0"
         >
-          <h3 id="contact-heading" className="font-semibold text-[25px]">
+          <a href="https://api.whatsapp.com/send?phone=541149604816" id="contact-heading" className="font-semibold text-[25px] border-b-1 ">
             Contact Info
-          </h3>
-          <p className="text-[20px] ">+54 9 1157979949</p>
-          <p className="text-[20px] ">Mon–Fri 9am–6pm</p>
+          </a>
+          <div className="space-y-2 mt-3">
+            <a href="https://api.whatsapp.com/send?phone=541149604816" className="text-[20px] ">+54 9 1157979949</a>
+            <p className="text-[20px] ">Mon–Fri 9am–6pm</p>
+          </div>
         </section>
 
         {/* RIGHT: Newsletter */}
@@ -202,6 +204,6 @@ export default function Footer() {
           </form>
         </section>
       </div>
-    </footer>
+    </footer >
   );
 }

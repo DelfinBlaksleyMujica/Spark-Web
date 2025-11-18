@@ -41,8 +41,26 @@ export default function TrustedByComponent() {
           Trusted by
         </h2>
 
+        {/* ON DESKTOP, HIDES THE SWIPER AND SHOWS 4 LOGOS AT ONCE */}
+        <div className="hidden lg:flex justify-center items-center gap-[100px] w-full max-w-[1800px] mx-auto py-[40px]">
+          {companies.map((company) => (
+            <div
+              key={company.id}
+              className="w-[90px] h-[90px] flex justify-center items-center"
+            >
+              <motion.img
+                src={company.img}
+                alt="Empresa asociada a Sparkclub"
+                className="max-w-full max-h-full object-contain"
+                whileHover={{ scale: 1.6 }}
+                whileTap={{ scale: 0.995 }}
+              />
+            </div>
+          ))}
+        </div>
+
         {/* MOBILE SWIPER */}
-        <div className="overflow-hidden w-full">
+        <div className="overflow-hidden w-full lg:hidden">
           <TrustedByMobileSwiper companies={companies} />
         </div>
 

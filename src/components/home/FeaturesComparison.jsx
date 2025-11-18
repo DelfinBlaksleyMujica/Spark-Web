@@ -69,9 +69,8 @@ export default function WhyChoose({ data }) {
                 {data.rows.map((r, i) => (
                   <div
                     key={r.feature + "-spark"}
-                    className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${
-                      i % 2 === 0 ? "bg-[#FFE696]" : "bg-[#FCD34D]"
-                    }`}
+                    className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-[#FFE696]" : "bg-[#FCD34D]"
+                      }`}
                   >
                     <CellContent value={r.spark} positiveColor="text-black" />
                   </div>
@@ -88,9 +87,8 @@ export default function WhyChoose({ data }) {
                 {data.rows.map((r, i) => (
                   <div
                     key={r.feature + "-other"}
-                    className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${
-                      i % 2 === 0 ? "bg-zinc-100" : "bg-zinc-200"
-                    }`}
+                    className={`flex items-center justify-center min-h-[72px] sm:min-h-[80px] md:min-h-[84px] lg:min-h-[60px] px-2 sm:px-3 ${i % 2 === 0 ? "bg-zinc-100" : "bg-zinc-200"
+                      }`}
                   >
                     <CellContent value={r.other} />
                   </div>
@@ -102,9 +100,9 @@ export default function WhyChoose({ data }) {
           {/* CTA - button unchanged */}
           <div className="col-start-2 col-span-10 flex justify-center">
             <Button
-              btnText="See Pricing"
+              btnText="Try Nevenka (alpha)"
               btnClass="primary-btn"
-              href="/pricing"
+              href="https://zcal.co/sparkclub"
             />
           </div>
         </div>

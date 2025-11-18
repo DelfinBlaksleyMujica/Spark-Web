@@ -62,34 +62,44 @@ export default function Navbar() {
   return (
     <header className="h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]">
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
-        {/* Logo */}
-        <div className="h-full flex items-center">
-          <Link href="/" aria-label="SparkClub - Home">
-            <img
-              src="/images/Logos/Logo_SparkClub_Original.webp"
-              alt="Sparkclub Logo"
-              width={155}
-              height={30}
-              className="block w-[135px] h-[25px] md:h-[20px] md:h-[auto] lg:w-[155px]"
-            />
-          </Link>
-        </div>
 
-        {/* Links desktop */}
-        <ul
-          className={`${public_sans.className} hidden md:flex items-center gap-[36px] lg:gap-[63px]`}
-        >
-          {NAV_LINKS.map((item) => (
-            <li key={item.href}>
-              <Link
-                className="text-white hover:text-gray-300 transition-colors font-semibold"
-                href={item.href}
+
+        <div className="flex items-center gap-[50px] lg:gap-[60px]">
+
+
+          <div className="flex items-center lg:pr-10">
+            {/* Logo */}
+            <Link href="/" aria-label="SparkClub - Home" >
+              <img
+                src="/images/Logos/Logo_SparkClub_Original.webp"
+                alt="Sparkclub Logo"
+                width={155}
+                height={30}
+                className="block w-[135px] h-[25px] md:h-[20px] md:h-[auto] lg:w-[155px]"
+              />
+            </Link>
+          </div>
+
+
+          {/* Links desktop */}
+          <ul
+            className={`${public_sans.className} hidden md:flex gap-[30px] lg:gap-[80px]`}
+          >
+            {NAV_LINKS.map((item) => (
+              <motion.li
+                key={item.href}
+                whileHover={{ translateY: -5, scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: "spring", stiffness: 220, damping: 12 }}
               >
-                {item.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                <Link className="text-white font-semibold" href={item.href}>
+                  {item.title}
+                </Link>
+              </motion.li>
+            ))}
+          </ul>
+
+        </div>
 
         {/* Pill Users/Providers (desktop) */}
         <div className="hidden md:block">
