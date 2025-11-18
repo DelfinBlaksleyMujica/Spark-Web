@@ -7,28 +7,46 @@ import Question from "@/models/question"; // 👈 IMPORTANTE
 
 const QUESTION_CONFIG = [
   {
-    pregunta: "¿Cuáles son tus intereses principales?",
-    opciones: ["Hacer deporte", "El Arte", "Deportes extremos", "Otro"],
+    pregunta: "Your favs to spend your social time",
+    opciones: [
+      "Art & Culture",
+      "Sport Events",
+      "Wellness",
+      "Music Events",
+      "Tourism",
+      "Education",
+      "Innmersive Experiences",
+      "Food & Drink",
+      "Talks and Conventions",
+      "Live Shows",
+      "Nightlife & Party",
+      "Workshops",
+    ],
   },
   {
-    pregunta: "¿Cuál es tu objetivo del evento?",
-    opciones: ["Networking", "Aprender", "Divertirme", "Otro"],
+    pregunta: "Why are you here",
+    opciones: [
+      "Funding",
+      "Collaborations/Partnerships (BD)",
+      "Investment opportunities",
+      "Seeking Talent",
+    ],
   },
   {
-    pregunta: "¿Cuál es tu nivel de energía para el evento?",
-    opciones: ["Bajo", "Medio", "Alto"],
+    pregunta: "What's your energy level today",
+    opciones: ["Flat", "Low", "Idle", "Full"],
   },
   {
-    pregunta: "¿Estas conociendo gente nueva?",
-    opciones: ["Si", "No"],
+    pregunta: "Did you meet new people?",
+    opciones: ["Yes", "No"],
   },
   {
-    pregunta: "¿Cumpliste con tu objetivo del evento?",
-    opciones: ["Si", "No"],
+    pregunta: "Did you acomplish your objectives today",
+    opciones: ["Yes", "No"],
   },
   {
-    pregunta: "¿Cuál es tu nivel de energía post evento?",
-    opciones: ["Bajo", "Medio", "Alto"],
+    pregunta: "What's your energy level after the event",
+    opciones: ["Flat", "Low", "Idle", "Full"],
   },
 ];
 
@@ -56,7 +74,7 @@ export default async function CuestionarioEventoPage({ params }) {
   }));
 
   return (
-    <div className="h-auto flex flex-col justify-center items-center px-[80px] py-[50px] bg-[#151515]">
+    <div className="h-auto hidden sm:flex flex-col justify-center items-center px-[15px] 2xl:px-[80px] py-[50px] bg-[#151515]">
       <CuestionarioEventoComponent
         eventoTitle={event.titulo}
         cuestionarioData={cuestionarioData}

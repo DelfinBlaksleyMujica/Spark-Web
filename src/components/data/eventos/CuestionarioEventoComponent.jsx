@@ -6,7 +6,7 @@ import Link from "next/link";
 import { inter, poppins } from "@/app/fonts/fonts";
 import { motion, AnimatePresence } from "framer-motion";
 import { Loader2 } from "lucide-react";
-import RadarStep from "./RadarStep";
+import RadarStep2 from "./RadarStep2";
 
 const stepCardVariants = {
   hidden: { opacity: 0, y: 12 },
@@ -38,45 +38,6 @@ const itemVariants = {
     transition: { duration: 0.25, ease: "easeOut" },
   },
 };
-
-// const radarCardVariants = {
-//   hidden: { opacity: 0, y: 10, scale: 0.96 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     scale: 1,
-//     transition: { duration: 0.35, ease: "easeOut" },
-//   },
-//   exit: {
-//     opacity: 0,
-//     y: -10,
-//     scale: 0.96,
-//     transition: { duration: 0.25, ease: "easeIn" },
-//   },
-// };
-
-// const radarBgVariants = {
-//   hidden: { opacity: 0, scale: 0.9 },
-//   visible: {
-//     opacity: 1,
-//     scale: 1,
-//     transition: { duration: 0.35, ease: "easeOut" },
-//   },
-//   exit: {
-//     opacity: 0,
-//     scale: 0.9,
-//     transition: { duration: 0.25, ease: "easeIn" },
-//   },
-// };
-
-// const radarItemVariants = {
-//   hidden: { opacity: 0, y: 8 },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     transition: { duration: 0.28, ease: "easeOut" },
-//   },
-// };
 
 export default function CuestionarioEventoComponent({
   cuestionarioData,
@@ -278,109 +239,11 @@ export default function CuestionarioEventoComponent({
     isSubmitting ? (
       <span className="flex items-center gap-2">
         <Loader2 className="w-4 h-4 animate-spin text-[#A1A1AA]" />
-        <span>Enviando...</span>
+        <span>Sending...</span>
       </span>
     ) : (
-      "Enviar"
+      "Send"
     );
-
-  const renderEnergyEmoji = (opcion) => {
-    if (opcion === "Bajo") return "😴";
-    if (opcion === "Medio") return "🙂";
-    if (opcion === "Alto") return "😁";
-    return "✨";
-  };
-
-  // --- Radar UI reutilizable (steps 3 y 6) ---
-  // const RadarStep = ({
-  //   preguntaFallback,
-  //   opciones,
-  //   questionData,
-  //   onSelect,
-  // }) => (
-  //   <motion.div
-  //     variants={stepCardVariants}
-  //     initial="hidden"
-  //     animate="visible"
-  //     exit="exit"
-  //     className="w-full h-full"
-  //   >
-  //     <motion.h2
-  //       variants={itemVariants}
-  //       className={`${inter.className} text-[#FCD34D] mb-[40px] w-full text-left font-bold text-[20px] leading-[100%] tracking-tight`}
-  //     >
-  //       Radar Emocional:{" "}
-  //       <span className="text-[#FAFAFA] font-medium">{preguntaFallback}</span>
-  //     </motion.h2>
-  //     <motion.div
-  //       variants={itemVariants}
-  //       className="mb-[20px] px-[24px] h-[400px] flex justify-center items-top"
-  //     >
-  //       <div className="w-full h-full flex justify-center items-center">
-  //         <motion.div
-  //           variants={radarCardVariants}
-  //           className="w-[60%] h-full relative flex justify-center items-center"
-  //         >
-  //           {/* LUCES EN CSS */}
-  //           <motion.div
-  //             variants={radarBgVariants}
-  //             className="pointer-events-none absolute inset-0 z-0"
-  //           >
-  //             <div className="absolute -top-10 right-0 h-48 w-48 rounded-full bg-[#FACC15]/25 blur-3xl" />
-  //             <div className="absolute -top-10 left-0 h-48 w-48 rounded-full bg-[#FACC15]/25 blur-3xl" />
-  //             <div className="absolute top-10 left-1/2 -translate-x-1/2 h-40 w-40 rounded-full bg-[#FACC15]/30 blur-3xl" />
-  //             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-20 w-72 rounded-full bg-[#FACC15]/20 blur-3xl" />
-  //           </motion.div>
-
-  //           {/* CARD PRINCIPAL */}
-  //           <img
-  //             className="absolute top-0 left-0 w-full z-10"
-  //             src="/images/CuestionarioData/cardDoradaFondo-RadarEmocional.svg"
-  //             alt=""
-  //           />
-  //           <img
-  //             className="absolute top-0 left-0 w-full z-1"
-  //             src="/images/CuestionarioData/cardDoradaSegunda-RadarEmocional.svg"
-  //             alt=""
-  //           />
-  //           <div className="bg-[#1A1A1A] rounded-[16px] p-[24px] h-[355px] w-[320px] relative z-20 overflow-hidden flex flex-col items-center">
-  //             <motion.img
-  //               variants={radarItemVariants}
-  //               src="/images/CuestionarioData/nevenka.png"
-  //               alt=""
-  //               className="mb-6 mx-auto"
-  //             />
-  //             <motion.div
-  //               variants={radarItemVariants}
-  //               className="flex w-full justify-center items-center gap-[32px] mt-auto mb-[32px] z-20"
-  //             >
-  //               {opciones?.map((opcion, index) => {
-  //                 const active = isOptionActive(questionData, opcion);
-  //                 return (
-  //                   <motion.button
-  //                     key={index}
-  //                     type="button"
-  //                     variants={radarItemVariants}
-  //                     onClick={() => onSelect(opcion)}
-  //                     className={`${
-  //                       inter.className
-  //                     } w-[52px] h-[52px] bg-[#27272A] text-[#FAFAFA] rounded-full text-[22px] border-[1px] cursor-pointer flex justify-center items-center shadow-lg ${
-  //                       active
-  //                         ? "border-[#FCD34D] shadow-[0_0_20px_rgba(250,204,21,0.6)]"
-  //                         : "border-[#3F3F46]"
-  //                     }`}
-  //                   >
-  //                     {renderEnergyEmoji(opcion)}
-  //                   </motion.button>
-  //                 );
-  //               })}
-  //             </motion.div>
-  //           </div>
-  //         </motion.div>
-  //       </div>
-  //     </motion.div>
-  //   </motion.div>
-  // );
 
   return (
     <div className="w-full flex flex-col justify-center items-center py-[120px]">
@@ -403,17 +266,17 @@ export default function CuestionarioEventoComponent({
 
       {/* Tabs de steps */}
       <motion.div
-        className="w-full flex justify-center items-center gap-[20px] h-[50px] mb-[45px]"
+        className="w-full flex justify-center items-center gap-[20px] h-[50px] mb-[45px] overflow-x-scroll lg:overflow-x-hidden"
         initial={{ opacity: 0, y: -6 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}
       >
         {[
-          { id: 1, label: "Intereses" },
-          { id: 2, label: "Objetivos del evento" },
-          { id: 3, label: "Nivel de Energía" },
-          { id: 4, label: "Nuevas Relaciones" },
-          { id: 5, label: "Status Objetivos" },
-          { id: 6, label: "Energía post evento" },
+          { id: 1, label: "Intrests" },
+          { id: 2, label: "Event objectives" },
+          { id: 3, label: "Energy level" },
+          { id: 4, label: "Social thermometer" },
+          { id: 5, label: "Objectives status" },
+          { id: 6, label: "Energy level after event" },
         ].map((tab) => (
           <motion.button
             key={tab.id}
@@ -442,7 +305,7 @@ export default function CuestionarioEventoComponent({
       )}
 
       {/* Contenido del step */}
-      <div className="w-[70%] min-h-[400px] bg-[#27272A] px-[24px] py-[48px] rounded-[10px]">
+      <div className="w-[90%] lg:w-[70%] min-h-[400px] bg-[#27272A] px-[24px] py-[48px] rounded-[10px]">
         <AnimatePresence mode="wait">
           {/* Paso 1 */}
           {step === 1 && (
@@ -458,7 +321,7 @@ export default function CuestionarioEventoComponent({
                 variants={itemVariants}
                 className={`${inter.className} text-[#FCD34D] mb-[40px] w-full text-left font-bold text-[20px] leading-[100%] tracking-tight`}
               >
-                Pregunta 1:{" "}
+                Passion Points:{" "}
                 <span className="text-[#FAFAFA] font-medium">
                   {cuestionario[0]?.pregunta ??
                     "¿Cuáles son tus intereses principales?"}
@@ -472,6 +335,7 @@ export default function CuestionarioEventoComponent({
                   onSubmit={(e) =>
                     handleSubmit(e, question1Data, "Pregunta 1", 1)
                   }
+                  className="flex gap-[2%] flex-wrap w-full justify-center items-center"
                 >
                   {cuestionario[0]?.opciones?.map((opcion, index) => {
                     const active = isOptionActive(question1Data, opcion);
@@ -479,14 +343,14 @@ export default function CuestionarioEventoComponent({
                       <motion.div
                         key={index}
                         variants={itemVariants}
-                        className="flex gap-[10px] mb-[20px]"
+                        className="flex mb-[20px]"
                       >
                         <button
                           type="button"
                           onClick={() => handleChangeQuestion1(opcion)}
                           className={`${
                             inter.className
-                          } w-full bg-[#27272A] text-[#FAFAFA] py-2 px-6 rounded-[5px] text-[14px] border-[1px] cursor-pointer ${
+                          } bg-[#27272A] text-[#FAFAFA] py-2 px-6 rounded-[20px] text-[14px] border-[1px] cursor-pointer ${
                             active ? "border-[#FCD34D]" : "border-[#3F3F46]"
                           }`}
                         >
@@ -526,7 +390,7 @@ export default function CuestionarioEventoComponent({
                 variants={itemVariants}
                 className={`${inter.className} text-[#FCD34D] mb-[40px] w-full text-left font-bold text-[20px] leading-[100%] tracking-tight`}
               >
-                Pregunta 2:{" "}
+                Your Intentions:{" "}
                 <span className="text-[#FAFAFA] font-medium">
                   {cuestionario[1]?.pregunta ??
                     "¿Cuál es tu objetivo del evento?"}
@@ -540,6 +404,7 @@ export default function CuestionarioEventoComponent({
                   onSubmit={(e) =>
                     handleSubmit(e, question2Data, "Pregunta 2", 2)
                   }
+                  className="flex flex-col flex-wrap gap-[2%] justify-center items-start"
                 >
                   {cuestionario[1]?.opciones?.map((opcion, index) => {
                     const active = isOptionActive(question2Data, opcion);
@@ -554,7 +419,7 @@ export default function CuestionarioEventoComponent({
                           onClick={() => handleChangeQuestion2(opcion)}
                           className={`${
                             inter.className
-                          } w-full bg-[#27272A] text-[#FAFAFA] py-2 px-6 rounded-[5px] text-[14px] border-[1px] cursor-pointer ${
+                          } bg-[#27272A] text-[#FAFAFA] py-2 px-6 rounded-[20px] text-[14px] border-[1px] cursor-pointer ${
                             active ? "border-[#FCD34D]" : "border-[#3F3F46]"
                           }`}
                         >
@@ -582,7 +447,7 @@ export default function CuestionarioEventoComponent({
 
           {/* Paso 3 - Radar Emocional (Energía para el evento) */}
           {step === 3 && (
-            <RadarStep
+            <RadarStep2
               pregunta={
                 cuestionario[2]?.pregunta ??
                 "¿Cuál es tu nivel de energía para el evento?"
@@ -609,7 +474,7 @@ export default function CuestionarioEventoComponent({
                 variants={itemVariants}
                 className={`${inter.className} text-[#FCD34D] mb-[40px] w-full text-left font-bold text-[20px] leading-[100%] tracking-tight`}
               >
-                Pregunta 4:{" "}
+                Social:{" "}
                 <span className="text-[#FAFAFA] font-medium">
                   {cuestionario[3]?.pregunta ??
                     "¿Cumpliste con tu objetivo del evento?"}
@@ -677,7 +542,7 @@ export default function CuestionarioEventoComponent({
                 variants={itemVariants}
                 className={`${inter.className} text-[#FCD34D] mb-[40px] w-full text-left font-bold text-[20px] leading-[100%] tracking-tight`}
               >
-                Pregunta 5:{" "}
+                Intentions status:{" "}
                 <span className="text-[#FAFAFA] font-medium">
                   {cuestionario[4]?.pregunta ??
                     "¿Cuál es tu nivel de energía post evento?"}
@@ -733,7 +598,7 @@ export default function CuestionarioEventoComponent({
 
           {/* Paso 6 - Radar Emocional (Energía post evento, misma UI que step 3) */}
           {step === 6 && (
-            <RadarStep
+            <RadarStep2
               pregunta={
                 cuestionario[5]?.pregunta ??
                 "¿Cuál es tu nivel de energía post evento?"
@@ -760,22 +625,23 @@ export default function CuestionarioEventoComponent({
                 variants={itemVariants}
                 className={`${inter.className} text-[#FCD34D] mb-[16px] text-[22px] font-bold`}
               >
-                Respuesta registrada ✅
+                Successfull Answer
               </motion.h2>
               <motion.p
                 variants={itemVariants}
-                className={`${inter.className} text-[#FAFAFA] mb-[24px] text-[15px] max-w-[420px]`}
+                className={`${inter.className} text-[#FAFAFA] mb-[36px] text-[15px] max-w-[420px]`}
               >
-                ¡Muchas gracias por participar! Vamos a usar tus respuestas para
-                crear experiencias cada vez más alineadas con lo que necesitás.
+                ¡Thanks for participating! We will be working on your answers to
+                create the best experience for you.
               </motion.p>
               <motion.div
                 variants={itemVariants}
-                className="w-[220px] h-[140px] bg-gradient-to-b from-[#FACC15]/10 to-transparent rounded-[16px] border border-[#3F3F46] flex items-center justify-center"
+                className="w-[220px] h-[140px] flex items-center justify-center"
               >
-                <span className={`${inter.className} text-[#A1A1AA] text-sm`}>
-                  Aquí podría ir un video corto ✨
-                </span>
+                <img
+                  src="/images/CuestionarioData/succesfulAnwserIcon.png"
+                  alt=""
+                />
               </motion.div>
             </motion.div>
           )}

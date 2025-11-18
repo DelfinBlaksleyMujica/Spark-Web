@@ -6,12 +6,12 @@ import Question from "@/models/question";
 
 // Las 5 preguntas del cuestionario
 const QUESTION_TEXTS = [
-  "¿Cuáles son tus intereses principales?",
-  "¿Cuál es tu objetivo del evento?",
-  "¿Cuál es tu nivel de energía para el evento?",
-  "¿Estás conociendo gente nueva?",
-  "¿Cumpliste con tu objetivo del evento?",
-  "¿Cuál es tu nivel de energía post evento?"
+  "Your favs to spend your social time??",
+  "Why are you here?",
+  "What's your energy level today?",
+  "Did you meet new people?",
+  "Did you acomplish your objectives today?",
+  "What's your energy level after the event?"
 ];
 
 // Definimos 5 eventos demo
