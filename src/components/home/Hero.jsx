@@ -8,8 +8,13 @@ import { public_sans } from "@/app/fonts/fonts";
 export default function Hero({ data }) {
   const { scrollY } = useScroll();
 
-  // PARALLAX EFFECT
-  const y = useTransform(scrollY, [0, 100], [0, -100]);
+  // Parallax values 
+  const leftBackY = useTransform(scrollY, [0, 80], [0, -200]);  // far left bg
+  const leftBubbleY = useTransform(scrollY, [0, 80], [0, -200]);  // left speech bubble
+  const centerCardY = useTransform(scrollY, [0, 80], [0, -10]);  // nevenka card
+  const screenY = useTransform(scrollY, [0, 80], [0, -10]);  // platform screen
+  const rightBackY = useTransform(scrollY, [0, 80], [0, -200]);  // far right bg
+  const rightBubbleY = useTransform(scrollY, [0, 80], [0, -200]);  // right speech bubble
 
   return (
     <div className="relative w-full  h-[1700px] sm:h-[1800px] md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
@@ -49,42 +54,80 @@ export default function Hero({ data }) {
             </p>
           </div>
           {/*Floating Images*/}
-          <img
-            className="absolute z-0 top-[700px] sm:top-[770px] md:top-[700px] md:w-[100px] lg:top-[550px] lg:w-[auto] xl:top-[500px] 2xl:top-[300px] left-0 "
+          {/* LEFT BACK IMAGE */}
+          <motion.img
+            className="absolute z-0 top-[700px] sm:top-[770px] md:top-[700px] md:w-[100px] lg:top-[550px] lg:w-[auto] xl:top-[500px] 2xl:top-[300px] left-0"
             src="/images/HomeHero/imagenIzquierdaSuperior.svg"
             alt="Experiencies in SparkClub"
+            // entry animation
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
+            // parallax
+            style={{ y: leftBackY }}
           />
 
-          <img
+          {/* LEFT BUBBLE */}
+          <motion.img
             className="absolute top-[650px] sm:top-[700px] md:top-[660px] md:w-[80px] lg:top-[470px] lg:w-[auto] xl:top-[420px] 2xl:top-[220px] left-[85px] z-1"
             src="/images/HomeHero/globoIzquierda.svg"
             alt="Experiencies in SparkClub"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.18 }}
+            style={{ y: leftBubbleY }}
           />
-          <div className="absolute top-[450px] sm:top-[450px] md:top-[400px] lg:top-[380px]  left-0 w-full flex justify-center items-center">
+
+          {/* CENTER NEVENKA CARD */}
+          <motion.div
+            className="absolute top-[450px] sm:top-[450px] md:top-[400px] lg:top-[380px] left-0 w-full flex justify-center items-center"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.25 }}
+            style={{ y: centerCardY }}
+          >
             <img
               className="h-[160px] w-[200px] sm:h-[245px] sm:w-[300px] z-20"
               src="/images/HomeHero/nevenkaAsset.png"
               alt="Team Building Experiences with SparkClub"
             />
-          </div>
-          <div className="w-full flex justify-center items-center absolute left-0 top-[880px] sm:top-[900px]  md:top-[800px] lg:top-[700px] xl:top-[550px] 2xl:top-[550px] z-10">
+          </motion.div>
+
+          {/* PLATFORM SCREEN */}
+          <motion.div
+            className="w-full flex justify-center items-center absolute left-0 top-[880px] sm:top-[900px] md:top-[800px] lg:top-[700px] xl:top-[550px] 2xl:top-[550px] z-10"
+            initial={{ opacity: 0, y: 80 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
+            style={{ y: screenY }}
+          >
             <img
               className="w-[965px] h-[626px]"
               src="/images/HomeHero/pantallaPlataforma.svg"
               alt="Imagen de plataforma de SparkClub"
             />
-          </div>
+          </motion.div>
 
-          <img
+          {/* RIGHT BACK IMAGE */}
+          <motion.img
             className="absolute top-[650px] sm:right-[75px] sm:top-[780px] md:top-[750px] md:w-[100px] lg:top-[507px] lg:w-[auto] xl:top-[450px] 2xl:top-[300px] right-0 z-0"
             src="/images/HomeHero/imagenDerechaSuperior.svg"
             alt="Experiencies in SparkClub"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+            style={{ y: rightBackY }}
           />
 
-          <img
-            className="absolute top-[600px] sm:top-[700px]   md:top-[690px] md:w-[80px] lg:top-[420px] lg:w-[auto] xl:top-[380px] 2xl:top-[220px] right-[57px] z-1"
+          {/* RIGHT BUBBLE */}
+          <motion.img
+            className="absolute top-[600px] sm:top-[700px] md:top-[690px] md:w-[80px] lg:top-[420px] lg:w-[auto] xl:top-[380px] 2xl:top-[220px] right-[57px] z-1"
             src="/images/HomeHero/globoDerecha.svg"
             alt="Experiencies in SparkClub"
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.28 }}
+            style={{ y: rightBubbleY }}
           />
 
         </div>

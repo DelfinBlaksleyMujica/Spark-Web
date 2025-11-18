@@ -240,7 +240,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
           <Button
             btnText="Create an event now!"
             btnClass="tertiary-btn"
-            href="https://forms.gle/QwyfJa6Nr6ZWz5hY7"
+            href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
           />
         </div>
       </div>
