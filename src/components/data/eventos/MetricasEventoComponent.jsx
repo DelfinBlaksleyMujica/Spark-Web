@@ -10,7 +10,7 @@ export default function MetricasEventoComponent({ eventId }) {
     <div>
       <div>Métricas</div>
       <div className="h-[100vh] flex justify-center items-center">
-        <Link href={`/data/eventos/${eventoId}/cuestionario`}>
+        <Link href={`/data/${eventoId}/cuestionario`}>
           Ir al cuestionario del evento
         </Link>
       </div>
