@@ -8,7 +8,7 @@ export default async function DataDeEventosContainerPage() {
   await connectDB();
 
   const eventsFromDB = await Event.find().lean();
-
+  console.log("Cambio para push");
   const eventos = eventsFromDB.map((ev) => ({
     // 👇 todos los ObjectId a string
     id: ev._id.toString(),
