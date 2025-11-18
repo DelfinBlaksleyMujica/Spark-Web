@@ -14,7 +14,7 @@ export default function HeaderDataEventos() {
         />
       </div>
       <div className="w-[20%] flex justify-center items-center text-white">
-        <Link href="/data/eventos">Eventos</Link>
+        <Link href="/data">Eventos</Link>
       </div>
     </nav>
   );

@@ -28,7 +28,7 @@ export default function EventosHomePage({ eventos }) {
             <div>
               <Link
                 className={`${inter.className} text-black bg-[#FCD34D] rounded-[10px] py-2 px-6`}
-                href={`/data/eventos/${evento.id}`}
+                href={`/data/${evento.id}`}
               >
                 Ver Detalle de evento
               </Link>

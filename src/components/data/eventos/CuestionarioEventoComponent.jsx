@@ -255,7 +255,7 @@ export default function CuestionarioEventoComponent({
       >
         <Link
           className={`${inter.className} bg-[#27272A] text-[#FAFAFA] p-3  rounded-[5px] text-[14px] border-[#3F3F46] border-[1px] cursor-pointer`}
-          href={`/data/eventos/${eventId}`}
+          href={`/data/${eventId}`}
         >
           <img src="/images/Icons/flechaVolver.svg" alt="" />
         </Link>
