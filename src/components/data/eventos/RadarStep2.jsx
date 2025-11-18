@@ -28,7 +28,7 @@ const renderEnergyEmoji = (opcion) => {
   return "✨";
 };
 
-export default function RadarStep({
+export default function RadarStep2({
   pregunta,
   opciones,
   questionData,
