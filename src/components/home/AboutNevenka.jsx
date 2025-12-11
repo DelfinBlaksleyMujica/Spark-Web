@@ -131,7 +131,7 @@ export default function AboutNevenka({ data }) {
           <Button
             btnText="Join Waitlist"
             btnClass="primary-btn"
-            href="https://zcal.co/sparkclub"
+            href="https://app.formbricks.com/s/cmj1mpv5u3avdad015eandi7o"
           />
         </div>
       </div>

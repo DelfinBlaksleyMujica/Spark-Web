@@ -50,9 +50,8 @@ export default function FaqSection({ data }) {
                     </span>
 
                     <span
-                      className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[50px] border border-white/30 transition-transform duration-300 ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
+                      className={`inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[50px] border border-white/30 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+                        }`}
                     >
                       <FiChevronDown className="text-white h-5 w-5" />
                     </span>
