@@ -47,8 +47,8 @@ const data = {
   },
   weMakeWorkWork: [
     {
-      title: "We make work,",
-      titleSpan: "work",
+      title: "Make Events, ",
+      titleSpan: "Work",
     },
   ],
   whyChooseSparkClub: {

@@ -1,45 +1,36 @@
-import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 
-// import required modules
-import { Autoplay, Pagination } from "swiper/modules";
-
-export default function TrustedByMobileSwiper({ companies }) {
+export default function TrustedByDesktopSwiper({ companies }) {
   return (
-    <>
+    <div className="lg:hidden lg:block w-full">
       <Swiper
-        spaceBetween={1}
-        navigation={true}
+        slidesPerView={4}
+        spaceBetween={80}
+        loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper mt-[20px] sm:hidden"
+        speed={700} // smooth transition
+        modules={[Autoplay]}
+        className="max-w-[1800px] "
       >
         {companies.map((company) => (
-          <SwiperSlide
-            key={company.id}
-            className="flex justify-center items-center"
-          >
-            <div className="w-[200px] h-[120px] sm:w-[200px] h-[50px] flex justify-center items-center">
+          <SwiperSlide key={company.id} className="flex justify-center items-center">
+            <div className="w-[200px] h-[200px] flex justify-center items-center">
               <img
-                className="max-w-full max-h-full object-contain"
                 src={company.img}
-                alt={`Empresa asociada a Sparkclub`}
+                alt="Empresa asociada a Sparkclub"
+                className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-150"
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+
+
+    </div>
   );
 }
