@@ -144,6 +144,7 @@ body {
     will-change: transform;
   }
 
+
   @media (prefers-reduced-motion: reduce) {
 
     .marquee,
@@ -162,9 +163,16 @@ body {
   margin-top: 0px;
 }
 
-.swiper-slide-active {
+/* .swiper-slide-active {
   width: 100% !important;
   margin-right: 30px;
+  height: 200px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+} */
+
+.swiper-slide-active {
   height: 200px;
   display: flex !important;
   align-items: center !important;

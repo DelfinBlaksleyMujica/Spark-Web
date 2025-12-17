@@ -9,9 +9,9 @@ const companies = [
   { id: 1, img: "/images/TrustedBy/Comp1.webp" },
   { id: 2, img: "/images/TrustedBy/Comp16.svg" },
   { id: 3, img: "/images/TrustedBy/Comp15.svg" },
-  { id: 4, img: "/images/TrustedBy/Avalanche.webp" },
+  { id: 4, img: "/images/TrustedBy/GrupoPenaflor.png" },
   { id: 5, img: "/images/TrustedBy/Logo_Monster_Energy.webp" },
-  { id: 6, img: "/images/TrustedBy/GrupoPenaflor.png" },
+  { id: 6, img: "/images/TrustedBy/Comp18.png" },
   { id: 7, img: "/images/TrustedBy/BrevisLogo.png" },
 ];
 

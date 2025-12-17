@@ -4,10 +4,10 @@ import "swiper/css";
 
 export default function TrustedByDesktopSwiper({ companies }) {
   return (
-    <div className="lg:hidden lg:block w-full">
+    <div className="lg:hidden lg:block w-full ">
       <Swiper
-        slidesPerView={4}
-        spaceBetween={80}
+        slidesPerView={2}
+        spaceBetween={24}
         loop={true}
         autoplay={{
           delay: 2000,

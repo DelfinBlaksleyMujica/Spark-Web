@@ -200,12 +200,7 @@ export default function Navbar() {
                   exit="initial"
                   className="flex flex-col justify-start pt-30 gap-10 sm:gap-8 h-full"
                 >
-                  {/* Pill Users/Providers también visible en el menú mobile */}
-                  <div className="mt-6 flex justify-center">
-                    <motion.div onClick={toggleMenu} variants={mobileLinkVars}>
-                      <NavUserProviderToggle />
-                    </motion.div>
-                  </div>
+
                   {NAV_LINKS.map((link) => (
                     <div className="overflow-hidden" key={link.href}>
                       <motion.div
@@ -223,16 +218,6 @@ export default function Navbar() {
                     </div>
                   ))}
 
-                  {/* CTA opcional abajo (si quisieras agregar alguno) */}
-                  {/* <motion.div variants={mobileLinkVars} className="mt-2 flex justify-center">
-                    <Link
-                      href="/contact"
-                      onClick={toggleMenu}
-                      className="px-5 py-3 rounded-xl bg-white text-black"
-                    >
-                      Get in touch
-                    </Link>
-                  </motion.div> */}
                 </motion.div>
               </div>
             </motion.div>

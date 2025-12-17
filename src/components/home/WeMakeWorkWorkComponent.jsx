@@ -122,7 +122,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
   const d = data[0];
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black">
+    <div className="relative flex justify-center items-center w-full px-6 h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black">
       {/* Background Texture */}
       <img
         className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
@@ -155,7 +155,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.0}>
                 <CategoryCard
                   category="Wellness Experiences"
-                  className="translate-y-[90px] "
+                  className="translate-y-[65px] sm:translate-y-[90px] "
                   badge=""
                   bgImg="/images/Cards/Welness.webp"
                   hoverText="Mindful activities curated for team wellbeing."
@@ -185,7 +185,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.24}>
                 <CategoryCard
                   category="Art & Culture"
-                  className="translate-y-[90px] "
+                  className="translate-y-[65px] sm:translate-y-[90px] "
                   badge="Trending"
                   bgImg="/images/Cards/ArtCulture.webp"
                   hoverText="From museum nights to creative labs."
