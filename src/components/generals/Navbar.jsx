@@ -120,7 +120,7 @@ export default function Navbar() {
 
         {/* Pill Users/Providers (desktop) */}
         <div className="hidden md:block">
-          <NavUserProviderToggle />
+          <NavUserProviderToggle instanceId="navbar" />
         </div>
 
         {/* Botón hamburguesa (mobile) */}

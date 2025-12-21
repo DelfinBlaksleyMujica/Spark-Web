@@ -11,7 +11,7 @@ const TABS = [
   { key: "provider", label: "Partners", href: "/provider" },
 ];
 
-export default function NavUserProviderToggle() {
+export default function NavUserProviderToggle({ instanceId = "nav" }) {
   const pathname = usePathname();
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -44,7 +44,7 @@ export default function NavUserProviderToggle() {
   };
 
   return (
-    <LayoutGroup id="users-providers-toggle">
+    <LayoutGroup id={`users-providers-toggle-${instanceId}`}>
       <motion.div
         layout
         className="relative inline-flex h-10 w-[260px] select-none p-1"
@@ -61,7 +61,7 @@ export default function NavUserProviderToggle() {
               {/* Píldora blanca compartida: mismo layoutId en ambos slots */}
               {isCurrent && (
                 <motion.div
-                  layoutId="toggle-pill"
+                  layoutId={`toggle-pill-${instanceId}`}
                   initial={false}
                   className="absolute inset-0"
                   style={{

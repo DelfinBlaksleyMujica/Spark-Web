@@ -27,23 +27,21 @@ export default function Hero({ data }) {
     },
   };
 
-
   // Parallax values 
-  const leftBackY = useTransform(scrollY, [0, 40], [0, -80]);  // far left bg
-  const leftBubbleY = useTransform(scrollY, [0, 40], [0, -80]);  // left speech bubble
+  const leftBackY = useTransform(scrollY, [0, 40], [0, -60]);  // far left bg
+  const leftBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // left speech bubble
   const centerCardY = useTransform(scrollY, [0, 40], [0, -20]);  // nevenka card
   const screenY = useTransform(scrollY, [0, 80], [0, -10]);  // platform screen
-  const rightBackY = useTransform(scrollY, [0, 40], [0, -80]);  // far right bg
-  const rightBubbleY = useTransform(scrollY, [0, 40], [0, -80]);  // right speech bubble
+  const rightBackY = useTransform(scrollY, [0, 40], [0, -60]);  // far right bg
+  const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
 
   return (
     <div className="relative w-full h-screen  md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
 
 
-      {/* Pill Users/Providers in mobile version */}
-      <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center">
-        <motion.div onClick={toggleMenu} variants={mobileLinkVars}>
-          <NavUserProviderToggle />
+      <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
+        <motion.div variants={mobileLinkVars}>
+          <NavUserProviderToggle instanceId="hero" />
         </motion.div>
       </div>
 
