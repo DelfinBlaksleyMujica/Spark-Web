@@ -109,6 +109,11 @@ body {
   transition: all .5s;
 }
 
+/*Iluminacion de cards de Data de Eventos*/
+.iluminación-amarilla{
+  filter: drop-shadow(0 0 40px #FACC1566);
+}
+
 
 @keyframes autoRun {
   from {
