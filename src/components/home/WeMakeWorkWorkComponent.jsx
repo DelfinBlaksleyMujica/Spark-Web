@@ -185,11 +185,8 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.24}>
                 <CategoryCard
                   category="Art & Culture"
-<<<<<<< HEAD
                   className="translate-y-[65px] sm:translate-y-[90px] "
-=======
-                  className="translate-y-[90px] "
->>>>>>> 6a7a1d2 (Cambios)
+
                   badge="Trending"
                   bgImg="/images/Cards/ArtCulture.webp"
                   hoverText="From museum nights to creative labs."

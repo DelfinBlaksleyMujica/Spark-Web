@@ -4,17 +4,11 @@ import "swiper/css";
 
 export default function TrustedByDesktopSwiper({ companies }) {
   return (
-<<<<<<< HEAD
     <div className="lg:hidden lg:block w-full ">
       <Swiper
         slidesPerView={2}
         spaceBetween={24}
-=======
-    <div className="lg:hidden lg:block w-full">
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={80}
->>>>>>> 6a7a1d2 (Cambios)
+
         loop={true}
         autoplay={{
           delay: 2000,
@@ -24,8 +18,8 @@ export default function TrustedByDesktopSwiper({ companies }) {
         modules={[Autoplay]}
         className="max-w-[1800px] "
       >
-        {companies.map((company) => (
-          <SwiperSlide key={company.id} className="flex justify-center items-center">
+        {companies.map((company, index) => (
+          <SwiperSlide key={`${company.id ?? company.img ?? "company"}-${index}`} className="flex justify-center items-center">
             <div className="w-[200px] h-[200px] flex justify-center items-center">
               <img
                 src={company.img}
@@ -33,6 +27,9 @@ export default function TrustedByDesktopSwiper({ companies }) {
                 className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-150"
               />
             </div>
+
+
+
           </SwiperSlide>
         ))}
       </Swiper>

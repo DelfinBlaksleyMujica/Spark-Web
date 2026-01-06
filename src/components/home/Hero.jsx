@@ -36,7 +36,7 @@ export default function Hero({ data }) {
   const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
 
   return (
-    <div className="relative w-full h-screen  md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
+    <div className="relative w-full h-[1250px] sm:h-[1300px]  md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
 
 
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
@@ -97,7 +97,7 @@ export default function Hero({ data }) {
 
           {/* LEFT BUBBLE */}
           <motion.img
-            className="absolute top-[490px] sm:top-[530px] md:top-[510px] md:w-[80px] lg:top-[470px] lg:w-[auto] xl:top-[420px] 2xl:top-[220px] left-[85px] z-1"
+            className="absolute w-[60px] left-[90px] top-[520px]  sm:top-[530px] md:top-[510px] md:w-[80px] lg:top-[470px] lg:w-[auto] xl:top-[420px] 2xl:top-[220px] z-1"
             src="/images/HomeHero/globoIzquierda.svg"
             alt="Experiencies in SparkClub"
             initial={{ opacity: 0, y: 60 }}
@@ -108,7 +108,7 @@ export default function Hero({ data }) {
 
           {/* CENTER NEVENKA CARD */}
           <motion.div
-            className="z-1000 absolute top-[800px] sm:top-[800px] md:top-[700px] lg:top-[380px] left-0 w-full flex justify-center items-center"
+            className="z-1000 absolute top-[750px]  md:top-[700px] lg:top-[380px] left-0 w-full flex justify-center items-center"
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.25 }}
@@ -149,7 +149,7 @@ export default function Hero({ data }) {
 
           {/* RIGHT BUBBLE */}
           <motion.img
-            className="absolute top-[500px] sm:top-[520px] md:top-[490px] md:w-[80px] lg:top-[460px] lg:w-[auto] xl:top-[380px] 2xl:top-[220px] right-[57px] z-1"
+            className="absolute w-[60px] right-[120px] top-[520px] sm:top-[520px] md:top-[490px] md:w-[80px] lg:top-[460px] lg:w-[auto] xl:top-[380px] 2xl:top-[220px] z-1"
             src="/images/HomeHero/globoDerecha.svg"
             alt="Experiencies in SparkClub"
             initial={{ opacity: 0, y: 60 }}
