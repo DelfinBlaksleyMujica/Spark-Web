@@ -16,8 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Smart Engagement Platform | Sparkclub , Buenos Aires Argentina",
-  description: "Experiences that level up your team",
+  title:
+    "Event & Experience Matching Platform | Sparkclub , Buenos Aires Argentina",
+  description:
+    "Corporate events platform. Nevenka our AI event planner connects you with certified suppliers to create budget-friendly experiences in just 10 minutes.",
 };
 
 export default function RootLayout({ children }) {
