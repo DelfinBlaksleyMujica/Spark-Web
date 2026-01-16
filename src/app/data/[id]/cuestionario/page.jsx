@@ -9,18 +9,66 @@ const QUESTION_CONFIG = [
   {
     pregunta: "Your favs to spend your social time",
     opciones: [
-      "Art & Culture",
-      "Sport Events",
-      "Wellness",
-      "Music Events",
-      "Tourism",
-      "Education",
-      "Innmersive Experiences",
-      "Food & Drink",
-      "Talks and Conventions",
-      "Live Shows",
-      "Nightlife & Party",
-      "Workshops",
+      {
+        id: 1,
+        value: "Art & Culture",
+        icon: "/images/CuestionarioData/intrestIcon1.svg",
+      },
+      {
+        id: 2,
+        value: "Sport Events",
+        icon: "/images/CuestionarioData/intrestIcon2.svg",
+      },
+      {
+        id: 3,
+        value: "Wellness",
+        icon: "/images/CuestionarioData/intrestIcon3.png",
+      },
+      {
+        id: 4,
+        value: "Music Events",
+        icon: "/images/CuestionarioData/intrestIcon1.svg",
+      },
+      {
+        id: 5,
+        value: "Tourism",
+        icon: "/images/CuestionarioData/intrestIcon2.svg",
+      },
+      {
+        id: 6,
+        value: "Education",
+        icon: "/images/CuestionarioData/intrestIcon3.png",
+      },
+      {
+        id: 7,
+        value: "Innmersive Experiences",
+        icon: "/images/CuestionarioData/intrestIcon1.svg",
+      },
+      {
+        id: 8,
+        value: "Food & Drink",
+        icon: "/images/CuestionarioData/intrestIcon8.svg",
+      },
+      {
+        id: 9,
+        value: "Talks and Conventions",
+        icon: "/images/CuestionarioData/intrestIcon1.svg",
+      },
+      {
+        id: 10,
+        value: "Live Shows",
+        icon: "/images/CuestionarioData/intrestIcon2.svg",
+      },
+      {
+        id: 11,
+        value: "Nightlife & Party",
+        icon: "/images/CuestionarioData/intrestIcon3.png",
+      },
+      {
+        id: 12,
+        value: "Workshops",
+        icon: "/images/CuestionarioData/intrestIcon1.svg",
+      },
     ],
   },
   {
