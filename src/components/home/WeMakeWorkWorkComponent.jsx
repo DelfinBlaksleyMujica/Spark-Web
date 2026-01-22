@@ -122,7 +122,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
   const d = data[0];
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black">
+    <div className="relative flex justify-center items-center w-full px-6 h-[1500px] md:h-[1900px] lg:h-[1000px] bg-black">
       {/* Background Texture */}
       <img
         className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
@@ -155,7 +155,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.0}>
                 <CategoryCard
                   category="Wellness Experiences"
-                  className="translate-y-[90px] "
+                  className="translate-y-[65px] sm:translate-y-[90px] "
                   badge=""
                   bgImg="/images/Cards/Welness.webp"
                   hoverText="Mindful activities curated for team wellbeing."
@@ -185,6 +185,8 @@ export default function WeMakeWorkWorkComponent({ data }) {
               <RevealUp delay={0.24}>
                 <CategoryCard
                   category="Art & Culture"
+                  className="translate-y-[65px] sm:translate-y-[90px] "
+
                   badge="Trending"
                   bgImg="/images/Cards/ArtCulture.webp"
                   hoverText="From museum nights to creative labs."
@@ -193,12 +195,14 @@ export default function WeMakeWorkWorkComponent({ data }) {
             </div>
           </div>
 
+
           <div className="w-full flex gap-[2%] md:gap-[20px] mb-[20px] justify-start items-center">
-            <div className="flex flex-col gap-[7px] sm:gap-[20px] w-[49%] md:w-auto">
+            <div className="flex flex-col gap-[7px] sm:gap-[20px] w-[49%] md:w-auto ">
               <RevealUp delay={0.32}>
                 <CategoryCard
                   category="Running Session"
                   badge=""
+                  className="translate-y-[60px] "
                   bgImg="/images/Cards/RunningSessions.webp"
                   hoverText="Weekly group runs and step challenges."
                 />
@@ -228,6 +232,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
                 <CategoryCard
                   category="Ed Tech"
                   badge="COMING SOON"
+                  className="translate-y-[50px] "
                   bgImg="/images/Cards/Edtech.webp"
                   hoverText="Learning tracks and growth paths."
                 />
@@ -236,7 +241,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
           </div>
         </div>
 
-        <div className="w-full flex justify-center lg:justify-end lg:max-w-[1040px]">
+        <div className="w-full flex justify-center lg:justify-end lg:max-w-[1040px] ">
           <Button
             btnText="Create an event now!"
             btnClass="tertiary-btn"

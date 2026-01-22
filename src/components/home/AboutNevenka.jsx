@@ -95,7 +95,7 @@ export default function AboutNevenka({ data }) {
                     src="/images/Cards/Background.webp"
                     alt="Fondo de Card"
                     fill
-                    className="object-cover"
+                    className="object-cover rounded-[10px]"
                     sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   />
                 </div>
@@ -129,9 +129,9 @@ export default function AboutNevenka({ data }) {
         {/* CTA BUTTON */}
         <div className="mt-10 flex flex-col lg:flex-row justify-center items-center px-8">
           <Button
-            btnText="Try for free"
+            btnText="Join Waitlist"
             btnClass="primary-btn"
-            href="https://zcal.co/sparkclub"
+            href="https://app.formbricks.com/s/cmj1mpv5u3avdad015eandi7o"
           />
         </div>
       </div>

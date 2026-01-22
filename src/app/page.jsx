@@ -47,8 +47,8 @@ const data = {
   },
   weMakeWorkWork: [
     {
-      title: "We make work,",
-      titleSpan: "work",
+      title: "Make Events, ",
+      titleSpan: "Work",
     },
   ],
   whyChooseSparkClub: {
@@ -237,7 +237,7 @@ export default function Home() {
       <TrustedByComponent />
       <AboutNevenka data={data.aboutNevenka} />
       <WeMakeWorkWorkComponent data={data.weMakeWorkWork} />
-      <FeaturesComparison data={data.whyChooseSparkClub} />
+      {/* <FeaturesComparison data={data.whyChooseSparkClub} /> */}
       <NonNegotiables data={data.ourNonNegotiables} />
       <TestimonialsContainer data={data.testimonials} />
       <FaqsSection data={data.faqs} />
