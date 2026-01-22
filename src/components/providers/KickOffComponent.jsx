@@ -9,7 +9,7 @@ const Card = ({ id, image, title, description, color, index }) => {
   return (
     <motion.div
       style={{ backgroundColor: color }}
-      className={`card w-[345px] h-[449px] px-[5px] py-[10px]`}
+      className={`card w-[345px] h-[449px] px-[5px] py-[10px] rounded-[8px]`}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -108,7 +108,7 @@ export default function KickOffComponent({ data }) {
         </p>
 
         {/* CARDS */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-[22px] flex-wrap py-[40px]">
+        <div className="flex flex-col md:flex-row  justify-center items-center gap-[22px] flex-wrap py-[40px]">
           {data.cards.map((card, index) => (
             <Card
               key={card.id}
@@ -123,8 +123,8 @@ export default function KickOffComponent({ data }) {
         </div>
 
         {/* CTA BUTTON */}
-        <div className="flex flex-col w-full lg:flex-row justify-center px-8 mt-[30px]">
-          <Button btnText="Become a partner" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhxz4jy53zuwad01lat59has" />
+        <div className="mt-10 flex flex-col lg:flex-row justify-center items-center w-full gap-4">
+          <Button btnText="Become a partner" btnClass="tertiary-btn" href="https://app.formbricks.com/s/cmhxz4jy53zuwad01lat59has" />
         </div>
       </div>
     </div>
