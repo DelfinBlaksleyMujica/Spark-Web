@@ -350,11 +350,12 @@ export default function CuestionarioEventoComponent({
                           onClick={() => handleChangeQuestion1(opcion)}
                           className={`${
                             inter.className
-                          } bg-[#27272A] text-[#FAFAFA] py-2 px-6 rounded-[20px] text-[14px] border-[1px] cursor-pointer ${
+                          } bg-[#27272A] flex gap-[10px] justify-center items-center text-[#FAFAFA] py-2 px-6 rounded-[20px] text-[14px] border-[1px] cursor-pointer ${
                             active ? "border-[#FCD34D]" : "border-[#3F3F46]"
                           }`}
                         >
-                          {opcion}
+                          {/* <img src={opcion.icon} alt="" /> */}
+                          {opcion.value}
                         </button>
                       </motion.div>
                     );
