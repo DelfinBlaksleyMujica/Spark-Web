@@ -11,10 +11,7 @@ const companies = [
   { id: 3, img: "/images/TrustedBy/Comp15.svg" },
   { id: 4, img: "/images/TrustedBy/GrupoPenaflor.png" },
   { id: 5, img: "/images/TrustedBy/Logo_Monster_Energy.webp" },
-  { id: 6, img: "/images/TrustedBy/Comp18.png" },
-  { id: 4, img: "/images/TrustedBy/Avalanche.webp" },
-  { id: 5, img: "/images/TrustedBy/Logo_Monster_Energy.webp" },
-  { id: 6, img: "/images/TrustedBy/GrupoPenaflor.png" },
+  { id: 6, img: "/images/TrustedBy/Avalanche.webp" },
   { id: 7, img: "/images/TrustedBy/BrevisLogo.png" },
 ];
 
@@ -56,7 +53,7 @@ export default function TrustedByComponent() {
   // pick the 4 visible logos in a circular way
   const visibleCompanies = Array.from(
     { length: Math.min(VISIBLE_LOGOS, companies.length) },
-    (_, i) => companies[(startIndex + i) % companies.length]
+    (_, i) => companies[(startIndex + i) % companies.length],
   );
 
   return (
@@ -76,7 +73,6 @@ export default function TrustedByComponent() {
 
         {/* DESKTOP: always show 4 logos, update 1 at a time */}
         <div className="hidden lg:flex flex-col justify-center items-center w-full max-w-[1800px] mx-auto py-[30px] overflow-hidden">
-
           <motion.div
             key={startIndex}
             initial={{ x: 40, opacity: 0 }}
@@ -105,14 +101,13 @@ export default function TrustedByComponent() {
             {companies.map((_, index) => (
               <div
                 key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === startIndex ? "bg-black scale-110" : "bg-gray-300"
-                  }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === startIndex ? "bg-black scale-110" : "bg-gray-300"
+                }`}
               ></div>
             ))}
           </div>
-
         </div>
-
       </motion.div>
 
       {/* MOBILE SWIPER */}
