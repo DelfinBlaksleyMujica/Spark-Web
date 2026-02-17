@@ -51,7 +51,7 @@ const mobileLinkVars = {
 
 // Links del menú (desktop y mobile)
 const NAV_LINKS = [
-  { title: "About us", href: "/about-us" },
+  { title: "Quiénes somos", href: "/about-us" },
   //{ title: "Pricing", href: "/pricing" },
   { title: "Blog", href: "/blog" },
 ];
@@ -72,11 +72,10 @@ export default function Navbar() {
 
   return (
     <header
-      className={`${
-        esconderNavbar == true
-          ? "hidden"
-          : "h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]"
-      } `}
+      className={`${esconderNavbar == true
+        ? "hidden"
+        : "h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]"
+        } `}
     >
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
 

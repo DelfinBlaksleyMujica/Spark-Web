@@ -7,22 +7,22 @@ import WhyUs from "@/components/about-us/WhyUs";
 
 const data = {
   hero: {
-    title: "Our mission is to strengthen work relationships through",
-    titleSpan: "shared experiences.",
+    title: "Nuestra misión es fortalecer las relaciones laborales a través de ",
+    titleSpan: "experiencias compartidas.",
     subtitle:
-      "At Spark, we redefine connections. We believe a single experience can flip your perception of someone 180º. That’s why we’re on a mission to make every moment unforgettable. We’ve handpicked, tested, and perfected the trendiest local experiences to help you build game-changing relationships—with your all-star team and top-tier clients.",
+      "En Spark, redefinimos las conexiones. Creemos que una sola experiencia puede cambiar tu percepción de alguien 180º. Por eso, estamos en una misión para hacer que cada momento sea inolvidable. Hemos seleccionado, probado y perfeccionado las experiencias locales más modernas para ayudarte a construir relaciones que marquen la diferencia, con tu equipo estelar y tus clientes de primer nivel.",
   },
   aboutUsCards: {
-    firstTitle: "Here’s the challenge:",
+    firstTitle: "Aquí está el desafío:",
     firstDescription:
-      "Fast-growing companies struggle to keep top talent engaged, while employees feel disconnected. At the same time, businesses often miss the mark when trying to appreciate their customers — relying on generic gestures that don’t leave a lasting impression.",
-    secondTitle: "So, we did something about it.",
+      "Las empresas de rápido crecimiento luchan por mantener a su mejor talento involucrado, mientras que los empleados se sienten desconectados. Al mismo tiempo, muchas compañías fallan al intentar reconocer a sus clientes, recurriendo a gestos genéricos que no dejan una impresión duradera.",
+    secondTitle: "Así que decidimos hacer algo al respecto.",
     secondDescription:
-      "As a team of experience-obsessed, adventure-seeking, culture-loving pros, we created SparkClub to turn business relationships into real connections. Because every interaction is a chance to build trust, create quality moments, and make lasting memories.",
-    secondDescriptionSpan: "Let’s make it count.",
+      "Como un equipo apasionado por las experiencias, la aventura y la cultura, creamos SparkClub para transformar las relaciones de negocio en conexiones reales. Porque cada interacción es una oportunidad para construir confianza, crear momentos de calidad y generar recuerdos que perduran.",
+    secondDescriptionSpan: "Hagamos que cuente.",
   },
   meetTheTeam: {
-    title: "Meet the Team",
+    title: "Conoce al equipo",
     sparkClubTeam: [
       {
         id: 1,
@@ -33,8 +33,8 @@ const data = {
         linkedinLink: "https://www.linkedin.com/in/gastisan/",
         topExperiences: ["Kartings"],
         descriptions: [
-          "Led brand, culture, and experience strategy for companies like Red Bull, Fitchin, 9z Team, and DalePlay. Managed teams of 50+ and executed 150+ online and on-site events across tech and entertainment.",
-          "Now channeling that operational scale into Sparkclub, a platform designed to scale engagement through AI, behavioral data, and tokenized coordination.",
+          "Lideré la estrategia de marca, cultura y experiencias para empresas como Red Bull, Fitchin, 9z Team y DalePlay. Gestioné equipos de más de 50 personas y ejecuté más de 150 eventos online y presenciales en los sectores de tecnología y entretenimiento.",
+          "Hoy canalizo esa escala operativa en Sparkclub, una plataforma diseñada para escalar la involucración a través de IA, datos de comportamiento y coordinación tokenizada.",
         ],
         experiences: [
           {
@@ -73,8 +73,8 @@ const data = {
           "https://www.linkedin.com/in/delfin-blaksley-mujica-73415b276/",
         topExperiences: ["Boards"],
         descriptions: [
-          "Spent +8 years turning ideas into products and challenges into growth. Built a software agency from scratch, delivered 100+ projects worldwide, led teams of 20+ people, and launched an OOH startup in Buenos Aires Argentina. This journey taught me how powerful aligned teams can be. ",
-          "Sparkclub is our way of bringing that same sense of connection and momentum to organizations everywhere",
+          "Más de 8 años convirtiendo ideas en productos y desafíos en crecimiento. Fundé una agencia de software desde cero, entregué más de 100 proyectos a nivel global, lideré equipos de más de 20 personas y lancé una startup de OOH en Buenos Aires, Argentina. Este recorrido me enseñó lo poderosos que pueden ser los equipos alineados.",
+          "Sparkclub es nuestra forma de llevar ese mismo sentido de conexión y momentum a organizaciones en todo el mundo.",
         ],
         experiences: [
           {
@@ -106,25 +106,25 @@ const data = {
     ],
   },
   whyUs: {
-    title: "Why work with us?",
+    title: "¿Por qué trabajar con nosotros?",
     items: [
       {
         id: "vision",
         icon: "/images/Icons/Illus1.svg",
-        title: "VISION",
-        text: "Dedicated to enhancing workplace engagement through innovative team building events and loyalty features.",
+        title: "VISIÓN",
+        text: "Potenciar la involucración en el entorno laboral a través de experiencias innovadoras de team building y herramientas que fortalecen la lealtad.",
       },
       {
         id: "mission",
         icon: "/images/Icons/Illus2.svg",
-        title: "MISSION",
-        text: "Our mission is to significantly reduce turnover and elevate performance by fostering strong connections among employees.",
+        title: "MISIÓN",
+        text: "Reducir significativamente la rotación y elevar el rendimiento creando conexiones sólidas entre las personas dentro de las organizaciones.",
       },
       {
         id: "process",
         icon: "/images/Icons/Illus3.svg",
-        title: "PROCESS",
-        text: "Enhance collaboration and boost morale with our tailored team-building events. Experience increased productivity and reduced turnover as your team connects and grows together.",
+        title: "PROCESO",
+        text: "Impulsa la colaboración y eleva la motivación con experiencias diseñadas a medida. Logra mayor productividad y menor rotación mientras tu equipo se conecta y crece en conjunto.",
       },
     ],
   },

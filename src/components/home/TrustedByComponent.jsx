@@ -68,7 +68,7 @@ export default function TrustedByComponent() {
         <h2
           className={`${public_sans.className} text-[24px] font-semibold leading-[100%] tracking-tight text-center mb-[10px] pt-[36px] text-black`}
         >
-          Trusted by
+          Empresas que confían en nosotros
         </h2>
 
         {/* DESKTOP: always show 4 logos, update 1 at a time */}
@@ -101,9 +101,8 @@ export default function TrustedByComponent() {
             {companies.map((_, index) => (
               <div
                 key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === startIndex ? "bg-black scale-110" : "bg-gray-300"
-                }`}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === startIndex ? "bg-black scale-110" : "bg-gray-300"
+                  }`}
               ></div>
             ))}
           </div>

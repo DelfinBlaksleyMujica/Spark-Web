@@ -23,25 +23,25 @@ export default function Footer() {
             className="font-regular leading-[1.2] text-balance p-x-4 sm:px-0
                          text-[30px] sm:text-[40px] md:text-[45px] lg:text-[55px]"
           >
-            <span className="block">Transform teams,</span>
-            <span className="block">Reduce turnover,</span>
-            <span className="block font-semibold">Boost performance</span>
+            <span className="block">Transforma equipos,</span>
+            <span className="block">Reduce la rotación de empleados,</span>
+            <span className="block font-semibold">Mejora el rendimiento</span>
           </h2>
 
           <div className="mt-6 sm:mt-8">
-            <Button btnText="Book a demo" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
+            <Button btnText="Reserva una demo" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
           </div>
         </section>
 
         {/* Right: Vertical nav  */}
         <nav
-          aria-label="Footer navigation"
+          aria-label="Navegacion del footer"
           className="pt-12 pb-6 md:col-start-9 md:col-span-3 md:py-4 md:self-start "
         >
           <ul className="space-y-4 text-[25px] sm:text-[30px] md:text-[20px] font-semibold leading-6 flex flex-col md:items-start sm:items-center ">
             <li>
               <Link href="/" className="hover:underline">
-                Home
+                Inicio
               </Link>
             </li>
             {/* <li>
@@ -51,7 +51,7 @@ export default function Footer() {
             </li> */}
             <li>
               <Link href="/about" className="hover:underline">
-                About Us
+                Quienes Somos
               </Link>
             </li>
             <li>
@@ -146,13 +146,11 @@ export default function Footer() {
             </div>
 
             <p className="text-[14px] mt-4">
-              We are a comprehensive smart engagement platform designed to help
-              companies boost employee engagement, reduce turnover, and improve
-              employee performance.
+              Somos una plataforma inteligente e integral diseñada para ayudar a las empresas a aumentar la involucración de sus empleados, reducir la rotación y mejorar el rendimiento del equipo.
             </p>
 
             <p className="text-[13px] mt-4 md:mt-auto">
-              &copy; 2025 Spark. All Rights Reserved.
+              &copy; 2026 Spark. Todos los derechos reservados.
             </p>
           </div>
         </section>
@@ -163,11 +161,11 @@ export default function Footer() {
           className="md:col-start-9 md:col-span-3 md:row-start-2 space-y-2 mx-auto md:mx-0"
         >
           <a href="https://api.whatsapp.com/send?phone=541149604816" id="contact-heading" className="font-semibold text-[25px] border-b-1 ">
-            Contact Info
+            Información de Contacto
           </a>
           <div className="space-y-2 mt-3">
             <a href="https://api.whatsapp.com/send?phone=541149604816" className="text-[20px] ">+54 9 1157979949</a>
-            <p className="text-[20px] ">Mon–Fri 9am–6pm</p>
+            <p className="text-[20px] ">Lun–Vie 9am–6pm</p>
           </div>
         </section>
 
@@ -177,11 +175,11 @@ export default function Footer() {
           className="md:col-start-9 md:col-span-3 md:row-start-3 space-y-4 mx-auto md:mx-0 pt-12 pb-6 sm:py-10"
         >
           <h3 id="newsletter-heading" className="font-semibold text-[25px] ">
-            Join Our Newsletter
+            Únete a nuestro newsletter
           </h3>
           <p className="text-[20px] leading-[1.2] max-w-sm ">
-            Sign up for our newsletter to enjoy free marketing tips,
-            inspiration, and more
+            Suscríbete a nuestro newsletter para recibir consejos de marketing gratuitos,
+            inspiración y más
           </p>
 
           <form
@@ -199,7 +197,7 @@ export default function Footer() {
               className="flex bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
             />
             <Button
-              btnText="Join us" btnClass="primary-btn" href="/about-us"
+              btnText="Subscribirse" btnClass="primary-btn" href="/about-us"
             />
           </form>
         </section>

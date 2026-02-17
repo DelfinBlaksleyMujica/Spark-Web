@@ -8,382 +8,385 @@ const publicSans = Public_Sans({ subsets: ["latin"] });
 const POSTS = [
   {
     id: "leadership-costs",
-    title: "438 billion: The hidden cost of poor leadership",
-    date: "23 July, 2025",
-    tag: "Costs",
+    title: "438 mil millones: el costo oculto del mal liderazgo",
+    date: "2025-07-23",
+    tag: "Costos",
     cover: "/images/Blog/wakeboard.svg",
     content: `
-      <p>The lack of engagement is silently draining the global economy, and it’s no longer a “soft” issue. Recent data shows that poor leadership costs companies <strong>$438 billion a year</strong>. It’s not just about low productivity, but also turnover, absenteeism, misalignment, burnout, and something deeper: a work model that was never designed for people.</p>
+      <p>La falta de conexión en el trabajo está drenando silenciosamente la economía global, y ya no es un problema “blando”. Datos recientes muestran que el mal liderazgo le cuesta a las empresas <strong>438 mil millones de dólares al año</strong>. No se trata solo de baja productividad, sino también de rotación, ausentismo, desalineación, burnout y algo más profundo: un modelo de trabajo que nunca fue diseñado pensando en las personas.</p>
 
-      <p>And what’s worse: only <strong>21% of employees worldwide</strong> feel engaged in their work. That means almost 8 out of 10 are disconnected from their purpose, their team, or their leadership. This isn’t a minor retention issue. It’s a cultural and operational crisis. The question isn’t why this is happening — it’s why we’re still running companies this way in 2025.</p>
+      <p>Y lo más preocupante: solo <strong>el 21% de los empleados en el mundo</strong> se siente realmente involucrado en su trabajo. Eso significa que casi 8 de cada 10 están desconectados de su propósito, de su equipo o de su liderazgo. No es un simple problema de retención. Es una crisis cultural y operativa. La pregunta ya no es por qué está pasando, sino por qué seguimos gestionando empresas así en 2025.</p>
 
-      <h3>🧠 The leadership gap that’s costing trillions</h3>
-      <p>The quality of leadership is the single most important factor in team performance. It explains up to <strong>70% of the difference</strong> between a motivated team and a toxic one. Yet most managers are unprepared and lack the tools to lead in hybrid, fast-changing environments that prioritize experience.</p>
+      <h3>🧠 La brecha de liderazgo que cuesta billones</h3>
+      <p>La calidad del liderazgo es el factor más determinante en el desempeño de un equipo. Puede explicar hasta <strong>el 70% de la diferencia</strong> entre un equipo motivado y uno tóxico. Sin embargo, muchos managers no están preparados y carecen de herramientas para liderar en entornos híbridos, dinámicos y centrados en la experiencia.</p>
 
-      <p>Even worse, manager engagement is also declining. The most affected groups are <strong>young leaders</strong> and <strong>women in leadership roles</strong>, who are burning out, shutting down, or simply leaving.</p>
+      <p>Aún más alarmante: el compromiso de los propios managers también está disminuyendo. Los grupos más afectados son <strong>líderes jóvenes</strong> y <strong>mujeres en roles de liderazgo</strong>, que enfrentan mayores niveles de agotamiento y desconexión.</p>
 
-      <p>When leadership collapses, culture collapses. And when culture breaks, the company begins to derail.</p>
+      <p>Cuando el liderazgo colapsa, la cultura se deteriora. Y cuando la cultura se rompe, la empresa comienza a desviarse.</p>
 
-      <p>Now, let’s zoom out: if companies invested in engagement in a meaningful way, we could unlock <strong>$9.6 trillion</strong> in global productivity. That’s almost <strong>10% of the world’s GDP</strong>.</p>
+      <p>Si ampliamos la mirada: si las compañías invirtieran estratégicamente en conexión, podríamos desbloquear <strong>9,6 billones de dólares</strong> en productividad global. Eso representa casi <strong>el 10% del PBI mundial</strong>.</p>
 
-      <h3>✨ Where Sparkclub comes in</h3>
-      <p>At Sparkclub, we don’t just create engagement tools. We build <strong>systems that activate culture</strong>, support leadership, and deliver real results.</p>
+      <h3>✨ Donde entra Sparkclub</h3>
+      <p>En Sparkclub no creamos simples herramientas de engagement. Construimos <strong>sistemas que activan cultura</strong>, fortalecen el liderazgo y generan resultados reales.</p>
 
-      <p>We use technology to connect people through real, meaningful experiences that go far beyond the classic Friday happy hour. Because connection isn’t about budget — it’s about intention. And when done right, it translates into performance.</p>
+      <p>Utilizamos tecnología para conectar personas a través de experiencias significativas que van mucho más allá del clásico after office de los viernes. Porque la conexión no depende del presupuesto, sino de la intención. Y cuando está bien diseñada, se traduce en rendimiento.</p>
 
-      <h2>Our platform helps leaders to:</h2>
+      <h2>Nuestra plataforma ayuda a los líderes a:</h2>
       <ul>
-        <li>Read signals of mood, friction, and energy in real time.</li>
-        <li>Receive recommendations based on actual interests, not assumptions.</li>
-        <li>Activate curated experiences and automate incentives through gamification.</li>
+        <li>Leer señales de ánimo, fricción y energía en tiempo real.</li>
+        <li>Recibir recomendaciones basadas en intereses reales, no en suposiciones.</li>
+        <li>Activar experiencias curadas y automatizar incentivos mediante dinámicas de gamificación.</li>
       </ul>
 
-      <p>What we do is connect the <strong>right moment</strong> with the <strong>right experience</strong>. Because culture doesn’t just happen — it’s designed.</p>
+      <p>Lo que hacemos es conectar <strong>el momento adecuado</strong> con <strong>la experiencia correcta</strong>. Porque la cultura no sucede por accidente: se diseña.</p>
 
-      <h3>📊 A massive market opportunity</h3>
-      <p>The HR Tech industry continues to grow, but many tools still treat engagement as an annual KPI.</p>
+      <h3>📊 Una oportunidad de mercado masiva</h3>
+      <p>La industria HR Tech sigue creciendo, pero muchas herramientas aún tratan el engagement como un KPI anual.</p>
 
-      <p>Meanwhile, the real market of disconnected employees is massive — <strong>over 130 million in Latin America alone</strong>. Globally, this problem translates into billions of dollars.</p>
+      <p>Mientras tanto, el mercado real de personas desconectadas es enorme — <strong>más de 130 millones solo en Latinoamérica</strong>. A nivel global, este problema se traduce en cientos de miles de millones de dólares.</p>
 
-      <p>Companies that successfully close this gap won’t just retain talent: they’ll build a competitive advantage based on trust, culture, and human energy.</p>
+      <p>Las empresas que logren cerrar esta brecha no solo retendrán talento: construirán una ventaja competitiva basada en confianza, cultura y energía humana.</p>
 
-      <p>At Sparkclub, we are building that infrastructure. We transform everyday moments into <strong>scalable signals of engagement</strong>. We connect data and emotion.</p>
+      <p>En Sparkclub estamos construyendo esa infraestructura. Transformamos momentos cotidianos en <strong>señales escalables de conexión</strong>. Conectamos datos y emoción.</p>
 
-      <p>And we help companies move beyond simply having “culture” to achieving real, active <strong>connection</strong>.</p>
+      <p>Y ayudamos a las empresas a pasar de simplemente tener “cultura” a lograr una <strong>conexión activa y medible</strong>.</p>
 
-      <blockquote>We help companies go from passive culture to active connection.</blockquote>
+      <blockquote>Ayudamos a las empresas a pasar de cultura pasiva a conexión activa.</blockquote>
 
-      <h3>🔁 From managing to leading</h3>
-      <p>The cost of doing nothing is no longer intangible — it’s measurable. And enormous. But the opportunity to do better has never been clearer.</p>
+      <h3>🔁 De gestionar a liderar</h3>
+      <p>El costo de no hacer nada ya no es intangible: es medible. Y enorme. Pero la oportunidad de hacerlo mejor nunca fue tan clara.</p>
 
-      <p>We believe in <strong>leadership backed by systems</strong>, powered by data, and guided by purpose. Everything starts when you stop guessing and start building teams that truly thrive.</p>
+      <p>Creemos en un <strong>liderazgo respaldado por sistemas</strong>, impulsado por datos y guiado por propósito. Todo comienza cuando dejamos de adivinar y empezamos a construir equipos que realmente prosperan.</p>
 
       <hr />
 
-      <p><em>Sources:</em><br />
+      <p><em>Fuentes:</em><br />
       Gallup – State of the Global Workplace 2025</p>
     `,
   },
+
   {
     id: "workplace-changing",
-    title: "The Workplace Is Changing. Are We Listening?",
-    date: "11 July, 2025",
-    tag: "Workplace",
+    title: "El trabajo está cambiando. ¿Estamos escuchando?",
+    date: "2025-07-11",
+    tag: "Trabajo",
     cover: "/images/Blog/Bouldering.svg",
     content: `
-    <p>As global engagement hits historic lows and managers face growing pressure, the future of work hangs in the balance. This post explores the root causes of workplace disconnection and how a more personalized, data-driven approach can help teams rebuild trust, motivation, and belonging.</p>
+    <p>Mientras la conexión laboral alcanza mínimos históricos y los managers enfrentan una presión creciente, el futuro del trabajo está en juego. Este artículo explora las causas profundas de la desconexión en el entorno laboral y cómo un enfoque más personalizado y basado en datos puede ayudar a los equipos a reconstruir confianza, motivación y sentido de pertenencia.</p>
 
-    <p>Only <strong>21% of employees worldwide</strong> say they feel engaged at work. In Europe, that number drops to just <strong>14%</strong>, and in Latin America, it’s only <strong>26%</strong>. This growing disconnect between people and their work is more than a motivational issue — it’s an economic one. Disengagement is estimated to cost the global economy over <strong>$438 billion per year</strong> in lost productivity, absenteeism, and turnover.</p>
+    <p>Solo <strong>el 21% de los empleados a nivel mundial</strong> afirma sentirse realmente involucrado en su trabajo. En Europa, esa cifra cae al <strong>14%</strong>, y en Latinoamérica alcanza apenas el <strong>26%</strong>. Esta creciente desconexión entre las personas y su trabajo no es solo un problema motivacional: es un problema económico. Se estima que la falta de engagement le cuesta a la economía global más de <strong>438 mil millones de dólares al año</strong> en pérdida de productividad, ausentismo y rotación.</p>
 
-    <h3>Managers under pressure, cultures losing shape</h3>
-    <p>It’s not just employees who are struggling. Only <strong>27% of managers</strong> feel engaged themselves, and many report lacking the support, tools, and time to lead effectively. This is critical, given that <strong>70% of a team’s engagement</strong> is directly tied to their manager.</p>
+    <h3>Managers bajo presión, culturas perdiendo forma</h3>
+    <p>No solo los empleados están luchando. Apenas <strong>el 27% de los managers</strong> se siente realmente comprometido, y muchos reportan falta de apoyo, herramientas y tiempo para liderar de manera efectiva. Esto es crítico, considerando que <strong>el 70% del engagement de un equipo</strong> está directamente vinculado a su manager.</p>
 
-    <p>At the same time, there’s a widening gap between what leadership believes they’re offering and what employees actually experience. Many organizations say they’re focused on wellbeing, but employees often don’t feel it. The disconnect is increasingly evident.</p>
+    <p>Al mismo tiempo, existe una brecha cada vez mayor entre lo que el liderazgo cree estar ofreciendo y lo que los empleados realmente experimentan. Muchas organizaciones dicen priorizar el bienestar, pero las personas no lo perciben así. La desconexión es cada vez más evidente.</p>
 
-    <h3>So, where do we go from here?</h3>
-    <p>The most forward-thinking organizations aren’t just rolling out new perks — they’re <strong>redesigning the employee experience</strong> around people’s real needs.</p>
+    <h3>Entonces, ¿hacia dónde vamos?</h3>
+    <p>Las organizaciones más avanzadas no solo están sumando beneficios aislados: están <strong>rediseñando la experiencia del empleado</strong> en función de necesidades reales.</p>
 
-    <p>Key areas of focus include:</p>
+    <p>Las áreas clave de enfoque incluyen:</p>
     <ul>
-      <li>Offering more schedule flexibility</li>
-      <li>Increasing career visibility</li>
-      <li>Redesigning key cultural moments</li>
-      <li>Addressing mental health</li>
-      <li>Delivering personalized experiences and benefits</li>
+      <li>Mayor flexibilidad horaria</li>
+      <li>Más visibilidad y proyección profesional</li>
+      <li>Rediseño de momentos culturales clave</li>
+      <li>Atención a la salud mental</li>
+      <li>Experiencias y beneficios personalizados</li>
     </ul>
 
-    <p>What these strategies have in common is clear: they’re based on <strong>real human signals</strong>, not assumptions. And they’re designed at the individual level, not for the average employee.</p>
+    <p>Lo que estas estrategias tienen en común es claro: se basan en <strong>señales humanas reales</strong>, no en suposiciones. Y están diseñadas a nivel individual, no para el “empleado promedio”.</p>
 
-    <h3>Tech and culture aren’t opposites — they’re allies</h3>
-    <p>Technology can’t fix culture on its own. But when used with purpose, it can help teams listen better, act faster, and connect more meaningfully.</p>
+    <h3>Tecnología y cultura no son opuestas — son aliadas</h3>
+    <p>La tecnología no puede arreglar la cultura por sí sola. Pero cuando se utiliza con propósito, puede ayudar a los equipos a escuchar mejor, actuar más rápido y conectar de forma más significativa.</p>
 
-    <p>With the right tools, we can interpret behavioral data, understand team sentiment, and offer experiences that actually resonate. What used to be based on intuition can now be guided by insight.</p>
+    <p>Con las herramientas adecuadas, podemos interpretar datos de comportamiento, comprender el pulso del equipo y activar experiencias que realmente resuenen. Lo que antes se basaba en intuición, hoy puede guiarse por información concreta.</p>
 
-    <blockquote>Because at its core, this isn’t just a structural problem — it’s an emotional one. People want to feel seen, heard, and valued. And technology can help make that happen.</blockquote>
+    <blockquote>Porque en el fondo, este no es solo un problema estructural: es un problema emocional. Las personas quieren sentirse vistas, escuchadas y valoradas. Y la tecnología puede ayudarnos a hacerlo realidad.</blockquote>
 
-    <h3>The WHY of building Sparkclub</h3>
-    <p>At Sparkclub, we believe the future of work is built on <strong>connection</strong>. We’re building an AI-powered platform that helps managers strengthen culture and motivation by connecting people with personalized experiences – aligned with their real interests and needs.</p>
+    <h3>El porqué de Sparkclub</h3>
+    <p>En Sparkclub creemos que el futuro del trabajo se construye sobre la <strong>conexión</strong>. Estamos desarrollando una plataforma impulsada por IA que ayuda a los managers a fortalecer la cultura y la motivación conectando a las personas con experiencias personalizadas, alineadas con sus intereses y necesidades reales.</p>
 
-    <p>But Sparkclub isn’t just another engagement tool. It’s designed to act on <strong>real signals:</strong> preferences, behaviors, feedback, and emotional cues.</p>
+    <p>Pero Sparkclub no es una herramienta más de engagement. Está diseñada para actuar sobre <strong>señales reales:</strong> preferencias, comportamientos, feedback y señales emocionales.</p>
 
-    <p>Our system maps out each individual’s interests and motivators, and matches them with curated experiences – from team-building activities and learning opportunities to wellness perks and community moments – all aligned with company values.</p>
+    <p>Nuestro sistema mapea los intereses y motivadores de cada persona, y los conecta con experiencias curadas — desde actividades de team building y oportunidades de aprendizaje hasta beneficios de bienestar y momentos de comunidad — todo alineado con los valores de la empresa.</p>
 
-    <p>Managers don’t need to guess what drives their people. They get insight, flexibility, and tools to act – not once a year, but as part of the day-to-day experience. Sparkclub makes culture measurable, engagement dynamic, and connection scalable.</p>
+    <p>Los managers no tienen que adivinar qué motiva a su equipo. Obtienen información, flexibilidad y herramientas para actuar — no una vez al año, sino como parte del día a día. Sparkclub hace que la cultura sea medible, el engagement dinámico y la conexión escalable.</p>
 
-    <p>Through our intelligence layer, <strong>InfoFi</strong>, we turn behavioral signals into actionable data — and data into incentive systems that reward participation, belonging, and engagement.</p>
+    <p>A través de nuestra capa de inteligencia, <strong>InfoFi</strong>, transformamos señales de comportamiento en datos accionables — y los datos en sistemas de incentivos que premian la participación, el sentido de pertenencia y la involucración.</p>
 
-    <h3>Because work shouldn’t just be about showing up.<br/>It should mean something.</h3>
+    <h3>Porque el trabajo no debería ser solo presentarse.<br/>Debería significar algo.</h3>
 
     <hr />
 
-    <p><em>Sources:</em><br />
+    <p><em>Fuentes:</em><br />
       Gallup – State of the Global Workplace 2025<br />
-      2024 Global Talent Trends Report<br />
+      Global Talent Trends Report 2024<br />
       Deloitte – Global Human Capital Trends 2025
     </p>
   `,
   },
+
+
   {
     id: "ai-hr-future",
     title:
-      "Human Resources in Charge: Why the Future of AI at Work Should Be Led by HR",
-    date: "09 July 2025",
-    tag: "AI & HR",
+      "Recursos Humanos al mando: por qué el futuro de la IA en el trabajo debe estar liderado por RR. HH.",
+    date: "2025-07-09",
+    tag: "IA y RR. HH.",
     cover: "/images/Blog/ArtificialIntelligence.webp",
     content: `
-    <p>Artificial intelligence is no longer a distant trend — it's fully integrated into how organizations operate, evolve, and thrive. As companies race to adopt AI, there’s a growing consensus about who should lead this transformation: the Human Resources (HR) department.</p>
+    <p>La inteligencia artificial ya no es una tendencia lejana: está totalmente integrada en la forma en que las organizaciones operan, evolucionan y prosperan. A medida que las empresas se apresuran a adoptar la IA, crece el consenso sobre quién debe liderar esta transformación: el área de Recursos Humanos (RR. HH.).</p>
 
-    <p>Recent statements from IBM’s CHRO, combined with global reports from Mercer and Deloitte, highlight a profound shift in how HR is perceived: no longer just a support function, but as a <strong>strategic architect</strong> of the AI-driven workplace.</p>
+    <p>Declaraciones recientes de la CHRO de IBM, combinadas con informes globales de Mercer y Deloitte, señalan un cambio profundo en cómo se percibe a RR. HH.: ya no solo como una función de soporte, sino como la <strong>arquitecta estratégica</strong> del entorno laboral impulsado por IA.</p>
 
-    <h3>HR is uniquely positioned to lead AI adoption</h3>
-    <p>According to IBM, HR professionals are best equipped to lead the transformation because they understand how people work and what they need to thrive <span class="italic">[Deloitte 2025]</span>. This aligns with Mercer’s <strong>Global Talent Trends 2024</strong> report, which shows that organizations adopting human-centered technology see <strong>higher retention and engagement</strong> <span class="italic">[Mercer 2024]</span>.</p>
+    <h3>RR. HH. está en una posición única para liderar la adopción de IA</h3>
+    <p>Según IBM, las y los profesionales de RR. HH. son quienes están mejor preparados para liderar la transformación porque entienden cómo trabajan las personas y qué necesitan para prosperar <span class="italic">[Deloitte 2025]</span>. Esto se alinea con el informe <strong>Global Talent Trends 2024</strong> de Mercer, que muestra que las organizaciones que adoptan tecnología centrada en las personas logran <strong>mayor retención y engagement</strong> <span class="italic">[Mercer 2024]</span>.</p>
 
-    <p>Additionally, <strong>30% of executives surveyed by Deloitte</strong> believe that CHROs should work closely with CIOs to optimize collaboration between humans and machines. Even more striking, <strong>11%</strong> envision the CHRO role evolving into a <em>Chief Human and Machine Resource Officer</em> <span class="italic">[Deloitte 2025]</span>.</p>
+    <p>Además, <strong>el 30% de los ejecutivos encuestados por Deloitte</strong> cree que las CHRO deberían trabajar muy de cerca con las áreas de tecnología (CIO) para optimizar la colaboración entre humanos y máquinas. Aún más llamativo: <strong>el 11%</strong> imagina que el rol de CHRO evolucionará hacia un <em>Chief Human and Machine Resource Officer</em> <span class="italic">[Deloitte 2025]</span>.</p>
 
-    <h3>Employees demand personalization — and AI makes it possible</h3>
-    <p>Today, employees want more than just a job. They’re looking for <strong>purpose, wellbeing, and personalization</strong>. According to Deloitte, <strong>60% of employees</strong> expect their company to increase their motivation, but only <strong>33%</strong> feel that their managers truly understand what drives them <span class="italic">[Deloitte 2025]</span>.</p>
+    <h3>Las personas exigen personalización — y la IA lo hace posible</h3>
+    <p>Hoy, las personas quieren más que un empleo. Buscan <strong>propósito, bienestar y personalización</strong>. Según Deloitte, <strong>el 60% de los empleados</strong> espera que su compañía aumente su motivación, pero solo <strong>el 33%</strong> siente que sus managers entienden realmente qué los impulsa <span class="italic">[Deloitte 2025]</span>.</p>
 
-    <p>This is where AI comes in. Advanced systems already allow companies to:</p>
+    <p>Ahí entra la IA. Los sistemas avanzados ya permiten a las empresas:</p>
     <ul>
-      <li>Analyze stress signals through wearable devices.</li>
-      <li>Connect employees to personalized learning and development opportunities.</li>
-      <li>Use AI-powered dashboards to send tailored reminders and incentives aligned with each individual’s goals and interests <span class="italic">[Deloitte 2025]</span>.</li>
+      <li>Analizar señales de estrés a través de wearables y herramientas de medición.</li>
+      <li>Conectar a las personas con oportunidades personalizadas de aprendizaje y desarrollo.</li>
+      <li>Usar tableros impulsados por IA para enviar recordatorios e incentivos alineados con los objetivos e intereses de cada individuo <span class="italic">[Deloitte 2025]</span>.</li>
     </ul>
 
-    <h3>The Sparkclub Formula: Human-centered AI to boost engagement</h3>
-    <p>At Sparkclub, we believe that AI should <strong>augment humans, not reduce them to data points</strong>. AI isn’t here to replace HR — it’s here to make it more powerful.</p>
+    <h3>La fórmula Sparkclub: IA centrada en las personas para potenciar el engagement</h3>
+    <p>En Sparkclub creemos que la IA debe <strong>amplificar a las personas, no reducirlas a puntos de datos</strong>. La IA no viene a reemplazar a RR. HH.: viene a hacerlo más potente.</p>
 
-    <p>Our platform is designed to:</p>
+    <p>Nuestra plataforma está diseñada para:</p>
     <ul>
-      <li>Provide intelligent dashboards that measure wellbeing, collaboration, and friction points.</li>
-      <li>Suggest hyper-personalized experiences — from training sessions to team activities — based on individual interests and behavior.</li>
-      <li>Equip HR teams with predictive insights to proactively address motivation and disengagement.</li>
+      <li>Proveer tableros inteligentes que miden bienestar, colaboración y puntos de fricción.</li>
+      <li>Sugerir experiencias hiperpersonalizadas — desde formaciones hasta actividades de equipo — según intereses y comportamientos individuales.</li>
+      <li>Dar a los equipos de RR. HH. información predictiva para anticipar la desmotivación y el riesgo de desconexión.</li>
     </ul>
 
-    <p>According to Deloitte, AI adoption is already reshaping the <strong>Employee Value Proposition (EVP)</strong>. More than <strong>70% of workers</strong> say they are more likely to stay at a company that helps them thrive in an AI-powered world <span class="italic">[Deloitte 2025]</span>.</p>
+    <p>Según Deloitte, la adopción de IA ya está redefiniendo la <strong>Propuesta de Valor al Empleado (EVP)</strong>. Más de <strong>el 70% de las personas</strong> dice que es más probable que se quede en una empresa que la ayude a prosperar en un mundo impulsado por IA <span class="italic">[Deloitte 2025]</span>.</p>
 
-    <p>To lead this transformation, HR must:</p>
+    <p>Para liderar esta transformación, RR. HH. necesita:</p>
     <ul>
-      <li>Embrace cross-functional roles between HR and technology.</li>
-      <li>Prioritize ethical AI that respects employee autonomy.</li>
-      <li>Reimagine engagement not as a perk, but as a strategic imperative.</li>
+      <li>Abrazar roles cruzados entre personas y tecnología.</li>
+      <li>Priorizar una IA ética que respete la autonomía y la privacidad de los empleados.</li>
+      <li>Reimaginar el engagement no como un beneficio extra, sino como un imperativo estratégico.</li>
     </ul>
 
-    <h2>HR holds the key to aligning tech and trust</h2>
-    <p>As companies adapt to AI, HR has the power to align <strong>technology with trust</strong> and <strong>performance with personalization</strong>. Platforms like Sparkclub allow HR teams to unlock this potential, scaling culture and connection with intelligence and actionable data.</p>
+    <h2>RR. HH. tiene la llave para alinear tecnología y confianza</h2>
+    <p>A medida que las compañías adoptan la IA, RR. HH. tiene el poder de alinear <strong>tecnología con confianza</strong> y <strong>desempeño con personalización</strong>. Plataformas como Sparkclub permiten que los equipos de personas desbloqueen ese potencial, escalando cultura y conexión con inteligencia y datos accionables.</p>
 
-    <blockquote>AI isn’t here to replace HR — it’s here to empower it.</blockquote>
+    <blockquote>La IA no viene a reemplazar a RR. HH.: viene a potenciarlo.</blockquote>
 
     <hr />
 
-    <h3>Sources & References</h3>
+    <h3>Fuentes y referencias</h3>
     <ul>
-      <li>IBM CHRO Statement – “Why HR Should Lead the AI Revolution in Companies,” Infobae, June 2025</li>
+      <li>Declaración de la CHRO de IBM – “Why HR Should Lead the AI Revolution in Companies”, Infobae, junio 2025</li>
       <li>Mercer (2024) – Global Talent Trends Report: <em>Empathy in Action: Designing Work for a New Era</em></li>
       <li>Deloitte (2025) – Global Human Capital Trends Report: <em>Reimagining the Workforce Experience for a Boundaryless World</em></li>
-      <li>Gartner – “How HR Can Prepare for the Generative AI Shift,” Gartner Insights, 2024</li>
-      <li>Accenture – “The CHRO as a Growth Executive,” Talent and Organization Report, 2023</li>
-      <li>IMD – “From CHRO to CHRO+AI: The Future of People Leadership,” IMD Business School, 2023</li>
-      <li>Washington Post – “No AI, No Job: Why Companies Like Duolingo and Shopify Are Mandating AI Literacy,” June 2025</li>
-      <li>Business Insider – “How Lattice Is Preparing for a World Where AI Agents and Humans Work Together,” June 2025</li>
-      <li>The Australian – “Balancing AI Agility With Workplace Stability,” June 2025</li>
+      <li>Gartner – “How HR Can Prepare for the Generative AI Shift”, Gartner Insights, 2024</li>
+      <li>Accenture – “The CHRO as a Growth Executive”, Talent and Organization Report, 2023</li>
+      <li>IMD – “From CHRO to CHRO+AI: The Future of People Leadership”, IMD Business School, 2023</li>
+      <li>The Washington Post – “No AI, No Job: Why Companies Like Duolingo and Shopify Are Mandating AI Literacy”, junio 2025</li>
+      <li>Business Insider – “How Lattice Is Preparing for a World Where AI Agents and Humans Work Together”, junio 2025</li>
+      <li>The Australian – “Balancing AI Agility With Workplace Stability”, junio 2025</li>
     </ul>
   `,
   },
   {
     id: "culture-connection-google",
     title:
-      "Culture, Connection, and Experiences at Google: A Success Story in Employee Engagement",
-    date: "10 April 2025",
-    tag: "Culture & Connection",
+      "Cultura, conexión y experiencias en Google: una historia de éxito en employee engagement",
+    date: "2025-04-10",
+    tag: "Cultura y conexión",
     cover: "/images/blog/Running.svg",
-    ontent: `
-    <p>In today’s corporate world, few companies have captured attention for their organizational culture like Google. Known for its innovative work environment and employee-centric initiatives, Google has become a reference point for engagement and job satisfaction. This article explores how Google’s strategies across culture, connection, and experiences can serve as a model for organizations seeking to improve employee engagement.</p>
+    content: `
+    <p>En el mundo corporativo actual, pocas compañías han captado tanta atención por su cultura organizacional como Google. Conocida por su entorno de trabajo innovador y sus iniciativas centradas en las personas, Google se ha convertido en un referente de engagement y satisfacción laboral. Este artículo explora cómo las estrategias de Google en cultura, conexión y experiencias pueden servir como modelo para organizaciones que buscan mejorar el engagement de sus equipos.</p>
 
-    <h3>🌟 Defining Employee Engagement</h3>
-    <p><strong>Employee engagement</strong> is the emotional connection and commitment an employee has to their organization and its goals. An engaged employee doesn’t just complete tasks—they bring passion, innovation, and a genuine desire to contribute to the company’s success.</p>
+    <h3>🌟 Definiendo el employee engagement</h3>
+    <p>El <strong>employee engagement</strong> es la conexión emocional y el nivel de compromiso que una persona tiene con su organización y sus objetivos. Una persona comprometida no solo cumple tareas: aporta pasión, innovación y un deseo genuino de contribuir al éxito de la empresa.</p>
 
-    <h3>Why Engagement Matters</h3>
+    <h3>Por qué el engagement importa</h3>
     <ul>
-      <li><strong>Higher productivity:</strong> engaged employees tend to be more efficient and proactive.</li>
-      <li><strong>Lower turnover:</strong> when people feel valued, they’re less likely to leave.</li>
-      <li><strong>Better climate:</strong> engagement fosters a positive, collaborative culture.</li>
+      <li><strong>Mayor productividad:</strong> las personas comprometidas suelen ser más eficientes y proactivas.</li>
+      <li><strong>Menor rotación:</strong> cuando la gente se siente valorada, es menos probable que se vaya.</li>
+      <li><strong>Mejor clima:</strong> el engagement fomenta una cultura positiva y colaborativa.</li>
     </ul>
 
-    <h3>🎯 Experiences That Build Culture</h3>
-    <p>At Google, employees are encouraged to fully participate in the workplace beyond day-to-day responsibilities. A standout example is the creation of <strong>Employee Resource Groups (ERGs)</strong>—employee-led communities that share identities, interests, or causes such as sustainability, mental health, cultural affiliations, or LGBTQ+ support.</p>
-    <p>What makes these groups exceptional is that Google not only allows them, it <strong>actively supports and funds</strong> them.</p>
+    <h3>🎯 Experiencias que construyen cultura</h3>
+    <p>En Google, se anima a las personas a participar activamente en la vida de la empresa más allá de sus responsabilidades diarias. Un ejemplo destacado es la creación de los <strong>Employee Resource Groups (ERGs)</strong>: comunidades lideradas por empleados que comparten identidades, intereses o causas, como sustentabilidad, salud mental, afiliaciones culturales o apoyo a la comunidad LGBTQ+.</p>
+    <p>Lo que hace únicos a estos grupos es que Google no solo los permite, sino que los <strong>apoya y financia activamente</strong>.</p>
 
-    <p>Google has <strong>17 ERGs</strong> spanning more than <strong>50,000 employees</strong> in over <strong>70 countries</strong>—a significant share of its workforce. These groups help <em>boost creativity and reduce burnout</em> by creating meaningful spaces for connection and purpose.</p>
+    <p>Google cuenta con <strong>17 ERGs</strong> que abarcan a más de <strong>50.000 empleados</strong> en más de <strong>70 países</strong>, una parte muy significativa de su plantilla. Estos grupos ayudan a <em>impulsar la creatividad y reducir el burnout</em> al crear espacios significativos de conexión y propósito.</p>
 
-    <h3>What ERGs Can Do</h3>
+    <h3>Qué pueden hacer los ERGs</h3>
     <ul>
-      <li><strong>Propose internal projects or initiatives:</strong> e.g., the Sustainability ERG can run office carbon-reduction campaigns.</li>
-      <li><strong>Organize events and awareness campaigns:</strong> e.g., Pride Month initiatives to promote inclusion and diversity.</li>
-      <li><strong>Create cross-department activities:</strong> bringing people from different areas together around shared interests.</li>
+      <li><strong>Proponer proyectos o iniciativas internas:</strong> por ejemplo, el ERG de sustentabilidad puede liderar campañas para reducir la huella de carbono en la oficina.</li>
+      <li><strong>Organizar eventos y campañas de concientización:</strong> como iniciativas durante el Mes del Orgullo para promover inclusión y diversidad.</li>
+      <li><strong>Crear actividades inter-áreas:</strong> conectando personas de distintos equipos en torno a intereses compartidos.</li>
     </ul>
 
-    <p>This strong support underscores Google’s commitment to diversity and inclusion. Research suggests that companies with effective ERGs can see a <strong>9% increase in retention</strong> and a <strong>10% lift in job satisfaction</strong>. Using <strong>People Analytics</strong>, Google evaluates the impact of these initiatives; teams with high psychological safety—a key outcome fostered by ERGs—are <strong>27% more likely to be effective</strong>.</p>
+    <p>Este nivel de apoyo refleja el compromiso de Google con la diversidad y la inclusión. La investigación muestra que las compañías con ERGs efectivos pueden lograr hasta un <strong>9% de aumento en retención</strong> y un <strong>10% de mejora en satisfacción laboral</strong>. A través de <strong>People Analytics</strong>, Google mide el impacto de estas iniciativas; los equipos con alta seguridad psicológica —un resultado clave impulsado por los ERGs— son <strong>un 27% más propensos a ser efectivos</strong>.</p>
 
-    <h3>📊 The Impact of Engagement at Google</h3>
+    <h3>📊 El impacto del engagement en Google</h3>
     <ul>
-      <li><strong>Lower turnover versus tech averages:</strong> while the tech industry’s turnover is estimated around <strong>13.2%</strong>, Google’s culture has helped keep attrition below sector averages.</li>
-      <li><strong>Higher productivity:</strong> studies indicate happy employees are about <strong>12% more productive</strong>; Google’s focus on satisfaction and engagement has translated into greater efficiency and performance.</li>
-      <li><strong>Best-place rankings:</strong> Google consistently appears on prestigious “best places to work” lists (e.g., Glassdoor), reflecting sustained commitment to a positive culture.</li>
+      <li><strong>Menor rotación frente al promedio del sector tecnológico:</strong> mientras que en tech la rotación ronda el <strong>13,2%</strong>, la cultura de Google ha ayudado a mantener la salida de talento por debajo del promedio.</li>
+      <li><strong>Mayor productividad:</strong> diversos estudios indican que las personas felices son alrededor de un <strong>12% más productivas</strong>; el foco de Google en satisfacción y engagement se traduce en mayor eficiencia y rendimiento.</li>
+      <li><strong>Rankings de “mejores lugares para trabajar”:</strong> Google aparece de forma constante en listas de empleadores destacados (como Glassdoor), reflejando un compromiso sostenido con una cultura positiva.</li>
     </ul>
 
-    <h3>🚀 Sparkclub’s Value Proposition</h3>
-    <p>You don’t have to be as big as Google to build a culture that generates engagement.</p>
-    <p>At <strong>Sparkclub</strong>, we specialize in driving employee engagement through meaningful, measurable experiences. We partner closely with HR teams and employees throughout the process to ensure every initiative has real, quantifiable impact.</p>
+    <h3>🚀 La propuesta de valor de Sparkclub</h3>
+    <p>No hace falta ser tan grande como Google para construir una cultura que genere engagement.</p>
+    <p>En <strong>Sparkclub</strong> nos especializamos en impulsar el engagement a través de experiencias significativas y medibles. Trabajamos de cerca con equipos de RR. HH. y con las personas de la organización para que cada iniciativa tenga un impacto real y cuantificable.</p>
 
-    <h3>End-to-End Support and Analytics</h3>
-    <p>From concept to execution, we deliver advanced analytics that track activities across the year, making it easy to generate precise reports on ROI and cultural impact.</p>
+    <h3>Acompañamiento end-to-end y analíticas</h3>
+    <p>Desde la ideación hasta la ejecución, ofrecemos analíticas avanzadas que permiten seguir las actividades a lo largo del año y generar reportes precisos sobre ROI e impacto cultural.</p>
 
-    <h3>Product Expansion & Web3 Adoption</h3>
-    <p>We launched our first product focused on corporate events that strengthen team cohesion and engagement. Looking ahead, we’re developing solutions for employee benefits and loyalty programs, incorporating emerging technologies like <strong>Web3</strong>. These innovations enable personalized rewards and more secure, transparent point systems using blockchain.</p>
+    <h3>Expansión de producto y adopción de Web3</h3>
+    <p>Lanzamos nuestro primer producto enfocado en eventos corporativos que fortalecen la cohesión y el engagement de los equipos. Mirando hacia adelante, estamos desarrollando soluciones de beneficios para empleados y programas de lealtad, incorporando tecnologías emergentes como <strong>Web3</strong>. Estas innovaciones permiten recompensas personalizadas y sistemas de puntos más seguros y transparentes utilizando blockchain.</p>
 
-    <p>In short, Sparkclub is transforming how organizations build and measure engagement—combining enriching experiences with deep analytics and cutting-edge technology.</p>
+    <p>En síntesis, Sparkclub está transformando la forma en que las organizaciones construyen y miden el engagement, combinando experiencias enriquecedoras con analíticas profundas y tecnología de vanguardia.</p>
 
-    <h3>🧭 Reflections</h3>
-    <blockquote>Google’s success isn’t only about technology; it starts with understanding that true innovation begins with people.</blockquote>
-    <p>At Spark, we’re here to help you build your own version of that success—through experiences that not only add value, but transform.</p>
+    <h3>🧭 Reflexiones</h3>
+    <blockquote>El éxito de Google no se trata solo de tecnología; comienza por entender que la verdadera innovación empieza por las personas.</blockquote>
+    <p>En Spark, estamos para ayudarte a construir tu propia versión de ese éxito, a través de experiencias que no solo agregan valor, sino que transforman.</p>
   `,
   },
   {
     id: "employee-engagement",
-    title: "What Is Employee Engagement and Why Your Team Needs It Now",
-    date: "08 April, 2025",
-    tag: "Employee Engagement",
+    title: "Qué es el employee engagement y por qué tu equipo lo necesita ahora",
+    date: "2025-04-08",
+    tag: "Engagement de empleados",
     cover: "/images/Blog/GoogleEngagement.png",
     content: `
-    <p>The world of work has changed. Offices are hybrid, teams are distributed, and people want more than a paycheck at the end of the month. In this new context, <strong>engagement</strong> has become a strategic asset. It’s no longer enough to have productive contributors; we need people who are connected, committed, and excited to build together. In this article, we unpack what employee engagement really is, why it matters, and how innovative companies are activating it.</p>
+    <p>El mundo del trabajo cambió. Las oficinas son híbridas, los equipos están distribuidos y las personas quieren algo más que un sueldo a fin de mes. En este nuevo contexto, el <strong>engagement</strong> se volvió un activo estratégico. Ya no alcanza con tener colaboradores productivos: necesitamos personas conectadas, comprometidas y entusiasmadas por construir juntas. En este artículo, desarmamos qué es realmente el employee engagement, por qué importa y cómo las empresas innovadoras lo están activando.</p>
 
-    <h2>Connection, Culture, and Experiences: The New ABC for High-Impact Teams</h2>
+    <h2>Conexión, cultura y experiencias: el nuevo ABC de los equipos de alto impacto</h2>
 
-    <h3>💡 What is Smart Engagement?</h3>
-    <p>At Spark, we define <strong>smart engagement</strong> as the <em>active emotional connection</em> that links people to their team, their purpose, and their work environment.</p>
-    <p>It’s not just about being “comfortable” or being paid well. An engaged team:</p>
+    <h3>💡 Qué es el smart engagement</h3>
+    <p>En Spark definimos el <strong>smart engagement</strong> como la <em>conexión emocional activa</em> que vincula a las personas con su equipo, su propósito y su entorno de trabajo.</p>
+    <p>No se trata solo de estar “cómodo” o de cobrar bien. Un equipo comprometido:</p>
     <ul>
-      <li>Feels part of something bigger.</li>
-      <li>Interacts with authenticity.</li>
-      <li>Participates actively in the company culture.</li>
-      <li>Celebrates, proposes, creates.</li>
+      <li>Siente que forma parte de algo más grande.</li>
+      <li>Interactúa con autenticidad.</li>
+      <li>Participa activamente de la cultura de la empresa.</li>
+      <li>Celebra, propone, crea.</li>
     </ul>
 
-    <h3>Key Differences</h3>
+    <h3>Diferencias clave</h3>
     <table>
       <thead>
         <tr>
-          <th>Concept</th>
-          <th>What it means</th>
+          <th>Concepto</th>
+          <th>Qué significa</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Job satisfaction</td>
-          <td>I feel good about my job.</td>
+          <td>Satisfacción laboral</td>
+          <td>Me siento bien con mi trabajo.</td>
         </tr>
         <tr>
-          <td>Retention</td>
-          <td>I stay at the company.</td>
+          <td>Retención</td>
+          <td>Me quedo en la empresa.</td>
         </tr>
         <tr>
           <td>Engagement</td>
-          <td>I get involved, contribute, enjoy—and help others do the same.</td>
+          <td>Me involucro, contribuyo, disfruto… y ayudo a que otros también lo hagan.</td>
         </tr>
       </tbody>
     </table>
 
-    <h3>📈 Why it matters</h3>
-    <p>According to Gallup, companies with engaged employees are:</p>
+    <h3>📈 Por qué importa</h3>
+    <p>Según Gallup, las empresas con personas comprometidas son:</p>
     <ul>
-      <li><strong>21%</strong> more profitable</li>
-      <li><strong>17%</strong> more productive</li>
-      <li><strong>41%</strong> less likely to suffer absenteeism</li>
+      <li><strong>21%</strong> más rentables</li>
+      <li><strong>17%</strong> más productivas</li>
+      <li><strong>41%</strong> menos propensas a sufrir ausentismo</li>
     </ul>
-    <p>And yet, only <strong>23%</strong> of employees globally feel truly engaged. The gap is huge—but so is the opportunity.</p>
+    <p>Y aun así, solo el <strong>23%</strong> de las personas a nivel global se siente realmente comprometida. La brecha es enorme, pero la oportunidad también.</p>
 
-    <h3>🛠️ How to build engagement</h3>
-    <p>There are no magic formulas, but there are pillars:</p>
+    <h3>🛠️ Cómo construir engagement</h3>
+    <p>No hay fórmulas mágicas, pero sí pilares:</p>
 
-    <h2>Shared culture</h2>
-    <p>Clarity on values, vision, and purpose—so they’re more than words on a wall.</p>
+    <h2>Cultura compartida</h2>
+    <p>Claridad sobre valores, visión y propósito, para que sean algo más que palabras en una pared.</p>
 
-    <h2>Recognition</h2>
-    <p>People need to feel seen and valued—not only for results, but for attitudes and collaboration.</p>
+    <h2>Reconocimiento</h2>
+    <p>Las personas necesitan sentirse vistas y valoradas, no solo por sus resultados, sino también por sus actitudes y su colaboración.</p>
 
-    <h2>Experiences beyond work</h2>
-    <p>Human relationships aren’t forged on a video call. They’re built by sharing, playing, and creating memories.</p>
+    <h2>Experiencias más allá del trabajo</h2>
+    <p>Las relaciones humanas no se construyen solo en una videollamada. Se construyen compartiendo, jugando y creando recuerdos.</p>
 
-    <h2>Active participation</h2>
-    <p>When people can voice opinions, propose ideas, and choose, they become part of the change.</p>
+    <h2>Participación activa</h2>
+    <p>Cuando las personas pueden opinar, proponer ideas y elegir, se vuelven parte del cambio.</p>
 
-    <h3>🌍 Real use cases</h3>
+    <h3>🌍 Casos reales</h3>
     <ul>
-      <li><strong>Zappos:</strong> a pioneer in culture based on shared experiences.</li>
-      <li><strong>Patagonia:</strong> incentives aligned to purpose and community.</li>
-      <li><strong>Google:</strong> fosters innovation with collaborative spaces and extracurricular activities.</li>
+      <li><strong>Zappos:</strong> pionera en una cultura basada en experiencias compartidas.</li>
+      <li><strong>Patagonia:</strong> incentivos alineados al propósito y a la comunidad.</li>
+      <li><strong>Google:</strong> fomenta la innovación con espacios colaborativos y actividades extracurriculares.</li>
     </ul>
 
-    <h3>💡 What Spark proposes</h3>
-    <p>At Spark, we believe the best way to activate engagement is through <strong>curated, human, and fun experiences</strong> that happen outside the day-to-day grind.</p>
-    <p><strong>🎯 Our platform</strong> lets each person set their interests and receive personalized proposals for activities, events, and benefits nearby—designed to enjoy with their team.</p>
+    <h3>💡 Lo que propone Spark</h3>
+    <p>En Spark creemos que la mejor forma de activar el engagement es a través de <strong>experiencias curadas, humanas y divertidas</strong> que suceden fuera de la rutina diaria.</p>
+    <p><strong>🎯 Nuestra plataforma</strong> permite que cada persona configure sus intereses y reciba propuestas personalizadas de actividades, eventos y beneficios cercanos, pensados para disfrutar en equipo.</p>
 
-    <h2>✨ Conclusion</h2>
-    <p>Employee engagement isn’t a perk. It’s a <strong>direct investment</strong> in your team’s culture, productivity, and happiness—and like any investment, it requires action.</p>
-    <p>From Spark, we invite you to build the culture your company deserves: more connected, more authentic, more human.</p>
-    <p><a href="https://sparkclub.xyz" target="_blank" rel="noopener">Explore our experiences</a> and start changing the way your team connects.</p>
+    <h2>✨ Conclusión</h2>
+    <p>El employee engagement no es un beneficio extra. Es una <strong>inversión directa</strong> en la cultura, la productividad y la felicidad de tu equipo, y como toda inversión, requiere acción.</p>
+    <p>Desde Spark te invitamos a construir la cultura que tu empresa merece: más conectada, más auténtica, más humana.</p>
+    <p><a href="https://sparkclub.xyz" target="_blank" rel="noopener">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
   `,
   },
   {
     id: "hello-spark-future-of-engagement",
-    title: "¡Hola, mundo! Meet Spark: The Future of Employee Engagement",
-    date: "23 January 2025",
-    tag: "Product",
+    title: "¡Hola, mundo! Conoce Spark: el futuro del employee engagement",
+    date: "2025-01-23",
+    tag: "Producto",
     cover: "/images/Blog/Logo.webp",
     content: `
-    <p>In today’s fast-paced corporate world, keeping employees engaged, motivated, and connected is more challenging than ever. Companies struggle with high turnover, lack of team cohesion, and disengaged employees—leading to lost productivity and declining morale.</p>
+    <p>En el mundo corporativo actual, acelerado y competitivo, mantener a las personas comprometidas, motivadas y conectadas es más desafiante que nunca. Las empresas lidian con alta rotación, falta de cohesión en los equipos y personas desconectadas, lo que deriva en pérdida de productividad y caída en la moral.</p>
 
-    <p><strong>Spark</strong> is an all-in-one smart engagement platform designed to help companies boost employee engagement, reduce turnover, and enhance workforce performance. We believe the key to a thriving workforce lies in <strong>smart engagement</strong>—creating meaningful experiences that bring teams together, lift performance, and strengthen workplace culture.</p>
+    <p><strong>Spark</strong> es una plataforma integral de smart engagement diseñada para ayudar a las compañías a aumentar el engagement, reducir la rotación y mejorar el desempeño de sus equipos. Creemos que la clave de una fuerza laboral vibrante está en el <strong>smart engagement</strong>: experiencias significativas que unen a los equipos, impulsan los resultados y fortalecen la cultura.</p>
 
-    <h3>Why Spark?</h3>
-    <p>Spark transforms how teams connect inside and outside the workplace by offering curated events, incentives, and loyalty-driven engagement programs.</p>
+    <h3>¿Por qué Spark?</h3>
+    <p>Spark transforma la manera en que los equipos se conectan dentro y fuera del trabajo mediante eventos curados, incentivos y programas de lealtad orientados al engagement.</p>
     <ul>
-      <li><strong>For Employees:</strong> Tailored experiences aligned with personal interests, fostering belonging and motivation.</li>
-      <li><strong>For Companies:</strong> Data-driven insights that help HR and leaders optimize engagement, improve retention, and boost productivity.</li>
+      <li><strong>Para las personas:</strong> experiencias hechas a medida, alineadas con sus intereses, que fomentan pertenencia y motivación.</li>
+      <li><strong>Para las empresas:</strong> insights basados en datos que ayudan a RR. HH. y al liderazgo a optimizar el engagement, mejorar la retención y potenciar la productividad.</li>
     </ul>
 
-    <h3>A Smarter Approach to Employee Engagement</h3>
-    <p>Traditional engagement programs often fall short because they don’t resonate with employees or deliver measurable impact. Spark changes that.</p>
-    <p>By leveraging <strong>AI-driven personalization</strong>, <strong>real-time analytics</strong>, and <strong>gamification</strong>, Spark ensures every initiative is both meaningful for employees and strategically beneficial for the business.</p>
+    <h3>Un enfoque más inteligente del employee engagement</h3>
+    <p>Muchos programas tradicionales de engagement fallan porque no conectan con las personas o no generan impacto medible. Spark cambia ese paradigma.</p>
+    <p>A través de <strong>personalización impulsada por IA</strong>, <strong>analíticas en tiempo real</strong> y <strong>dinámicas de gamificación</strong>, Spark se asegura de que cada iniciativa sea significativa para las personas y estratégica para el negocio.</p>
 
-    <h2>How Spark Benefits Both Employees and Leadership</h2>
-    <h3>🔹 For Employees</h3>
+    <h2>Cómo Spark potencia tanto a las personas como al liderazgo</h2>
+    <h3>🔹 Para las personas</h3>
     <ul>
-      <li>Personalized team-building experiences based on interests.</li>
-      <li>Access to exclusive events, wellness programs, and skill-building activities.</li>
-      <li>Recognition and rewards that matter—VIP perks and loyalty-driven incentives.</li>
+      <li>Experiencias de team building personalizadas según intereses.</li>
+      <li>Acceso a eventos exclusivos, programas de bienestar y actividades de desarrollo.</li>
+      <li>Reconocimiento y beneficios que importan: perks relevantes e incentivos basados en lealtad.</li>
     </ul>
 
-    <h3>🔹 For Business Leaders & HR Teams</h3>
+    <h3>🔹 Para líderes y equipos de RR. HH.</h3>
     <ul>
-      <li>Reduce turnover by fostering deeper employee connections.</li>
-      <li>Gain real-time insight into engagement trends and team morale.</li>
-      <li>Implement cost-effective strategies that improve performance and satisfaction.</li>
+      <li>Reducción de la rotación gracias a conexiones más profundas dentro de los equipos.</li>
+      <li>Visibilidad en tiempo real sobre tendencias de engagement y clima.</li>
+      <li>Estrategias costo-efectivas que mejoran desempeño y satisfacción.</li>
     </ul>
 
-    <h3>Benchmarks: What Industry Leaders Are Doing</h3>
+    <h3>Benchmarks: qué hacen los líderes de la industria</h3>
     <ul>
-      <li>✅ <strong>Google</strong> invests in immersive team experiences to sustain innovation and collaboration.</li>
-      <li>✅ <strong>Salesforce</strong> builds engagement through culture-first events and personalized benefits.</li>
-      <li>✅ <strong>LinkedIn</strong> leverages data-driven strategies to increase job satisfaction and retention.</li>
+      <li>✅ <strong>Google</strong> invierte en experiencias inmersivas para sostener la innovación y la colaboración.</li>
+      <li>✅ <strong>Salesforce</strong> impulsa el engagement con eventos centrados en la cultura y beneficios personalizados.</li>
+      <li>✅ <strong>LinkedIn</strong> usa estrategias basadas en datos para aumentar la satisfacción y la retención.</li>
     </ul>
-    <p>Spark brings this level of engagement excellence to companies of all sizes—making meaningful workplace connections accessible and measurable.</p>
+    <p>Spark lleva este nivel de excelencia en engagement a compañías de todos los tamaños, haciendo que las conexiones significativas en el trabajo sean accesibles y medibles.</p>
 
-    <h3>Join the Spark Movement</h3>
-    <p>We’re here to redefine employee engagement—turning today’s workforce challenges into opportunities for growth and connection.</p>
-    <p><strong>Ready to build a more engaged, motivated, high-performing team?</strong> Let’s Spark the change together. 🚀</p>
-    <p><em>Sign up to get launch updates and early access to Spark’s engagement platform.</em></p>
+    <h3>Súmate al movimiento Spark</h3>
+    <p>Estamos acá para redefinir el employee engagement, convirtiendo los desafíos actuales del trabajo en oportunidades de crecimiento y conexión.</p>
+    <p><strong>¿Listo para construir un equipo más comprometido, motivado y de alto desempeño?</strong> Encendamos el cambio juntos. 🚀</p>
+    <p><em>Regístrate para recibir novedades de nuestro lanzamiento y acceso anticipado a la plataforma de engagement de Spark.</em></p>
   `,
   },
 ];
@@ -411,12 +414,12 @@ export default function BlogPostPageContainer({ params }) {
       >
         <div className="grid grid-cols-12 gap-x-6">
           <div className="col-start-2 col-span-10">
-            <h1 className="text-2xl font-semibold">Post not found</h1>
+            <h1 className="text-2xl font-semibold">Post no encontrado</h1>
             <Link
               href="/blog"
               className="text-zinc-700 underline mt-4 inline-block"
             >
-              ← Back to blog
+              ← Volver al blog
             </Link>
           </div>
         </div>
@@ -427,11 +430,11 @@ export default function BlogPostPageContainer({ params }) {
   const dateObj = parseDate(post.date);
   const dateText = isNaN(dateObj)
     ? post.date
-    : dateObj.toLocaleDateString(undefined, {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      });
+    : dateObj.toLocaleDateString("es-ES", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
 
   return (
     <article className={`${publicSans.className} bg-white text-zinc-900`}>
@@ -443,7 +446,7 @@ export default function BlogPostPageContainer({ params }) {
               href="/blog"
               className="text-zinc-700 text-[20px] font-semibold"
             >
-              ← Back to blog
+              ← Volver al blog
             </Link>
             <h1 className="mt-3 text-[28px] sm:text-[36px] lg:text-[44px] font-semibold tracking-tight">
               {post.title}
