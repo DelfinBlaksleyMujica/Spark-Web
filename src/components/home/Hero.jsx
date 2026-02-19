@@ -36,7 +36,7 @@ export default function Hero({ data }) {
   const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
 
   return (
-    <div className="relative w-full h-[1250px] sm:h-[1200px]  md:h-[1350px] lg:h-[1400px] xl:h-[1400px] flex items-center justify-center overflow-hidden bg-[#151515]">
+    <div className="relative w-full h-[900px] sm:h-[1050px]  md:h-[990px] lg:h-[1000px] xl:h-[1050px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
 
 
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
@@ -106,7 +106,7 @@ export default function Hero({ data }) {
           {/*Floating Images*/}
           {/* LEFT BACK IMAGE */}
           <motion.img
-            className="absolute z-0 top-[790px] w-[150px] sm:w-[180px] md:top-[660px] md:w-[220px] lg:top-[630px] lg:w-[auto] xl:top-[570px] 2xl:top-[450px] left-0"
+            className="hidden xl:block xl:absolute xl:z-0  xl:w-[auto] xl:top-[570px] 2xl:top-[450px] lg:left-0"
             src="/images/HomeHero/imagenIzquierdaSuperior.svg"
             alt="Experiencias en SparkClub"
             // entry animation
@@ -119,7 +119,7 @@ export default function Hero({ data }) {
 
           {/* LEFT bottom IMAGE */}
           <motion.img
-            className="absolute z-0 top-[1050px] w-[150px] sm:w-[180px] sm:top-[1100px] md:top-[1000px] md:w-[220px] lg:top-[900px] lg:w-[auto] xl:top-[900px] 2xl:top-[900px] sm:left-20 left-0 "
+            className="hidden lg:block lg:absolute lg:z-0 lg:top-[900px] lg:w-[auto] xl:top-[800px] 2xl:top-[800px] lg:left-40 xl:left-[100px] 2xl:left-[150px]"
             src="/images/HomeHero/imagenIzquierdaInferior.svg"
             alt="Experiencias en SparkClub"
             // entry animation
@@ -133,7 +133,7 @@ export default function Hero({ data }) {
 
           {/* LEFT BUBBLE */}
           <motion.img
-            className="absolute w-[100px] left-[90px] top-[750px]  md:top-[620px] md:left-[130px] lg:top-[590px] lg:w-[auto] xl:top-[520px] 2xl:top-[400px] z-1"
+            className="hidden xl:block xl:absolute xl:w-[100px] xl:left-[90px]   xl:top-[520px] 2xl:top-[400px] xl:z-1"
             src="/images/HomeHero/globoIzquierda.svg"
             alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 60 }}
@@ -145,7 +145,7 @@ export default function Hero({ data }) {
 
           {/* PLATFORM SCREEN + IPHONE (md+) */}
           <motion.div
-            className="hidden md:flex md:items-center md:justify-center md:absolute md:left-1/2 md:-translate-x-1/2 md:top-[580px] lg:top-[520px] xl:top-[520px] 2xl:top-[520px] sm:z-10"
+            className="pt-10 z-10"
             initial={{ opacity: 0, y: 80 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
@@ -153,13 +153,13 @@ export default function Hero({ data }) {
           >
             <div className="relative inline-block">
               <img
-                className="lg:w-[720px] 2xl:w-[965px] h-auto"
+                className="md:top-[580px] lg:top-[520px] xl:top-[520px] 2xl:top-[500px]  w-[500px] sm:w-[600px] md:w-[600px] lg:w-[720px] 2xl:w-[965px] h-auto"
                 src="/images/HomeHero/Mockup_pantalla.svg"
                 alt="Imagen de plataforma de SparkClub"
               />
               {/* IPHONE MOCKUP - always stuck to right of platform, md+ */}
               <img
-                className="hidden md:block md:w-[100px] lg:w-[150px] 2xl:w-[260px] absolute md:top-[20px] lg:top-[30px] 2xl:top-[40px] md:-right-[40px] lg:-right-[60px] 2xl:-right-[80px] z-20"
+                className="hidden md:block md:w-[130px] lg:w-[150px] 2xl:w-[260px] absolute md:top-[100px] lg:top-[120px] 2xl:top-[80px] md:-right-[40px] lg:-right-[60px] 2xl:-right-[80px] z-20"
                 src="/images/HomeHero/Iphone_mockup.svg"
                 alt="Vista móvil de SparkClub"
               />
@@ -168,7 +168,7 @@ export default function Hero({ data }) {
 
           {/* RIGHT BACK IMAGE */}
           <motion.img
-            className="absolute top-[760px] w-[160px] right-0  md:top-[680px] md:w-[190px] lg:top-[630px] lg:w-[auto] xl:top-[570px] 2xl:top-[450px] z-0"
+            className="hidden xl:block xl:absolute xl:z-0  xl:w-[auto] xl:top-[570px] 2xl:top-[450px] 3xl:w-[400px] xl:right-0"
             src="/images/HomeHero/imagenDerechaSuperior.svg"
             alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 40 }}
@@ -180,7 +180,7 @@ export default function Hero({ data }) {
 
           {/* RIGHT bottom IMAGE */}
           <motion.img
-            className="absolute z-0 top-[1050px] w-[120px] sm:w-[180px] sm:top-[1100px] md:top-[1000px] md:w-[220px] lg:top-[900px] lg:w-[auto] xl:top-[900px] 2xl:top-[900px] sm:right-20 right-0"
+            className="hidden xl:block xl:absolute xl:z-0 xl:w-[auto] xl:top-[800px] 2xl:top-[700px] xl:right-0"
             src="/images/HomeHero/imagenDerechaInferior.svg"
             alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 40 }}
@@ -191,7 +191,7 @@ export default function Hero({ data }) {
 
           {/* RIGHT BUBBLE */}
           <motion.img
-            className="absolute w-[60px] right-[110px] top-[750px]  md:top-[650px] md:w-[80px] lg:top-[590px] lg:w-[auto] xl:top-[520px] 2xl:top-[400px] z-1"
+            className="hidden xl:block xl:absolute  right-[110px] xl:w-[auto] xl:top-[520px] 2xl:top-[400px] z-1"
             src="/images/HomeHero/globoDerecha.svg"
             alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 60 }}
