@@ -36,7 +36,7 @@ export default function Hero({ data }) {
   const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
 
   return (
-    <div className="relative w-full h-[900px] sm:h-[1050px]  md:h-[990px] lg:h-[1000px] xl:h-[1050px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
+    <div className="relative w-full h-[890px] sm:h-[1050px]  md:h-[1005px] lg:h-[1010px] xl:h-[1060px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
 
 
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
@@ -144,27 +144,27 @@ export default function Hero({ data }) {
 
 
           {/* PLATFORM SCREEN + IPHONE (md+) */}
-          <motion.div
+          <div
             className="pt-10 z-10"
-            initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
-            style={{ y: screenY }}
+          // initial={{ opacity: 0, y: 80 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
+          // style={{ y: screenY }}
           >
             <div className="relative inline-block">
               <img
-                className="md:top-[580px] lg:top-[520px] xl:top-[520px] 2xl:top-[500px]  w-[500px] sm:w-[600px] md:w-[600px] lg:w-[720px] 2xl:w-[965px] h-auto"
+                className="md:top-[580px] lg:top-[500px] xl:top-[520px] 2xl:top-[500px]  w-[500px] sm:w-[600px] md:w-[600px] lg:w-[720px] 2xl:w-[965px] h-auto"
                 src="/images/HomeHero/Mockup_pantalla.svg"
                 alt="Imagen de plataforma de SparkClub"
               />
-              {/* IPHONE MOCKUP - always stuck to right of platform, md+ */}
+              {/* IPHONE MOCKUP */}
               <img
                 className="hidden md:block md:w-[130px] lg:w-[150px] 2xl:w-[260px] absolute md:top-[100px] lg:top-[120px] 2xl:top-[80px] md:-right-[40px] lg:-right-[60px] 2xl:-right-[80px] z-20"
                 src="/images/HomeHero/Iphone_mockup.svg"
                 alt="Vista móvil de SparkClub"
               />
             </div>
-          </motion.div>
+          </div>
 
           {/* RIGHT BACK IMAGE */}
           <motion.img
