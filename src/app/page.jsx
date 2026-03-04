@@ -9,222 +9,222 @@ import TrustedByComponent from "@/components/home/TrustedByComponent";
 
 const data = {
   hero: {
-    tituloPrincipal: "Experiences that foster",
-    kwTituloPrincipal: "engagement.",
-    firstSubtitle: "Stop spending weeks planning and fortune on team events. ",
-    strongSubtitle: "Tell Nevenka what you need ",
+    tituloPrincipal: "Eventos y Experiencias",
+    kwTituloPrincipal: "que conectan personas",
+    firstSubtitle: "Deja de pasar semanas planificando y gastando una fortuna en eventos de equipo. ",
+    strongSubtitle: "Cuéntale a Nevenka lo que necesitas ",
     secondPartSubtitle:
-      "and get perfectly curated, budget-friendly experiences with certified suppliers, ready in just 10 minutes.",
+      "y obtén experiencias perfectamente diseñadas, ajustadas a tu presupuesto, con proveedores certificados, listas en sólo 10 minutos.",
   },
   aboutNevenka: {
-    title: "But wait, who is",
-    firstSubtitle: "Nevenka is the teammate every manager wishes they had.",
+    title: "Pero espera, ¿quién es",
+    firstSubtitle: "Nevenka es la compañera de equipo que todo líder quisiera tener.",
     secondSubtitle:
-      " She listens, understands your team, and turns scattered ideas into meaningful experiences that truly bring people together.",
+      " Ella escucha, entiende a tu equipo y convierte ideas dispersas en experiencias significativas que realmente unen a las personas.",
     cards: [
       {
         id: "input",
         img: "/images/Cards/MockUp-01.webp",
-        imageAlt: "Input your event ideas",
-        title: "Input your event ideas",
-        description: "Dates, guests, vibe, format, services.",
+        imageAlt: "Ingresa tus ideas para el evento.",
+        title: "Ingresa tus ideas para el evento.",
+        description: "Fechas, invitados, vibra, formato, servicios.",
       },
       {
         id: "proposal",
         img: "/images/Cards/MockUp-02.webp",
-        imageAlt: "Get a proposal in 20 sec",
-        title: "Get a proposal in 20 sec",
-        description: "Nevenka briefs the event for all your needs.",
+        imageAlt: "Obtén una propuesta en 20 segundos",
+        title: "Obtén una propuesta en 20 segundos",
+        description: "Nevenka prepara la propuesta del evento según tus necesidades.",
       },
       {
         id: "pm",
         img: "/images/Cards/MockUp-03.webp",
-        imageAlt: "Your PM takes over",
-        title: "Your PM takes over",
-        description: "Experiences, suppliers, and love for details.",
+        imageAlt: "Tu PM se hace cargo",
+        title: "Tu PM se hace cargo",
+        description: "Experiencias, proveedores y atención a los detalles.",
       },
     ],
   },
   weMakeWorkWork: [
     {
-      title: "Make Events, ",
-      titleSpan: "Work",
+      title: "Convierte los eventos, ",
+      titleSpan: "en resultados",
     },
   ],
-  whyChooseSparkClub: {
-    title: "Why choose",
-    titleSpan: "SparkClub?",
-    tableTitle: "Features",
-    firstColumnTitle: "SparkClub",
-    secondColumnTitle: "Others",
-    rows: [
-      { feature: "Can you track events?", spark: true, other: false },
-      {
-        feature: "Is the organizer investing hours for every event?",
-        spark: "10 mins = $5 salary",
-        other: "+8hs = +$500 salary",
-      },
-      {
-        feature: "Are the events impactful?",
-        spark: true,
-        other: "Not certified",
-      },
-      {
-        feature: "Can you scale events through your organization?",
-        spark: true,
-        other: "Limited",
-      },
-      {
-        feature:
-          "Do you have a host guiding you though the organizing process?",
-        spark: true,
-        other: false,
-      },
-      {
-        feature: "Can you track organizational behaviour?",
-        spark: "w/ specific dynamics",
-        other: false,
-      },
-      { feature: "Can you track specific EX KPIs?", spark: true, other: false },
-      { feature: "High-end UX", spark: true, other: false },
-    ],
-  },
+  // whyChooseSparkClub: {
+  //   title: "Por qué",
+  //   titleSpan: "SparkClub?",
+  //   tableTitle: "Características",
+  //   firstColumnTitle: "SparkClub",
+  //   secondColumnTitle: "Otros",
+  //   rows: [
+  //     { feature: "Can you track events?", spark: true, other: false },
+  //     {
+  //       feature: "Is the organizer investing hours for every event?",
+  //       spark: "10 mins = $5 salary",
+  //       other: "+8hs = +$500 salary",
+  //     },
+  //     {
+  //       feature: "Are the events impactful?",
+  //       spark: true,
+  //       other: "Not certified",
+  //     },
+  //     {
+  //       feature: "Can you scale events through your organization?",
+  //       spark: true,
+  //       other: "Limited",
+  //     },
+  //     {
+  //       feature:
+  //         "Do you have a host guiding you though the organizing process?",
+  //       spark: true,
+  //       other: false,
+  //     },
+  //     {
+  //       feature: "Can you track organizational behaviour?",
+  //       spark: "w/ specific dynamics",
+  //       other: false,
+  //     },
+  //     { feature: "Can you track specific EX KPIs?", spark: true, other: false },
+  //     { feature: "High-end UX", spark: true, other: false },
+  //   ],
+  // },
   ourNonNegotiables: {
-    title: "Our non-negotiables",
+    title: "Nuestros no-negociables",
     nonNegotiables: [
       {
         id: 1,
-        title: "INNOVATION",
-        description: "Leveraging AI to foster employee well-being.",
+        title: "INNOVACIÓN",
+        description: "Aprovechando la IA para fomentar el bienestar de los empleados.",
         color: "bg-[#FCA5A5]",
         img: "/images/3DIllus/Rocket.svg",
       },
       {
         id: 2,
-        title: "EMPLOYEE CENTRIC",
-        description: "To reduce rotation and turnover rates.",
+        title: "CENTRADO EN EL INVITADO",
+        description: "Para reducir la rotación y las tasas de abandono.",
         color: "bg-[#D8B4FE]",
         img: "/images/3DIllus/Backpack.svg",
       },
       {
         id: 3,
-        title: "DATA DRIVEN",
-        description: "To enhance workforce performance and satisfaction",
+        title: "BASADO EN DATOS",
+        description: "Para mejorar el rendimiento y la satisfacción de la fuerza laboral.",
         color: "bg-[#FAE5A8]",
         img: "/images/3DIllus/Plant.svg",
       },
       {
         id: 4,
-        title: "EFFICIENCY",
-        description: "S.M.A.R.T long-term plans to enforce brand culture.",
+        title: "EFICIENCIA",
+        description: "Planes a largo plazo S.M.A.R.T para reforzar la cultura de la marca.",
         color: "bg-[#67E8F9]",
         img: "/images/3DIllus/Lamp.svg",
       },
     ],
   },
   testimonials: {
-    title: "What people are saying",
+    title: "Testimonios",
     testimonials: [
       {
         id: 1,
         img: "/images/Testimonios/TestimonialIconPlaceholder1.jpeg",
         testimonio:
-          "Working with SparkClub feels natural. The connections are there, the way of working is clear, and everything runs smooth from start to finish. It´s the kind of partner you don´t need to over-explain things to - they get it and make it happen.",
-        firma: "Technical production",
+          "Trabajar con SparkClub se siente natural. Las conexiones están ahí, la forma de trabajar es clara y todo funciona sin problemas de principio a fin. Es el tipo de socio al que no necesitas explicarle demasiado: lo entienden y lo hacen realidad.",
+        firma: "Producción técnica",
       },
       {
         id: 2,
         img: "/images/Testimonios/TestimonialIconPlaceholder2.svg",
         testimonio:
-          "I like how SparkClub opens doors. One week I´m setting up an event for a startup, the next I´m meeting a new brand I never thought I´d work with. They make thos connections possible, and for frelancers like me, that´s gold.",
+          "Me gusta cómo SparkClub abre puertas. Una semana estoy organizando un evento para una startup, la siguiente estoy conociendo una nueva marca con la que nunca pensé que trabajaría. Hacen posibles esas conexiones, y para freelancers como yo, eso es oro.",
         firma: "Wellness Coach",
       },
       {
         id: 3,
         img: "/images/Testimonios/TestimonialIconPlaceholder3.svg",
         testimonio:
-          "With SparkClub, creating events stopped being a headache. The platform connects us instantly with trusted suppliers, and in minutes we have everything set up. It´s seamless, efficient, and lets us focus on delivering experiences that strenghten our brand.",
-        firma: "FMCG Beverages",
+          "Con SparkClub, crear eventos dejó de ser un dolor de cabeza. La plataforma nos conecta al instante con proveedores de confianza, y en minutos tenemos todo listo. Es fluido, eficiente y nos permite centrarnos en ofrecer experiencias que fortalecen nuestra marca.",
+        firma: "FMCG Bebidas",
       },
       {
         id: 4,
         img: "/images/Testimonios/TestimonialIconPlaceholder4.svg",
         testimonio:
-          "We needed to organize an activation for DevConnect, and we were 10,500 km away from the venue. Honestly, I didn´t expect it to come together so fast. SparkClub managed everything with precision and delivered an event that felt like we´d been on the ground al along.",
-        firma: "Industry-Blockchain",
+          "Necesitábamos organizar una activación para DevConnect, y estábamos a 10,500 km del lugar. Honestamente, no esperaba que se resolviera tan rápido. SparkClub gestionó todo con precisión y entregó un evento que parecía que hubiéramos estado en el lugar desde el principio.",
+        firma: "Industria-Blockchain",
       },
     ],
   },
   faqs: {
     title: "FAQs",
     subtitle:
-      "Your questions answered: how we make work more engaging, fun, and connected.",
+      "Tus preguntas respondidas: cómo hacemos que el trabajo sea más atractivo, divertido y conectado.",
     FAQS: [
       {
         id: "user",
-        question: "What is Sparkclub?",
+        question: "¿Qué es Sparkclub?",
         answer:
-          "Sparkclub is a platform that brings people together through curated events, activities, and experiences designed to build stronger teams and communities — inside and outside the workplace.",
+          "Sparkclub es una plataforma que reúne a las personas a través de eventos, actividades y experiencias seleccionadas diseñadas para construir equipos y comunidades más fuertes, tanto dentro como fuera del lugar de trabajo.",
       },
       {
         id: "organizer",
-        question: "Who is Sparkclub for?",
+        question: "¿Para quién es Sparkclub?",
         answer: [
           [
             "- ",
-            { bold: "Employees" },
-            " — discover and join activities that match your interests.",
+            { bold: "Empleados" },
+            " — descubre y únete a actividades que se ajusten a tus intereses.",
           ],
           [
             "- ",
-            { bold: "Managers & HR teams" },
-            " — plan team-building experiences easily and measure their impact.",
+            { bold: "Gerentes y equipos de RRHH" },
+            " — planifica experiencias de team-building fácilmente y mide su impacto.",
           ],
           [
             "- ",
-            { bold: "Brands & suppliers" },
-            " — connect with companies and communities through meaningful events.",
+            { bold: "Marcas y proveedores" },
+            " — conecta con empresas y comunidades a través de eventos significativos.",
           ],
         ],
       },
       {
         id: "analytics",
-        question: "How does Sparkclub work?",
+        question: "¿Cómo funciona Sparkclub?",
         answer:
-          "You create your profile, share your interests, and Sparkclub recommends events, activities, and experiences that fit your team’s vibe. From after-work meetups to larger offsites or wellness activities, everything is designed to strengthen connections.",
+          "Creas tu perfil, compartes tus intereses y Sparkclub recomienda eventos, actividades y experiencias que se ajusten al ambiente de tu equipo. Desde encuentros después del trabajo hasta retiros más grandes o actividades de bienestar, todo está diseñado para fortalecer las conexiones.",
       },
       {
         id: "billing",
-        question: "What kind of experiences can I expect?",
+        question: "¿Qué tipo de experiencias puedo esperar?",
         answer: [
           [
-            "- 🏔 Internal team events: offsites, workshops, sports, cultural activities.",
+            "- 🏔 Eventos internos de equipo: retiros, talleres, deportes, actividades culturales.",
           ],
           [
-            "- 🌍 External community events: networking, festivals, learning sessions, and collaborations with other companies.",
+            "- 🌍 Eventos comunitarios externos: networking, festivales, sesiones de aprendizaje y colaboraciones con otras empresas.",
           ],
           [
-            "- ✨ Well-being & lifestyle perks: from yoga classes to cooking nights.",
+            "- ✨ Beneficios de bienestar y estilo de vida: desde clases de yoga hasta noches de cocina.",
           ],
         ],
       },
       {
         id: "companies",
-        question: "Why should companies use Sparkclub?",
+        question: "¿Por qué deberían las empresas usar Sparkclub?",
         answer:
-          "Because engaged teams perform better. Sparkclub saves managers time by automating event planning and helps companies create a culture of belonging, motivation, and connection.",
+          "Porque los equipos comprometidos rinden mejor. Sparkclub ahorra tiempo a los gerentes al automatizar la planificación de eventos y ayuda a las empresas a crear una cultura de pertenencia, motivación y conexión.",
       },
       {
         id: "communities",
-        question: "How does Sparkclub help communities grow?",
+        question: "¿Cómo ayuda Sparkclub a las comunidades a crecer?",
         answer:
-          "Every event, big or small, becomes a way to connect. Employees bond with each other, companies connect with suppliers, and brands get closer to communities through real experiences.",
+          "Cada evento, grande o pequeño, se convierte en una forma de conectar. Los empleados se relacionan entre sí, las empresas se conectan con los proveedores y las marcas se acercan a las comunidades a través de experiencias reales.",
       },
       {
         id: "active",
-        question: "Is Sparkclub already active?",
+        question: "¿Está Sparkclub ya activo?",
         answer:
-          "Yes. We’ve already organized multiple events and activities, with teams and suppliers joining in. Our community is growing every week.",
+          "Sí. Ya hemos organizado múltiples eventos y actividades, con equipos y proveedores participando. Nuestra comunidad está creciendo cada semana.",
       },
     ],
   },

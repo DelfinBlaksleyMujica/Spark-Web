@@ -36,7 +36,7 @@ export default function Hero({ data }) {
   const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
 
   return (
-    <div className="relative w-full h-[1250px] sm:h-[1300px]  md:h-[1750px] lg:h-[1700px] xl:h-[1600px] flex items-center justify-center overflow-hidden bg-[#151515]">
+    <div className="relative w-full h-[890px] sm:h-[1050px]  md:h-[1005px] lg:h-[1010px] xl:h-[1060px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
 
 
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
@@ -58,7 +58,7 @@ export default function Hero({ data }) {
               <p
                 className={`${public_sans.className} text-[16px] md:text-[18px] #FFFFFF font-medium leading-[100%] tracking-tight `}
               >
-                ✨ From weeks to minutes
+                ✨ De semanas a minutos
               </p>
             </div>
           </div>
@@ -81,12 +81,34 @@ export default function Hero({ data }) {
               {data.secondPartSubtitle}
             </p>
           </div>
+
+
+          {/* Buttons */}
+          <div className="z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-4 lg:px-0 ">
+            <Button
+              btnText="Planifica tu evento"
+              btnClass="primary-btn"
+              href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
+            />
+            <Button
+              btnText="Probar Nevenka (alpha)"
+              btnClass="tertiary-btn"
+              href="https://zcal.co/sparkclub"
+            >
+              <img
+                className="ml-[15px]"
+                src="/images/Icons/black-arrow.svg"
+                alt="Icono de flecha"
+              />
+            </Button>
+          </div>
+
           {/*Floating Images*/}
           {/* LEFT BACK IMAGE */}
           <motion.img
-            className="absolute z-0 top-[550px] sm:top-[550px] md:top-[530px] md:w-[170px] lg:top-[550px] lg:w-[auto] xl:top-[500px] 2xl:top-[300px] left-0"
+            className="hidden xl:block xl:absolute xl:z-0  xl:w-[auto] xl:top-[570px] 2xl:top-[450px] lg:left-0"
             src="/images/HomeHero/imagenIzquierdaSuperior.svg"
-            alt="Experiencies in SparkClub"
+            alt="Experiencias en SparkClub"
             // entry animation
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -95,52 +117,72 @@ export default function Hero({ data }) {
             style={{ y: leftBackY }}
           />
 
+          {/* LEFT bottom IMAGE */}
+          <motion.img
+            className="hidden lg:block lg:absolute lg:z-0 lg:top-[900px] lg:w-[auto] xl:top-[800px] 2xl:top-[800px] lg:left-40 xl:left-[100px] 2xl:left-[150px]"
+            src="/images/HomeHero/imagenIzquierdaInferior.svg"
+            alt="Experiencias en SparkClub"
+            // entry animation
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
+            // parallax
+            style={{ y: leftBackY }}
+          />
+
+
           {/* LEFT BUBBLE */}
           <motion.img
-            className="absolute w-[60px] left-[90px] top-[520px]  sm:top-[530px] md:top-[510px] md:w-[80px] lg:top-[470px] lg:w-[auto] xl:top-[420px] 2xl:top-[220px] z-1"
+            className="hidden xl:block xl:absolute xl:w-[100px] xl:left-[90px]   xl:top-[520px] 2xl:top-[400px] xl:z-1"
             src="/images/HomeHero/globoIzquierda.svg"
-            alt="Experiencies in SparkClub"
+            alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.18 }}
             style={{ y: leftBubbleY }}
           />
 
-          {/* CENTER NEVENKA CARD */}
-          <motion.div
-            className="z-1000 absolute top-[750px]  md:top-[700px] lg:top-[380px] left-0 w-full flex justify-center items-center"
-            initial={{ opacity: 0, y: 60 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.25 }}
-            style={{ y: centerCardY }}
-          >
-            <img
-              className="h-[160px] w-[200px] md:h-[245px] md:w-[300px] z-20"
-              src="/images/HomeHero/nevenkaAsset.png"
-              alt="Team Building Experiences with SparkClub"
-            />
-          </motion.div>
 
-          {/* PLATFORM SCREEN */}
-          <motion.div
-            className="hidden md:w-full md:flex md:justify-center md:items-center md:absolute md:left-0 md:top-[800px] lg:top-[700px] xl:top-[550px] 2xl:top-[550px] sm:z-10 px-8"
-            initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
-            style={{ y: screenY }}
+          {/* PLATFORM SCREEN + IPHONE (md+) */}
+          <div
+            className="pt-10 z-10"
+          // initial={{ opacity: 0, y: 80 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
+          // style={{ y: screenY }}
           >
-            <img
-              className="w-[965px] h-[626px]"
-              src="/images/HomeHero/Mockup_Hero_Sparkclub.svg"
-              alt="Imagen de plataforma de SparkClub"
-            />
-          </motion.div>
+            <div className="relative inline-block">
+              <img
+                className="md:top-[580px] lg:top-[500px] xl:top-[520px] 2xl:top-[500px]  w-[500px] sm:w-[600px] md:w-[600px] lg:w-[720px] 2xl:w-[965px] h-auto"
+                src="/images/HomeHero/Mockup_pantalla.svg"
+                alt="Imagen de plataforma de SparkClub"
+              />
+              {/* IPHONE MOCKUP */}
+              <img
+                className="hidden md:block md:w-[130px] lg:w-[150px] 2xl:w-[260px] absolute md:top-[100px] lg:top-[120px] 2xl:top-[80px] md:-right-[40px] lg:-right-[60px] 2xl:-right-[80px] z-20"
+                src="/images/HomeHero/Iphone_mockup.svg"
+                alt="Vista móvil de SparkClub"
+              />
+            </div>
+          </div>
 
           {/* RIGHT BACK IMAGE */}
           <motion.img
-            className="absolute top-[560px] sm:right-[75px] sm:top-[560px] md:top-[530px] md:w-[190px] lg:top-[507px] lg:w-[auto] xl:top-[450px] 2xl:top-[300px] right-0 z-0"
+            className="hidden xl:block xl:absolute xl:z-0  xl:w-[auto] xl:top-[570px] 2xl:top-[450px] 3xl:w-[400px] xl:right-0"
             src="/images/HomeHero/imagenDerechaSuperior.svg"
-            alt="Experiencies in SparkClub"
+            alt="Experiencias en SparkClub"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+            style={{ y: rightBackY }}
+          />
+
+
+          {/* RIGHT bottom IMAGE */}
+          <motion.img
+            className="hidden xl:block xl:absolute xl:z-0 xl:w-[auto] xl:top-[800px] 2xl:top-[700px] xl:right-0"
+            src="/images/HomeHero/imagenDerechaInferior.svg"
+            alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
@@ -149,37 +191,18 @@ export default function Hero({ data }) {
 
           {/* RIGHT BUBBLE */}
           <motion.img
-            className="absolute w-[60px] right-[120px] top-[520px] sm:top-[520px] md:top-[490px] md:w-[80px] lg:top-[460px] lg:w-[auto] xl:top-[380px] 2xl:top-[220px] z-1"
+            className="hidden xl:block xl:absolute  right-[110px] xl:w-[auto] xl:top-[520px] 2xl:top-[400px] z-1"
             src="/images/HomeHero/globoDerecha.svg"
-            alt="Experiencies in SparkClub"
+            alt="Experiencias en SparkClub"
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.28 }}
             style={{ y: rightBubbleY }}
           />
-
         </div>
       </div>
 
-      {/* Buttons */}
-      <div className="absolute inset-x-0 bottom-30 z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-4 lg:px-0">
-        <Button
-          btnText="Plan Your Event"
-          btnClass="primary-btn"
-          href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
-        />
-        <Button
-          btnText="Try Nevenka (alpha)"
-          btnClass="tertiary-btn"
-          href="https://zcal.co/sparkclub"
-        >
-          <img
-            className="ml-[15px]"
-            src="/images/Icons/black-arrow.svg"
-            alt="Arrow Icon"
-          />
-        </Button>
-      </div>
+
 
     </div>
 

@@ -1,7 +1,6 @@
 import TestimonialsContainer from "@/components/generals/TestimonialsContainer";
 import Hero from "@/components/providers/Hero";
 import KickOffComponent from "@/components/providers/KickOffComponent";
-import ActivityTags from "@/components/providers/ActivityTags";
 import FaqsProviders from "@/components/providers/FaqsProviders";
 
 
@@ -9,139 +8,139 @@ import React from "react";
 
 const data = {
   hero: {
-    title: "Certified Experiences. ",
-    titleSpan: "Real Impact.",
+    title: "Experiencias certificadas. ",
+    titleSpan: "Impacto real.",
     subtitle:
-      "Join Sparkclub´s partner network to scale your experiences/services and connect with brands that value human interaction.",
+      "Únete a la red de partners de Sparkclub para escalar tus experiencias o servicios y conectar con marcas que valoran la interacción humana.",
   },
   kickOffWithSparkClub: {
-    title: "Kick off your journey",
+    title: "Comienza tu recorrido",
     subtitle:
-      "Three simple steps to certify your profile, showcase your experiences, and connect with brands.",
+      "Tres pasos simples para certificar tu perfil, mostrar tus experiencias y conectar con marcas.",
     cards: [
       {
         id: 1,
         image: "/images/Providers/KickOffJourneyStep1.webp",
-        title: "Sync with Nevenka",
+        title: "Conéctate con Nevenka",
         description:
-          "Easily complete your profile and become a verified partner.",
+          "Completa tu perfil fácilmente y conviértete en partner verificado.",
         color: "#D8B4FE",
       },
       {
         id: 2,
         image: "/images/Providers/KickOffJourneyStep2.webp",
-        title: "Share your experiences",
+        title: "Comparte tus servicios",
         description:
-          "Share your activities, get discovered, and track engagement.",
+          "Publica tus actividades, gana visibilidad y mide la interacción.",
         color: "#FCA5A5",
       },
       {
         id: 3,
         image: "/images/Providers/KickOffJourneyStep3.webp",
-        title: "Grow your impact.",
+        title: "Haz crecer tu impacto",
         description:
-          "Connect with brands, scale your reach, and unlock new opportunities.",
+          "Conecta con marcas, amplía tu alcance y desbloquea nuevas oportunidades.",
         color: "#6EE7B7",
       },
     ],
   },
   testimonials: {
-    title: "What people are saying",
+    title: "Lo que la gente está diciendo",
     testimonials: [
       {
         id: 1,
         img: "/images/Testimonios/TestimonialIconPlaceholder1.jpeg",
         testimonio:
-          "Working with SparkClub feels natural. The connections are there, the way of working is clear, and everything runs smooth from start to finish. It´s the kind of partner you don´t need to over-explain things to - they get it and make it happen.",
-        firma: "Technical production",
+          "Trabajar con SparkClub se siente natural. Las conexiones están ahí, la forma de trabajar es clara y todo funciona sin problemas de principio a fin. Es el tipo de socio al que no necesitas explicarle demasiado: lo entienden y lo hacen realidad.",
+        firma: "Producción técnica",
       },
       {
         id: 2,
         img: "/images/Testimonios/TestimonialIconPlaceholder2.svg",
         testimonio:
-          "I like how SparkClub opens doors. One week I´m setting up an event for a startup, the next I´m meeting a new brand I never thought I´d work with. They make thos connections possible, and for frelancers like me, that´s gold.",
+          "Me gusta cómo SparkClub abre puertas. Una semana estoy organizando un evento para una startup, la siguiente estoy conociendo una nueva marca con la que nunca pensé que trabajaría. Hacen posibles esas conexiones, y para freelancers como yo, eso es oro.",
         firma: "Wellness Coach",
       },
       {
         id: 3,
         img: "/images/Testimonios/TestimonialIconPlaceholder3.svg",
         testimonio:
-          "With SparkClub, creating events stopped being a headache. The platform connects us instantly with trusted suppliers, and in minutes we have everything set up. It´s seamless, efficient, and lets us focus on delivering experiences that strenghten our brand.",
-        firma: "FMCG Beverages",
+          "Con SparkClub, crear eventos dejó de ser un dolor de cabeza. La plataforma nos conecta al instante con proveedores de confianza, y en minutos tenemos todo listo. Es fluido, eficiente y nos permite centrarnos en ofrecer experiencias que fortalecen nuestra marca.",
+        firma: "FMCG Bebidas",
       },
       {
         id: 4,
         img: "/images/Testimonios/TestimonialIconPlaceholder4.svg",
         testimonio:
-          "We needed to organize an activation for DevConnect, and we were 10,500 km away from the venue. Honestly, I didn´t expect it to come together so fast. SparkClub managed everything with precision and delivered an event that felt like we´d been on the ground al along.",
-        firma: "Industry-Blockchain",
+          "Necesitábamos organizar una activación para DevConnect, y estábamos a 10,500 km del lugar. Honestamente, no esperaba que se resolviera tan rápido. SparkClub gestionó todo con precisión y entregó un evento que parecía que hubiéramos estado en el lugar desde el principio.",
+        firma: "Industria-Blockchain",
       },
     ],
   },
   providersFaqs: {
     title: "FAQs",
     subtitle:
-      "Your questions answered: how we make work more engaging, fun, and connected.",
+      "Tus preguntas respondidas: cómo hacemos que el trabajo sea más atractivo, divertido y conectado.",
     faqs: [
       {
         id: "user",
-        question: "What is Sparkclub?",
+        question: "¿Qué es Sparkclub?",
         answer:
-          "Sparkclub is a platform that brings people together through curated events, activities, and experiences designed to build stronger teams and communities — inside and outside the workplace.",
+          "Sparkclub es una plataforma que reúne a las personas a través de eventos, actividades y experiencias seleccionadas diseñadas para construir equipos y comunidades más fuertes, tanto dentro como fuera del lugar de trabajo.",
       },
       {
         id: "supplier",
-        question: "Who can become a supplier?",
+        question: "¿Quién puede convertirse en proveedor?",
         answer:
-          "Any provider offering services or experiences for teams — from workshops and sports to catering, venues, tech, or wellness activities.",
+          "Cualquier proveedor que ofrezca servicios o experiencias para equipos — desde talleres y deportes hasta catering, espacios, tecnología o actividades de bienestar.",
       },
       {
         id: "work",
-        question: "How does Sparkclub work for suppliers?",
+        question: "¿Cómo funciona Sparkclub para los proveedores?",
         answer:
-          "You create your profile, list your services, and companies can book directly. Sparkclub makes it easy to connect with new clients and manage requests.",
+          "Creas tu perfil, publicas tus servicios y las empresas pueden reservar directamente. Sparkclub facilita la conexión con nuevos clientes y la gestión de solicitudes.",
       },
       {
         id: "companies",
-        question: "What kind of companies will I reach?",
+        question: "¿Qué tipo de empresas puedo alcanzar?",
         answer:
-          "Startups, SMEs, and large organizations looking for team-building, offsites, and well-being activities for their employees.",
+          "Startups, pymes y grandes organizaciones que buscan actividades de team building, offsites y bienestar para sus equipos.",
       },
       {
         id: "payments",
-        question: "How do bookings and payments work?",
+        question: "¿Cómo funcionan las reservas y los pagos?",
         answer:
-          "Companies book through Sparkclub, and you’ll receive payment securely after the event.",
+          "Las empresas reservan a través de Sparkclub y recibirás el pago de forma segura una vez finalizado el evento.",
       },
       {
         id: "cancelled",
-        question: "What happens if a booking is cancelled?",
+        question: "¿Qué sucede si una reserva se cancela?",
         answer:
-          "Sparkclub has a cancellation policy to protect both companies and suppliers. You’ll always be notified in advance, and in some cases you may keep part of the payment depending on timing.",
+          "Sparkclub cuenta con una política de cancelación para proteger tanto a empresas como a proveedores. Siempre serás notificado con anticipación y, según el momento de la cancelación, podrás conservar parte del pago.",
       },
       {
         id: "ratings",
-        question: "How do ratings and reviews work?",
+        question: "¿Cómo funcionan las valoraciones y reseñas?",
         answer:
-          "After each event, companies can leave feedback. Positive reviews increase your visibility on the platform and help you reach more clients.",
+          "Después de cada evento, las empresas pueden dejar una reseña. Las valoraciones positivas aumentan tu visibilidad en la plataforma y te ayudan a conseguir más clientes.",
       },
       {
         id: "costs",
-        question: "Is there a cost to join as a supplier?",
+        question: "¿Tiene costo unirse como proveedor?",
         answer:
-          "Joining is free. Sparkclub charges a small commission per booking to keep the platform running.",
+          "Unirse es gratuito. Sparkclub cobra una pequeña comisión por cada reserva para mantener la plataforma operativa.",
       },
       {
         id: "availability",
-        question: "Can I manage my own availability?",
+        question: "¿Puedo gestionar mi propia disponibilidad?",
         answer:
-          "Yes. You decide when and how your services are offered, including blackout dates or limits.",
+          "Sí. Tú decides cuándo y cómo ofrecer tus servicios, incluyendo fechas bloqueadas o límites de capacidad.",
       },
       {
         id: "joining",
-        question: "Why should I join Sparkclub?",
+        question: "¿Por qué debería unirme a Sparkclub?",
         answer:
-          "Sparkclub helps you grow your business, reach new clients, and be part of a community that values real experiences.",
+          "Sparkclub te ayuda a hacer crecer tu negocio, llegar a nuevos clientes y formar parte de una comunidad que valora las experiencias reales.",
       },
     ],
   },

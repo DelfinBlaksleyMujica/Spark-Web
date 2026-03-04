@@ -56,8 +56,8 @@ export default function Hero({ data }) {
           </p>
 
           <div className=" flex flex-col lg:flex-row items-center w-full gap-[18px] justify-center ">
-            <Button btnText="Become a Certified Partner" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhxz4jy53zuwad01lat59has" />
-            <Button btnText="Try Nevenka (alpha)" btnClass="tertiary-btn" href="https://zcal.co/sparkclub" />
+            <Button btnText="Unirse como Partner Certificado" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhxz4jy53zuwad01lat59has" />
+            <Button btnText="Probar Nevenka (alpha)" btnClass="tertiary-btn" href="https://zcal.co/sparkclub" />
           </div>
         </div>
       </div>

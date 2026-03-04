@@ -154,11 +154,11 @@ export default function WeMakeWorkWorkComponent({ data }) {
             <div className="flex flex-col gap-[7px] sm:gap-[20px] w-[50%] md:w-auto">
               <RevealUp delay={0.0}>
                 <CategoryCard
-                  category="Wellness Experiences"
+                  category="Experiencias de Bienestar"
                   className="translate-y-[65px] sm:translate-y-[90px] "
                   badge=""
                   bgImg="/images/Cards/Welness.webp"
-                  hoverText="Mindful activities curated for team wellbeing."
+                  hoverText="Actividades conscientes diseñadas para el bienestar del equipo."
                 />
               </RevealUp>
 
@@ -166,8 +166,8 @@ export default function WeMakeWorkWorkComponent({ data }) {
                 <ColoredCard
                   color="#FCD34D"
                   icon="/images/3DIllus/Mountain.svg"
-                  title="Global Events"
-                  text="Access to the biggest event network in LatAm"
+                  title="Eventos Globales"
+                  text="Acceso a la red de eventos más grande de LatAm"
                 />
               </RevealUp>
             </div>
@@ -177,19 +177,19 @@ export default function WeMakeWorkWorkComponent({ data }) {
                 <ColoredCard
                   color="#FCA5A5"
                   icon="/images/3DIllus/Laptop.svg"
-                  title="+20 Brands"
-                  text="Already using Sparkclub as their engagement platform."
+                  title="+20 Marcas"
+                  text="Ya utilizan Sparkclub como su plataforma de engagement."
                 />
               </RevealUp>
 
               <RevealUp delay={0.24}>
                 <CategoryCard
-                  category="Art & Culture"
+                  category="Arte & Cultura"
                   className="translate-y-[65px] sm:translate-y-[90px] "
 
-                  badge="Trending"
+                  badge="Tendencia"
                   bgImg="/images/Cards/ArtCulture.webp"
-                  hoverText="From museum nights to creative labs."
+                  hoverText="De noches en museos a laboratorios creativos."
                 />
               </RevealUp>
             </div>
@@ -200,11 +200,11 @@ export default function WeMakeWorkWorkComponent({ data }) {
             <div className="flex flex-col gap-[7px] sm:gap-[20px] w-[49%] md:w-auto ">
               <RevealUp delay={0.32}>
                 <CategoryCard
-                  category="Running Session"
+                  category="Sesión de Running"
                   badge=""
                   className="translate-y-[60px] "
                   bgImg="/images/Cards/RunningSessions.webp"
-                  hoverText="Weekly group runs and step challenges."
+                  hoverText="Carreras grupales semanales y desafíos de pasos."
                 />
               </RevealUp>
 
@@ -212,8 +212,8 @@ export default function WeMakeWorkWorkComponent({ data }) {
                 <ColoredCard
                   color="#86EFAC"
                   icon="/images/3DIllus/Truck.svg"
-                  title="+300 Certified Suppliers"
-                  text="Scaling their experiences and services."
+                  title="+300 Proveedores"
+                  text="Escalando sus experiencias y servicios."
                 />
               </RevealUp>
             </div>
@@ -223,18 +223,18 @@ export default function WeMakeWorkWorkComponent({ data }) {
                 <ColoredCard
                   color="#D8B4FE"
                   icon="/images/3DIllus/Bicycle.svg"
-                  title="Experiences"
-                  text="Looking for meaningful moments with your team?"
+                  title="Experiencias"
+                  text="¿Buscas momentos significativos con tu equipo?"
                 />
               </RevealUp>
 
               <RevealUp delay={0.56}>
                 <CategoryCard
                   category="Ed Tech"
-                  badge="COMING SOON"
+                  badge="PRÓXIMAMENTE"
                   className="translate-y-[50px] "
                   bgImg="/images/Cards/Edtech.webp"
-                  hoverText="Learning tracks and growth paths."
+                  hoverText="Rutas de aprendizaje y caminos de crecimiento."
                 />
               </RevealUp>
             </div>
@@ -243,7 +243,7 @@ export default function WeMakeWorkWorkComponent({ data }) {
 
         <div className="w-full flex justify-center lg:justify-end lg:max-w-[1040px] ">
           <Button
-            btnText="Create an event now!"
+            btnText="¡Crea un evento ahora!"
             btnClass="tertiary-btn"
             href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
           />

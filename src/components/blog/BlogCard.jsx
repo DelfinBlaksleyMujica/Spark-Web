@@ -39,9 +39,9 @@ export default function BlogCard({ post }) {
                 </h3>
 
                 <p className="mt-1 text-[14px] text-zinc-600">
-                    {new Date(date).toLocaleDateString(undefined, {
+                    {new Date(date).toLocaleDateString("es-ES", {
                         year: "numeric",
-                        month: "short",
+                        month: "long",
                         day: "numeric",
                     })}
                 </p>

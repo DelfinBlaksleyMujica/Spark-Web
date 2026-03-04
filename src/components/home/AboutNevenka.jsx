@@ -129,7 +129,7 @@ export default function AboutNevenka({ data }) {
         {/* CTA BUTTON */}
         <div className="mt-10 flex flex-col lg:flex-row justify-center items-center px-8">
           <Button
-            btnText="Join Waitlist"
+            btnText="Sumate a la lista de espera"
             btnClass="primary-btn"
             href="https://app.formbricks.com/s/cmj1mpv5u3avdad015eandi7o"
           />
