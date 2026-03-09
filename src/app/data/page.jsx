@@ -4,13 +4,16 @@ import EventosHomePage from "@/components/data/eventos/EventosHomePage";
 import { connectDB } from "@/lib/mongo";
 import Event from "@/models/events";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function DataDeEventosContainerPage() {
   await connectDB();
 
   const eventsFromDB = await Event.find().lean();
   console.log("Cambio para push");
   const eventos = eventsFromDB.map((ev) => ({
-    // 👇 todos los ObjectId a string
+    //todos los ObjectId a string
     id: ev._id.toString(),
     titulo: ev.titulo,
     // uso el id en la URL porque tu ruta es /data/eventos/[id]
@@ -21,6 +24,6 @@ export default async function DataDeEventosContainerPage() {
     data: Array.isArray(ev.data) ? ev.data.map((qId) => qId.toString()) : [],
   }));
 
-  // 👇 Ahora sí son plain objects serializables
+  // Ahora sí son plain objects serializables
   return <EventosHomePage eventos={eventos} />;
 }
