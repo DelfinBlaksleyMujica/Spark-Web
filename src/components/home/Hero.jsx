@@ -11,7 +11,6 @@ export default function Hero({ data }) {
 
   const [open, setOpen] = useState(false);
 
-
   const toggleMenu = () => setOpen((v) => !v);
 
   const mobileLinkVars = {
@@ -27,18 +26,16 @@ export default function Hero({ data }) {
     },
   };
 
-  // Parallax values 
-  const leftBackY = useTransform(scrollY, [0, 40], [0, -60]);  // far left bg
-  const leftBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // left speech bubble
-  const centerCardY = useTransform(scrollY, [0, 40], [0, -20]);  // nevenka card
-  const screenY = useTransform(scrollY, [0, 80], [0, -10]);  // platform screen
-  const rightBackY = useTransform(scrollY, [0, 40], [0, -60]);  // far right bg
-  const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]);  // right speech bubble
+  // Parallax values
+  const leftBackY = useTransform(scrollY, [0, 40], [0, -60]); // far left bg
+  const leftBubbleY = useTransform(scrollY, [0, 40], [0, -60]); // left speech bubble
+  const centerCardY = useTransform(scrollY, [0, 40], [0, -20]); // nevenka card
+  const screenY = useTransform(scrollY, [0, 80], [0, -10]); // platform screen
+  const rightBackY = useTransform(scrollY, [0, 40], [0, -60]); // far right bg
+  const rightBubbleY = useTransform(scrollY, [0, 40], [0, -60]); // right speech bubble
 
   return (
     <div className="relative w-full h-[890px] sm:h-[1050px]  md:h-[1005px] lg:h-[1010px] xl:h-[1060px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
-
-
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
         <motion.div variants={mobileLinkVars}>
           <NavUserProviderToggle instanceId="hero" />
@@ -47,7 +44,6 @@ export default function Hero({ data }) {
 
       {/* GRADIENTE */}
       <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none" />
-
 
       {/* Content Container */}
       <div className="w-full h-auto flex justify-center items-center z-10 px-4 2xl:mt-[-100px] absolute top-[100px] md:top-[150px] xl:top-[200px] 2xl:top-[300px]">
@@ -81,7 +77,6 @@ export default function Hero({ data }) {
               {data.secondPartSubtitle}
             </p>
           </div>
-
 
           {/* Buttons */}
           <div className="z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-4 lg:px-0 ">
@@ -130,7 +125,6 @@ export default function Hero({ data }) {
             style={{ y: leftBackY }}
           />
 
-
           {/* LEFT BUBBLE */}
           <motion.img
             className="hidden xl:block xl:absolute xl:w-[100px] xl:left-[90px]   xl:top-[520px] 2xl:top-[400px] xl:z-1"
@@ -142,14 +136,13 @@ export default function Hero({ data }) {
             style={{ y: leftBubbleY }}
           />
 
-
           {/* PLATFORM SCREEN + IPHONE (md+) */}
           <div
             className="pt-10 z-10"
-          // initial={{ opacity: 0, y: 80 }}
-          // animate={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
-          // style={{ y: screenY }}
+            // initial={{ opacity: 0, y: 80 }}
+            // animate={{ opacity: 1, y: 0 }}
+            // transition={{ duration: 1, ease: "easeOut", delay: 0.35 }}
+            // style={{ y: screenY }}
           >
             <div className="relative inline-block">
               <img
@@ -160,7 +153,7 @@ export default function Hero({ data }) {
               {/* IPHONE MOCKUP */}
               <img
                 className="hidden md:block md:w-[130px] lg:w-[150px] 2xl:w-[260px] absolute md:top-[100px] lg:top-[120px] 2xl:top-[80px] md:-right-[40px] lg:-right-[60px] 2xl:-right-[80px] z-20"
-                src="/images/HomeHero/Iphone_mockup.svg"
+                src="/images/HomeHero/iphone_mockup.svg"
                 alt="Vista móvil de SparkClub"
               />
             </div>
@@ -176,7 +169,6 @@ export default function Hero({ data }) {
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
             style={{ y: rightBackY }}
           />
-
 
           {/* RIGHT bottom IMAGE */}
           <motion.img
@@ -201,11 +193,6 @@ export default function Hero({ data }) {
           />
         </div>
       </div>
-
-
-
     </div>
-
-
   );
 }
