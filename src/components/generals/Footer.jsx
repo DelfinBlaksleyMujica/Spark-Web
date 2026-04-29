@@ -6,7 +6,6 @@ import Image from "next/image";
 import Button from "../generals/Button";
 import { motion } from "framer-motion";
 
-
 import { Public_Sans } from "next/font/google";
 
 const publicSans = Public_Sans({
@@ -29,7 +28,11 @@ export default function Footer() {
           </h2>
 
           <div className="mt-6 sm:mt-8">
-            <Button btnText="Reserva una demo" btnClass="primary-btn" href="https://zcal.co/sparkclub" />
+            <Button
+              btnText="Reserva una demo"
+              btnClass="primary-btn"
+              href="https://zcal.co/sparkclub"
+            />
           </div>
         </section>
 
@@ -123,11 +126,14 @@ export default function Footer() {
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
             >
-              <img src="/images/Icons/twitter.svg" alt="Twitter" className="h-7 w-7 text-black" />
+              <img
+                src="/images/Icons/twitter.svg"
+                alt="Twitter"
+                className="h-7 w-7 text-black"
+              />
               <span className="text-[20px]">tw/sparkclub</span>
             </motion.a>
           </section>
-
         </section>
 
         {/* LEFT: Logo + copyright */}
@@ -146,7 +152,9 @@ export default function Footer() {
             </div>
 
             <p className="text-[14px] mt-4">
-              Somos una plataforma inteligente e integral diseñada para ayudar a las empresas a aumentar la involucración de sus empleados, reducir la rotación y mejorar el rendimiento del equipo.
+              Somos una plataforma inteligente e integral diseñada para ayudar a
+              las empresas a aumentar la involucración de sus empleados, reducir
+              la rotación y mejorar el rendimiento del equipo.
             </p>
 
             <p className="text-[13px] mt-4 md:mt-auto">
@@ -160,11 +168,20 @@ export default function Footer() {
           aria-labelledby="contact-heading"
           className="md:col-start-9 md:col-span-3 md:row-start-2 space-y-2 mx-auto md:mx-0"
         >
-          <a href="https://api.whatsapp.com/send?phone=541149604816" id="contact-heading" className="font-semibold text-[25px] border-b-1 ">
+          <a
+            href="https://api.whatsapp.com/send?phone=541123641441"
+            id="contact-heading"
+            className="font-semibold text-[25px] border-b-1 "
+          >
             Información de Contacto
           </a>
           <div className="space-y-2 mt-3">
-            <a href="https://api.whatsapp.com/send?phone=541149604816" className="text-[20px] ">+54 9 1157979949</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=541123641441"
+              className="text-[20px] "
+            >
+              +54 9 1157979949
+            </a>
             <p className="text-[20px] ">Lun–Vie 9am–6pm</p>
           </div>
         </section>
@@ -178,8 +195,8 @@ export default function Footer() {
             Únete a nuestro newsletter
           </h3>
           <p className="text-[20px] leading-[1.2] max-w-sm ">
-            Suscríbete a nuestro newsletter para recibir consejos de marketing gratuitos,
-            inspiración y más
+            Suscríbete a nuestro newsletter para recibir consejos de marketing
+            gratuitos, inspiración y más
           </p>
 
           <form
@@ -197,11 +214,13 @@ export default function Footer() {
               className="flex bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
             />
             <Button
-              btnText="Subscribirse" btnClass="primary-btn" href="/about-us"
+              btnText="Subscribirse"
+              btnClass="primary-btn"
+              href="/about-us"
             />
           </form>
         </section>
       </div>
-    </footer >
+    </footer>
   );
 }
