@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import NavUserProviderToggle from "../generals/NavUserProviderToggle";
 
 export default function Hero({ data }) {
-
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => setOpen((v) => !v);
@@ -25,7 +24,6 @@ export default function Hero({ data }) {
       transition: { duration: 0.7, ease: [0, 0.55, 0.45, 1] },
     },
   };
-
 
   return (
     <div className="relative flex justify-center items-center h-screen w-full bg-white pt-[40px] ">
@@ -56,8 +54,16 @@ export default function Hero({ data }) {
           </p>
 
           <div className=" flex flex-col lg:flex-row items-center w-full gap-[18px] justify-center ">
-            <Button btnText="Unirse como Partner Certificado" btnClass="primary-btn" href="https://app.formbricks.com/s/cmhxz4jy53zuwad01lat59has" />
-            <Button btnText="Probar Nevenka (alpha)" btnClass="tertiary-btn" href="https://zcal.co/sparkclub" />
+            <Button
+              btnText="Unirse como Partner Certificado"
+              btnClass="primary-btn"
+              href="https://spark-club-suppliers.vercel.app/"
+            />
+            <Button
+              btnText="Agenda una demo"
+              btnClass="tertiary-btn"
+              href=" https://zcal.co/sparkclub/discovery"
+            />
           </div>
         </div>
       </div>

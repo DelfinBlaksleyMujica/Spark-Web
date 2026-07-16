@@ -83,12 +83,12 @@ export default function Hero({ data }) {
             <Button
               btnText="Planifica tu evento"
               btnClass="primary-btn"
-              href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
+              href=" https://zcal.co/sparkclub/discovery"
             />
             <Button
               btnText="Probar Nevenka (alpha)"
               btnClass="tertiary-btn"
-              href="https://zcal.co/sparkclub"
+              href="https://spark-club-empresas.vercel.app/"
             >
               <img
                 className="ml-[15px]"
