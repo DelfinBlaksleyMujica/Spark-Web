@@ -7,8 +7,8 @@ import { useMemo, useState, useEffect, useTransition } from "react";
 import { public_sans } from "@/app/fonts/fonts";
 
 const TABS = [
-  { key: "users", label: "Team Leads", href: "/" },
-  { key: "provider", label: "Partners", href: "/provider" },
+  { key: "users", label: "Empresas", href: "/" },
+  { key: "provider", label: "Proveedores", href: "/provider" },
 ];
 
 export default function NavUserProviderToggle({ instanceId = "nav" }) {
@@ -50,7 +50,7 @@ export default function NavUserProviderToggle({ instanceId = "nav" }) {
         className="relative inline-flex h-10 w-[260px] select-none p-1"
         style={{ backgroundColor: "#27272A", borderRadius: "8px" }}
         role="tablist"
-        aria-label="Team Leads / Partners"
+        aria-label="Empresas / Proveedores"
       >
         {TABS.map((tab) => {
           const isActive = activeKey === tab.key;
