@@ -81,12 +81,12 @@ export default function Hero({ data }) {
           {/* Buttons */}
           <div className="z-20 flex flex-col justify-center items-center md:flex-row gap-[18px] px-4 lg:px-0 ">
             <Button
-              btnText="Planifica tu evento"
+              btnText="Planificá tu evento con un asesor"
               btnClass="primary-btn"
               href=" https://zcal.co/sparkclub/discovery"
             />
             <Button
-              btnText="Probar Nevenka (alpha)"
+              btnText="Probar Nevenka"
               btnClass="tertiary-btn"
               href="https://spark-club-empresas.vercel.app/"
             >

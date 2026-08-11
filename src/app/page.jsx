@@ -32,8 +32,8 @@ const data = {
       {
         id: "proposal",
         img: "/images/Cards/MockUp-02.webp",
-        imageAlt: "Obtén una propuesta en 20 segundos",
-        title: "Obtén una propuesta en 20 segundos",
+        imageAlt: "Obtén una propuesta en 10 minutos",
+        title: "Obtén una propuesta en 10 minutos",
         description: "Nevenka prepara la propuesta del evento según tus necesidades.",
       },
       {
