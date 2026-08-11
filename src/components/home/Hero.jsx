@@ -86,7 +86,7 @@ export default function Hero({ data }) {
               href=" https://zcal.co/sparkclub/discovery"
             />
             <Button
-              btnText="Probar Nevenka (alpha)"
+              btnText="Probar Nevenka"
               btnClass="tertiary-btn"
               href="https://spark-club-empresas.vercel.app/"
             >
