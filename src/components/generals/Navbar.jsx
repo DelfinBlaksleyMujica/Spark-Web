@@ -54,6 +54,7 @@ const NAV_LINKS = [
   { title: "Quiénes somos", href: "/about-us" },
   //{ title: "Pricing", href: "/pricing" },
   { title: "Blog", href: "/blog" },
+  { title: "Contáctanos", href: "/contacto" },
 ];
 
 export default function Navbar() {
