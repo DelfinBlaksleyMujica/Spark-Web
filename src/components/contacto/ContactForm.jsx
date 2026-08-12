@@ -72,10 +72,15 @@ export default function ContactForm() {
     setStatus("loading");
 
     try {
+      const formData = new FormData();
+      Object.entries(form).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
       if (response.ok) {

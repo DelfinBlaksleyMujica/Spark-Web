@@ -23,6 +23,7 @@ export default function ContactPage() {
     <>
       <ContactHero data={data.hero} />
       <ContactForm />
+
     </>
   );
 }
