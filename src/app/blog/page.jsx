@@ -1,6 +1,12 @@
 import React from "react";
 import BlogLanding from "@/components/blog/BlogLanding";
 
+export const metadata = {
+  title: "Blog de engagement laboral | Sparkclub",
+  description:
+    "Tendencias, consejos y estrategias para potenciar el engagement, fortalecer la cultura y crear equipos más conectados.",
+};
+
 const data = {
   title: "Blog de engagement",
   subtitle:

@@ -5,6 +5,12 @@ import AboutUsHero from "@/components/about-us/AboutUsHero";
 import AboutUsCards from "@/components/about-us/AboutUsCards";
 import WhyUs from "@/components/about-us/WhyUs";
 
+export const metadata = {
+  title: "Quiénes somos | Sparkclub",
+  description:
+    "Conocé al equipo detrás de Sparkclub y nuestra misión de fortalecer las relaciones laborales a través de experiencias compartidas.",
+};
+
 const data = {
   hero: {
     title: "Nuestra misión es fortalecer las relaciones laborales a través de ",

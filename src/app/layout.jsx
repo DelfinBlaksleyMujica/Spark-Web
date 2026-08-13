@@ -16,16 +16,36 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteTitle = "Sparkclub | Eventos y experiencias corporativas en minutos";
+const siteDescription =
+  "Nevenka, la IA de Sparkclub, diseña eventos y experiencias corporativas a medida con proveedores certificados en solo 10 minutos.";
+
 export const metadata = {
-  title:
-    "Event & Experience Matching Platform | Sparkclub , Buenos Aires Argentina",
-  description:
-    "Corporate events platform. Nevenka our AI event planner connects you with certified suppliers to create budget-friendly experiences in just 10 minutes.",
+  title: siteTitle,
+  description: siteDescription,
+  metadataBase: new URL("https://www.sparkclub.xyz"),
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "https://www.sparkclub.xyz",
+    siteName: "Sparkclub",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

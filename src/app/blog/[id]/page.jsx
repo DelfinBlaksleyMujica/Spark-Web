@@ -402,6 +402,37 @@ function parseDate(d) {
   return new Date(d); // works for ISO like "2025-09-22"
 }
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const post = POSTS.find((p) => String(p.id) === String(id));
+
+  if (!post) {
+    return {
+      title: "Post no encontrado | Blog Sparkclub",
+      description: "El artículo que buscás no existe o fue movido.",
+    };
+  }
+
+  const plainText = post.content
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const description =
+    plainText.length > 155 ? `${plainText.slice(0, 155)}...` : plainText;
+
+  return {
+    title: `${post.title} | Blog Sparkclub`,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      type: "article",
+      publishedTime: post.date,
+      images: post.cover ? [{ url: post.cover }] : undefined,
+    },
+  };
+}
+
 export default function BlogPostPageContainer({ params }) {
   const { id } = use(params);
 
