@@ -1,5 +1,3 @@
-"use client";
-
 import Button from "../generals/Button";
 import { Public_Sans } from "next/font/google";
 import CheckIcon from "@mui/icons-material/Check";

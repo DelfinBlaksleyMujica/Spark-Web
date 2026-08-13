@@ -1,13 +1,7 @@
-"use client";
 import { inter } from "@/app/fonts/fonts";
 import Link from "next/link";
-import React from "react";
 
 export default function EventosHomePage({ eventos }) {
-  const [events, setEvents] = React.useState(eventos);
-  React.useEffect(() => {
-    setEvents(eventos);
-  }, [eventos]);
   return (
     <div className="h-auto w-full py-40 px-[80px] bg-[#151515]">
       <div className="mb-[40px]">
@@ -16,7 +10,7 @@ export default function EventosHomePage({ eventos }) {
         </h1>
       </div>
       <div>
-        {events.map((evento) => (
+        {eventos.map((evento) => (
           <div
             key={evento.id}
             className="border-b border-[#F4F4F4] p-4 flex justify-between items-center"
