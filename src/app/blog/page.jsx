@@ -7,7 +7,7 @@ export const metadata = {
     "Tendencias, consejos y estrategias para potenciar el engagement, fortalecer la cultura y crear equipos más conectados.",
 };
 
-const data = {
+export const data = {
   title: "Blog de engagement",
   subtitle:
     "Descubre tendencias, consejos y estrategias para potenciar el engagement de las personas, fortalecer la cultura de tu empresa y crear un lugar de trabajo más conectado y productivo.",
