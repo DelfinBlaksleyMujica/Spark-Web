@@ -2,71 +2,106 @@ import { public_sans } from "@/app/fonts/fonts";
 import Link from "next/link";
 import React from "react";
 
+// Colores de badge por persona (mapeados por id, según orden del deck de referencia)
+const BADGE_COLORS = {
+  1: "bg-[#86EFAC]", // Gastón - verde
+  2: "bg-[#7DD3FC]", // Delfín - celeste/cyan
+  3: "bg-[#FDE047]", // Inés - amarillo
+};
+
 export default function TeamMemberCard({
+  id,
   image,
   nombre,
   apellido,
   rol,
   linkedinLink,
   topExperiences,
-  descriptions,
+  bullets,
   experiences,
 }) {
+  const badgeColor = BADGE_COLORS[id] ?? "bg-[#FDE047]";
+
   return (
     <div
-      className={`${public_sans.className} w-[90%] sm:w-[460px] max-w-[600px] px-[20px]
-                  flex flex-col h-full`}
+      className={`${public_sans.className} bg-[#121212] rounded-[10px] overflow-hidden w-full h-full flex flex-col`}
     >
-      {/* Header:  */}
-      <div className="w-full flex justify-center items-center gap-[10px] mb-[25px] overflow-hidden">
+      {/* FOTO */}
+      <div className="relative w-full h-[320px] sm:h-[360px]">
         <img
-          className="w-[50%] rounded-[50%]"
           src={image}
           alt={`${nombre} ${apellido}`}
+          className="w-full h-full object-cover"
         />
-        <div className="w-[50%]">
-          <h4 className="font-semibold mb-[5px] text-[20px] sm:text-[26px] leading-[100%] tracking-tight text-black">
-            {nombre} <br /> {apellido}
-          </h4>
-          <h5 className="text-[14px] sm:text-[16px] mb-[5px] text-black">{rol}</h5>
-          <Link href={linkedinLink} rel="noopener noreferrer" target="_blank">
-            <img src="/images/Icons/LinkedinLogo.svg" alt="LinkedIn Profile" />
-          </Link>
-          <ul className="text-[16px] leading-[136%] list-none mt-[10px]">
-            <li className="text-black">
-              <strong>Top experience:</strong>
-            </li>
-            {topExperiences.map((experience, index) => (
-              <li key={index} className="text-black">
-                {experience}
-              </li>
-            ))}
-          </ul>
+
+        {/* Badge flotante top-right */}
+        <div
+          className={`absolute top-[16px] right-[16px] ${badgeColor} rounded-full px-[14px] py-[6px] flex items-center gap-[6px]`}
+        >
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="currentColor"
+            className="text-black flex-shrink-0"
+            aria-hidden="true"
+          >
+            <path d="M7.75 0.5L1.5 8.25H6.25L6.25 13.5L12.5 5.75H7.75L7.75 0.5Z" />
+          </svg>
+          <span className="text-[13px] font-medium text-black leading-none">
+            {topExperiences.join(", ")}
+          </span>
+        </div>
+
+        {/* Logos superpuestos bottom-left */}
+        <div className="absolute bottom-[16px] left-[16px] flex items-center gap-[8px]">
+          {experiences.map((exp, index) => (
+            <img
+              key={index}
+              src={exp.logo}
+              alt={exp.title || ""}
+              className="w-[32px] h-[32px] object-contain"
+            />
+          ))}
         </div>
       </div>
 
-      {/* Descriptions  */}
-      <div className="mb-[40px] lg:min-h-[220px]">
-        {descriptions.map((desc, index) => (
-          <p
-            className="mb-[20px] text-black text-left w-full font-regular text-[16px] leading-[136%]"
-            key={index}
+      {/* CUERPO */}
+      <div className="flex flex-col flex-1 px-[24px] py-[20px]">
+        {/* Nombre + rol + LinkedIn */}
+        <div className="flex justify-between items-center mb-[18px]">
+          <div>
+            <h4 className="text-white font-semibold text-[22px] leading-[110%] tracking-tight">
+              {nombre} {apellido}
+            </h4>
+            <p className="text-white/50 text-[14px] mt-[4px]">{rol}</p>
+          </div>
+          <Link
+            href={linkedinLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center flex-shrink-0"
           >
-            {desc}
-          </p>
-        ))}
-      </div>
+            <img
+              src="/images/Icons/LinkedinLogo.svg"
+              alt="LinkedIn Profile"
+              className="w-[18px] h-[18px]"
+            />
+          </Link>
+        </div>
 
-      {/* Logos  */}
-      <div className="w-full flex flex-wrap justify-center sm:justify-start items-center gap-[35px] mt-auto">
-        {experiences.map((exp, index) => (
-          <img
-            className="w-[70px]"
-            key={index}
-            src={exp.logo}
-            alt={exp.title}
-          />
-        ))}
+        {/* Bullets */}
+        <ul className="flex flex-col gap-[10px] mt-auto">
+          {bullets.map((bullet, index) => (
+            <li
+              key={index}
+              className="flex items-start gap-[8px] text-white/80 text-[14px] leading-[136%]"
+            >
+              <span className="mt-[7px] w-[4px] h-[4px] rounded-full bg-white/50 flex-shrink-0" />
+              {bullet}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
