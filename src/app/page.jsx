@@ -6,6 +6,7 @@ import Hero from "@/components/home/Hero";
 import WeMakeWorkWorkComponent from "@/components/home/WeMakeWorkWorkComponent";
 import TestimonialsContainer from "@/components/generals/TestimonialsContainer";
 import TrustedByComponent from "@/components/home/TrustedByComponent";
+import { flattenAnswer } from "@/lib/flattenAnswer";
 
 const data = {
   hero: {
@@ -230,9 +231,26 @@ const data = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: data.faqs.FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: flattenAnswer(faq.answer),
+    },
+  })),
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero data={data.hero} />
       <TrustedByComponent />
       <AboutNevenka data={data.aboutNevenka} />

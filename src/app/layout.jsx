@@ -43,12 +43,29 @@ export const metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Sparkclub",
+  url: "https://www.sparkclub.xyz",
+  logo: "https://www.sparkclub.xyz/images/Logos/Logo_SparkClub_Original.webp",
+  sameAs: [
+    "https://www.instagram.com/sparkclub.xyz",
+    "https://www.linkedin.com/company/spark-latam",
+    "https://x.com/SparkclubXYZ",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TN7MK86TX9"
           strategy="afterInteractive"
