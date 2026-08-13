@@ -335,7 +335,7 @@ const POSTS = [
     <h2>✨ Conclusión</h2>
     <p>El employee engagement no es un beneficio extra. Es una <strong>inversión directa</strong> en la cultura, la productividad y la felicidad de tu equipo, y como toda inversión, requiere acción.</p>
     <p>Desde Spark te invitamos a construir la cultura que tu empresa merece: más conectada, más auténtica, más humana.</p>
-    <p><a href="https://sparkclub.xyz" target="_blank" rel="noopener">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
+    <p><a href="/">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
   `,
   },
   {

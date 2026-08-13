@@ -84,11 +84,15 @@ export default function Hero({ data }) {
               btnText="Planificá tu evento con un asesor"
               btnClass="primary-btn"
               href=" https://zcal.co/sparkclub/discovery"
+              target="_blank"
+              rel="noopener noreferrer"
             />
             <Button
               btnText="Probar Nevenka"
               btnClass="tertiary-btn"
               href="https://spark-club-empresas.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="ml-[15px]"

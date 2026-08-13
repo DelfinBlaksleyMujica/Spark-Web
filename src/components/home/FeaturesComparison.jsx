@@ -103,6 +103,8 @@ export default function WhyChoose({ data }) {
               btnText="Try Nevenka (alpha)"
               btnClass="primary-btn"
               href="https://zcal.co/sparkclub"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </div>

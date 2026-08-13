@@ -18,6 +18,8 @@ export default function WhatsAppButton() {
       <a
         id="whatsapp"
         href="https://api.whatsapp.com/send?phone=541123641441"
+        target="_blank"
+        rel="noopener noreferrer"
         className="cursor-pointer"
       >
         <svg

@@ -4,12 +4,21 @@ import { inter, poppins } from "@/app/fonts/fonts";
 import { motion, useReducedMotion } from "framer-motion";
 import React from "react";
 
-export default function Button({ btnText, btnClass, href, children }) {
+export default function Button({
+  btnText,
+  btnClass,
+  href,
+  children,
+  target = undefined,
+  rel = undefined,
+}) {
   const prefersReduced = useReducedMotion();
 
   return (
     <motion.a
       href={href}
+      target={target}
+      rel={rel}
       whileHover={prefersReduced ? {} : { scale: 1.05 }}
       whileTap={prefersReduced ? {} : { scale: 0.96 }}
       transition={

@@ -132,6 +132,8 @@ export default function AboutNevenka({ data }) {
             btnText="Sumate a la lista de espera"
             btnClass="primary-btn"
             href="https://app.formbricks.com/s/cmj1mpv5u3avdad015eandi7o"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
       </div>
