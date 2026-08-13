@@ -97,7 +97,7 @@ export default function ContactForm() {
   const isLoading = status === "loading";
 
   return (
-    <section className="bg-black px-4 sm:px-6 md:px-0 pb-24">
+    <section className="px-4 sm:px-6 md:px-0 pb-24">
       <form
         onSubmit={handleSubmit}
         noValidate

@@ -7,7 +7,7 @@ const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export default function ContactHero({ data }) {
   return (
-    <section className={`${publicSans.className} bg-black text-white`}>
+    <section className={`${publicSans.className} text-white`}>
       <div className="px-4 sm:px-6 md:px-0 pt-32 pb-8">
         <div className="grid grid-cols-12">
           {/* TITLE */}
