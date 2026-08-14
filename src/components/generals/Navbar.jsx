@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import NavUserProviderToggle from "./NavUserProviderToggle";
 import { public_sans } from "@/app/fonts/fonts";
 import { usePathname } from "next/navigation";
+import { useMobileMenu } from "@/context/MobileMenuContext";
 
 // --- Config menú mobile (mismas animaciones que tu Navbar anterior) ---
 const menuVars = {
@@ -58,7 +59,7 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useMobileMenu();
   const toggleMenu = () => setOpen((v) => !v);
   const pathname = usePathname();
   const [esconderNavbar, setEsconderNavbar] = useState("");
@@ -75,7 +76,7 @@ export default function Navbar() {
     <header
       className={`${esconderNavbar == true
         ? "hidden"
-        : "h-[90px] w-full flex justify-center items-center fixed top-0 z-50 bg-[#121212]"
+        : `h-[90px] w-full flex justify-center items-center fixed top-0 bg-[#121212] ${open ? "z-[110]" : "z-50"}`
         } `}
     >
       <nav className="relative z-50 flex w-full max-w-[1440px] items-center justify-between gap-[40px] px-[18px] sm:px-[48px] md:px-[72px] lg:px-[118px] py-[24px] md:py-[40px] h-full">
@@ -167,7 +168,7 @@ export default function Navbar() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed inset-0 origin-top bg-[#000000] p-6 sm:p-8"
+              className="fixed inset-0 z-[110] origin-top bg-[#000000] p-6 sm:p-8"
             >
               <div className="flex h-full flex-col">
                 {/* Header del overlay: logo + cerrar */}
