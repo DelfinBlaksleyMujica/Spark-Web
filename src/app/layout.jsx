@@ -5,7 +5,6 @@ import Footer from "@/components/generals/Footer";
 import WhatsAppButton from "@/components/generals/WhatsAppButton";
 import ClarityScript from "@/components/generals/ClarityScripts";
 import Script from "next/script";
-import { MobileMenuProvider } from "@/context/MobileMenuContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,13 +41,11 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-TN7MK86TX9');
           `}
         </Script>
-        <MobileMenuProvider>
-          <Navbar />
-          {children}
-          <ClarityScript />
-          <WhatsAppButton />
-          <Footer />
-        </MobileMenuProvider>
+        <Navbar />
+        {children}
+        <ClarityScript />
+        <WhatsAppButton />
+        <Footer />
       </body>
     </html>
   );
