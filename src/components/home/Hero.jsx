@@ -1,30 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Button from "../generals/Button";
 import { public_sans } from "@/app/fonts/fonts";
 import NavUserProviderToggle from "../generals/NavUserProviderToggle";
+import { useMobileMenu } from "@/context/MobileMenuContext";
 
 export default function Hero({ data }) {
   const { scrollY } = useScroll();
-
-  const [open, setOpen] = useState(false);
-
-  const toggleMenu = () => setOpen((v) => !v);
-
-  const mobileLinkVars = {
-    initial: {
-      y: "30vh",
-      opacity: 0,
-      transition: { duration: 0.5, ease: [0.37, 0, 0.63, 1] },
-    },
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.7, ease: [0, 0.55, 0.45, 1] },
-    },
-  };
+  const { open } = useMobileMenu();
 
   // Parallax values
   const leftBackY = useTransform(scrollY, [0, 40], [0, -60]); // far left bg
@@ -37,9 +21,19 @@ export default function Hero({ data }) {
   return (
     <div className="relative w-full h-[890px] sm:h-[1050px]  md:h-[1005px] lg:h-[1010px] xl:h-[1060px]  2xl:h-[1150px] flex items-center justify-center overflow-hidden bg-[#151515]">
       <div className="md:hidden absolute top-[120px] left-0 right-0 flex justify-center z-[60] pointer-events-auto">
-        <motion.div variants={mobileLinkVars}>
-          <NavUserProviderToggle instanceId="hero" />
-        </motion.div>
+        <AnimatePresence>
+          {!open && (
+            <motion.div
+              key="hero-provider-toggle"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10, transition: { duration: 0.2, ease: "easeOut" } }}
+              transition={{ delay: 0.75, duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <NavUserProviderToggle instanceId="hero" />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       {/* GRADIENTE */}

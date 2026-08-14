@@ -9,6 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import NavUserProviderToggle from "./NavUserProviderToggle";
 import { public_sans } from "@/app/fonts/fonts";
 import { usePathname } from "next/navigation";
+import { useMobileMenu } from "@/context/MobileMenuContext";
 
 // --- Config menú mobile (mismas animaciones que tu Navbar anterior) ---
 const menuVars = {
@@ -58,7 +59,7 @@ const NAV_LINKS = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useMobileMenu();
   const toggleMenu = () => setOpen((v) => !v);
   const pathname = usePathname();
   const [esconderNavbar, setEsconderNavbar] = useState("");
