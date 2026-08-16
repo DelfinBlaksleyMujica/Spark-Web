@@ -126,6 +126,8 @@ const data = {
   testimonials: {
     title: "Testimonios",
     testimonials: [
+      // Testimonios placeholder, reemplazados por casos reales el 2026-08-16 — mantener comentados por si se necesitan de referencia
+      /*
       {
         id: 1,
         img: "/images/Testimonios/TestimonialIconPlaceholder1.jpeg",
@@ -153,6 +155,41 @@ const data = {
         testimonio:
           "Necesitábamos organizar una activación para DevConnect, y estábamos a 10,500 km del lugar. Honestamente, no esperaba que se resolviera tan rápido. SparkClub gestionó todo con precisión y entregó un evento que parecía que hubiéramos estado en el lugar desde el principio.",
         firma: "Industria-Blockchain",
+      },
+      */
+      {
+        id: 5,
+        img: "/images/Testimonios/AvatarAdrianLi.png",
+        testimonio:
+          "Trabajé construyendo comunidades en distintos países y sé lo importante que es la intencionalidad. La conexión humana es difícil, especialmente en tech. Si queremos conexiones reales, necesitamos sistemas que funcionen y organizadores como Gastón y Flor de SparkClub.",
+        firma: "@adrianli_eth",
+      },
+      {
+        id: 6,
+        img: "/images/Testimonios/AvatarZoeBrevis.png",
+        testimonio:
+          "Update rápido: el evento fue un éxito enorme. Terminamos con 1.500 registros y 500+ personas on-site. La sala estuvo llena todo el día y casi todo corrió en horario. Este éxito es de todos ustedes.",
+        firma: "@zoe_brevis",
+      },
+      {
+        id: 7,
+        img: "/images/Testimonios/AvatarMacaCapillo.png",
+        testimonio: "Un lujo el evento ❤️🤩 @RedBullBasement",
+        firma: "@MacaCapillo",
+      },
+      {
+        id: 8,
+        img: "/images/Testimonios/AvatarLaughingKite.jpg",
+        testimonio:
+          "Gracias por organizar un Proof of AI side event tan increíble. Estuvo excepcionalmente bien armado, sentimos la energía del mercado latinoamericano, y esperamos seguir trabajando juntos.",
+        firma: "@Laughing_Kite",
+      },
+      {
+        id: 9,
+        img: "/images/Testimonios/AvatarKhanAbbas.png",
+        testimonio:
+          "Founders night fue un éxito enorme en @EFDevcon. La sala llena de builders, founders y operadores del ecosistema, todos conectando e intercambiando ideas.",
+        firma: "@KhanAbbas201",
       },
     ],
   },
