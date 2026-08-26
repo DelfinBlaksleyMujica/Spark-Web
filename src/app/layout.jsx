@@ -17,10 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:
-    "Event & Experience Matching Platform | Sparkclub , Buenos Aires Argentina",
+  title: "SparkClub | Organiza los mejores eventos corporativos",
   description:
-    "Corporate events platform. Nevenka our AI event planner connects you with certified suppliers to create budget-friendly experiences in just 10 minutes.",
+    "Organiza eventos corporativos memorables con SparkClub. Encontrá espacios, experiencias y proveedores en un solo lugar, de forma simple y ágil.",
 };
 
 export default function RootLayout({ children }) {
