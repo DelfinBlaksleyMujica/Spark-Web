@@ -5,6 +5,10 @@ import { connectDB } from "@/lib/mongo";
 import Event from "@/models/events";
 import Question from "@/models/question"; // 👈 IMPORTANTE
 
+export const metadata = {
+  robots: { index: false, follow: false },
+};
+
 const QUESTION_CONFIG = [
   {
     pregunta: "Your favs to spend your social time",

@@ -20,9 +20,21 @@ const data = {
 
 export default function ContactPage() {
   return (
-    <>
-      <ContactHero data={data.hero} />
-      <ContactForm />
-    </>
+    <section className="bg-black">
+      <div className="relative w-full overflow-hidden">
+        {/* Bg texture */}
+        <img
+          src="/images/Textures/SparkLogo_Texture.webp"
+          alt="Background texture"
+          className="absolute inset-0 z-10 w-full h-full object-cover"
+        />
+
+        {/* CONTENT */}
+        <div className="relative z-10">
+          <ContactHero data={data.hero} />
+          <ContactForm />
+        </div>
+      </div>
+    </section>
   );
 }

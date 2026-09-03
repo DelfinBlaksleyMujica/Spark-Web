@@ -6,13 +6,14 @@ import Hero from "@/components/home/Hero";
 import WeMakeWorkWorkComponent from "@/components/home/WeMakeWorkWorkComponent";
 import TestimonialsContainer from "@/components/generals/TestimonialsContainer";
 import TrustedByComponent from "@/components/home/TrustedByComponent";
+import { flattenAnswer } from "@/lib/flattenAnswer";
 
 const data = {
   hero: {
-    tituloPrincipal: "La plataforma de IA",
-    kwTituloPrincipal: "para organización de eventos",
-    firstSubtitle: "SparkClub organiza eventos corporativos y ",
-    strongSubtitle: "centraliza la coordinación: ",
+    tituloPrincipal: "Organizá los mejores",
+    kwTituloPrincipal: "eventos corporativos",
+    firstSubtitle: "Deja de pasar semanas planificando y gastando una fortuna en eventos de equipo. ",
+    strongSubtitle: "Cuéntale a Nevenka lo que necesitas ",
     secondPartSubtitle:
       "locaciones, proveedores, productores, presupuesto y reportes. Más control, más trazabilidad, más memorias - menos tiempo perdido.",
   },
@@ -130,6 +131,8 @@ const data = {
   testimonials: {
     title: "Testimonios",
     testimonials: [
+      // Testimonios placeholder, reemplazados por casos reales el 2026-08-16 — mantener comentados por si se necesitan de referencia
+      /*
       {
         id: 1,
         img: "/images/Testimonios/TestimonialIconPlaceholder1.jpeg",
@@ -157,6 +160,41 @@ const data = {
         testimonio:
           "Necesitábamos organizar una activación para DevConnect, y estábamos a 10,500 km del lugar. Honestamente, no esperaba que se resolviera tan rápido. SparkClub gestionó todo con precisión y entregó un evento que parecía que hubiéramos estado en el lugar desde el principio.",
         firma: "Industria-Blockchain",
+      },
+      */
+      {
+        id: 5,
+        img: "/images/Testimonios/AvatarAdrianLi.png",
+        testimonio:
+          "Trabajé construyendo comunidades en distintos países y sé lo importante que es la intencionalidad. La conexión humana es difícil, especialmente en tech. Si queremos conexiones reales, necesitamos sistemas que funcionen y organizadores como Gastón y Flor de SparkClub.",
+        firma: "@adrianli_eth",
+      },
+      {
+        id: 6,
+        img: "/images/Testimonios/AvatarZoeBrevis.png",
+        testimonio:
+          "Update rápido: el evento fue un éxito enorme. Terminamos con 1.500 registros y 500+ personas on-site. La sala estuvo llena todo el día y casi todo corrió en horario. Este éxito es de todos ustedes.",
+        firma: "@zoe_brevis",
+      },
+      {
+        id: 7,
+        img: "/images/Testimonios/AvatarMacaCapillo.png",
+        testimonio: "Un lujo el evento ❤️🤩 @RedBullBasement",
+        firma: "@MacaCapillo",
+      },
+      {
+        id: 8,
+        img: "/images/Testimonios/AvatarLaughingKite.jpg",
+        testimonio:
+          "Gracias por organizar un Proof of AI side event tan increíble. Estuvo excepcionalmente bien armado, sentimos la energía del mercado latinoamericano, y esperamos seguir trabajando juntos.",
+        firma: "@Laughing_Kite",
+      },
+      {
+        id: 9,
+        img: "/images/Testimonios/AvatarKhanAbbas.png",
+        testimonio:
+          "Founders night fue un éxito enorme en @EFDevcon. La sala llena de builders, founders y operadores del ecosistema, todos conectando e intercambiando ideas.",
+        firma: "@KhanAbbas201",
       },
     ],
   },
@@ -235,9 +273,26 @@ const data = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: data.faqs.FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: flattenAnswer(faq.answer),
+    },
+  })),
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Hero data={data.hero} />
       <TrustedByComponent />
       <AboutNevenka data={data.aboutNevenka} />

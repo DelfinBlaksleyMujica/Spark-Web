@@ -1,7 +1,13 @@
 import React from "react";
 import BlogLanding from "@/components/blog/BlogLanding";
 
-const data = {
+export const metadata = {
+  title: "Blog de engagement laboral | Sparkclub",
+  description:
+    "Tendencias, consejos y estrategias para potenciar el engagement, fortalecer la cultura y crear equipos más conectados.",
+};
+
+export const data = {
   title: "Blog de engagement",
   subtitle:
     "Descubre tendencias, consejos y estrategias para potenciar el engagement de las personas, fortalecer la cultura de tu empresa y crear un lugar de trabajo más conectado y productivo.",
@@ -334,7 +340,7 @@ const data = {
     <h2>✨ Conclusión</h2>
     <p>El employee engagement no es un beneficio extra. Es una <strong>inversión directa</strong> en la cultura, la productividad y la felicidad de tu equipo, y como toda inversión, requiere acción.</p>
     <p>Desde Spark te invitamos a construir la cultura que tu empresa merece: más conectada, más auténtica, más humana.</p>
-    <p><a href="https://sparkclub.xyz" target="_blank" rel="noopener">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
+    <p><a href="/">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
   `,
     },
     {

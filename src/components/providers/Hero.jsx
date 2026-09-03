@@ -58,11 +58,15 @@ export default function Hero({ data }) {
               btnText="Unirse como Partner Certificado"
               btnClass="primary-btn"
               href="https://spark-club-suppliers.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
             />
             <Button
               btnText="Agenda una demo"
               btnClass="tertiary-btn"
               href=" https://zcal.co/sparkclub/discovery"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </div>

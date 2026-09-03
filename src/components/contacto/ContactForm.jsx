@@ -72,10 +72,15 @@ export default function ContactForm() {
     setStatus("loading");
 
     try {
+      const formData = new FormData();
+      Object.entries(form).forEach(([key, value]) => {
+        formData.append(key, value);
+      });
+
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
       if (response.ok) {
@@ -92,7 +97,7 @@ export default function ContactForm() {
   const isLoading = status === "loading";
 
   return (
-    <section className="bg-black px-4 sm:px-6 md:px-0 pb-24">
+    <section className="px-4 sm:px-6 md:px-0 pb-24">
       <form
         onSubmit={handleSubmit}
         noValidate

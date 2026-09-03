@@ -335,7 +335,7 @@ const POSTS = [
     <h2>✨ Conclusión</h2>
     <p>El employee engagement no es un beneficio extra. Es una <strong>inversión directa</strong> en la cultura, la productividad y la felicidad de tu equipo, y como toda inversión, requiere acción.</p>
     <p>Desde Spark te invitamos a construir la cultura que tu empresa merece: más conectada, más auténtica, más humana.</p>
-    <p><a href="https://sparkclub.xyz" target="_blank" rel="noopener">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
+    <p><a href="/">Explorá nuestras experiencias</a> y empezá a cambiar la forma en que tu equipo se conecta.</p>
   `,
   },
   {
@@ -400,6 +400,37 @@ function parseDate(d) {
     return new Date(Number(yyyy), Number(mm) - 1, Number(dd));
   }
   return new Date(d); // works for ISO like "2025-09-22"
+}
+
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const post = POSTS.find((p) => String(p.id) === String(id));
+
+  if (!post) {
+    return {
+      title: "Post no encontrado | Blog Sparkclub",
+      description: "El artículo que buscás no existe o fue movido.",
+    };
+  }
+
+  const plainText = post.content
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const description =
+    plainText.length > 155 ? `${plainText.slice(0, 155)}...` : plainText;
+
+  return {
+    title: `${post.title} | Blog Sparkclub`,
+    description,
+    openGraph: {
+      title: post.title,
+      description,
+      type: "article",
+      publishedTime: post.date,
+      images: post.cover ? [{ url: post.cover }] : undefined,
+    },
+  };
 }
 
 export default function BlogPostPageContainer({ params }) {

@@ -246,6 +246,8 @@ export default function WeMakeWorkWorkComponent({ data }) {
             btnText="¡Crea un evento ahora!"
             btnClass="tertiary-btn"
             href="https://app.formbricks.com/s/cmhp7c1hu6w0jad01xarsqg9u"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
       </div>

@@ -1,5 +1,3 @@
-"use client";
-
 import Button from "../generals/Button";
 import { Public_Sans } from "next/font/google";
 import CheckIcon from "@mui/icons-material/Check";
@@ -103,6 +101,8 @@ export default function WhyChoose({ data }) {
               btnText="Try Nevenka (alpha)"
               btnClass="primary-btn"
               href="https://zcal.co/sparkclub"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </div>

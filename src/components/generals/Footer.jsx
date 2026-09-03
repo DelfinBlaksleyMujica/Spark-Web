@@ -32,6 +32,8 @@ export default function Footer() {
               btnText="Reserva una demo"
               btnClass="primary-btn"
               href="https://zcal.co/sparkclub"
+              target="_blank"
+              rel="noopener noreferrer"
             />
           </div>
         </section>
@@ -171,6 +173,8 @@ export default function Footer() {
           <a
             href="https://api.whatsapp.com/send?phone=541123641441"
             id="contact-heading"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-semibold text-[25px] border-b-1 "
           >
             Información de Contacto
@@ -178,6 +182,8 @@ export default function Footer() {
           <div className="space-y-2 mt-3">
             <a
               href="https://api.whatsapp.com/send?phone=541123641441"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[20px] "
             >
               +54 9 1157979949

@@ -1,0 +1,22 @@
+# Sparkclub
+
+> Plataforma que conecta personas a través de eventos y experiencias corporativas, diseñadas en minutos. Sparkclub ayuda a empresas a planificar experiencias de equipo ajustadas a su presupuesto, con proveedores certificados, en lugar de semanas de planificación manual.
+
+Sparkclub fortalece las relaciones laborales a través de experiencias compartidas: eventos internos de equipo, eventos comunitarios externos, y beneficios de bienestar y estilo de vida para empresas y sus equipos.
+
+## Producto
+
+- [Nevenka](/): motor de Sparkclub que convierte los requerimientos de un evento en una propuesta lista en minutos, con proveedores certificados y ajuste automático de presupuesto.
+
+## Páginas principales
+
+- [Inicio](https://www.sparkclub.xyz/): qué es Sparkclub, cómo funciona, FAQs
+- [Quiénes somos](https://www.sparkclub.xyz/about-us): equipo, misión y valores de Sparkclub
+- [Para proveedores](https://www.sparkclub.xyz/provider): información para proveedores de experiencias y servicios
+- [Blog](https://www.sparkclub.xyz/blog): artículos sobre cultura, engagement y experiencias de equipo
+- [Contacto](https://www.sparkclub.xyz/contacto): formulario de contacto directo con el equipo
+
+## Notas
+
+- Sparkclub opera principalmente en Argentina/LATAM.
+- Las rutas bajo /data son herramientas internas de uso exclusivo del equipo de Sparkclub y no representan contenido público del sitio.

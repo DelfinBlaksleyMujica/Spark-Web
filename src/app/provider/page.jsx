@@ -6,6 +6,12 @@ import FaqsProviders from "@/components/providers/FaqsProviders";
 
 import React from "react";
 
+export const metadata = {
+  title: "Sé Partner de Sparkclub | Experiencias certificadas",
+  description:
+    "Únete a la red de partners de Sparkclub para escalar tus experiencias y conectar con marcas que valoran la interacción humana.",
+};
+
 const data = {
   hero: {
     title: "Experiencias certificadas. ",
