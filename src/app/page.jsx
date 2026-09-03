@@ -10,8 +10,8 @@ import { flattenAnswer } from "@/lib/flattenAnswer";
 
 const data = {
   hero: {
-    tituloPrincipal: "Eventos y Experiencias",
-    kwTituloPrincipal: "que conectan personas",
+    tituloPrincipal: "Organizá los mejores",
+    kwTituloPrincipal: "eventos corporativos",
     firstSubtitle: "Deja de pasar semanas planificando y gastando una fortuna en eventos de equipo. ",
     strongSubtitle: "Cuéntale a Nevenka lo que necesitas ",
     secondPartSubtitle:
