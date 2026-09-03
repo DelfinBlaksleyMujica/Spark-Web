@@ -15,11 +15,12 @@ const data = {
     firstSubtitle: "Deja de pasar semanas planificando y gastando una fortuna en eventos de equipo. ",
     strongSubtitle: "Cuéntale a Nevenka lo que necesitas ",
     secondPartSubtitle:
-      "y obtén experiencias perfectamente diseñadas, ajustadas a tu presupuesto, con proveedores certificados, listas en sólo 10 minutos.",
+      "locaciones, proveedores, productores, presupuesto y reportes. Más control, más trazabilidad, más memorias - menos tiempo perdido.",
   },
   aboutNevenka: {
     title: "Pero espera, ¿quién es",
-    firstSubtitle: "Nevenka es la compañera de equipo que todo líder quisiera tener.",
+    firstSubtitle:
+      "Nevenka es la compañera de equipo que todo líder quisiera tener.",
     secondSubtitle:
       " Ella escucha, entiende a tu equipo y convierte ideas dispersas en experiencias significativas que realmente unen a las personas.",
     cards: [
@@ -35,7 +36,8 @@ const data = {
         img: "/images/Cards/MockUp-02.webp",
         imageAlt: "Obtén una propuesta en 10 minutos",
         title: "Obtén una propuesta en 10 minutos",
-        description: "Nevenka prepara la propuesta del evento según tus necesidades.",
+        description:
+          "Nevenka prepara la propuesta del evento según tus necesidades.",
       },
       {
         id: "pm",
@@ -96,7 +98,8 @@ const data = {
       {
         id: 1,
         title: "INNOVACIÓN",
-        description: "Aprovechando la IA para fomentar el bienestar de los empleados.",
+        description:
+          "Aprovechando la IA para fomentar el bienestar de los empleados.",
         color: "bg-[#FCA5A5]",
         img: "/images/3DIllus/Rocket.svg",
       },
@@ -110,14 +113,16 @@ const data = {
       {
         id: 3,
         title: "BASADO EN DATOS",
-        description: "Para mejorar el rendimiento y la satisfacción de la fuerza laboral.",
+        description:
+          "Para mejorar el rendimiento y la satisfacción de la fuerza laboral.",
         color: "bg-[#FAE5A8]",
         img: "/images/3DIllus/Plant.svg",
       },
       {
         id: 4,
         title: "EFICIENCIA",
-        description: "Planes a largo plazo S.M.A.R.T para reforzar la cultura de la marca.",
+        description:
+          "Planes a largo plazo S.M.A.R.T para reforzar la cultura de la marca.",
         color: "bg-[#67E8F9]",
         img: "/images/3DIllus/Lamp.svg",
       },
