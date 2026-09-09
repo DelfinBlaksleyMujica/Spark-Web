@@ -9,8 +9,8 @@ import TrustedByComponent from "@/components/home/TrustedByComponent";
 
 const data = {
   hero: {
-    tituloPrincipal: "La plataforma de IA",
-    kwTituloPrincipal: "para organización de eventos",
+    tituloPrincipal: "Organiza los mejores",
+    kwTituloPrincipal: "eventos corporativos",
     firstSubtitle: "SparkClub organiza eventos corporativos y ",
     strongSubtitle: "centraliza la coordinación: ",
     secondPartSubtitle:
