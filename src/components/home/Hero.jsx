@@ -88,7 +88,7 @@ export default function Hero({ data }) {
             <Button
               btnText="Probar Nevenka"
               btnClass="tertiary-btn"
-              href="https://spark-club-empresas.vercel.app/"
+              href="https://sparkclub-plataforma-brands.vercel.app/"
             >
               <img
                 className="ml-[15px]"
