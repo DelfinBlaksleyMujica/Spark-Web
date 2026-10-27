@@ -62,7 +62,7 @@ export default function Hero({ data }) {
             <Button
               btnText="Agenda una demo"
               btnClass="tertiary-btn"
-              href=" https://zcal.co/sparkclub/discovery"
+              href="https://zcal.co/sparkclub/discovery"
             />
           </div>
         </div>

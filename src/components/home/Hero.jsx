@@ -133,12 +133,18 @@ export default function Hero({ data }) {
           />
         </div>
 
-        {/* Canales */}
-        <ChannelsBar />
+        {/* Redes (mobile) */}
+        <ChannelsBar className="lg:hidden" />
       </div>
 
+      {/* Redes (desktop): columna vertical a la derecha */}
+      <ChannelsBar
+        orientation="vertical"
+        className="hidden lg:block absolute right-[32px] xl:right-[48px] top-[190px] z-30"
+      />
+
       {/* Mockups + imágenes laterales */}
-      <div className="relative mt-[56px] md:mt-[72px] w-full px-4">
+      <div className="relative mt-[56px] md:mt-[72px] lg:mt-[64px] w-full px-4">
         {SIDE_IMAGES.map((img) => (
           <motion.img
             key={img.src}

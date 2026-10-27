@@ -102,7 +102,7 @@ export default function WhyChoose({ data }) {
             <Button
               btnText="Try Nevenka (alpha)"
               btnClass="primary-btn"
-              href="https://zcal.co/sparkclub"
+              href="https://zcal.co/sparkclub/discovery"
             />
           </div>
         </div>

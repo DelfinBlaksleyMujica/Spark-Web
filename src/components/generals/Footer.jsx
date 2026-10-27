@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 import Image from "next/image";
 import Button from "../generals/Button";
+import NewsletterForm from "./NewsletterForm";
 import { motion } from "framer-motion";
 
 import { Public_Sans } from "next/font/google";
@@ -31,7 +32,7 @@ export default function Footer() {
             <Button
               btnText="Reserva una demo"
               btnClass="primary-btn"
-              href="https://zcal.co/sparkclub"
+              href="https://zcal.co/sparkclub/discovery"
             />
           </div>
         </section>
@@ -60,11 +61,6 @@ export default function Footer() {
             <li>
               <Link href="/blog" className="hover:underline">
                 Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/es" className="hover:underline">
-                ES
               </Link>
             </li>
           </ul>
@@ -180,7 +176,7 @@ export default function Footer() {
               href="https://api.whatsapp.com/send?phone=541123641441"
               className="text-[20px] "
             >
-              +54 9 1157979949
+              +54 9 11 2364-1441
             </a>
             <p className="text-[20px] ">Lun–Vie 9am–6pm</p>
           </div>
@@ -199,26 +195,7 @@ export default function Footer() {
             gratuitos, inspiración y más
           </p>
 
-          <form
-            className="flex flex-col lg:flex-row md:items-left md:justify-left lg:justify-left items-center gap-3 max-w-md w-full mx-auto md:mx-0"
-            onSubmit={(e) => e.preventDefault()}
-          >
-            <label htmlFor="email" className="sr-only">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              placeholder="Email Address"
-              className="flex bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
-            />
-            <Button
-              btnText="Subscribirse"
-              btnClass="primary-btn"
-              href="/about-us"
-            />
-          </form>
+          <NewsletterForm />
         </section>
       </div>
     </footer>
