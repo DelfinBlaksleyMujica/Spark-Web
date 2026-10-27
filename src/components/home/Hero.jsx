@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Play, Sparkles } from "lucide-react";
 import Button from "../generals/Button";
 import ChannelsBar from "./ChannelsBar";
-import DemoVideoModal from "./DemoVideoModal";
 import { inter, public_sans } from "@/app/fonts/fonts";
 import NavUserProviderToggle from "../generals/NavUserProviderToggle";
 
@@ -52,7 +51,6 @@ const SIDE_IMAGES = [
 
 export default function Hero({ data }) {
   const { scrollY } = useScroll();
-  const [videoOpen, setVideoOpen] = useState(false);
 
   // Parallax values
   const backY = useTransform(scrollY, [0, 300], [0, -60]);
@@ -134,16 +132,15 @@ export default function Hero({ data }) {
           </div>
 
           {/* Demo en video */}
-          <button
-            type="button"
-            onClick={() => setVideoOpen(true)}
+          <a
+            href="#como-funciona"
             className={`${inter.className} group flex items-center gap-[10px] rounded-full py-[6px] pl-[6px] pr-[14px] text-[15px] font-medium text-[#d4d4d8] transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-[#FCD34D]`}
           >
             <span className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#FCD34D] text-black transition-transform group-hover:scale-110">
               <Play className="ml-[2px] h-[14px] w-[14px] fill-current" aria-hidden="true" />
             </span>
             Ver la demo en video
-          </button>
+          </a>
         </div>
 
         {/* Redes (mobile) */}
@@ -202,8 +199,6 @@ export default function Hero({ data }) {
           </div>
         </motion.div>
       </div>
-
-      <DemoVideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />
     </section>
   );
 }
