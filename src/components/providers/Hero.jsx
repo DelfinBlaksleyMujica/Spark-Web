@@ -57,7 +57,7 @@ export default function Hero({ data }) {
             <Button
               btnText="Unirse como Partner Certificado"
               btnClass="primary-btn"
-              href="https://spark-club-suppliers.vercel.app/"
+              href="https://sparkclub-plataforma-suppliers.vercel.app/"
             />
             <Button
               btnText="Agenda una demo"
