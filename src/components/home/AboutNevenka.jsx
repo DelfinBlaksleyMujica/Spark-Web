@@ -7,7 +7,8 @@ import { Play } from "lucide-react";
 import Button from "../generals/Button";
 import { inter, public_sans } from "@/app/fonts/fonts";
 
-const VIDEO_ID = "TD80Ze-7Cys"; // Sparkclub | MVP V1
+// "Sparkclub Launch" comprimido a 720p (el original en 4K pesa 52 MB)
+const VIDEO_SRC = "/videos/nevenka-demo.mp4";
 
 // Cada tramo de la línea se llena en orden y enciende el paso siguiente
 const SEGMENT_DURATION = 0.5;
@@ -82,34 +83,35 @@ function Timeline({ steps }) {
 }
 
 function DemoVideo() {
+  const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
+
+  const play = () => {
+    setPlaying(true);
+    videoRef.current?.play();
+  };
 
   return (
     <div className="relative aspect-video w-full overflow-hidden rounded-[12px] bg-black shadow-[0_24px_60px_rgba(0,0,0,0.18)]">
-      {playing ? (
-        <iframe
-          className="absolute inset-0 h-full w-full"
-          src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1&rel=0`}
-          title="Demo de SparkClub: Nevenka crea un evento"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        />
-      ) : (
-        // Póster liviano: el iframe de YouTube carga recién al tocar play
+      {/* Video propio (sin la barra de YouTube); se descarga recién al tocar play */}
+      <video
+        ref={videoRef}
+        className="absolute inset-0 h-full w-full"
+        src={VIDEO_SRC}
+        poster="/images/Nevenka/demo-poster.jpg"
+        preload="none"
+        playsInline
+        controls={playing}
+        aria-label="Demo de SparkClub: Nevenka crea un evento"
+      />
+
+      {!playing && (
         <button
           type="button"
-          onClick={() => setPlaying(true)}
+          onClick={play}
           aria-label="Reproducir la demo de SparkClub"
           className="group absolute inset-0 h-full w-full focus-visible:outline-4 focus-visible:-outline-offset-4 focus-visible:outline-[#FCD34D]"
         >
-          <Image
-            src="/images/Nevenka/demo-poster.jpg"
-            alt=""
-            fill
-            sizes="(min-width: 1024px) 680px, 100vw"
-            className="object-cover"
-          />
           <span
             className={`${inter.className} absolute bottom-[16px] left-[16px] sm:bottom-[24px] sm:left-[24px] flex items-center gap-[10px] rounded-full bg-[#FCD34D] py-[8px] pl-[8px] pr-[18px] text-[15px] font-semibold text-black shadow-[0_8px_24px_rgba(0,0,0,0.4)] transition-transform duration-200 group-hover:scale-105`}
           >
