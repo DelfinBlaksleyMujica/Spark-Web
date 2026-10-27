@@ -17,7 +17,8 @@ const data = {
       "locaciones, proveedores, productores, presupuesto y reportes. Más control, más trazabilidad, más memorias - menos tiempo perdido.",
   },
   aboutNevenka: {
-    title: "Pero espera, ¿quién es",
+    title: "Pero espera,",
+    question: "¿quién es",
     firstSubtitle:
       "Nevenka es la compañera de equipo que todo líder quisiera tener.",
     secondSubtitle:

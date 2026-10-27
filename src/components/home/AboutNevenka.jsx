@@ -134,7 +134,9 @@ export default function AboutNevenka({ data }) {
         {/* Izquierda: título + pasos */}
         <div>
           <h2 className="text-[32px] sm:text-[40px] font-medium leading-[1.15] tracking-[-0.02em]">
-            {data.title}{" "}
+            {data.title}
+            <br />
+            {data.question}{" "}
             <span className="whitespace-nowrap">
               <Image
                 src="/images/Logos/Nevenka_logo.png"
@@ -163,9 +165,9 @@ export default function AboutNevenka({ data }) {
         {/* CTA: debajo de los pasos en desktop, al final en mobile */}
         <div className="flex justify-center lg:justify-start lg:col-start-1 lg:row-start-2 lg:-mt-[8px]">
           <Button
-            btnText="Sumate a la lista de espera"
+            btnText="Usar Nevenka"
             btnClass="primary-btn"
-            href="https://app.formbricks.com/s/cmj1mpv5u3avdad015eandi7o"
+            href="https://sparkclub-plataforma-brands.vercel.app/"
           />
         </div>
       </div>
