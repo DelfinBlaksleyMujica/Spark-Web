@@ -48,7 +48,7 @@ export default function SectionContainer({ data }) {
         <div className="w-full flex justify-center items-center mt-[20px] mb-[125px] text-black">
           <p>
             {data.personalisedPlanTitle}{" "}
-            <Link className="underline font-semibold" href="/contact">
+            <Link className="underline font-semibold" href="/contacto">
               Get in touch
             </Link>
           </p>

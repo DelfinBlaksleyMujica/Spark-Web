@@ -17,7 +17,8 @@ const data = {
       "locaciones, proveedores, productores, presupuesto y reportes. Más control, más trazabilidad, más memorias - menos tiempo perdido.",
   },
   aboutNevenka: {
-    title: "Pero espera, ¿quién es",
+    title: "Pero espera,",
+    question: "¿quién es",
     firstSubtitle:
       "Nevenka es la compañera de equipo que todo líder quisiera tener.",
     secondSubtitle:
@@ -27,13 +28,15 @@ const data = {
         id: "input",
         img: "/images/Cards/MockUp-01.webp",
         imageAlt: "Ingresa tus ideas para el evento.",
-        title: "Ingresa tus ideas para el evento.",
+        time: "Minuto 0",
+        title: "Ingresa tus ideas para el evento",
         description: "Fechas, invitados, vibra, formato, servicios.",
       },
       {
         id: "proposal",
         img: "/images/Cards/MockUp-02.webp",
         imageAlt: "Obtén una propuesta en 10 minutos",
+        time: "Minuto 10",
         title: "Obtén una propuesta en 10 minutos",
         description:
           "Nevenka prepara la propuesta del evento según tus necesidades.",
@@ -42,6 +45,7 @@ const data = {
         id: "pm",
         img: "/images/Cards/MockUp-03.webp",
         imageAlt: "Tu PM se hace cargo",
+        time: "Hasta el día del evento",
         title: "Tu PM se hace cargo",
         description: "Experiencias, proveedores y atención a los detalles.",
       },

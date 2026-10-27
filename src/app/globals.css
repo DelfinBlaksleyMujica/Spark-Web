@@ -19,6 +19,12 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -55,9 +61,53 @@ body {
 }
 
 .tertiary-btn {
-  background-color: #FFEE35;
+  background-color: #FCD34D;
   color: #000000;
-  border: solid 1px #FFEE35;
+  border: solid 1px #FCD34D;
+}
+
+/* Botón "Crear Evento con IA": borde con brillo que gira */
+.ai-btn {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #000000;
+  background-color: #92650f;
+  box-shadow: 0 0 24px rgba(252, 211, 77, 0.3);
+}
+
+.ai-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  aspect-ratio: 1;
+  z-index: -2;
+  background: conic-gradient(from 0deg, transparent 0 62%, #fffbeb 80%, #f59e0b 88%, transparent 100%);
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: ai-btn-spin 3s linear infinite;
+}
+
+.ai-btn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: -1;
+  border-radius: 8px;
+  background-color: #FCD34D;
+}
+
+@keyframes ai-btn-spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-btn::before {
+    animation: none;
+  }
 }
 
 @media (min-width: 640px) {
@@ -158,53 +208,6 @@ body {
     }
   }
 }
-
-/*Trusted By - Mobile Swiper Styles*/
-
-.swiper {
-  width: 100%;
-  height: 230px;
-  overflow: hidden !important;
-  margin-top: 0px;
-}
-
-/* .swiper-slide-active {
-  width: 100% !important;
-  margin-right: 30px;
-  height: 200px;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-} */
-
-.swiper-slide-active {
-  height: 200px;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.swiper-slide img {
-  display: block;
-  width: 55%;
-  height: auto;
-  object-fit: cover;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: black !important;
-}
-
 
 /*Btn de Whats App*/
 .whatsApp-logo-container {
