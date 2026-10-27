@@ -42,7 +42,7 @@ function validate(form) {
 }
 
 const inputClass =
-  "w-full bg-[#121212] border border-white/10 rounded-[10px] px-4 py-3 text-white placeholder:text-white/40 outline-none transition-colors duration-200 focus:border-[#FFEE35] focus:ring-1 focus:ring-[#FFEE35]";
+  "w-full bg-[#121212] border border-white/10 rounded-[10px] px-4 py-3 text-white placeholder:text-white/40 outline-none transition-colors duration-200 focus:border-[#FCD34D] focus:ring-1 focus:ring-[#FCD34D]";
 
 const labelClass = "block text-[14px] font-medium text-white/70 mb-2";
 
@@ -227,14 +227,14 @@ export default function ContactForm() {
               ? undefined
               : { type: "spring", stiffness: 260, damping: 20 }
           }
-          className="mt-2 w-full rounded-[10px] bg-[#FFEE35] text-black font-medium text-[18px] leading-[100%] tracking-tight px-6 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="mt-2 w-full rounded-[10px] bg-[#FCD34D] text-black font-medium text-[18px] leading-[100%] tracking-tight px-6 py-3 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isLoading ? "Enviando..." : "Enviar mensaje"}
         </motion.button>
 
         <div aria-live="polite">
           {status === "success" && (
-            <p className="text-center text-[14px] text-[#FFEE35]">
+            <p className="text-center text-[14px] text-[#FCD34D]">
               ¡Gracias! Recibimos tu mensaje y te vamos a contactar pronto.
             </p>
           )}

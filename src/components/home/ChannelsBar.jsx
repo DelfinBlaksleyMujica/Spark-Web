@@ -35,7 +35,7 @@ export default function ChannelsBar({ orientation = "horizontal", className = ""
               rel="noopener noreferrer"
               aria-label={name}
               title={name}
-              className="flex h-[40px] w-[40px] items-center justify-center rounded-full text-white transition duration-200 hover:scale-110 hover:text-[#FFEE35] focus-visible:outline-2 focus-visible:outline-[#FFEE35]"
+              className="flex h-[40px] w-[40px] items-center justify-center rounded-full text-white transition duration-200 hover:scale-110 hover:text-[#FCD34D] focus-visible:outline-2 focus-visible:outline-[#FCD34D]"
             >
               <Icon className="h-[22px] w-[22px]" aria-hidden="true" />
             </a>

@@ -55,9 +55,9 @@ body {
 }
 
 .tertiary-btn {
-  background-color: #FFEE35;
+  background-color: #FCD34D;
   color: #000000;
-  border: solid 1px #FFEE35;
+  border: solid 1px #FCD34D;
 }
 
 /* Botón "Crear Evento con IA": borde con brillo que gira */
@@ -66,8 +66,8 @@ body {
   isolation: isolate;
   overflow: hidden;
   color: #000000;
-  background-color: #8a7d12;
-  box-shadow: 0 0 24px rgba(255, 238, 53, 0.28);
+  background-color: #92650f;
+  box-shadow: 0 0 24px rgba(252, 211, 77, 0.3);
 }
 
 .ai-btn::before {
@@ -78,7 +78,7 @@ body {
   width: 150%;
   aspect-ratio: 1;
   z-index: -2;
-  background: conic-gradient(from 0deg, transparent 0 62%, #ffffff 80%, #ff9d00 88%, transparent 100%);
+  background: conic-gradient(from 0deg, transparent 0 62%, #fffbeb 80%, #f59e0b 88%, transparent 100%);
   transform: translate(-50%, -50%) rotate(0deg);
   animation: ai-btn-spin 3s linear infinite;
 }
@@ -89,7 +89,7 @@ body {
   inset: 2px;
   z-index: -1;
   border-radius: 8px;
-  background-color: #FFEE35;
+  background-color: #FCD34D;
 }
 
 @keyframes ai-btn-spin {
