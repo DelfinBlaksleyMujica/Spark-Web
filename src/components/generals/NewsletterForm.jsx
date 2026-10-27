@@ -44,16 +44,16 @@ export default function NewsletterForm() {
 
   if (status === "success") {
     return (
-      <p className="text-[18px] font-semibold" role="status">
+      <p className={`${inter.className} text-[15px] font-semibold`} role="status">
         ¡Listo! Ya estás suscripto al newsletter.
       </p>
     );
   }
 
   return (
-    <div className="max-w-md w-full mx-auto md:mx-0">
+    <div className="w-full sm:max-w-[420px]">
       <form
-        className="flex flex-col lg:flex-row items-center gap-3 w-full"
+        className={`${inter.className} flex w-full flex-col gap-[8px] sm:flex-row`}
         onSubmit={handleSubmit}
         noValidate
       >
@@ -72,12 +72,12 @@ export default function NewsletterForm() {
           placeholder="Email"
           aria-invalid={status === "invalid" || undefined}
           aria-describedby="newsletter-feedback"
-          className="flex w-full lg:w-auto bg-transparent border-0 border-b border-zinc-900/60 focus:border-zinc-900 focus:outline-none text-[15px] placeholder-zinc-700"
+          className="h-[44px] w-full min-w-0 sm:flex-1 rounded-[10px] border border-black/20 bg-white/50 px-[14px] text-[15px] text-zinc-900 placeholder-zinc-600 focus:border-black focus:bg-white/70 focus:outline-none"
         />
         <button
           type="submit"
           disabled={status === "loading"}
-          className={`${inter.className} primary-btn rounded-[10px] px-6 py-3 text-[18px] font-medium leading-[100%] tracking-tight w-[85%] sm:w-[65%] md:w-auto transition-transform hover:scale-105 active:scale-95 disabled:opacity-60 disabled:hover:scale-100`}
+          className="primary-btn h-[44px] w-full shrink-0 rounded-[10px] px-[18px] text-[15px] font-medium sm:w-auto transition-transform hover:scale-[1.03] active:scale-95 disabled:opacity-60 disabled:hover:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           {status === "loading" ? "Enviando..." : "Suscribirse"}
         </button>

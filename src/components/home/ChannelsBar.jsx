@@ -5,8 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 import { FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-// Mismos links que el Footer
-const CHANNELS = [
+// Redes de SparkClub (también las usa el Footer)
+export const CHANNELS = [
   { name: "LinkedIn", href: "https://www.linkedin.com/company/spark-latam", Icon: FaLinkedinIn },
   { name: "X", href: "https://x.com/SparkclubXYZ", Icon: FaXTwitter },
   { name: "WhatsApp", href: "https://api.whatsapp.com/send?phone=541123641441", Icon: FaWhatsapp },
